@@ -6285,5 +6285,1265 @@
     "explication": "« Rouge » a la plus grande part.",
     "tempsSec": 15,
     "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 4 × 4 ?",
+    "visuel": null,
+    "choix": [
+      "16",
+      "14",
+      "6",
+      "26"
+    ],
+    "reponse": "16",
+    "indice": "Pense à la table de 4.",
+    "explication": "4 × 4 = 4 × 3 + 4 = 12 + 4 = 16.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 4 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "24",
+      "28",
+      "30",
+      "18"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 6.",
+    "explication": "4 × 6 = 4 × 5 + 4 = 20 + 4 = 24.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "28",
+      "18",
+      "21",
+      "38"
+    ],
+    "reponse": "28",
+    "indice": "Pense à la table de 7.",
+    "explication": "4 × 7 = 4 × 6 + 4 = 24 + 4 = 28.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 4 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "40",
+      "36",
+      "30",
+      "32"
+    ],
+    "reponse": "32",
+    "indice": "Pense à la table de 8.",
+    "explication": "4 × 8 = 4 × 7 + 4 = 28 + 4 = 32.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 4 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "38",
+      "36",
+      "26",
+      "45"
+    ],
+    "reponse": "36",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "4 × 9 = 4 × 8 + 4 = 32 + 4 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 4 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "34",
+      "44",
+      "46",
+      "54"
+    ],
+    "reponse": "44",
+    "indice": "Pense à la table de 11.",
+    "explication": "4 × 11 = 4 × 10 + 4 = 40 + 4 = 44.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 4 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "48",
+      "44",
+      "38",
+      "58"
+    ],
+    "reponse": "48",
+    "indice": "Pense à la table de 12.",
+    "explication": "4 × 12 = 4 × 11 + 4 = 44 + 4 = 48.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 6 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "26",
+      "38",
+      "36",
+      "46"
+    ],
+    "reponse": "36",
+    "indice": "Pense à la table de 6.",
+    "explication": "6 × 6 = 6 × 5 + 6 = 30 + 6 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 6 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "48",
+      "42",
+      "32",
+      "40"
+    ],
+    "reponse": "42",
+    "indice": "Pense à la table de 7.",
+    "explication": "6 × 7 = 6 × 6 + 6 = 36 + 6 = 42.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 6 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "48",
+      "58",
+      "56",
+      "40"
+    ],
+    "reponse": "48",
+    "indice": "Pense à la table de 8.",
+    "explication": "6 × 8 = 6 × 7 + 6 = 42 + 6 = 48.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 6 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "45",
+      "60",
+      "48"
+    ],
+    "reponse": "54",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "6 × 9 = 6 × 8 + 6 = 48 + 6 = 54.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 6 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "66",
+      "56",
+      "72",
+      "68"
+    ],
+    "reponse": "66",
+    "indice": "Pense à la table de 11.",
+    "explication": "6 × 11 = 6 × 10 + 6 = 60 + 6 = 66.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "6 × 12 = ?",
+    "visuel": null,
+    "choix": [
+      "84",
+      "72",
+      "66",
+      "70"
+    ],
+    "reponse": "72",
+    "indice": "Pense à la table de 12.",
+    "explication": "6 × 12 = 6 × 11 + 6 = 66 + 6 = 72.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "7 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "47",
+      "42",
+      "39",
+      "49"
+    ],
+    "reponse": "49",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 7 = 7 × 6 + 7 = 42 + 7 = 49.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "7 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "63",
+      "66",
+      "48",
+      "56"
+    ],
+    "reponse": "56",
+    "indice": "Pense à la table de 8.",
+    "explication": "7 × 8 = 7 × 7 + 7 = 49 + 7 = 56.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_016",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "7 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "65",
+      "54",
+      "63",
+      "72"
+    ],
+    "reponse": "63",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "7 × 9 = 7 × 8 + 7 = 56 + 7 = 63.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_017",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 7 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "87",
+      "77",
+      "67",
+      "70"
+    ],
+    "reponse": "77",
+    "indice": "Pense à la table de 11.",
+    "explication": "7 × 11 = 7 × 10 + 7 = 70 + 7 = 77.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_018",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "7 × 12 = ?",
+    "visuel": null,
+    "choix": [
+      "84",
+      "72",
+      "96",
+      "94"
+    ],
+    "reponse": "84",
+    "indice": "Pense à la table de 12.",
+    "explication": "7 × 12 = 7 × 11 + 7 = 77 + 7 = 84.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_019",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 8 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "66",
+      "54",
+      "72",
+      "64"
+    ],
+    "reponse": "64",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 8 = 8 × 7 + 8 = 56 + 8 = 64.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_020",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 8 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "72",
+      "82",
+      "62",
+      "74"
+    ],
+    "reponse": "72",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "8 × 9 = 8 × 8 + 8 = 64 + 8 = 72.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_021",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 8 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "80",
+      "77",
+      "96",
+      "88"
+    ],
+    "reponse": "88",
+    "indice": "Pense à la table de 11.",
+    "explication": "8 × 11 = 8 × 10 + 8 = 80 + 8 = 88.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_022",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "8 × 12 = ?",
+    "visuel": null,
+    "choix": [
+      "96",
+      "108",
+      "86",
+      "98"
+    ],
+    "reponse": "96",
+    "indice": "Pense à la table de 12.",
+    "explication": "8 × 12 = 8 × 11 + 8 = 88 + 8 = 96.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_023",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 9 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "72",
+      "90",
+      "81",
+      "91"
+    ],
+    "reponse": "81",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "9 × 9 = 9 × 8 + 9 = 72 + 9 = 81.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_024",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 9 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "101",
+      "90",
+      "88",
+      "99"
+    ],
+    "reponse": "99",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "9 × 11 = 9 × 10 + 9 = 90 + 9 = 99.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_025",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 9 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "108",
+      "110",
+      "96",
+      "98"
+    ],
+    "reponse": "108",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "9 × 12 = 9 × 11 + 9 = 99 + 9 = 108.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_026",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "11 × 11 = ?",
+    "visuel": null,
+    "choix": [
+      "110",
+      "121",
+      "132",
+      "123"
+    ],
+    "reponse": "121",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 11 = 11 × 10 + 11 = 110 + 11 = 121.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_027",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 11 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "144",
+      "134",
+      "122",
+      "132"
+    ],
+    "reponse": "132",
+    "indice": "Pense à la table de 12.",
+    "explication": "11 × 12 = 11 × 11 + 11 = 121 + 11 = 132.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_028",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 12 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "142",
+      "146",
+      "156",
+      "144"
+    ],
+    "reponse": "144",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 12 = 12 × 11 + 12 = 132 + 12 = 144.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_029",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "14",
+      "4",
+      "3",
+      "2"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la table de 4.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 4 = 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_030",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel est le résultat de 1 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "12",
+      "6",
+      "5"
+    ],
+    "reponse": "6",
+    "indice": "Pense à la table de 6.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 6 = 6.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_031",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "8",
+      "5",
+      "7",
+      "6"
+    ],
+    "reponse": "7",
+    "indice": "Pense à la table de 7.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 7 = 7.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_032",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "1 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "16",
+      "10",
+      "8",
+      "7"
+    ],
+    "reponse": "8",
+    "indice": "Pense à la table de 8.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 8 = 8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_033",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "1 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "7",
+      "9",
+      "19",
+      "11"
+    ],
+    "reponse": "9",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 9 = 9.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_034",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 1 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "21",
+      "11",
+      "22"
+    ],
+    "reponse": "11",
+    "indice": "Pense à la table de 11.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 11 = 11.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_035",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 1 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "10",
+      "12",
+      "11",
+      "2"
+    ],
+    "reponse": "12",
+    "indice": "Pense à la table de 12.",
+    "explication": "Multiplier par 1 ne change rien : 1 × 12 = 12.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_036",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "2 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "18",
+      "12",
+      "8"
+    ],
+    "reponse": "8",
+    "indice": "Pense à la table de 4.",
+    "explication": "2 × 4, c'est le double de 4 : 4 + 4 = 8.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_037",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien font 2 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "22",
+      "12",
+      "18"
+    ],
+    "reponse": "12",
+    "indice": "Pense à la table de 6.",
+    "explication": "2 × 6, c'est le double de 6 : 6 + 6 = 12.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_038",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "2 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "21",
+      "16",
+      "14",
+      "24"
+    ],
+    "reponse": "14",
+    "indice": "Pense à la table de 7.",
+    "explication": "2 × 7, c'est le double de 7 : 7 + 7 = 14.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_039",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "2 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "18",
+      "16",
+      "6",
+      "26"
+    ],
+    "reponse": "16",
+    "indice": "Pense à la table de 8.",
+    "explication": "2 × 8, c'est le double de 8 : 8 + 8 = 16.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_040",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 2 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "20",
+      "18",
+      "28",
+      "27"
+    ],
+    "reponse": "18",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "2 × 9, c'est le double de 9 : 9 + 9 = 18.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_041",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "2 × 11 = ?",
+    "visuel": null,
+    "choix": [
+      "32",
+      "22",
+      "11",
+      "33"
+    ],
+    "reponse": "22",
+    "indice": "Pense à la table de 11.",
+    "explication": "2 × 11, c'est le double de 11 : 11 + 11 = 22.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_042",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 2 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "34",
+      "24",
+      "14",
+      "26"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 12.",
+    "explication": "2 × 12, c'est le double de 12 : 12 + 12 = 24.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_043",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "3 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "8",
+      "12",
+      "14"
+    ],
+    "reponse": "12",
+    "indice": "Pense à la table de 4.",
+    "explication": "3 × 4 = 3 × 3 + 3 = 9 + 3 = 12.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_044",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel est le résultat de 3 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "20",
+      "18",
+      "24",
+      "16"
+    ],
+    "reponse": "18",
+    "indice": "Pense à la table de 6.",
+    "explication": "3 × 6 = 3 × 5 + 3 = 15 + 3 = 18.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_045",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien font 3 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "21",
+      "18",
+      "24",
+      "14"
+    ],
+    "reponse": "21",
+    "indice": "Pense à la table de 7.",
+    "explication": "3 × 7 = 3 × 6 + 3 = 18 + 3 = 21.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_046",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 3 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "21",
+      "24",
+      "27",
+      "32"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 8.",
+    "explication": "3 × 8 = 3 × 7 + 3 = 21 + 3 = 24.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_047",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "3 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "25",
+      "29",
+      "27",
+      "17"
+    ],
+    "reponse": "27",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "3 × 9 = 3 × 8 + 3 = 24 + 3 = 27.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_048",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 3 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "30",
+      "23",
+      "33",
+      "35"
+    ],
+    "reponse": "33",
+    "indice": "Pense à la table de 11.",
+    "explication": "3 × 11 = 3 × 10 + 3 = 30 + 3 = 33.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_049",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 3 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "34",
+      "33",
+      "36",
+      "38"
+    ],
+    "reponse": "36",
+    "indice": "Pense à la table de 12.",
+    "explication": "3 × 12 = 3 × 11 + 3 = 33 + 3 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_050",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel est le résultat de 4 × 5 ?",
+    "visuel": null,
+    "choix": [
+      "10",
+      "22",
+      "20",
+      "24"
+    ],
+    "reponse": "20",
+    "indice": "Table de 5 : le résultat termine par 0 ou 5.",
+    "explication": "4 × 5 = 4 × 4 + 4 = 16 + 4 = 20.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_051",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "5 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "25",
+      "30",
+      "36",
+      "40"
+    ],
+    "reponse": "30",
+    "indice": "Table de 5 : le résultat termine par 0 ou 5.",
+    "explication": "5 × 6 = 6/2 × 10 = 3 × 10 = 30.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_052",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "5 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "45",
+      "35",
+      "37",
+      "33"
+    ],
+    "reponse": "35",
+    "indice": "Table de 5 : le résultat termine par 0 ou 5.",
+    "explication": "5 × 7 = 5 × 6 + 5 = 30 + 5 = 35.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_053",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 5 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "35",
+      "50",
+      "40",
+      "48"
+    ],
+    "reponse": "40",
+    "indice": "Table de 5 : le résultat termine par 0 ou 5.",
+    "explication": "5 × 8 = 8/2 × 10 = 4 × 10 = 40.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_054",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "5 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "47",
+      "36",
+      "50",
+      "45"
+    ],
+    "reponse": "45",
+    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
+    "explication": "5 × 9 = 5 × 8 + 5 = 40 + 5 = 45.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_055",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 5 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "55",
+      "44",
+      "65",
+      "66"
+    ],
+    "reponse": "55",
+    "indice": "Table de 5 : le résultat termine par 0 ou 5.",
+    "explication": "5 × 11 = 5 × 10 + 5 = 50 + 5 = 55.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_056",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 5 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "60",
+      "50",
+      "58",
+      "55"
+    ],
+    "reponse": "60",
+    "indice": "Table de 5 : le résultat termine par 0 ou 5.",
+    "explication": "5 × 12 = 12/2 × 10 = 6 × 10 = 60.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_057",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 × 10 = ?",
+    "visuel": null,
+    "choix": [
+      "40",
+      "44",
+      "36",
+      "38"
+    ],
+    "reponse": "40",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "4 × 10 = 4 × 9 + 4 = 36 + 4 = 40.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_058",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 6 × 10 ?",
+    "visuel": null,
+    "choix": [
+      "66",
+      "60",
+      "70",
+      "54"
+    ],
+    "reponse": "60",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "6 × 10 = 6 × 9 + 6 = 54 + 6 = 60.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_059",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "7 × 10 = ?",
+    "visuel": null,
+    "choix": [
+      "72",
+      "63",
+      "70",
+      "68"
+    ],
+    "reponse": "70",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "7 × 10 = 7 × 9 + 7 = 63 + 7 = 70.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_060",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 8 × 10 ?",
+    "visuel": null,
+    "choix": [
+      "82",
+      "90",
+      "70",
+      "80"
+    ],
+    "reponse": "80",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "8 × 10 = 8 × 9 + 8 = 72 + 8 = 80.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_061",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 9 × 10 ?",
+    "visuel": null,
+    "choix": [
+      "90",
+      "81",
+      "88",
+      "100"
+    ],
+    "reponse": "90",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "9 × 10 = 9 × 9 + 9 = 81 + 9 = 90.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_062",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 10 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "108",
+      "110",
+      "121",
+      "99"
+    ],
+    "reponse": "110",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "Multiplier par 10 ajoute un zéro : 11 × 10 = 110.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_063",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 10 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "108",
+      "120",
+      "118",
+      "130"
+    ],
+    "reponse": "120",
+    "indice": "Multiplier par 10 ajoute un zéro.",
+    "explication": "Multiplier par 10 ajoute un zéro : 12 × 10 = 120.",
+    "tempsSec": 15,
+    "pointsBase": 150
   }
 ]

@@ -1,13 +1,13 @@
 /* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal */
 
-// Phase 3 — Niveau complet :
-//   - Numéro de niveau (1..20) → mélange de paliers (CLAUDE.md §7).
-//   - Charge la banque depuis le cache JSON (BootScene).
-//   - Portail de fin qui s'ouvre quand CONFIG.cristauxRequisParNiveau
-//     cristaux sont récoltés ; entrer dedans → ResultScene.
-//   - Bloc raté → cooldown puis réactivé avec une nouvelle question du même
-//     domaine (CONFIG.delaiReactivationBloc).
-//   - Minuteur du tableau (CONFIG.tempsNiveau) ; à 0 → ResultScene.
+// LevelScene — joue un niveau de plateforme.
+// Deux modes :
+//   - 'aventure' : niveaux 1 à 20 (mélange de paliers selon CLAUDE.md §7),
+//     16 blocs « ? » de domaines variés. Le portail s'ouvre quand TOUS
+//     les blocs ont été résolus.
+//   - 'mult'     : entraînement aux tables de multiplication. Monde
+//     élargi, 30 blocs, banque filtrée sur le sous-domaine
+//     « Tables de multiplication ». Portail à 30 blocs résolus.
 
 class LevelScene extends Phaser.Scene {
     constructor() {
@@ -17,13 +17,19 @@ class LevelScene extends Phaser.Scene {
     }
 
     init(data) {
-        this.niveau = (data && data.niveau) || 1;
+        data = data || {};
+        this.mode   = data.mode || 'aventure';
+        this.niveau = data.niveau || 1;
+        // Le mode entraînement utilise un monde plus large pour héberger 30 blocs.
+        this.largeurMonde = this.mode === 'mult' ? 5600 : CONFIG.moteur.largeurMonde;
+        // Pas de minuteur en entraînement (l'objectif est la maîtrise, pas la vitesse).
+        this.tempsNiveauTotal = this.mode === 'mult' ? null : CONFIG.tempsNiveau;
     }
 
     create() {
         const m = CONFIG.moteur;
 
-        this.physics.world.setBounds(0, 0, m.largeurMonde, m.hauteurMonde);
+        this.physics.world.setBounds(0, 0, this.largeurMonde, m.hauteurMonde);
 
         const banque = this.cache.json.get('questions') || [];
         if (banque.length === 0) {
@@ -32,20 +38,24 @@ class LevelScene extends Phaser.Scene {
 
         this.score     = new ScoreManager();
         this.questions = new QuestionManager(banque, {
-            niveau: this.niveau,
-            domainesActifs: CONFIG.domainesActifs,
-            adaptatif: CONFIG.adaptatif
+            niveau:         this.niveau,
+            domainesActifs: this.mode === 'mult' ? ['Arithmétique'] : CONFIG.domainesActifs,
+            sousDomaines:   this.mode === 'mult' ? ['Tables de multiplication'] : null,
+            adaptatif:      CONFIG.adaptatif
         });
-        this.modale    = new QuestionModal();
+        this.modale       = new QuestionModal();
         this.enQuestion   = false;
         this.niveauFini   = false;
         this.portailOuvert = false;
+        this.timerNiveau  = null;
 
         this.addBackgroundDecor();
 
         this.platforms = this.physics.add.staticGroup();
         this.questionBlocks = this.physics.add.staticGroup();
         this.buildLevel();
+
+        this.totalBlocs = this.questionBlocks.getChildren().length;
 
         const groundTopY = m.hauteurMonde - 48;
         this.hero = this.physics.add.sprite(80, groundTopY - 30, 'hero');
@@ -55,19 +65,17 @@ class LevelScene extends Phaser.Scene {
 
         this.physics.add.collider(this.hero, this.platforms);
         this.physics.add.collider(
-            this.hero,
-            this.questionBlocks,
+            this.hero, this.questionBlocks,
             (hero, block) => this.onCollisionBlock(hero, block),
-            null,
-            this
+            null, this
         );
 
-        // Portail (overlap, pas un mur).
-        this.portail = this.physics.add.staticSprite(m.largeurMonde - 60, groundTopY - 55, 'portail-ferme');
+        // Portail à l'extrémité droite.
+        this.portail = this.physics.add.staticSprite(this.largeurMonde - 60, groundTopY - 55, 'portail-ferme');
         this.portail.body.setSize(40, 80);
         this.physics.add.overlap(this.hero, this.portail, () => this.tenterEntreePortail());
 
-        this.cameras.main.setBounds(0, 0, m.largeurMonde, m.hauteurMonde);
+        this.cameras.main.setBounds(0, 0, this.largeurMonde, m.hauteurMonde);
         this.cameras.main.startFollow(this.hero, true, 0.12, 0.12);
         this.cameras.main.setDeadzone(120, 80);
 
@@ -78,7 +86,9 @@ class LevelScene extends Phaser.Scene {
 
         this.bindTouchControls();
         this.addHud();
-        this.lancerMinuteurNiveau();
+        if (this.tempsNiveauTotal !== null) {
+            this.lancerMinuteurNiveau();
+        }
     }
 
     update() {
@@ -109,11 +119,10 @@ class LevelScene extends Phaser.Scene {
         }
     }
 
-    // ---------------- Décor & niveau ----------------
+    // ---------------- Décor & construction du niveau ----------------
 
     addBackgroundDecor() {
-        const m = CONFIG.moteur;
-        for (let x = 100; x < m.largeurMonde; x += 360) {
+        for (let x = 100; x < this.largeurMonde; x += 360) {
             const y = Phaser.Math.Between(50, 160);
             this.add.image(x, y, 'cloud').setScrollFactor(0.4).setDepth(-1);
         }
@@ -123,11 +132,19 @@ class LevelScene extends Phaser.Scene {
         const m = CONFIG.moteur;
         const groundY = m.hauteurMonde - 24;
 
-        for (let x = 32; x < m.largeurMonde; x += 64) {
+        for (let x = 32; x < this.largeurMonde; x += 64) {
             this.platforms.create(x, groundY, 'ground').refreshBody();
         }
 
-        // Plateformes basses accessibles depuis le sol (saut ≈ 130 px).
+        if (this.mode === 'mult') {
+            this._buildMultLevel();
+        } else {
+            this._buildAventureLevel();
+        }
+    }
+
+    _buildAventureLevel() {
+        // Plateformes basses (« marches ») accessibles depuis le sol.
         const lowPlatforms = [200, 520, 880, 1240, 1600, 1960, 2320, 2680, 3000];
         lowPlatforms.forEach(x => this.platforms.create(x, 450, 'platform').refreshBody());
 
@@ -137,24 +154,13 @@ class LevelScene extends Phaser.Scene {
         const highPlatforms = [540, 900, 1260, 1620, 1980, 2340, 2700];
         highPlatforms.forEach(x => this.platforms.create(x, 250, 'platform').refreshBody());
 
-        // Blocs « ? » : chaque bloc a un domaine fixe (thème), répété cycliquement.
         const domaines = CONFIG.domainesActifs;
         const questionSpots = [
-            { x: 280,  y: 390 },
-            { x: 460,  y: 290 },
-            { x: 620,  y: 390 },
-            { x: 800,  y: 190 },
-            { x: 980,  y: 390 },
-            { x: 1160, y: 290 },
-            { x: 1340, y: 390 },
-            { x: 1500, y: 190 },
-            { x: 1680, y: 290 },
-            { x: 1860, y: 390 },
-            { x: 2020, y: 190 },
-            { x: 2200, y: 290 },
-            { x: 2400, y: 390 },
-            { x: 2560, y: 190 },
-            { x: 2760, y: 290 },
+            { x: 280,  y: 390 }, { x: 460,  y: 290 }, { x: 620,  y: 390 },
+            { x: 800,  y: 190 }, { x: 980,  y: 390 }, { x: 1160, y: 290 },
+            { x: 1340, y: 390 }, { x: 1500, y: 190 }, { x: 1680, y: 290 },
+            { x: 1860, y: 390 }, { x: 2020, y: 190 }, { x: 2200, y: 290 },
+            { x: 2400, y: 390 }, { x: 2560, y: 190 }, { x: 2760, y: 290 },
             { x: 2940, y: 390 }
         ];
 
@@ -166,6 +172,37 @@ class LevelScene extends Phaser.Scene {
             block.setData('domaine', domaines[i % domaines.length]);
             block.setData('lastQuestionId', null);
         });
+    }
+
+    _buildMultLevel() {
+        // Monde élargi : plateformes régulières tous les ~320 px en marches,
+        // ~340 mid, ~360 high, sur toute la largeur (5600 px).
+        const step = 320;
+        for (let x = 200; x < this.largeurMonde - 200; x += step) {
+            this.platforms.create(x, 450, 'platform').refreshBody();
+        }
+        for (let x = 380; x < this.largeurMonde - 200; x += 340) {
+            this.platforms.create(x, 350, 'platform').refreshBody();
+        }
+        for (let x = 540; x < this.largeurMonde - 200; x += 360) {
+            this.platforms.create(x, 250, 'platform').refreshBody();
+        }
+
+        // 30 blocs « ? » disposés en alternance de hauteurs (391, 291, 191).
+        const hauteurs = [390, 290, 190];
+        const nbBlocs = 30;
+        const start = 260;
+        const ecart = (this.largeurMonde - 320 - start) / (nbBlocs - 1);
+        for (let i = 0; i < nbBlocs; i++) {
+            const x = Math.round(start + i * ecart);
+            const y = hauteurs[i % hauteurs.length];
+            const block = this.questionBlocks.create(x, y, 'question-block');
+            block.refreshBody();
+            block.setData('state', 'active');
+            block.setData('id', 'qb_' + i);
+            block.setData('domaine', 'Arithmétique');
+            block.setData('lastQuestionId', null);
+        }
     }
 
     // ---------------- Blocs-questions ----------------
@@ -184,22 +221,18 @@ class LevelScene extends Phaser.Scene {
         if (hitFromBelow) {
             const yOrigine = block.y;
             this.tweens.add({
-                targets: block,
-                y: yOrigine - 6,
-                duration: 80,
-                yoyo: true,
+                targets: block, y: yOrigine - 6, duration: 80, yoyo: true,
                 onComplete: () => { block.y = yOrigine; block.refreshBody(); }
             });
             hero.setVelocityY(0);
         }
 
         this.touchInput.left = this.touchInput.right = this.touchInput.jump = false;
-
         this.afficherQuestion(block);
     }
 
     afficherQuestion(block) {
-        const domaine = block.getData('domaine');
+        const domaine   = block.getData('domaine');
         const exclureId = block.getData('lastQuestionId');
         const question = this.questions.prochaineDuDomaine(domaine, exclureId)
                       || this.questions.prochaine();
@@ -210,7 +243,6 @@ class LevelScene extends Phaser.Scene {
         }
 
         block.setData('lastQuestionId', question.id);
-
         this.physics.world.pause();
 
         this.modale.afficher(question, {
@@ -261,37 +293,45 @@ class LevelScene extends Phaser.Scene {
 
     // ---------------- Portail ----------------
 
-    majPortail() {
-        if (!this.portailOuvert && this.score.cristaux >= CONFIG.cristauxRequisParNiveau) {
-            this.portailOuvert = true;
-            this.portail.setTexture('portail-ouvert');
-            this.tweens.add({
-                targets: this.portail,
-                alpha: { from: 0.4, to: 1 },
-                duration: 600,
-                ease: 'Sine.easeInOut',
-                yoyo: true,
-                repeat: -1
-            });
+    blocsResolus() {
+        let n = 0;
+        this.questionBlocks.getChildren().forEach(b => {
+            if (b.getData('state') === 'done') n += 1;
+        });
+        return n;
+    }
 
-            // Petite annonce.
-            const ann = this.add.text(
-                this.scale.width / 2, 110,
-                'Le portail est ouvert ! Cours vers la droite →',
-                {
-                    fontFamily: 'Arial, sans-serif',
-                    fontSize: '22px',
-                    color: '#fff',
-                    backgroundColor: 'rgba(78, 167, 239, 0.85)',
-                    padding: { x: 14, y: 8 },
-                    fontStyle: 'bold'
-                }
-            ).setOrigin(0.5).setScrollFactor(0).setDepth(20);
-            this.tweens.add({
-                targets: ann, alpha: 0, delay: 2500, duration: 600,
-                onComplete: () => ann.destroy()
-            });
-        }
+    majPortail() {
+        if (this.portailOuvert) return;
+        if (this.blocsResolus() < this.totalBlocs) return;
+
+        this.portailOuvert = true;
+        this.portail.setTexture('portail-ouvert');
+        this.tweens.add({
+            targets: this.portail,
+            alpha: { from: 0.4, to: 1 },
+            duration: 600,
+            ease: 'Sine.easeInOut',
+            yoyo: true,
+            repeat: -1
+        });
+
+        const ann = this.add.text(
+            this.scale.width / 2, 110,
+            'Bravo ! Le portail est ouvert — cours vers la droite →',
+            {
+                fontFamily: 'Arial, sans-serif',
+                fontSize: '22px',
+                color: '#fff',
+                backgroundColor: 'rgba(78, 167, 239, 0.85)',
+                padding: { x: 14, y: 8 },
+                fontStyle: 'bold'
+            }
+        ).setOrigin(0.5).setScrollFactor(0).setDepth(20);
+        this.tweens.add({
+            targets: ann, alpha: 0, delay: 2800, duration: 600,
+            onComplete: () => ann.destroy()
+        });
     }
 
     tenterEntreePortail() {
@@ -299,7 +339,7 @@ class LevelScene extends Phaser.Scene {
         this.terminerNiveau({ succes: true });
     }
 
-    // ---------------- HUD & minuteur du tableau ----------------
+    // ---------------- HUD ----------------
 
     addHud() {
         const styleBase = {
@@ -310,36 +350,46 @@ class LevelScene extends Phaser.Scene {
             padding: { x: 8, y: 4 }
         };
 
-        this.hudNiveau   = this.add.text(16, 16, 'Niveau ' + this.niveau, { ...styleBase, fontStyle: 'bold' })
+        const titre = this.mode === 'mult'
+            ? 'Tables de multiplication'
+            : 'Niveau ' + this.niveau;
+
+        this.hudNiveau   = this.add.text(16, 16, titre, { ...styleBase, fontStyle: 'bold' })
             .setScrollFactor(0).setDepth(10);
         this.hudScore    = this.add.text(16, 44, 'Score : 0', styleBase).setScrollFactor(0).setDepth(10);
-        this.hudCristaux = this.add.text(16, 72, 'Cristaux : 0 / ' + CONFIG.cristauxRequisParNiveau, styleBase)
+        this.hudCristaux = this.add.text(16, 72, 'Réussies : 0 / ' + this.totalBlocs, styleBase)
             .setScrollFactor(0).setDepth(10);
         this.hudCombo    = this.add.text(16, 100, 'Série : ×1,0', styleBase).setScrollFactor(0).setDepth(10);
-        this.hudTemps    = this.add.text(this.scale.width - 16, 16, 'Temps : --:--',
-            { ...styleBase, fontSize: '20px' }
-        ).setOrigin(1, 0).setScrollFactor(0).setDepth(10);
 
+        if (this.tempsNiveauTotal !== null) {
+            this.hudTemps = this.add.text(this.scale.width - 16, 16, 'Temps : --:--',
+                { ...styleBase, fontSize: '20px' }
+            ).setOrigin(1, 0).setScrollFactor(0).setDepth(10);
+        }
+
+        const aide = this.mode === 'mult'
+            ? 'Réponds aux 30 multiplications pour ouvrir le portail'
+            : 'Réponds à toutes les questions pour ouvrir le portail';
         this.add.text(
-            16, this.scale.height - 32,
-            'Saute sur un bloc « ? » par-dessous ou pose-toi dessus pour répondre',
+            16, this.scale.height - 32, aide,
             { ...styleBase, fontSize: '14px' }
         ).setScrollFactor(0).setDepth(10);
     }
 
     majHud() {
         this.hudScore.setText('Score : ' + this.score.score);
-        this.hudCristaux.setText('Cristaux : ' + this.score.cristaux + ' / ' + CONFIG.cristauxRequisParNiveau);
+        this.hudCristaux.setText('Réussies : ' + this.blocsResolus() + ' / ' + this.totalBlocs);
         this.hudCombo.setText('Série : ' + this.score.formatCombo());
     }
 
+    // ---------------- Minuteur (mode aventure seulement) ----------------
+
     lancerMinuteurNiveau() {
-        this.tempsRestant = CONFIG.tempsNiveau;
+        this.tempsRestant = this.tempsNiveauTotal;
         this.majHudTemps();
 
         this.timerNiveau = this.time.addEvent({
-            delay: 1000,
-            loop: true,
+            delay: 1000, loop: true,
             callback: () => {
                 if (this.enQuestion || this.niveauFini) return;
                 this.tempsRestant -= 1;
@@ -352,6 +402,7 @@ class LevelScene extends Phaser.Scene {
     }
 
     majHudTemps() {
+        if (!this.hudTemps) return;
         const t = Math.max(0, this.tempsRestant);
         const mm = Math.floor(t / 60);
         const ss = t % 60;
@@ -370,10 +421,11 @@ class LevelScene extends Phaser.Scene {
         this.physics.world.pause();
 
         this.scene.start('ResultScene', {
+            mode:             this.mode,
             niveau:           this.niveau,
             score:            this.score.score,
             cristaux:         this.score.cristaux,
-            cristauxRequis:   CONFIG.cristauxRequisParNiveau,
+            cristauxRequis:   this.totalBlocs,
             questionsTotales: this.score.questionsTotales,
             etoiles:          this.score.etoiles(),
             recap:            this.score.recapDomaines(),
@@ -382,7 +434,7 @@ class LevelScene extends Phaser.Scene {
         });
     }
 
-    // ---------------- Effets ----------------
+    // ---------------- Effets & contrôles tactiles ----------------
 
     afficherFloatScore(info) {
         if (!info || info.gain <= 0) return;

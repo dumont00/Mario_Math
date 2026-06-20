@@ -1,8 +1,6 @@
 /* global Phaser, CONFIG */
 
-// Écran de résultats de fin de niveau.
-// Affiche les étoiles, le récap global, le détail par domaine et
-// propose de rejouer ou de passer au niveau suivant.
+// Écran de résultats : étoiles, récap par domaine, et boutons selon le mode.
 
 class ResultScene extends Phaser.Scene {
     constructor() {
@@ -10,15 +8,16 @@ class ResultScene extends Phaser.Scene {
     }
 
     init(data) {
-        this.niveau    = data.niveau || 1;
-        this.score     = data.score;
-        this.cristaux  = data.cristaux || 0;
-        this.cristauxRequis = data.cristauxRequis || CONFIG.cristauxRequisParNiveau;
+        this.mode             = data.mode || 'aventure';
+        this.niveau           = data.niveau || 1;
+        this.score            = data.score || 0;
+        this.cristaux         = data.cristaux || 0;
+        this.cristauxRequis   = data.cristauxRequis || CONFIG.cristauxRequisParNiveau;
         this.questionsTotales = data.questionsTotales || 0;
-        this.etoiles  = data.etoiles || 0;
-        this.recap    = data.recap || [];
-        this.succes   = !!data.succes;
-        this.tempsEcoule = !!data.tempsEcoule;
+        this.etoiles          = data.etoiles || 0;
+        this.recap            = data.recap || [];
+        this.succes           = !!data.succes;
+        this.tempsEcoule      = !!data.tempsEcoule;
     }
 
     create() {
@@ -38,20 +37,30 @@ class ResultScene extends Phaser.Scene {
             ? Math.round(100 * this.cristaux / this.questionsTotales)
             : 0;
 
-        if (this.succes) {
-            elTitre.textContent = 'Niveau ' + this.niveau + ' réussi !';
-            elSous.textContent  = 'Tu as franchi le portail. Bravo !';
-        } else if (this.tempsEcoule) {
-            elTitre.textContent = 'Temps écoulé !';
-            elSous.textContent  = pct >= 50
-                ? 'Beau parcours, mais il manquait quelques cristaux.'
-                : 'On va revoir ça ensemble, puis on retente !';
+        // Titre + sous-titre selon l'issue et le mode.
+        if (this.mode === 'mult') {
+            elTitre.textContent = this.succes
+                ? 'Tables réussies !'
+                : 'Entraînement terminé';
+            elSous.textContent  = this.succes
+                ? 'Tu as répondu aux 30 multiplications. Tu deviens champion des tables !'
+                : 'Bel effort. On peut recommencer pour aller plus loin.';
         } else {
-            elTitre.textContent = 'Niveau ' + this.niveau + ' terminé';
-            elSous.textContent  = 'Voici tes résultats :';
+            if (this.succes) {
+                elTitre.textContent = 'Niveau ' + this.niveau + ' réussi !';
+                elSous.textContent  = 'Tu as franchi le portail. Bravo !';
+            } else if (this.tempsEcoule) {
+                elTitre.textContent = 'Temps écoulé !';
+                elSous.textContent  = pct >= 50
+                    ? 'Beau parcours, mais il manquait quelques réponses.'
+                    : 'On va revoir ça ensemble, puis on retente !';
+            } else {
+                elTitre.textContent = 'Niveau ' + this.niveau + ' terminé';
+                elSous.textContent  = 'Voici tes résultats :';
+            }
         }
 
-        // Étoiles (3 cases, allumées selon le score).
+        // Étoiles.
         elEtoiles.innerHTML = '';
         for (let i = 0; i < 3; i++) {
             const s = document.createElement('span');
@@ -60,11 +69,12 @@ class ResultScene extends Phaser.Scene {
             elEtoiles.appendChild(s);
         }
 
-        elNiveau.textContent = this.niveau;
+        elNiveau.textContent = this.mode === 'mult' ? 'Tables ×' : this.niveau;
         elScore.textContent  = this.score;
         elCrist.textContent  = this.cristaux + ' / ' + this.cristauxRequis;
         elPct.textContent    = pct + ' %';
 
+        // Récap par domaine.
         elDoms.innerHTML = '';
         if (this.recap.length === 0) {
             const vide = document.createElement('div');
@@ -81,35 +91,57 @@ class ResultScene extends Phaser.Scene {
             });
         }
 
-        // Reset des boutons (clones pour éviter les doublons).
+        // Boutons (clones pour purger les anciens écouteurs).
         const newReplay = btnReplay.cloneNode(true);
         const newNext   = btnNext.cloneNode(true);
         btnReplay.parentNode.replaceChild(newReplay, btnReplay);
         btnNext.parentNode.replaceChild(newNext, btnNext);
 
         const niveauMax = 20;
-        if (!this.succes || this.niveau >= niveauMax) {
-            newNext.disabled = !this.succes;
+
+        if (this.mode === 'mult') {
+            newNext.textContent = 'Retour au menu';
+            newNext.disabled = false;
+            newNext.style.opacity = '';
+            newNext.style.cursor = '';
+            newReplay.addEventListener('click', () => {
+                this._fermer(overlay);
+                this.scene.start('LevelScene', { mode: 'mult' });
+            });
+            newNext.addEventListener('click', () => {
+                this._fermer(overlay);
+                this.scene.start('MenuScene');
+            });
+        } else {
             if (this.niveau >= niveauMax && this.succes) {
-                newNext.textContent = '🏁 Jeu terminé !';
-                newNext.disabled = true;
+                newNext.textContent = '🏁 Aventure terminée — retour au menu';
+                newNext.disabled = false;
             } else if (!this.succes) {
                 newNext.textContent = 'Niveau suivant ▶';
                 newNext.disabled = true;
                 newNext.style.opacity = '0.5';
                 newNext.style.cursor = 'not-allowed';
+            } else {
+                newNext.textContent = 'Niveau suivant ▶';
+                newNext.disabled = false;
             }
+            newReplay.addEventListener('click', () => {
+                this._fermer(overlay);
+                this.scene.start('LevelScene', { niveau: this.niveau, mode: 'aventure' });
+            });
+            newNext.addEventListener('click', () => {
+                if (newNext.disabled) return;
+                this._fermer(overlay);
+                if (this.niveau >= niveauMax && this.succes) {
+                    this.scene.start('MenuScene');
+                } else {
+                    this.scene.start('LevelScene', {
+                        niveau: Math.min(niveauMax, this.niveau + 1),
+                        mode: 'aventure'
+                    });
+                }
+            });
         }
-
-        newReplay.addEventListener('click', () => {
-            this._fermer(overlay);
-            this.scene.start('LevelScene', { niveau: this.niveau });
-        });
-        newNext.addEventListener('click', () => {
-            if (newNext.disabled) return;
-            this._fermer(overlay);
-            this.scene.start('LevelScene', { niveau: Math.min(niveauMax, this.niveau + 1) });
-        });
 
         overlay.hidden = false;
         overlay.setAttribute('aria-hidden', 'false');

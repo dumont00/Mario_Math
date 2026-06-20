@@ -12,9 +12,16 @@ class QuestionManager {
         this.domainesActifs = options.domainesActifs
             || (CONFIG && CONFIG.domainesActifs)
             || ['Arithmétique', 'Géométrie', 'Mesure', 'Statistique', 'Probabilité'];
+        // Si défini, ne pige que dans ce(s) sous-domaine(s) (mode entraînement).
+        this.sousDomaines = options.sousDomaines || null;
         this.adaptatif = options.adaptatif !== undefined
             ? options.adaptatif
             : !!(CONFIG && CONFIG.adaptatif);
+
+        // Banque filtrée selon le sous-domaine (si actif).
+        this.banque = this.sousDomaines
+            ? this.toutes.filter(q => this.sousDomaines.includes(q.sousDomaine))
+            : this.toutes;
 
         this.recentlyServed = [];
         this.maxRecent = 25;
@@ -39,7 +46,7 @@ class QuestionManager {
         }
         const palier = this._choisirPalierAdapte(domaine);
 
-        let pool = this.toutes.filter(q =>
+        let pool = this.banque.filter(q =>
             q.domaine === domaine
             && q.palier === palier
             && q.id !== exclureId
@@ -47,14 +54,14 @@ class QuestionManager {
         );
         if (pool.length === 0) {
             // Fallback 1 : on retire le filtre "récente".
-            pool = this.toutes.filter(q =>
+            pool = this.banque.filter(q =>
                 q.domaine === domaine && q.palier === palier && q.id !== exclureId
             );
         }
         if (pool.length === 0) {
             // Fallback 2 : palier voisin (vers le bas, puis vers le haut).
             for (const altP of [palier - 1, palier + 1, palier - 2, palier + 2]) {
-                pool = this.toutes.filter(q =>
+                pool = this.banque.filter(q =>
                     q.domaine === domaine && q.palier === altP && q.id !== exclureId
                 );
                 if (pool.length > 0) break;
@@ -62,7 +69,7 @@ class QuestionManager {
         }
         if (pool.length === 0) {
             // Fallback 3 : n'importe quelle question du domaine.
-            pool = this.toutes.filter(q => q.domaine === domaine);
+            pool = this.banque.filter(q => q.domaine === domaine);
         }
         if (pool.length === 0) return null;
 

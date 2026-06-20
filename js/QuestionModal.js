@@ -102,14 +102,16 @@ class QuestionModal {
         this.repondu = true;
         this.arreterTimer();
 
-        const bonneReponse = this.question.reponse;
-        const correct = choixJoueur === bonneReponse;
+        const correct = choixJoueur === this.question.reponse;
 
+        // On désactive tous les choix. On surligne en vert seulement si la
+        // réponse est bonne, jamais celle qui aurait été correcte pour ne
+        // pas « donner » la solution en cas d'erreur. L'explication suffit.
         Array.from(this.elChoices.children).forEach((b) => {
             b.disabled = true;
-            if (b.textContent === bonneReponse) {
+            if (correct && b === btn) {
                 b.classList.add('is-correct');
-            } else if (b === btn && !correct) {
+            } else if (!correct && b === btn) {
                 b.classList.add('is-wrong');
             }
         });
@@ -121,12 +123,7 @@ class QuestionModal {
     tempsEcoule() {
         this.repondu = true;
         this.arreterTimer();
-        Array.from(this.elChoices.children).forEach((b) => {
-            b.disabled = true;
-            if (b.textContent === this.question.reponse) {
-                b.classList.add('is-correct');
-            }
-        });
+        Array.from(this.elChoices.children).forEach((b) => { b.disabled = true; });
         this.afficherFeedback(false, true);
         this._resultat = { correct: false, choixJoueur: null, tempsRestant: 0, tempsEcoule: true };
     }

@@ -22,6 +22,24 @@
             </div>
         </div>
 
+        <div id="menu-screen" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal__panel modal__panel--menu">
+                <h1 class="modal__titre">Les Aventures du Calcul</h1>
+                <p class="modal__sous-titre">Choisis ton mode :</p>
+
+                <div class="menu__choix">
+                    <button id="menu-btn-aventure" class="menu__btn">
+                        <span class="menu__btn-titre">Aventure</span>
+                        <span class="menu__btn-detail">Niveaux 1 à 20 — 5 mondes, tous les domaines</span>
+                    </button>
+                    <button id="menu-btn-mult" class="menu__btn">
+                        <span class="menu__btn-titre">Entraînement — Tables de multiplication</span>
+                        <span class="menu__btn-detail">30 multiplications de 1 à 12 (accent sur 4, 6, 7, 8, 9, 11, 12)</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <div id="result-screen" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
             <div class="modal__panel modal__panel--end">
                 <h2 class="modal__titre" id="result-titre">Niveau terminé !</h2>
@@ -80,6 +98,7 @@
     <script src="js/QuestionManager.js"></script>
     <script src="js/QuestionModal.js"></script>
     <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/MenuScene.js"></script>
     <script src="js/scenes/LevelScene.js"></script>
     <script src="js/scenes/ResultScene.js"></script>
     <script src="js/main.js"></script>

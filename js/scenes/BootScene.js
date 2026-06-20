@@ -29,7 +29,7 @@ class BootScene extends Phaser.Scene {
     }
 
     create() {
-        this.scene.start('LevelScene', { niveau: 1 });
+        this.scene.start('MenuScene');
     }
 
     // --- Textures générées par primitives Phaser ---
