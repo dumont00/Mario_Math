@@ -1,0 +1,6289 @@
+[
+  {
+    "id": "arith_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel nombre vient juste après 2 823 ?",
+    "visuel": null,
+    "choix": [
+      "2 834",
+      "2 825",
+      "2 824",
+      "2 814"
+    ],
+    "reponse": "2 824",
+    "indice": "Pense au comptage un à un.",
+    "explication": "Juste après 2 823, c'est 2 824.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel nombre vient juste avant 3 285 ?",
+    "visuel": null,
+    "choix": [
+      "3 285",
+      "3 294",
+      "3 274",
+      "3 284"
+    ],
+    "reponse": "3 284",
+    "indice": "Pense au comptage un à un.",
+    "explication": "Juste avant 3 285, c'est 3 284.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel nombre vient juste après 1 519 ?",
+    "visuel": null,
+    "choix": [
+      "1 521",
+      "1 510",
+      "1 520",
+      "1 530"
+    ],
+    "reponse": "1 520",
+    "indice": "Pense au comptage un à un.",
+    "explication": "Juste après 1 519, c'est 1 520.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel nombre vient juste avant 4 256 ?",
+    "visuel": null,
+    "choix": [
+      "4 245",
+      "4 265",
+      "4 255",
+      "4 256"
+    ],
+    "reponse": "4 255",
+    "indice": "Pense au comptage un à un.",
+    "explication": "Juste avant 4 256, c'est 4 255.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel nombre vient juste avant 5 556 ?",
+    "visuel": null,
+    "choix": [
+      "5 545",
+      "5 565",
+      "5 556",
+      "5 555"
+    ],
+    "reponse": "5 555",
+    "indice": "Pense au comptage un à un.",
+    "explication": "Juste avant 5 556, c'est 5 555.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel nombre vient juste après 6 573 ?",
+    "visuel": null,
+    "choix": [
+      "6 564",
+      "6 574",
+      "6 575",
+      "6 584"
+    ],
+    "reponse": "6 574",
+    "indice": "Pense au comptage un à un.",
+    "explication": "Juste après 6 573, c'est 6 574.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "167 + 314 = ?",
+    "visuel": null,
+    "choix": [
+      "482",
+      "471",
+      "491",
+      "481"
+    ],
+    "reponse": "481",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "167 + 314 = 481.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "429 + 255 = ?",
+    "visuel": null,
+    "choix": [
+      "685",
+      "694",
+      "674",
+      "684"
+    ],
+    "reponse": "684",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "429 + 255 = 684.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "394 + 183 = ?",
+    "visuel": null,
+    "choix": [
+      "567",
+      "587",
+      "577",
+      "578"
+    ],
+    "reponse": "577",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "394 + 183 = 577.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "441 + 436 = ?",
+    "visuel": null,
+    "choix": [
+      "887",
+      "877",
+      "878",
+      "867"
+    ],
+    "reponse": "877",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "441 + 436 = 877.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "480 + 155 = ?",
+    "visuel": null,
+    "choix": [
+      "645",
+      "636",
+      "625",
+      "635"
+    ],
+    "reponse": "635",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "480 + 155 = 635.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "268 + 160 = ?",
+    "visuel": null,
+    "choix": [
+      "418",
+      "429",
+      "428",
+      "438"
+    ],
+    "reponse": "428",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "268 + 160 = 428.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "262 + 352 = ?",
+    "visuel": null,
+    "choix": [
+      "615",
+      "624",
+      "614",
+      "604"
+    ],
+    "reponse": "614",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "262 + 352 = 614.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "301 + 227 = ?",
+    "visuel": null,
+    "choix": [
+      "538",
+      "528",
+      "529",
+      "518"
+    ],
+    "reponse": "528",
+    "indice": "Additionne unités, dizaines, centaines.",
+    "explication": "301 + 227 = 528.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "711 − 295 = ?",
+    "visuel": null,
+    "choix": [
+      "406",
+      "417",
+      "416",
+      "426"
+    ],
+    "reponse": "416",
+    "indice": "Enlève unités, dizaines, centaines.",
+    "explication": "711 − 295 = 416.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_016",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "594 − 258 = ?",
+    "visuel": null,
+    "choix": [
+      "336",
+      "337",
+      "326",
+      "346"
+    ],
+    "reponse": "336",
+    "indice": "Enlève unités, dizaines, centaines.",
+    "explication": "594 − 258 = 336.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_017",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "831 − 177 = ?",
+    "visuel": null,
+    "choix": [
+      "644",
+      "655",
+      "654",
+      "664"
+    ],
+    "reponse": "654",
+    "indice": "Enlève unités, dizaines, centaines.",
+    "explication": "831 − 177 = 654.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_018",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "605 − 257 = ?",
+    "visuel": null,
+    "choix": [
+      "338",
+      "358",
+      "349",
+      "348"
+    ],
+    "reponse": "348",
+    "indice": "Enlève unités, dizaines, centaines.",
+    "explication": "605 − 257 = 348.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_019",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "508 − 455 = ?",
+    "visuel": null,
+    "choix": [
+      "53",
+      "43",
+      "63",
+      "54"
+    ],
+    "reponse": "53",
+    "indice": "Enlève unités, dizaines, centaines.",
+    "explication": "508 − 455 = 53.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_020",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "473 − 255 = ?",
+    "visuel": null,
+    "choix": [
+      "208",
+      "219",
+      "218",
+      "228"
+    ],
+    "reponse": "218",
+    "indice": "Enlève unités, dizaines, centaines.",
+    "explication": "473 − 255 = 218.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_021",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "8 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "65",
+      "66",
+      "64",
+      "63"
+    ],
+    "reponse": "64",
+    "indice": "C'est la table de 8.",
+    "explication": "8 × 8 = 64.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_022",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "9 × 3 = ?",
+    "visuel": null,
+    "choix": [
+      "28",
+      "26",
+      "29",
+      "27"
+    ],
+    "reponse": "27",
+    "indice": "C'est la table de 9.",
+    "explication": "9 × 3 = 27.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_023",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "4 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "34",
+      "31",
+      "33",
+      "32"
+    ],
+    "reponse": "32",
+    "indice": "C'est la table de 4.",
+    "explication": "4 × 8 = 32.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_024",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "9 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "55",
+      "56",
+      "53",
+      "54"
+    ],
+    "reponse": "54",
+    "indice": "C'est la table de 9.",
+    "explication": "9 × 6 = 54.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_025",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "6 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "44",
+      "41",
+      "43",
+      "42"
+    ],
+    "reponse": "42",
+    "indice": "C'est la table de 6.",
+    "explication": "6 × 7 = 42.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_026",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "4 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "38",
+      "37",
+      "35",
+      "36"
+    ],
+    "reponse": "36",
+    "indice": "C'est la table de 4.",
+    "explication": "4 × 9 = 36.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_027",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "4 × 3 = ?",
+    "visuel": null,
+    "choix": [
+      "13",
+      "12",
+      "14",
+      "11"
+    ],
+    "reponse": "12",
+    "indice": "C'est la table de 4.",
+    "explication": "4 × 3 = 12.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_028",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "4 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "30",
+      "28",
+      "27",
+      "29"
+    ],
+    "reponse": "28",
+    "indice": "C'est la table de 4.",
+    "explication": "4 × 7 = 28.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_029",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "7 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "62",
+      "64",
+      "65",
+      "63"
+    ],
+    "reponse": "63",
+    "indice": "C'est la table de 7.",
+    "explication": "7 × 9 = 63.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_030",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "6 × 5 = ?",
+    "visuel": null,
+    "choix": [
+      "31",
+      "29",
+      "32",
+      "30"
+    ],
+    "reponse": "30",
+    "indice": "C'est la table de 6.",
+    "explication": "6 × 5 = 30.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_031",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de demis (1/2) forment un entier ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "reponse": "2",
+    "indice": "Un entier = deux demis.",
+    "explication": "1/2 + 1/2 = 1.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_032",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de quarts (1/4) forment un entier ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "reponse": "4",
+    "indice": "Pense à une tarte en 4.",
+    "explication": "Quatre quarts font un entier.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_033",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de tiers (1/3) forment un entier ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "reponse": "3",
+    "indice": "Une barre en 3.",
+    "explication": "Trois tiers font un entier.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_034",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle fraction représente la moitié d'un objet ?",
+    "visuel": null,
+    "choix": [
+      "1/2",
+      "1/3",
+      "1/4",
+      "2/3"
+    ],
+    "reponse": "1/2",
+    "indice": "Une part sur deux.",
+    "explication": "La moitié s'écrit 1/2.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_035",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans la fraction 3/5, quel est le dénominateur ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "5",
+      "8",
+      "2"
+    ],
+    "reponse": "5",
+    "indice": "En bas.",
+    "explication": "Le dénominateur de 3/5 est 5.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_036",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans la fraction 3/5, quel est le numérateur ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "5",
+      "8",
+      "2"
+    ],
+    "reponse": "3",
+    "indice": "En haut.",
+    "explication": "Le numérateur de 3/5 est 3.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_037",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 3 dans 34 695 ?",
+    "visuel": null,
+    "choix": [
+      "30 000",
+      "300",
+      "3",
+      "30"
+    ],
+    "reponse": "30 000",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 3 vaut 30 000 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_038",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 8 dans 15 278 ?",
+    "visuel": null,
+    "choix": [
+      "8 000",
+      "800",
+      "8",
+      "80"
+    ],
+    "reponse": "8",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 8 vaut 8 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_039",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 2 dans 43 892 ?",
+    "visuel": null,
+    "choix": [
+      "2 000",
+      "200",
+      "2",
+      "20"
+    ],
+    "reponse": "2",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 2 vaut 2 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_040",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 9 dans 97 143 ?",
+    "visuel": null,
+    "choix": [
+      "900",
+      "90",
+      "90 000",
+      "9"
+    ],
+    "reponse": "90 000",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 9 vaut 90 000 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_041",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 5 dans 65 238 ?",
+    "visuel": null,
+    "choix": [
+      "50",
+      "5",
+      "500",
+      "5 000"
+    ],
+    "reponse": "5 000",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 5 vaut 5 000 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_042",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 4 dans 48 529 ?",
+    "visuel": null,
+    "choix": [
+      "400",
+      "40",
+      "40 000",
+      "4"
+    ],
+    "reponse": "40 000",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 4 vaut 40 000 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_043",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 1 dans 68 971 ?",
+    "visuel": null,
+    "choix": [
+      "10",
+      "100",
+      "1 000",
+      "1"
+    ],
+    "reponse": "1",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 1 vaut 1 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_044",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Valeur de position",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la valeur du chiffre 9 dans 59 162 ?",
+    "visuel": null,
+    "choix": [
+      "9",
+      "900",
+      "90",
+      "9 000"
+    ],
+    "reponse": "9 000",
+    "indice": "Regarde sa position (unités, dizaines...).",
+    "explication": "Le chiffre 9 vaut 9 000 ici.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_045",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 995 + 4 311 = ?",
+    "visuel": null,
+    "choix": [
+      "9 306",
+      "9 206",
+      "9 406",
+      "9 307"
+    ],
+    "reponse": "9 306",
+    "indice": "Colonne par colonne.",
+    "explication": "4 995 + 4 311 = 9 306.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_046",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 053 + 4 092 = ?",
+    "visuel": null,
+    "choix": [
+      "8 245",
+      "8 045",
+      "8 145",
+      "8 146"
+    ],
+    "reponse": "8 145",
+    "indice": "Colonne par colonne.",
+    "explication": "4 053 + 4 092 = 8 145.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_047",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "2 415 + 1 991 = ?",
+    "visuel": null,
+    "choix": [
+      "4 506",
+      "4 407",
+      "4 306",
+      "4 406"
+    ],
+    "reponse": "4 406",
+    "indice": "Colonne par colonne.",
+    "explication": "2 415 + 1 991 = 4 406.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_048",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 263 + 2 384 = ?",
+    "visuel": null,
+    "choix": [
+      "6 547",
+      "6 747",
+      "6 648",
+      "6 647"
+    ],
+    "reponse": "6 647",
+    "indice": "Colonne par colonne.",
+    "explication": "4 263 + 2 384 = 6 647.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_049",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "3 259 + 4 592 = ?",
+    "visuel": null,
+    "choix": [
+      "7 852",
+      "7 751",
+      "7 851",
+      "7 951"
+    ],
+    "reponse": "7 851",
+    "indice": "Colonne par colonne.",
+    "explication": "3 259 + 4 592 = 7 851.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_050",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 687 + 1 861 = ?",
+    "visuel": null,
+    "choix": [
+      "6 648",
+      "6 549",
+      "6 448",
+      "6 548"
+    ],
+    "reponse": "6 548",
+    "indice": "Colonne par colonne.",
+    "explication": "4 687 + 1 861 = 6 548.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_051",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "3 965 + 4 630 = ?",
+    "visuel": null,
+    "choix": [
+      "8 495",
+      "8 595",
+      "8 596",
+      "8 695"
+    ],
+    "reponse": "8 595",
+    "indice": "Colonne par colonne.",
+    "explication": "3 965 + 4 630 = 8 595.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_052",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "8 666 − 3 216 = ?",
+    "visuel": null,
+    "choix": [
+      "5 550",
+      "5 451",
+      "5 350",
+      "5 450"
+    ],
+    "reponse": "5 450",
+    "indice": "Colonne par colonne.",
+    "explication": "8 666 − 3 216 = 5 450.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_053",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "7 434 − 6 585 = ?",
+    "visuel": null,
+    "choix": [
+      "850",
+      "849",
+      "949",
+      "749"
+    ],
+    "reponse": "849",
+    "indice": "Colonne par colonne.",
+    "explication": "7 434 − 6 585 = 849.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_054",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "6 573 − 3 155 = ?",
+    "visuel": null,
+    "choix": [
+      "3 419",
+      "3 418",
+      "3 518",
+      "3 318"
+    ],
+    "reponse": "3 418",
+    "indice": "Colonne par colonne.",
+    "explication": "6 573 − 3 155 = 3 418.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_055",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "6 457 − 4 945 = ?",
+    "visuel": null,
+    "choix": [
+      "1 612",
+      "1 513",
+      "1 512",
+      "1 412"
+    ],
+    "reponse": "1 512",
+    "indice": "Colonne par colonne.",
+    "explication": "6 457 − 4 945 = 1 512.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_056",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "7 754 − 6 288 = ?",
+    "visuel": null,
+    "choix": [
+      "1 566",
+      "1 366",
+      "1 467",
+      "1 466"
+    ],
+    "reponse": "1 466",
+    "indice": "Colonne par colonne.",
+    "explication": "7 754 − 6 288 = 1 466.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_057",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "8 144 − 3 372 = ?",
+    "visuel": null,
+    "choix": [
+      "4 672",
+      "4 772",
+      "4 773",
+      "4 872"
+    ],
+    "reponse": "4 772",
+    "indice": "Colonne par colonne.",
+    "explication": "8 144 − 3 372 = 4 772.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_058",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "27 × 5 = ?",
+    "visuel": null,
+    "choix": [
+      "136",
+      "145",
+      "135",
+      "125"
+    ],
+    "reponse": "135",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "27 × 5 = 135.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_059",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "46 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "378",
+      "368",
+      "369",
+      "358"
+    ],
+    "reponse": "368",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "46 × 8 = 368.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_060",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "47 × 5 = ?",
+    "visuel": null,
+    "choix": [
+      "225",
+      "245",
+      "236",
+      "235"
+    ],
+    "reponse": "235",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "47 × 5 = 235.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_061",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "19 × 3 = ?",
+    "visuel": null,
+    "choix": [
+      "57",
+      "47",
+      "58",
+      "67"
+    ],
+    "reponse": "57",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "19 × 3 = 57.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_062",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "25 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "201",
+      "210",
+      "200",
+      "190"
+    ],
+    "reponse": "200",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "25 × 8 = 200.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_063",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "44 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "274",
+      "265",
+      "264",
+      "254"
+    ],
+    "reponse": "264",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "44 × 6 = 264.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_064",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "39 × 5 = ?",
+    "visuel": null,
+    "choix": [
+      "185",
+      "205",
+      "196",
+      "195"
+    ],
+    "reponse": "195",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "39 × 5 = 195.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_065",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "20 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "161",
+      "170",
+      "160",
+      "150"
+    ],
+    "reponse": "160",
+    "indice": "Multiplie unités puis dizaines.",
+    "explication": "20 × 8 = 160.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_066",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "16 ÷ 8 = ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "reponse": "2",
+    "indice": "Combien de fois 8 dans 16 ?",
+    "explication": "16 ÷ 8 = 2 (car 8 × 2 = 16).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_067",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "14 ÷ 2 = ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "7",
+      "9",
+      "8"
+    ],
+    "reponse": "7",
+    "indice": "Combien de fois 2 dans 14 ?",
+    "explication": "14 ÷ 2 = 7 (car 2 × 7 = 14).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_068",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "12 ÷ 2 = ?",
+    "visuel": null,
+    "choix": [
+      "8",
+      "7",
+      "6",
+      "5"
+    ],
+    "reponse": "6",
+    "indice": "Combien de fois 2 dans 12 ?",
+    "explication": "12 ÷ 2 = 6 (car 2 × 6 = 12).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_069",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "25 ÷ 5 = ?",
+    "visuel": null,
+    "choix": [
+      "7",
+      "4",
+      "6",
+      "5"
+    ],
+    "reponse": "5",
+    "indice": "Combien de fois 5 dans 25 ?",
+    "explication": "25 ÷ 5 = 5 (car 5 × 5 = 25).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_070",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "20 ÷ 4 = ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "7",
+      "5",
+      "6"
+    ],
+    "reponse": "5",
+    "indice": "Combien de fois 4 dans 20 ?",
+    "explication": "20 ÷ 4 = 5 (car 4 × 5 = 20).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_071",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "8 ÷ 2 = ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "4",
+      "5",
+      "3"
+    ],
+    "reponse": "4",
+    "indice": "Combien de fois 2 dans 8 ?",
+    "explication": "8 ÷ 2 = 4 (car 2 × 4 = 8).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_072",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 2,
+    "type": "choix",
+    "question": "24 ÷ 6 = ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "6",
+      "5",
+      "4"
+    ],
+    "reponse": "4",
+    "indice": "Combien de fois 6 dans 24 ?",
+    "explication": "24 ÷ 6 = 4 (car 6 × 4 = 24).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_073",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions équivalentes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle fraction est équivalente à 2/3 ?",
+    "visuel": null,
+    "choix": [
+      "8/11",
+      "4/8",
+      "5/12",
+      "4/6"
+    ],
+    "reponse": "4/6",
+    "indice": "Multiplie haut et bas par le même nombre.",
+    "explication": "2/3 = 4/6 (× 2).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_074",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions équivalentes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle fraction est équivalente à 2/4 ?",
+    "visuel": null,
+    "choix": [
+      "1/3",
+      "2/7",
+      "6/12",
+      "9/11"
+    ],
+    "reponse": "6/12",
+    "indice": "Multiplie haut et bas par le même nombre.",
+    "explication": "2/4 = 6/12 (× 3).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_075",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions équivalentes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle fraction est équivalente à 1/2 ?",
+    "visuel": null,
+    "choix": [
+      "9/10",
+      "3/6",
+      "7/12",
+      "6/10"
+    ],
+    "reponse": "3/6",
+    "indice": "Multiplie haut et bas par le même nombre.",
+    "explication": "1/2 = 3/6 (× 3).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_076",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions équivalentes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle fraction est équivalente à 3/5 ?",
+    "visuel": null,
+    "choix": [
+      "6/10",
+      "9/12",
+      "7/8",
+      "4/10"
+    ],
+    "reponse": "6/10",
+    "indice": "Multiplie haut et bas par le même nombre.",
+    "explication": "3/5 = 6/10 (× 2).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_077",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions équivalentes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle fraction est équivalente à 3/4 ?",
+    "visuel": null,
+    "choix": [
+      "9/12",
+      "7/10",
+      "9/10",
+      "9/11"
+    ],
+    "reponse": "9/12",
+    "indice": "Multiplie haut et bas par le même nombre.",
+    "explication": "3/4 = 9/12 (× 3).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_078",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions équivalentes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle fraction est équivalente à 1/3 ?",
+    "visuel": null,
+    "choix": [
+      "2/6",
+      "7/12",
+      "2/10",
+      "1/2"
+    ],
+    "reponse": "2/6",
+    "indice": "Multiplie haut et bas par le même nombre.",
+    "explication": "1/3 = 2/6 (× 2).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_079",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 2,
+    "type": "choix",
+    "question": "0,5 + 0,8 = ?",
+    "visuel": null,
+    "choix": [
+      "2,3",
+      "1,2",
+      "1,3",
+      "1,4"
+    ],
+    "reponse": "1,3",
+    "indice": "Garde la virgule alignée.",
+    "explication": "0,5 + 0,8 = 1,3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_080",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 2,
+    "type": "choix",
+    "question": "0,8 + 0,3 = ?",
+    "visuel": null,
+    "choix": [
+      "1,2",
+      "1",
+      "1,1",
+      "2,1"
+    ],
+    "reponse": "1,1",
+    "indice": "Garde la virgule alignée.",
+    "explication": "0,8 + 0,3 = 1,1.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_081",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 2,
+    "type": "choix",
+    "question": "0,8 + 0,9 = ?",
+    "visuel": null,
+    "choix": [
+      "1,8",
+      "2,7",
+      "1,6",
+      "1,7"
+    ],
+    "reponse": "1,7",
+    "indice": "Garde la virgule alignée.",
+    "explication": "0,8 + 0,9 = 1,7.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_082",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 2,
+    "type": "choix",
+    "question": "0,7 + 0,7 = ?",
+    "visuel": null,
+    "choix": [
+      "1,4",
+      "1,5",
+      "1,3",
+      "2,4"
+    ],
+    "reponse": "1,4",
+    "indice": "Garde la virgule alignée.",
+    "explication": "0,7 + 0,7 = 1,4.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_083",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 2,
+    "type": "choix",
+    "question": "0,5 + 0,6 = ?",
+    "visuel": null,
+    "choix": [
+      "1,1",
+      "2,1",
+      "1",
+      "1,2"
+    ],
+    "reponse": "1,1",
+    "indice": "Garde la virgule alignée.",
+    "explication": "0,5 + 0,6 = 1,1.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_084",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 2,
+    "type": "choix",
+    "question": "0,2 + 0,6 = ?",
+    "visuel": null,
+    "choix": [
+      "0,8",
+      "0,7",
+      "1,8",
+      "0,9"
+    ],
+    "reponse": "0,8",
+    "indice": "Garde la virgule alignée.",
+    "explication": "0,2 + 0,6 = 0,8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_085",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 3,
+    "type": "choix",
+    "question": "Place en ordre croissant : 60 250, 60 500, 60 050",
+    "visuel": null,
+    "choix": [
+      "60 500 ; 60 250 ; 60 050",
+      "60 500 ; 60 050 ; 60 250",
+      "60 050 ; 60 250 ; 60 500",
+      "60 250 ; 60 500 ; 60 050"
+    ],
+    "reponse": "60 050 ; 60 250 ; 60 500",
+    "indice": "Compare de gauche à droite.",
+    "explication": "En ordre croissant : 60 050 ; 60 250 ; 60 500.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_086",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 3,
+    "type": "choix",
+    "question": "Place en ordre croissant : 72 250, 72 150, 72 550",
+    "visuel": null,
+    "choix": [
+      "72 250 ; 72 550 ; 72 150",
+      "72 550 ; 72 250 ; 72 150",
+      "72 550 ; 72 150 ; 72 250",
+      "72 150 ; 72 250 ; 72 550"
+    ],
+    "reponse": "72 150 ; 72 250 ; 72 550",
+    "indice": "Compare de gauche à droite.",
+    "explication": "En ordre croissant : 72 150 ; 72 250 ; 72 550.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_087",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 3,
+    "type": "choix",
+    "question": "Place en ordre croissant : 81 505, 81 005, 81 550",
+    "visuel": null,
+    "choix": [
+      "81 005 ; 81 505 ; 81 550",
+      "81 505 ; 81 550 ; 81 005",
+      "81 505 ; 81 005 ; 81 550",
+      "81 550 ; 81 505 ; 81 005"
+    ],
+    "reponse": "81 005 ; 81 505 ; 81 550",
+    "indice": "Compare de gauche à droite.",
+    "explication": "En ordre croissant : 81 005 ; 81 505 ; 81 550.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_088",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 3,
+    "type": "choix",
+    "question": "Place en ordre croissant : 23 500, 23 550, 23 015",
+    "visuel": null,
+    "choix": [
+      "23 500 ; 23 550 ; 23 015",
+      "23 550 ; 23 500 ; 23 015",
+      "23 015 ; 23 550 ; 23 500",
+      "23 015 ; 23 500 ; 23 550"
+    ],
+    "reponse": "23 015 ; 23 500 ; 23 550",
+    "indice": "Compare de gauche à droite.",
+    "explication": "En ordre croissant : 23 015 ; 23 500 ; 23 550.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_089",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 3,
+    "type": "choix",
+    "question": "Place en ordre croissant : 37 500, 37 005, 37 150",
+    "visuel": null,
+    "choix": [
+      "37 005 ; 37 150 ; 37 500",
+      "37 500 ; 37 005 ; 37 150",
+      "37 150 ; 37 500 ; 37 005",
+      "37 500 ; 37 150 ; 37 005"
+    ],
+    "reponse": "37 005 ; 37 150 ; 37 500",
+    "indice": "Compare de gauche à droite.",
+    "explication": "En ordre croissant : 37 005 ; 37 150 ; 37 500.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_090",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres naturels",
+    "palier": 3,
+    "type": "choix",
+    "question": "Place en ordre croissant : 55 505, 55 050, 55 015",
+    "visuel": null,
+    "choix": [
+      "55 050 ; 55 505 ; 55 015",
+      "55 015 ; 55 505 ; 55 050",
+      "55 505 ; 55 015 ; 55 050",
+      "55 015 ; 55 050 ; 55 505"
+    ],
+    "reponse": "55 015 ; 55 050 ; 55 505",
+    "indice": "Compare de gauche à droite.",
+    "explication": "En ordre croissant : 55 015 ; 55 050 ; 55 505.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_091",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "127 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "509",
+      "408",
+      "508",
+      "608"
+    ],
+    "reponse": "508",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "127 × 4 = 508.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_092",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "234 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "1 036",
+      "936",
+      "836",
+      "937"
+    ],
+    "reponse": "936",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "234 × 4 = 936.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_093",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "223 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "1 339",
+      "1 338",
+      "1 438",
+      "1 238"
+    ],
+    "reponse": "1 338",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "223 × 6 = 1 338.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_094",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "170 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "780",
+      "681",
+      "680",
+      "580"
+    ],
+    "reponse": "680",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "170 × 4 = 680.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_095",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "271 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "1 797",
+      "1 897",
+      "1 997",
+      "1 898"
+    ],
+    "reponse": "1 897",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "271 × 7 = 1 897.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_096",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "150 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "950",
+      "1 051",
+      "1 050",
+      "1 150"
+    ],
+    "reponse": "1 050",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "150 × 7 = 1 050.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_097",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "173 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "1 212",
+      "1 111",
+      "1 311",
+      "1 211"
+    ],
+    "reponse": "1 211",
+    "indice": "Multiplie chaque chiffre.",
+    "explication": "173 × 7 = 1 211.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_098",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "49 ÷ 8 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "6 reste 2",
+      "7 reste 1",
+      "6 reste 1",
+      "5 reste 1"
+    ],
+    "reponse": "6 reste 1",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "49 ÷ 8 = 6 reste 1.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_099",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "28 ÷ 6 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "4 reste 4",
+      "5 reste 4",
+      "4 reste 5",
+      "3 reste 4"
+    ],
+    "reponse": "4 reste 4",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "28 ÷ 6 = 4 reste 4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_100",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "44 ÷ 8 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "5 reste 4",
+      "5 reste 5",
+      "4 reste 4",
+      "6 reste 4"
+    ],
+    "reponse": "5 reste 4",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "44 ÷ 8 = 5 reste 4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_101",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "60 ÷ 7 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "8 reste 4",
+      "7 reste 4",
+      "9 reste 4",
+      "8 reste 5"
+    ],
+    "reponse": "8 reste 4",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "60 ÷ 7 = 8 reste 4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_102",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "26 ÷ 5 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "5 reste 2",
+      "5 reste 1",
+      "6 reste 1",
+      "4 reste 1"
+    ],
+    "reponse": "5 reste 1",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "26 ÷ 5 = 5 reste 1.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_103",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "53 ÷ 6 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "7 reste 5",
+      "8 reste 5",
+      "9 reste 5",
+      "8 reste 4"
+    ],
+    "reponse": "8 reste 5",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "53 ÷ 6 = 8 reste 5.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_104",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Division",
+    "palier": 3,
+    "type": "choix",
+    "question": "38 ÷ 6 = ? (quotient et reste)",
+    "visuel": null,
+    "choix": [
+      "5 reste 2",
+      "7 reste 2",
+      "6 reste 2",
+      "6 reste 3"
+    ],
+    "reponse": "6 reste 2",
+    "indice": "Combien d'entiers, et le reste ?",
+    "explication": "38 ÷ 6 = 6 reste 2.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_105",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Fractions",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est la plus grande fraction ?",
+    "visuel": null,
+    "choix": [
+      "3/8",
+      "3/4",
+      "1/6",
+      "2/4"
+    ],
+    "reponse": "3/4",
+    "indice": "Pense à une pizza.",
+    "explication": "La plus grande est 3/4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_106",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "2,86 + 3,07 = ?",
+    "visuel": null,
+    "choix": [
+      "5,88",
+      "6,93",
+      "5,98",
+      "5,93"
+    ],
+    "reponse": "5,93",
+    "indice": "Aligne les virgules.",
+    "explication": "2,86 + 3,07 = 5,93.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_107",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "3,88 + 2,96 = ?",
+    "visuel": null,
+    "choix": [
+      "6,79",
+      "7,84",
+      "6,84",
+      "6,89"
+    ],
+    "reponse": "6,84",
+    "indice": "Aligne les virgules.",
+    "explication": "3,88 + 2,96 = 6,84.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_108",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "1,53 + 3,1 = ?",
+    "visuel": null,
+    "choix": [
+      "4,68",
+      "4,63",
+      "5,63",
+      "4,58"
+    ],
+    "reponse": "4,63",
+    "indice": "Aligne les virgules.",
+    "explication": "1,53 + 3,1 = 4,63.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_109",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "2,53 + 1,79 = ?",
+    "visuel": null,
+    "choix": [
+      "4,27",
+      "4,32",
+      "4,37",
+      "5,32"
+    ],
+    "reponse": "4,32",
+    "indice": "Aligne les virgules.",
+    "explication": "2,53 + 1,79 = 4,32.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_110",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "4,63 + 2,65 = ?",
+    "visuel": null,
+    "choix": [
+      "7,33",
+      "7,23",
+      "8,28",
+      "7,28"
+    ],
+    "reponse": "7,28",
+    "indice": "Aligne les virgules.",
+    "explication": "4,63 + 2,65 = 7,28.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_111",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "2,53 + 2,01 = ?",
+    "visuel": null,
+    "choix": [
+      "5,54",
+      "4,54",
+      "4,49",
+      "4,59"
+    ],
+    "reponse": "4,54",
+    "indice": "Aligne les virgules.",
+    "explication": "2,53 + 2,01 = 4,54.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_112",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Nombres décimaux",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le plus grand nombre décimal ?",
+    "visuel": null,
+    "choix": [
+      "0,84",
+      "0,49",
+      "0,85",
+      "0,68"
+    ],
+    "reponse": "0,85",
+    "indice": "Compare dixièmes puis centièmes.",
+    "explication": "Le plus grand est 0,85.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_113",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 4 boîtes de 12 crayons. Elle en donne 9. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "29",
+      "39",
+      "40",
+      "49"
+    ],
+    "reponse": "39",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "4 × 12 = 48, puis 48 − 9 = 39.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_114",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 3 boîtes de 16 crayons. Elle en donne 19. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "19",
+      "29",
+      "39",
+      "30"
+    ],
+    "reponse": "29",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "3 × 16 = 48, puis 48 − 19 = 29.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_115",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 3 boîtes de 14 crayons. Elle en donne 19. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "33",
+      "13",
+      "23",
+      "24"
+    ],
+    "reponse": "23",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "3 × 14 = 42, puis 42 − 19 = 23.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_116",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 3 boîtes de 20 crayons. Elle en donne 8. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "42",
+      "53",
+      "52",
+      "62"
+    ],
+    "reponse": "52",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "3 × 20 = 60, puis 60 − 8 = 52.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_117",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 5 boîtes de 15 crayons. Elle en donne 13. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "52",
+      "72",
+      "63",
+      "62"
+    ],
+    "reponse": "62",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "5 × 15 = 75, puis 75 − 13 = 62.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_118",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 4 boîtes de 22 crayons. Elle en donne 14. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "74",
+      "64",
+      "75",
+      "84"
+    ],
+    "reponse": "74",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "4 × 22 = 88, puis 88 − 14 = 74.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_119",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Problèmes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Léa a 6 boîtes de 20 crayons. Elle en donne 16. Combien lui reste-t-il ?",
+    "visuel": null,
+    "choix": [
+      "104",
+      "94",
+      "105",
+      "114"
+    ],
+    "reponse": "104",
+    "indice": "Multiplication, puis soustraction.",
+    "explication": "6 × 20 = 120, puis 120 − 16 = 104.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_001",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de centimètres dans 1 mètre ?",
+    "visuel": null,
+    "choix": [
+      "101 cm",
+      "105 cm",
+      "95 cm",
+      "100 cm"
+    ],
+    "reponse": "100 cm",
+    "indice": "Rappelle-toi la règle.",
+    "explication": "1 m = 100 cm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_002",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de millimètres dans 1 centimètre ?",
+    "visuel": null,
+    "choix": [
+      "15 mm",
+      "11 mm",
+      "5 mm",
+      "10 mm"
+    ],
+    "reponse": "10 mm",
+    "indice": "Rappelle-toi la règle.",
+    "explication": "1 cm = 10 mm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_003",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de minutes dans 1 heure ?",
+    "visuel": null,
+    "choix": [
+      "61 minutes",
+      "60 minutes",
+      "55 minutes",
+      "65 minutes"
+    ],
+    "reponse": "60 minutes",
+    "indice": "Rappelle-toi la règle.",
+    "explication": "1 h = 60 minutes.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_004",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de jours dans 1 semaine ?",
+    "visuel": null,
+    "choix": [
+      "12 jours",
+      "2 jours",
+      "7 jours",
+      "8 jours"
+    ],
+    "reponse": "7 jours",
+    "indice": "Rappelle-toi la règle.",
+    "explication": "1 semaine = 7 jours.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_005",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de mois dans 1 année ?",
+    "visuel": null,
+    "choix": [
+      "13 mois",
+      "12 mois",
+      "7 mois",
+      "17 mois"
+    ],
+    "reponse": "12 mois",
+    "indice": "Rappelle-toi la règle.",
+    "explication": "1 année = 12 mois.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_006",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de secondes dans 1 minute ?",
+    "visuel": null,
+    "choix": [
+      "61 secondes",
+      "60 secondes",
+      "55 secondes",
+      "65 secondes"
+    ],
+    "reponse": "60 secondes",
+    "indice": "Rappelle-toi la règle.",
+    "explication": "1 min = 60 s.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_007",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle heure indique cette horloge ?",
+    "visuel": {
+      "type": "horloge",
+      "heures": 12,
+      "minutes": 45
+    },
+    "choix": [
+      "9 h 45",
+      "2 h 15",
+      "6 h 30",
+      "12 h 45"
+    ],
+    "reponse": "12 h 45",
+    "indice": "Petite aiguille = heures.",
+    "explication": "Il est 12 h 45.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_008",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle heure indique cette horloge ?",
+    "visuel": {
+      "type": "horloge",
+      "heures": 5,
+      "minutes": 30
+    },
+    "choix": [
+      "1 h 30",
+      "8 h 30",
+      "5 h 30",
+      "12 h 30"
+    ],
+    "reponse": "5 h 30",
+    "indice": "Petite aiguille = heures.",
+    "explication": "Il est 5 h 30.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_009",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle heure indique cette horloge ?",
+    "visuel": {
+      "type": "horloge",
+      "heures": 5,
+      "minutes": 0
+    },
+    "choix": [
+      "5 h 00",
+      "8 h 00",
+      "10 h 00",
+      "4 h 45"
+    ],
+    "reponse": "5 h 00",
+    "indice": "Petite aiguille = heures.",
+    "explication": "Il est 5 h 00.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_010",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle heure indique cette horloge ?",
+    "visuel": {
+      "type": "horloge",
+      "heures": 10,
+      "minutes": 0
+    },
+    "choix": [
+      "10 h 00",
+      "5 h 00",
+      "1 h 45",
+      "2 h 45"
+    ],
+    "reponse": "10 h 00",
+    "indice": "Petite aiguille = heures.",
+    "explication": "Il est 10 h 00.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_011",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle heure indique cette horloge ?",
+    "visuel": {
+      "type": "horloge",
+      "heures": 8,
+      "minutes": 30
+    },
+    "choix": [
+      "8 h 30",
+      "1 h 00",
+      "12 h 15",
+      "12 h 45"
+    ],
+    "reponse": "8 h 30",
+    "indice": "Petite aiguille = heures.",
+    "explication": "Il est 8 h 30.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_012",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle heure indique cette horloge ?",
+    "visuel": {
+      "type": "horloge",
+      "heures": 6,
+      "minutes": 45
+    },
+    "choix": [
+      "3 h 45",
+      "10 h 30",
+      "6 h 45",
+      "6 h 15"
+    ],
+    "reponse": "6 h 45",
+    "indice": "Petite aiguille = heures.",
+    "explication": "Il est 6 h 45.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_013",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de millilitres dans 1 litre ?",
+    "visuel": null,
+    "choix": [
+      "10 000 ml",
+      "500 ml",
+      "1 000 ml",
+      "100 ml"
+    ],
+    "reponse": "1 000 ml",
+    "indice": "Kilo = 1 000.",
+    "explication": "1 L = 1 000 ml.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_014",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de grammes dans 1 kilogramme ?",
+    "visuel": null,
+    "choix": [
+      "500 g",
+      "100 g",
+      "1 000 g",
+      "10 000 g"
+    ],
+    "reponse": "1 000 g",
+    "indice": "Kilo = 1 000.",
+    "explication": "1 kg = 1 000 g.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_015",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un carré de 5 cm de côté ?",
+    "visuel": null,
+    "choix": [
+      "20 cm",
+      "21 cm",
+      "22 cm",
+      "18 cm"
+    ],
+    "reponse": "20 cm",
+    "indice": "4 × côté.",
+    "explication": "4 × 5 = 20 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_016",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un carré de 12 cm de côté ?",
+    "visuel": null,
+    "choix": [
+      "50 cm",
+      "48 cm",
+      "46 cm",
+      "49 cm"
+    ],
+    "reponse": "48 cm",
+    "indice": "4 × côté.",
+    "explication": "4 × 12 = 48 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_017",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un carré de 4 cm de côté ?",
+    "visuel": null,
+    "choix": [
+      "18 cm",
+      "16 cm",
+      "17 cm",
+      "14 cm"
+    ],
+    "reponse": "16 cm",
+    "indice": "4 × côté.",
+    "explication": "4 × 4 = 16 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_018",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un carré de 9 cm de côté ?",
+    "visuel": null,
+    "choix": [
+      "37 cm",
+      "34 cm",
+      "36 cm",
+      "38 cm"
+    ],
+    "reponse": "36 cm",
+    "indice": "4 × côté.",
+    "explication": "4 × 9 = 36 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_019",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un carré de 11 cm de côté ?",
+    "visuel": null,
+    "choix": [
+      "45 cm",
+      "46 cm",
+      "44 cm",
+      "42 cm"
+    ],
+    "reponse": "44 cm",
+    "indice": "4 × côté.",
+    "explication": "4 × 11 = 44 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_020",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "2 cm = ? mm",
+    "visuel": null,
+    "choix": [
+      "20 mm",
+      "22 mm",
+      "19 mm",
+      "21 mm"
+    ],
+    "reponse": "20 mm",
+    "indice": "Multiplie selon les unités.",
+    "explication": "2 × 10 = 20 mm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_021",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "7 m = ? cm",
+    "visuel": null,
+    "choix": [
+      "700 cm",
+      "701 cm",
+      "690 cm",
+      "710 cm"
+    ],
+    "reponse": "700 cm",
+    "indice": "Multiplie selon les unités.",
+    "explication": "7 × 100 = 700 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_022",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "8 m = ? cm",
+    "visuel": null,
+    "choix": [
+      "810 cm",
+      "801 cm",
+      "800 cm",
+      "790 cm"
+    ],
+    "reponse": "800 cm",
+    "indice": "Multiplie selon les unités.",
+    "explication": "8 × 100 = 800 cm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_023",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "9 km = ? m",
+    "visuel": null,
+    "choix": [
+      "9 000 m",
+      "9 100 m",
+      "9 001 m",
+      "8 900 m"
+    ],
+    "reponse": "9 000 m",
+    "indice": "Multiplie selon les unités.",
+    "explication": "9 × 1 000 = 9 000 m.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_024",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 m = ? dm",
+    "visuel": null,
+    "choix": [
+      "39 dm",
+      "41 dm",
+      "40 dm",
+      "42 dm"
+    ],
+    "reponse": "40 dm",
+    "indice": "Multiplie selon les unités.",
+    "explication": "4 × 10 = 40 dm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_025",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "6 L = ? ml",
+    "visuel": null,
+    "choix": [
+      "6 000 ml",
+      "6 100 ml",
+      "5 900 ml",
+      "6 001 ml"
+    ],
+    "reponse": "6 000 ml",
+    "indice": "Multiplie selon les unités.",
+    "explication": "6 × 1 000 = 6 000 ml.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_026",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "2 m = ? dm",
+    "visuel": null,
+    "choix": [
+      "20 dm",
+      "19 dm",
+      "22 dm",
+      "21 dm"
+    ],
+    "reponse": "20 dm",
+    "indice": "Multiplie selon les unités.",
+    "explication": "2 × 10 = 20 dm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_027",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 cm = ? mm",
+    "visuel": null,
+    "choix": [
+      "39 mm",
+      "41 mm",
+      "40 mm",
+      "42 mm"
+    ],
+    "reponse": "40 mm",
+    "indice": "Multiplie selon les unités.",
+    "explication": "4 × 10 = 40 mm.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_028",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 2,
+    "type": "choix",
+    "question": "De 8 h 00 à 9 h 15, combien de temps s'écoule-t-il ?",
+    "visuel": null,
+    "choix": [
+      "1 h 30",
+      "1 h 45",
+      "1 h 15",
+      "1 h"
+    ],
+    "reponse": "1 h 15",
+    "indice": "Heures puis minutes.",
+    "explication": "Cela fait 1 h 15.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_029",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 2,
+    "type": "choix",
+    "question": "De 12 h 00 à 14 h 30, combien de temps s'écoule-t-il ?",
+    "visuel": null,
+    "choix": [
+      "3 h",
+      "2 h 45",
+      "2 h 15",
+      "2 h 30"
+    ],
+    "reponse": "2 h 30",
+    "indice": "Heures puis minutes.",
+    "explication": "Cela fait 2 h 30.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_030",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 2,
+    "type": "choix",
+    "question": "De 9 h 15 à 10 h 45, combien de temps s'écoule-t-il ?",
+    "visuel": null,
+    "choix": [
+      "2 h",
+      "1 h 15",
+      "1 h 45",
+      "1 h 30"
+    ],
+    "reponse": "1 h 30",
+    "indice": "Heures puis minutes.",
+    "explication": "Cela fait 1 h 30.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_031",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 2,
+    "type": "choix",
+    "question": "De 10 h 00 à 10 h 45, combien de temps s'écoule-t-il ?",
+    "visuel": null,
+    "choix": [
+      "0 h 45",
+      "1 h 15",
+      "1 h",
+      "0 h 30"
+    ],
+    "reponse": "0 h 45",
+    "indice": "Heures puis minutes.",
+    "explication": "Cela fait 0 h 45.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_032",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 2,
+    "type": "choix",
+    "question": "De 10 h 30 à 12 h 00, combien de temps s'écoule-t-il ?",
+    "visuel": null,
+    "choix": [
+      "1 h 45",
+      "2 h",
+      "1 h 15",
+      "1 h 30"
+    ],
+    "reponse": "1 h 30",
+    "indice": "Heures puis minutes.",
+    "explication": "Cela fait 1 h 30.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_033",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 2,
+    "type": "choix",
+    "question": "De 10 h 30 à 12 h 30, combien de temps s'écoule-t-il ?",
+    "visuel": null,
+    "choix": [
+      "2 h 15",
+      "2 h",
+      "2 h 30",
+      "1 h 45"
+    ],
+    "reponse": "2 h",
+    "indice": "Heures puis minutes.",
+    "explication": "Cela fait 2 h.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_034",
+    "domaine": "Mesure",
+    "sousDomaine": "Température",
+    "palier": 2,
+    "type": "choix",
+    "question": "Il fait 8 °C. La température monte de 7 °C. Quelle est la nouvelle température ?",
+    "visuel": null,
+    "choix": [
+      "16 °C",
+      "15 °C",
+      "13 °C",
+      "17 °C"
+    ],
+    "reponse": "15 °C",
+    "indice": "On additionne.",
+    "explication": "8 + 7 = 15 °C.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_035",
+    "domaine": "Mesure",
+    "sousDomaine": "Température",
+    "palier": 2,
+    "type": "choix",
+    "question": "Il fait 13 °C. La température monte de 12 °C. Quelle est la nouvelle température ?",
+    "visuel": null,
+    "choix": [
+      "26 °C",
+      "25 °C",
+      "23 °C",
+      "27 °C"
+    ],
+    "reponse": "25 °C",
+    "indice": "On additionne.",
+    "explication": "13 + 12 = 25 °C.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_036",
+    "domaine": "Mesure",
+    "sousDomaine": "Température",
+    "palier": 2,
+    "type": "choix",
+    "question": "Il fait 8 °C. La température monte de 10 °C. Quelle est la nouvelle température ?",
+    "visuel": null,
+    "choix": [
+      "16 °C",
+      "20 °C",
+      "19 °C",
+      "18 °C"
+    ],
+    "reponse": "18 °C",
+    "indice": "On additionne.",
+    "explication": "8 + 10 = 18 °C.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_037",
+    "domaine": "Mesure",
+    "sousDomaine": "Température",
+    "palier": 2,
+    "type": "choix",
+    "question": "Il fait 6 °C. La température monte de 4 °C. Quelle est la nouvelle température ?",
+    "visuel": null,
+    "choix": [
+      "12 °C",
+      "10 °C",
+      "8 °C",
+      "11 °C"
+    ],
+    "reponse": "10 °C",
+    "indice": "On additionne.",
+    "explication": "6 + 4 = 10 °C.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_038",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un rectangle de 13 cm sur 12 cm ?",
+    "visuel": null,
+    "choix": [
+      "50 cm",
+      "52 cm",
+      "48 cm",
+      "51 cm"
+    ],
+    "reponse": "50 cm",
+    "indice": "2 × (L + l).",
+    "explication": "2 × (13 + 12) = 50 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_039",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un rectangle de 12 cm sur 3 cm ?",
+    "visuel": null,
+    "choix": [
+      "32 cm",
+      "28 cm",
+      "30 cm",
+      "31 cm"
+    ],
+    "reponse": "30 cm",
+    "indice": "2 × (L + l).",
+    "explication": "2 × (12 + 3) = 30 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_040",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un rectangle de 5 cm sur 4 cm ?",
+    "visuel": null,
+    "choix": [
+      "18 cm",
+      "16 cm",
+      "20 cm",
+      "19 cm"
+    ],
+    "reponse": "18 cm",
+    "indice": "2 × (L + l).",
+    "explication": "2 × (5 + 4) = 18 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_041",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un rectangle de 12 cm sur 10 cm ?",
+    "visuel": null,
+    "choix": [
+      "46 cm",
+      "44 cm",
+      "42 cm",
+      "45 cm"
+    ],
+    "reponse": "44 cm",
+    "indice": "2 × (L + l).",
+    "explication": "2 × (12 + 10) = 44 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_042",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un rectangle de 11 cm sur 7 cm ?",
+    "visuel": null,
+    "choix": [
+      "38 cm",
+      "37 cm",
+      "36 cm",
+      "34 cm"
+    ],
+    "reponse": "36 cm",
+    "indice": "2 × (L + l).",
+    "explication": "2 × (11 + 7) = 36 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_043",
+    "domaine": "Mesure",
+    "sousDomaine": "Périmètre",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le périmètre d'un rectangle de 5 cm sur 2 cm ?",
+    "visuel": null,
+    "choix": [
+      "15 cm",
+      "12 cm",
+      "14 cm",
+      "16 cm"
+    ],
+    "reponse": "14 cm",
+    "indice": "2 × (L + l).",
+    "explication": "2 × (5 + 2) = 14 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_044",
+    "domaine": "Mesure",
+    "sousDomaine": "Aire",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est l'aire de ce rectangle (en carrés-unités) ?",
+    "visuel": {
+      "type": "grilleAire",
+      "largeur": 3,
+      "hauteur": 5
+    },
+    "choix": [
+      "16 carrés",
+      "15 carrés",
+      "17 carrés",
+      "13 carrés"
+    ],
+    "reponse": "15 carrés",
+    "indice": "L × l.",
+    "explication": "3 × 5 = 15 carrés.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_045",
+    "domaine": "Mesure",
+    "sousDomaine": "Aire",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est l'aire de ce rectangle (en carrés-unités) ?",
+    "visuel": {
+      "type": "grilleAire",
+      "largeur": 7,
+      "hauteur": 6
+    },
+    "choix": [
+      "40 carrés",
+      "42 carrés",
+      "43 carrés",
+      "44 carrés"
+    ],
+    "reponse": "42 carrés",
+    "indice": "L × l.",
+    "explication": "7 × 6 = 42 carrés.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_046",
+    "domaine": "Mesure",
+    "sousDomaine": "Aire",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est l'aire de ce rectangle (en carrés-unités) ?",
+    "visuel": {
+      "type": "grilleAire",
+      "largeur": 7,
+      "hauteur": 4
+    },
+    "choix": [
+      "30 carrés",
+      "29 carrés",
+      "26 carrés",
+      "28 carrés"
+    ],
+    "reponse": "28 carrés",
+    "indice": "L × l.",
+    "explication": "7 × 4 = 28 carrés.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_047",
+    "domaine": "Mesure",
+    "sousDomaine": "Aire",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est l'aire de ce rectangle (en carrés-unités) ?",
+    "visuel": {
+      "type": "grilleAire",
+      "largeur": 4,
+      "hauteur": 6
+    },
+    "choix": [
+      "24 carrés",
+      "25 carrés",
+      "22 carrés",
+      "26 carrés"
+    ],
+    "reponse": "24 carrés",
+    "indice": "L × l.",
+    "explication": "4 × 6 = 24 carrés.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_048",
+    "domaine": "Mesure",
+    "sousDomaine": "Aire",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est l'aire de ce rectangle (en carrés-unités) ?",
+    "visuel": {
+      "type": "grilleAire",
+      "largeur": 5,
+      "hauteur": 6
+    },
+    "choix": [
+      "31 carrés",
+      "30 carrés",
+      "28 carrés",
+      "32 carrés"
+    ],
+    "reponse": "30 carrés",
+    "indice": "L × l.",
+    "explication": "5 × 6 = 30 carrés.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_049",
+    "domaine": "Mesure",
+    "sousDomaine": "Aire",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelle est l'aire de ce rectangle (en carrés-unités) ?",
+    "visuel": {
+      "type": "grilleAire",
+      "largeur": 4,
+      "hauteur": 2
+    },
+    "choix": [
+      "10 carrés",
+      "9 carrés",
+      "8 carrés",
+      "6 carrés"
+    ],
+    "reponse": "8 carrés",
+    "indice": "L × l.",
+    "explication": "4 × 2 = 8 carrés.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_050",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 11 h 45 et dure 1 h 30. À quelle heure finit-il ?",
+    "visuel": null,
+    "choix": [
+      "13 h 30",
+      "13 h 20",
+      "13 h 10",
+      "13 h 15"
+    ],
+    "reponse": "13 h 15",
+    "indice": "Ajoute la durée.",
+    "explication": "11 h 45 + 1 h 30 = 13 h 15.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_051",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 16 h 15 et dure 2 h 10. À quelle heure finit-il ?",
+    "visuel": null,
+    "choix": [
+      "18 h 25",
+      "18 h 20",
+      "18 h 40",
+      "18 h 30"
+    ],
+    "reponse": "18 h 25",
+    "indice": "Ajoute la durée.",
+    "explication": "16 h 15 + 2 h 10 = 18 h 25.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_052",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 17 h 15 et dure 1 h 50. À quelle heure finit-il ?",
+    "visuel": null,
+    "choix": [
+      "19 h 00",
+      "19 h 05",
+      "19 h 20",
+      "19 h 10"
+    ],
+    "reponse": "19 h 05",
+    "indice": "Ajoute la durée.",
+    "explication": "17 h 15 + 1 h 50 = 19 h 05.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_053",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 11 h 15 et dure 0 h 50. À quelle heure finit-il ?",
+    "visuel": null,
+    "choix": [
+      "12 h 10",
+      "12 h 05",
+      "12 h 20",
+      "12 h 00"
+    ],
+    "reponse": "12 h 05",
+    "indice": "Ajoute la durée.",
+    "explication": "11 h 15 + 0 h 50 = 12 h 05.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_054",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 11 h 30 et dure 1 h 15. À quelle heure finit-il ?",
+    "visuel": null,
+    "choix": [
+      "12 h 50",
+      "12 h 40",
+      "12 h 45",
+      "13 h 00"
+    ],
+    "reponse": "12 h 45",
+    "indice": "Ajoute la durée.",
+    "explication": "11 h 30 + 1 h 15 = 12 h 45.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_055",
+    "domaine": "Mesure",
+    "sousDomaine": "Temps",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 10 h 00 et dure 2 h 10. À quelle heure finit-il ?",
+    "visuel": null,
+    "choix": [
+      "12 h 15",
+      "12 h 05",
+      "12 h 25",
+      "12 h 10"
+    ],
+    "reponse": "12 h 10",
+    "indice": "Ajoute la durée.",
+    "explication": "10 h 00 + 2 h 10 = 12 h 10.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_056",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 3,
+    "type": "choix",
+    "question": "2 m 30 cm = ? cm",
+    "visuel": null,
+    "choix": [
+      "231 cm",
+      "230 cm",
+      "220 cm",
+      "240 cm"
+    ],
+    "reponse": "230 cm",
+    "indice": "Mètres en cm, puis additionne.",
+    "explication": "2 m = 200 cm, + 30 = 230 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_057",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 3,
+    "type": "choix",
+    "question": "2 m 50 cm = ? cm",
+    "visuel": null,
+    "choix": [
+      "251 cm",
+      "240 cm",
+      "250 cm",
+      "260 cm"
+    ],
+    "reponse": "250 cm",
+    "indice": "Mètres en cm, puis additionne.",
+    "explication": "2 m = 200 cm, + 50 = 250 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_058",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 3,
+    "type": "choix",
+    "question": "3 m 25 cm = ? cm",
+    "visuel": null,
+    "choix": [
+      "325 cm",
+      "326 cm",
+      "315 cm",
+      "335 cm"
+    ],
+    "reponse": "325 cm",
+    "indice": "Mètres en cm, puis additionne.",
+    "explication": "3 m = 300 cm, + 25 = 325 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_059",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 3,
+    "type": "choix",
+    "question": "4 m 20 cm = ? cm",
+    "visuel": null,
+    "choix": [
+      "430 cm",
+      "410 cm",
+      "421 cm",
+      "420 cm"
+    ],
+    "reponse": "420 cm",
+    "indice": "Mètres en cm, puis additionne.",
+    "explication": "4 m = 400 cm, + 20 = 420 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_060",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 3,
+    "type": "choix",
+    "question": "2 m 40 cm = ? cm",
+    "visuel": null,
+    "choix": [
+      "230 cm",
+      "250 cm",
+      "241 cm",
+      "240 cm"
+    ],
+    "reponse": "240 cm",
+    "indice": "Mètres en cm, puis additionne.",
+    "explication": "2 m = 200 cm, + 40 = 240 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_061",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions",
+    "palier": 3,
+    "type": "choix",
+    "question": "2 m 25 cm = ? cm",
+    "visuel": null,
+    "choix": [
+      "226 cm",
+      "235 cm",
+      "215 cm",
+      "225 cm"
+    ],
+    "reponse": "225 cm",
+    "indice": "Mètres en cm, puis additionne.",
+    "explication": "2 m = 200 cm, + 25 = 225 cm.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_001",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un triangle ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "reponse": "3",
+    "indice": "Tri = trois.",
+    "explication": "Un triangle a 3 côtés.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_002",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un carré ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "reponse": "4",
+    "indice": "Une fenêtre carrée.",
+    "explication": "Un carré a 4 côtés.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_003",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Comment appelle-t-on un polygone à 4 côtés ?",
+    "visuel": null,
+    "choix": [
+      "un triangle",
+      "un quadrilatère",
+      "un pentagone",
+      "un hexagone"
+    ],
+    "reponse": "un quadrilatère",
+    "indice": "Quadri = quatre.",
+    "explication": "4 côtés = quadrilatère.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_004",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un pentagone ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "reponse": "5",
+    "indice": "Penta = cinq.",
+    "explication": "Un pentagone a 5 côtés.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_005",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un hexagone ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "reponse": "6",
+    "indice": "Hexa = six.",
+    "explication": "Un hexagone a 6 côtés.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_006",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Comment appelle-t-on un polygone à 3 côtés ?",
+    "visuel": null,
+    "choix": [
+      "un triangle",
+      "un carré",
+      "un losange",
+      "un pentagone"
+    ],
+    "reponse": "un triangle",
+    "indice": "Tri = trois.",
+    "explication": "3 côtés = triangle.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_007",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures planes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Le cercle est-il un polygone ?",
+    "visuel": null,
+    "choix": [
+      "Oui",
+      "Non",
+      "Parfois",
+      "Si grand"
+    ],
+    "reponse": "Non",
+    "indice": "Un polygone a des côtés droits.",
+    "explication": "Non, le cercle n'a pas de côtés droits.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_008",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de faces a un cube ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "reponse": "6",
+    "indice": "Un dé à jouer.",
+    "explication": "Un cube a 6 faces.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_009",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de faces a une pyramide à base carrée ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "reponse": "5",
+    "indice": "Base + triangles.",
+    "explication": "1 carré + 4 triangles = 5 faces.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_010",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de sommets a un cube ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "reponse": "8",
+    "indice": "Compte les coins.",
+    "explication": "Un cube a 8 sommets.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_011",
+    "domaine": "Géométrie",
+    "sousDomaine": "Angles",
+    "palier": 2,
+    "type": "choix",
+    "question": "Comment appelle-t-on un angle plus petit qu'un angle droit ?",
+    "visuel": null,
+    "choix": [
+      "aigu",
+      "obtus",
+      "droit",
+      "plat"
+    ],
+    "reponse": "aigu",
+    "indice": "Aigu = pointu.",
+    "explication": "Plus petit que droit = aigu.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_012",
+    "domaine": "Géométrie",
+    "sousDomaine": "Angles",
+    "palier": 2,
+    "type": "choix",
+    "question": "Comment appelle-t-on un angle plus grand qu'un angle droit ?",
+    "visuel": null,
+    "choix": [
+      "aigu",
+      "obtus",
+      "droit",
+      "plat"
+    ],
+    "reponse": "obtus",
+    "indice": "Obtus = ouvert.",
+    "explication": "Plus grand que droit = obtus.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_013",
+    "domaine": "Géométrie",
+    "sousDomaine": "Angles",
+    "palier": 2,
+    "type": "choix",
+    "question": "Comment appelle-t-on l'angle qui forme le coin d'un carré ?",
+    "visuel": null,
+    "choix": [
+      "aigu",
+      "obtus",
+      "droit",
+      "plat"
+    ],
+    "reponse": "droit",
+    "indice": "90 degrés.",
+    "explication": "Le coin d'un carré = angle droit.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_014",
+    "domaine": "Géométrie",
+    "sousDomaine": "Symétrie",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'axes de symétrie a un carré ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "reponse": "4",
+    "indice": "Plie-le.",
+    "explication": "Un carré a 4 axes de symétrie.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_015",
+    "domaine": "Géométrie",
+    "sousDomaine": "Symétrie",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'axes de symétrie a un rectangle non carré ?",
+    "visuel": null,
+    "choix": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "reponse": "2",
+    "indice": "Plie-le en deux.",
+    "explication": "Un rectangle a 2 axes de symétrie.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_016",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel solide a 6 faces carrées identiques ?",
+    "visuel": null,
+    "choix": [
+      "le cube",
+      "la sphère",
+      "le cône",
+      "le cylindre"
+    ],
+    "reponse": "le cube",
+    "indice": "6 carrés pareils.",
+    "explication": "C'est le cube.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_017",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien d'arêtes a un cube ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "8",
+      "12",
+      "16"
+    ],
+    "reponse": "12",
+    "indice": "Compte-les.",
+    "explication": "Un cube a 12 arêtes.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_018",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien d'arêtes a une pyramide à base carrée ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "6",
+      "8",
+      "10"
+    ],
+    "reponse": "8",
+    "indice": "4 base + 4 montantes.",
+    "explication": "8 arêtes.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_019",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de sommets a une pyramide à base carrée ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "reponse": "5",
+    "indice": "4 base + 1 haut.",
+    "explication": "5 sommets.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_020",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de faces a un prisme à base triangulaire ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "reponse": "5",
+    "indice": "2 triangles + 3 rect.",
+    "explication": "5 faces.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_021",
+    "domaine": "Géométrie",
+    "sousDomaine": "Solides",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de sommets a un prisme à base triangulaire ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "6",
+      "8",
+      "9"
+    ],
+    "reponse": "6",
+    "indice": "3 + 3.",
+    "explication": "6 sommets.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_022",
+    "domaine": "Géométrie",
+    "sousDomaine": "Quadrilatères",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel quadrilatère a 4 côtés égaux et 4 angles droits ?",
+    "visuel": null,
+    "choix": [
+      "le carré",
+      "le rectangle",
+      "le losange",
+      "le trapèze"
+    ],
+    "reponse": "le carré",
+    "indice": "Tout égal + coins droits.",
+    "explication": "Le carré.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_023",
+    "domaine": "Géométrie",
+    "sousDomaine": "Quadrilatères",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel quadrilatère a 4 angles droits mais pas tous les côtés égaux ?",
+    "visuel": null,
+    "choix": [
+      "le carré",
+      "le rectangle",
+      "le losange",
+      "le trapèze"
+    ],
+    "reponse": "le rectangle",
+    "indice": "Coins droits, L ≠ l.",
+    "explication": "Le rectangle.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_024",
+    "domaine": "Géométrie",
+    "sousDomaine": "Quadrilatères",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel quadrilatère a 4 côtés égaux mais pas forcément d'angles droits ?",
+    "visuel": null,
+    "choix": [
+      "le carré",
+      "le rectangle",
+      "le losange",
+      "le trapèze"
+    ],
+    "reponse": "le losange",
+    "indice": "4 côtés égaux, penché.",
+    "explication": "Le losange.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_025",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          1,
+          1
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(1, 3)",
+      "(1, 2)",
+      "(2, 3)",
+      "(1, 1)"
+    ],
+    "reponse": "(1, 1)",
+    "indice": "Horizontal d'abord, vertical ensuite.",
+    "explication": "Le point A est en (1, 1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_026",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          2,
+          5
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(4, 3)",
+      "(1, 5)",
+      "(2, 5)",
+      "(2, 4)"
+    ],
+    "reponse": "(2, 5)",
+    "indice": "Horizontal d'abord, vertical ensuite.",
+    "explication": "Le point A est en (2, 5).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_027",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          5,
+          1
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(2, 5)",
+      "(1, 4)",
+      "(5, 4)",
+      "(5, 1)"
+    ],
+    "reponse": "(5, 1)",
+    "indice": "Horizontal d'abord, vertical ensuite.",
+    "explication": "Le point A est en (5, 1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_028",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          4,
+          1
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(3, 1)",
+      "(5, 1)",
+      "(4, 1)",
+      "(1, 3)"
+    ],
+    "reponse": "(4, 1)",
+    "indice": "Horizontal d'abord, vertical ensuite.",
+    "explication": "Le point A est en (4, 1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_029",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          4,
+          5
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(4, 1)",
+      "(5, 1)",
+      "(4, 3)",
+      "(4, 5)"
+    ],
+    "reponse": "(4, 5)",
+    "indice": "Horizontal d'abord, vertical ensuite.",
+    "explication": "Le point A est en (4, 5).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_030",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          5,
+          2
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(5, 2)",
+      "(2, 3)",
+      "(5, 1)",
+      "(3, 5)"
+    ],
+    "reponse": "(5, 2)",
+    "indice": "Horizontal d'abord, vertical ensuite.",
+    "explication": "Le point A est en (5, 2).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_001",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'élèves ont choisi « Hockey » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Course": 6,
+        "Danse": 9,
+        "Hockey": 11
+      }
+    },
+    "choix": [
+      "10",
+      "13",
+      "12",
+      "11"
+    ],
+    "reponse": "11",
+    "indice": "Lis la hauteur.",
+    "explication": "La barre « Hockey » indique 11.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_002",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Tennis": 6,
+        "Danse": 9,
+        "Course": 7
+      }
+    },
+    "choix": [
+      "Danse",
+      "Tennis",
+      "Course"
+    ],
+    "reponse": "Danse",
+    "indice": "Barre la plus haute.",
+    "explication": "« Danse » est la plus haute (9).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_003",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'élèves ont choisi « Danse » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Tennis": 5,
+        "Natation": 12,
+        "Danse": 8,
+        "Ski": 6
+      }
+    },
+    "choix": [
+      "9",
+      "8",
+      "10",
+      "7"
+    ],
+    "reponse": "8",
+    "indice": "Lis la hauteur.",
+    "explication": "La barre « Danse » indique 8.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_004",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'élèves ont choisi « Course » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Ski": 7,
+        "Course": 9,
+        "Tennis": 8
+      }
+    },
+    "choix": [
+      "8",
+      "9",
+      "11",
+      "10"
+    ],
+    "reponse": "9",
+    "indice": "Lis la hauteur.",
+    "explication": "La barre « Course » indique 9.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_005",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Course": 6,
+        "Soccer": 4,
+        "Ski": 2
+      }
+    },
+    "choix": [
+      "Ski",
+      "Course",
+      "Soccer"
+    ],
+    "reponse": "Course",
+    "indice": "Barre la plus haute.",
+    "explication": "« Course » est la plus haute (6).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_006",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'élèves ont choisi « Course » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Tennis": 4,
+        "Vélo": 10,
+        "Ski": 3,
+        "Course": 7
+      }
+    },
+    "choix": [
+      "6",
+      "8",
+      "9",
+      "7"
+    ],
+    "reponse": "7",
+    "indice": "Lis la hauteur.",
+    "explication": "La barre « Course » indique 7.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_007",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Hockey": 2,
+        "Tennis": 10,
+        "Vélo": 7,
+        "Soccer": 5
+      }
+    },
+    "choix": [
+      "Hockey",
+      "Vélo",
+      "Tennis",
+      "Soccer"
+    ],
+    "reponse": "Tennis",
+    "indice": "Barre la plus haute.",
+    "explication": "« Tennis » est la plus haute (10).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_008",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Tennis": 6,
+        "Course": 8,
+        "Vélo": 11,
+        "Natation": 4
+      }
+    },
+    "choix": [
+      "Vélo",
+      "Tennis",
+      "Natation",
+      "Course"
+    ],
+    "reponse": "Vélo",
+    "indice": "Barre la plus haute.",
+    "explication": "« Vélo » est la plus haute (11).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_009",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Hockey": 3,
+        "Vélo": 5,
+        "Danse": 10,
+        "Course": 5
+      }
+    },
+    "choix": [
+      "Course",
+      "Vélo",
+      "Hockey",
+      "Danse"
+    ],
+    "reponse": "Danse",
+    "indice": "Barre la plus haute.",
+    "explication": "« Danse » est la plus haute (10).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_010",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Hockey": 11,
+        "Ski": 11,
+        "Natation": 12,
+        "Vélo": 8
+      }
+    },
+    "choix": [
+      "Ski",
+      "Natation",
+      "Hockey",
+      "Vélo"
+    ],
+    "reponse": "Natation",
+    "indice": "Barre la plus haute.",
+    "explication": "« Natation » est la plus haute (12).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_011",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'élèves ont choisi « Vélo » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Danse": 2,
+        "Vélo": 2,
+        "Natation": 11
+      }
+    },
+    "choix": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ],
+    "reponse": "2",
+    "indice": "Lis la hauteur.",
+    "explication": "La barre « Vélo » indique 2.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_012",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Vélo": 8,
+        "Tennis": 12,
+        "Danse": 8
+      }
+    },
+    "choix": [
+      "Danse",
+      "Tennis",
+      "Vélo"
+    ],
+    "reponse": "Tennis",
+    "indice": "Barre la plus haute.",
+    "explication": "« Tennis » est la plus haute (12).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_013",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'élèves ont choisi « Ski » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Natation": 7,
+        "Course": 4,
+        "Ski": 10
+      }
+    },
+    "choix": [
+      "9",
+      "11",
+      "10",
+      "12"
+    ],
+    "reponse": "10",
+    "indice": "Lis la hauteur.",
+    "explication": "La barre « Ski » indique 10.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_014",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus haute barre ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sport préféré des élèves",
+      "donnees": {
+        "Soccer": 6,
+        "Tennis": 3,
+        "Danse": 11,
+        "Ski": 2
+      }
+    },
+    "choix": [
+      "Ski",
+      "Tennis",
+      "Soccer",
+      "Danse"
+    ],
+    "reponse": "Danse",
+    "indice": "Barre la plus haute.",
+    "explication": "« Danse » est la plus haute (11).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "stat_015",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Course » que « Tennis » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Hockey": 4,
+        "Tennis": 5,
+        "Course": 9
+      }
+    },
+    "choix": [
+      "6",
+      "3",
+      "4",
+      "5"
+    ],
+    "reponse": "4",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "9 − 5 = 4.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_016",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Danse » que « Course » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Danse": 14,
+        "Hockey": 2,
+        "Course": 3
+      }
+    },
+    "choix": [
+      "13",
+      "12",
+      "11",
+      "10"
+    ],
+    "reponse": "11",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "14 − 3 = 11.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_017",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Tennis » que « Soccer » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Vélo": 6,
+        "Tennis": 10,
+        "Soccer": 7
+      }
+    },
+    "choix": [
+      "4",
+      "2",
+      "5",
+      "3"
+    ],
+    "reponse": "3",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "10 − 7 = 3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_018",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Ski » que « Tennis » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Hockey": 14,
+        "Ski": 14,
+        "Tennis": 13
+      }
+    },
+    "choix": [
+      "0",
+      "2",
+      "1",
+      "3"
+    ],
+    "reponse": "1",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "14 − 13 = 1.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_019",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Natation » que « Course » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Course": 5,
+        "Natation": 9,
+        "Soccer": 3
+      }
+    },
+    "choix": [
+      "6",
+      "3",
+      "5",
+      "4"
+    ],
+    "reponse": "4",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "9 − 5 = 4.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_020",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Tennis » que « Hockey » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Tennis": 8,
+        "Vélo": 10,
+        "Hockey": 4
+      }
+    },
+    "choix": [
+      "6",
+      "3",
+      "4",
+      "5"
+    ],
+    "reponse": "4",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "8 − 4 = 4.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_021",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Natation » que « Ski » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Hockey": 8,
+        "Natation": 4,
+        "Ski": 2
+      }
+    },
+    "choix": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "reponse": "2",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "4 − 2 = 2.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_022",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Danse » que « Natation » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Ski": 9,
+        "Natation": 3,
+        "Danse": 13
+      }
+    },
+    "choix": [
+      "9",
+      "11",
+      "10",
+      "12"
+    ],
+    "reponse": "10",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "13 − 3 = 10.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_023",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Course » que « Soccer » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Soccer": 8,
+        "Course": 11,
+        "Ski": 9
+      }
+    },
+    "choix": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "reponse": "3",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "11 − 8 = 3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_024",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'élèves de plus ont choisi « Ski » que « Vélo » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Sondage de la classe",
+      "donnees": {
+        "Vélo": 4,
+        "Ski": 12,
+        "Danse": 5
+      }
+    },
+    "choix": [
+      "9",
+      "7",
+      "10",
+      "8"
+    ],
+    "reponse": "8",
+    "indice": "Soustrais les hauteurs.",
+    "explication": "12 − 4 = 8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_025",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Course » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Hockey": 2,
+        "Course": 3,
+        "Tennis": 4
+      }
+    },
+    "choix": [
+      "8",
+      "7",
+      "4",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Multiplie par 2.",
+    "explication": "3 × 2 = 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_026",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 5. Combien pour « Danse » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 5,
+      "donnees": {
+        "Tennis": 2,
+        "Danse": 5,
+        "Ski": 5
+      }
+    },
+    "choix": [
+      "30",
+      "26",
+      "20",
+      "25"
+    ],
+    "reponse": "25",
+    "indice": "Multiplie par 5.",
+    "explication": "5 × 5 = 25.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_027",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Ski » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Ski": 5,
+        "Course": 2,
+        "Tennis": 5
+      }
+    },
+    "choix": [
+      "10",
+      "8",
+      "11",
+      "12"
+    ],
+    "reponse": "10",
+    "indice": "Multiplie par 2.",
+    "explication": "5 × 2 = 10.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_028",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 5. Combien pour « Soccer » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 5,
+      "donnees": {
+        "Soccer": 6,
+        "Tennis": 3,
+        "Natation": 6
+      }
+    },
+    "choix": [
+      "35",
+      "30",
+      "25",
+      "31"
+    ],
+    "reponse": "30",
+    "indice": "Multiplie par 5.",
+    "explication": "6 × 5 = 30.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_029",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Course » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Course": 4,
+        "Natation": 4,
+        "Soccer": 4
+      }
+    },
+    "choix": [
+      "10",
+      "9",
+      "8",
+      "6"
+    ],
+    "reponse": "8",
+    "indice": "Multiplie par 2.",
+    "explication": "4 × 2 = 8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_030",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Ski » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Danse": 2,
+        "Ski": 6,
+        "Natation": 5
+      }
+    },
+    "choix": [
+      "13",
+      "10",
+      "14",
+      "12"
+    ],
+    "reponse": "12",
+    "indice": "Multiplie par 2.",
+    "explication": "6 × 2 = 12.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_031",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Course » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Course": 4,
+        "Tennis": 5,
+        "Danse": 6
+      }
+    },
+    "choix": [
+      "9",
+      "8",
+      "6",
+      "10"
+    ],
+    "reponse": "8",
+    "indice": "Multiplie par 2.",
+    "explication": "4 × 2 = 8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_032",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 2,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Ski » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte de la semaine",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Course": 3,
+        "Ski": 2,
+        "Vélo": 2
+      }
+    },
+    "choix": [
+      "4",
+      "5",
+      "2",
+      "6"
+    ],
+    "reponse": "4",
+    "indice": "Multiplie par 2.",
+    "explication": "2 × 2 = 4.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "stat_033",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Danse": 3,
+        "Natation": 4,
+        "Hockey": 4,
+        "Tennis": 5
+      }
+    },
+    "choix": [
+      "19",
+      "16",
+      "13",
+      "17"
+    ],
+    "reponse": "16",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 16.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_034",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Ski": 7,
+        "Danse": 12,
+        "Hockey": 10,
+        "Course": 9
+      }
+    },
+    "choix": [
+      "41",
+      "39",
+      "35",
+      "38"
+    ],
+    "reponse": "38",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 38.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_035",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Vélo": 10,
+        "Course": 9,
+        "Ski": 3,
+        "Tennis": 4
+      }
+    },
+    "choix": [
+      "27",
+      "23",
+      "26",
+      "29"
+    ],
+    "reponse": "26",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 26.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_036",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Course": 6,
+        "Hockey": 4,
+        "Natation": 4,
+        "Danse": 8
+      }
+    },
+    "choix": [
+      "25",
+      "19",
+      "22",
+      "23"
+    ],
+    "reponse": "22",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 22.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_037",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Course": 10,
+        "Natation": 4,
+        "Hockey": 3,
+        "Danse": 9
+      }
+    },
+    "choix": [
+      "26",
+      "27",
+      "29",
+      "23"
+    ],
+    "reponse": "26",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 26.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_038",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Course": 11,
+        "Natation": 7,
+        "Tennis": 3,
+        "Ski": 7
+      }
+    },
+    "choix": [
+      "29",
+      "28",
+      "25",
+      "31"
+    ],
+    "reponse": "28",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 28.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_039",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Soccer": 12,
+        "Hockey": 10,
+        "Tennis": 6,
+        "Natation": 9
+      }
+    },
+    "choix": [
+      "37",
+      "38",
+      "40",
+      "34"
+    ],
+    "reponse": "37",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 37.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_040",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à bandes",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le total des quatre catégories ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Ventes de la semaine",
+      "donnees": {
+        "Ski": 5,
+        "Soccer": 7,
+        "Hockey": 12,
+        "Course": 11
+      }
+    },
+    "choix": [
+      "35",
+      "32",
+      "38",
+      "36"
+    ],
+    "reponse": "35",
+    "indice": "Additionne toutes les barres.",
+    "explication": "Total = 35.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_041",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Température (°C)",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai"
+      ],
+      "valeurs": [
+        2,
+        10,
+        11,
+        15,
+        4
+      ]
+    },
+    "choix": [
+      "Fév → Mar",
+      "Avr → Mai",
+      "Mar → Avr",
+      "Jan → Fév"
+    ],
+    "reponse": "Jan → Fév",
+    "indice": "Montée la plus raide.",
+    "explication": "Entre Jan et Fév (+8).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_042",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Température (°C)",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai"
+      ],
+      "valeurs": [
+        2,
+        19,
+        2,
+        7,
+        18
+      ]
+    },
+    "choix": [
+      "Fév → Mar",
+      "Jan → Fév",
+      "Mar → Avr",
+      "Avr → Mai"
+    ],
+    "reponse": "Jan → Fév",
+    "indice": "Montée la plus raide.",
+    "explication": "Entre Jan et Fév (+17).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_043",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Température (°C)",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai"
+      ],
+      "valeurs": [
+        18,
+        1,
+        5,
+        16,
+        5
+      ]
+    },
+    "choix": [
+      "Jan → Fév",
+      "Mar → Avr",
+      "Fév → Mar",
+      "Avr → Mai"
+    ],
+    "reponse": "Mar → Avr",
+    "indice": "Montée la plus raide.",
+    "explication": "Entre Mar et Avr (+11).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_044",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Température (°C)",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai"
+      ],
+      "valeurs": [
+        5,
+        5,
+        0,
+        15,
+        2
+      ]
+    },
+    "choix": [
+      "Mar → Avr",
+      "Fév → Mar",
+      "Avr → Mai",
+      "Jan → Fév"
+    ],
+    "reponse": "Mar → Avr",
+    "indice": "Montée la plus raide.",
+    "explication": "Entre Mar et Avr (+15).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "stat_045",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Température (°C)",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai"
+      ],
+      "valeurs": [
+        0,
+        20,
+        7,
+        6,
+        13
+      ]
+    },
+    "choix": [
+      "Jan → Fév",
+      "Fév → Mar",
+      "Mar → Avr",
+      "Avr → Mai"
+    ],
+    "reponse": "Jan → Fév",
+    "indice": "Montée la plus raide.",
+    "explication": "Entre Jan et Fév (+20).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_001",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un sac ne contient que des billes rouges. Tirer une bille rouge est…",
+    "visuel": null,
+    "choix": [
+      "certain",
+      "possible",
+      "impossible"
+    ],
+    "reponse": "certain",
+    "indice": "Que du rouge.",
+    "explication": "Certain.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "prob_002",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un sac ne contient que des billes rouges. Tirer une bille bleue est…",
+    "visuel": null,
+    "choix": [
+      "certain",
+      "possible",
+      "impossible"
+    ],
+    "reponse": "impossible",
+    "indice": "Aucune bleue.",
+    "explication": "Impossible.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "prob_003",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Avec un dé (1 à 6), obtenir un 7 est…",
+    "visuel": null,
+    "choix": [
+      "certain",
+      "possible",
+      "impossible"
+    ],
+    "reponse": "impossible",
+    "indice": "Pas de 7.",
+    "explication": "Impossible : le dé va de 1 à 6.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "prob_004",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Avec un dé (1 à 6), obtenir un nombre entre 1 et 6 est…",
+    "visuel": null,
+    "choix": [
+      "certain",
+      "possible",
+      "impossible"
+    ],
+    "reponse": "certain",
+    "indice": "Toutes les faces.",
+    "explication": "Certain.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "prob_005",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Avec un dé, obtenir un 4 est…",
+    "visuel": null,
+    "choix": [
+      "certain",
+      "possible",
+      "impossible"
+    ],
+    "reponse": "possible",
+    "indice": "Le 4 existe.",
+    "explication": "Possible.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "prob_006",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Avec un dé, est-il plus probable d'obtenir un nombre pair ou exactement le 6 ?",
+    "visuel": null,
+    "choix": [
+      "un nombre pair",
+      "exactement le 6",
+      "les deux pareil"
+    ],
+    "reponse": "un nombre pair",
+    "indice": "Combien de faces ?",
+    "explication": "Pair = 3 faces, le 6 = 1 face.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_007",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 3,
+    "type": "choix",
+    "question": "Avec un dé, combien de résultats sont plus grands que 4 ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "reponse": "2",
+    "indice": "Lesquels ?",
+    "explication": "Le 5 et le 6 : 2.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_008",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 3,
+    "type": "choix",
+    "question": "Avec un dé, combien de résultats sont pairs ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "reponse": "3",
+    "indice": "2, 4, 6.",
+    "explication": "3 pairs.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_009",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de résultats possibles en lançant un dé ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "6",
+      "12"
+    ],
+    "reponse": "6",
+    "indice": "Les faces.",
+    "explication": "6 résultats.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_010",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 8,
+        "Bleu": 5
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "8 rouges contre 5 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_011",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 4,
+        "Bleu": 3
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "4 rouges contre 3 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_012",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 3,
+        "Bleu": 2
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "3 rouges contre 2 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_013",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 6,
+        "Bleu": 2
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "6 rouges contre 2 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_014",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 5,
+        "Bleu": 4
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "5 rouges contre 4 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_015",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 5,
+        "Bleu": 3
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "5 rouges contre 3 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_016",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 4,
+        "Bleu": 2
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "4 rouges contre 2 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_017",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 3,
+        "Bleu": 1
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Les deux pareil"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "3 rouges contre 1 bleus : le rouge.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_018",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sac de 4 billes rouges et 1 bleue : le rouge est combien de fois plus probable ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 4,
+        "Bleu": 1
+      }
+    },
+    "choix": [
+      "6 fois",
+      "4 fois",
+      "5 fois",
+      "3 fois"
+    ],
+    "reponse": "4 fois",
+    "indice": "Compare rouge et bleu.",
+    "explication": "4 contre 1 = 4 fois.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_019",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sac de 6 billes rouges et 1 bleue : le rouge est combien de fois plus probable ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 6,
+        "Bleu": 1
+      }
+    },
+    "choix": [
+      "6 fois",
+      "8 fois",
+      "7 fois",
+      "5 fois"
+    ],
+    "reponse": "6 fois",
+    "indice": "Compare rouge et bleu.",
+    "explication": "6 contre 1 = 6 fois.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_020",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sac de 3 billes rouges et 1 bleue : le rouge est combien de fois plus probable ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 3,
+        "Bleu": 1
+      }
+    },
+    "choix": [
+      "4 fois",
+      "5 fois",
+      "3 fois",
+      "2 fois"
+    ],
+    "reponse": "3 fois",
+    "indice": "Compare rouge et bleu.",
+    "explication": "3 contre 1 = 3 fois.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "prob_021",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 3,
+        "Bleu": 2,
+        "Vert": 1
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Vert"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_022",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 4,
+        "Bleu": 1,
+        "Vert": 2
+      }
+    },
+    "choix": [
+      "Bleu",
+      "Rouge",
+      "Vert"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_023",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 3,
+        "Bleu": 1,
+        "Vert": 2
+      }
+    },
+    "choix": [
+      "Bleu",
+      "Vert",
+      "Rouge"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_024",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 5,
+        "Bleu": 2,
+        "Vert": 1
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Vert",
+      "Bleu"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_025",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 3,
+        "Bleu": 1,
+        "Vert": 1
+      }
+    },
+    "choix": [
+      "Vert",
+      "Bleu",
+      "Rouge"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_026",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 6,
+        "Bleu": 1,
+        "Vert": 2
+      }
+    },
+    "choix": [
+      "Bleu",
+      "Vert",
+      "Rouge"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_027",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 5,
+        "Bleu": 1,
+        "Vert": 2
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Vert"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "prob_028",
+    "domaine": "Probabilité",
+    "sousDomaine": "Comparaison",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur cette roue, quelle couleur a le plus de chances de sortir ?",
+    "visuel": {
+      "type": "roue",
+      "secteurs": {
+        "Rouge": 6,
+        "Bleu": 2,
+        "Vert": 2
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Bleu",
+      "Vert"
+    ],
+    "reponse": "Rouge",
+    "indice": "Plus grande part.",
+    "explication": "« Rouge » a la plus grande part.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  }
+]
