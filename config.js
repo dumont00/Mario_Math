@@ -22,7 +22,7 @@ window.CONFIG = {
     delaiReactivationBloc: 20,
 
     // Objectifs de fin de niveau / boss.
-    cristauxRequisParNiveau: 6,
+    cristauxRequisParNiveau: 20,
     bossCible: 8,
     bossTempsTotal: 90,
 

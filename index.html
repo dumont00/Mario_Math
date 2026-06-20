@@ -22,16 +22,27 @@
             </div>
         </div>
 
-        <div id="end-of-level" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+        <div id="result-screen" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
             <div class="modal__panel modal__panel--end">
-                <h2 class="modal__titre">Temps écoulé !</h2>
-                <p class="modal__sous-titre">Beau parcours, regarde tes résultats :</p>
+                <h2 class="modal__titre" id="result-titre">Niveau terminé !</h2>
+                <p class="modal__sous-titre" id="result-sous-titre">Beau parcours, regarde tes résultats :</p>
+
+                <div class="result__etoiles" id="result-etoiles" aria-label="étoiles obtenues"></div>
+
                 <ul class="modal__recap">
-                    <li>Score : <strong id="end-score">0</strong></li>
-                    <li>Cristaux récoltés : <strong id="end-cristaux">0</strong></li>
-                    <li>Questions répondues : <strong id="end-questions">0</strong></li>
+                    <li>Niveau : <strong id="result-niveau">1</strong></li>
+                    <li>Score : <strong id="result-score">0</strong></li>
+                    <li>Cristaux : <strong id="result-cristaux">0 / 20</strong></li>
+                    <li>Réussite : <strong id="result-pourcent">0 %</strong></li>
                 </ul>
-                <button id="end-restart" class="modal__continue">Recommencer</button>
+
+                <h3 class="result__sous-titre">Par domaine</h3>
+                <div class="result__domaines" id="result-domaines"></div>
+
+                <div class="result__actions">
+                    <button id="result-replay"  class="modal__continue modal__continue--sec">Rejouer</button>
+                    <button id="result-next"    class="modal__continue">Niveau suivant ▶</button>
+                </div>
             </div>
         </div>
 
@@ -45,6 +56,8 @@
                 <div class="modal__timebar" aria-hidden="true">
                     <div class="modal__timebar-fill" id="modal-timebar-fill"></div>
                 </div>
+
+                <div class="modal__visuel" id="modal-visuel" hidden></div>
 
                 <p class="modal__question" id="modal-question">Énoncé…</p>
 
@@ -62,11 +75,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
     <script src="config.js"></script>
+    <script src="js/Visuels.js"></script>
     <script src="js/ScoreManager.js"></script>
     <script src="js/QuestionManager.js"></script>
     <script src="js/QuestionModal.js"></script>
     <script src="js/scenes/BootScene.js"></script>
     <script src="js/scenes/LevelScene.js"></script>
+    <script src="js/scenes/ResultScene.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

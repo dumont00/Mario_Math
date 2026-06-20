@@ -179,6 +179,23 @@ body.modal-open .touch-controls {
     background: #e74c3c;
 }
 
+.modal__visuel {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 14px;
+    max-height: 240px;
+    overflow: auto;
+}
+
+.modal__visuel[hidden] {
+    display: none;
+}
+
+.modal__visuel svg {
+    max-width: 100%;
+    height: auto;
+}
+
 .modal__question {
     font-size: 24px;
     line-height: 1.35;
@@ -286,7 +303,7 @@ body.modal-open .touch-controls {
 
 .modal__panel--end {
     text-align: center;
-    max-width: 480px;
+    max-width: 560px;
 }
 
 .modal__titre {
@@ -322,9 +339,69 @@ body.modal-open .touch-controls {
     font-size: 22px;
 }
 
+.result__etoiles {
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 8px;
+    color: #d6d6d6;
+    margin: 4px 0 14px;
+    min-height: 50px;
+}
+
+.result__etoiles .is-on {
+    color: #f6c244;
+    text-shadow: 0 2px 8px rgba(246, 194, 68, 0.55);
+}
+
+.result__sous-titre {
+    text-align: left;
+    font-size: 16px;
+    color: #4a5a8a;
+    margin: 12px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.result__domaines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 16px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.result__dom {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 8px;
+    background: #f5f7fc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #2a3760;
+}
+
+.result__dom strong { color: #1d2746; }
+
+.result__actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.modal__continue--sec {
+    background: #e6ebf7;
+    color: #1d2746;
+    box-shadow: none;
+}
+
+.modal__continue--sec:hover { background: #d4dcef; }
+
 @media (max-width: 520px) {
     .modal__panel { padding: 18px; }
     .modal__question { font-size: 20px; }
     .modal__choice { font-size: 18px; padding: 14px 10px; }
     .modal__choices { grid-template-columns: 1fr 1fr; }
+    .result__domaines { grid-template-columns: 1fr; }
+    .result__actions { flex-direction: column; }
 }

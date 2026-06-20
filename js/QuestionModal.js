@@ -1,10 +1,12 @@
+/* global Visuels */
+
 // Encapsule la modale DOM : ouverture, fermeture, minuteur visuel,
-// gestion des clics sur les choix et bouton « Continuer ».
+// rendu des `visuel` (CLAUDE.md §5), gestion des clics et bouton « Continuer ».
 //
 // API :
 //   const modal = new QuestionModal();
 //   modal.afficher(question, {
-//     onTermine: ({ correct, choixJoueur, tempsRestant }) => { ... }
+//     onTermine: ({ correct, choixJoueur, tempsRestant, tempsEcoule }) => { ... }
 //   });
 
 class QuestionModal {
@@ -13,6 +15,7 @@ class QuestionModal {
         this.elDomaine     = document.getElementById('modal-domain');
         this.elStars       = document.getElementById('modal-stars');
         this.elTimebarFill = document.getElementById('modal-timebar-fill');
+        this.elVisuel      = document.getElementById('modal-visuel');
         this.elQuestion    = document.getElementById('modal-question');
         this.elChoices     = document.getElementById('modal-choices');
         this.elFeedback    = document.getElementById('modal-feedback');
@@ -37,6 +40,21 @@ class QuestionModal {
 
         this.elDomaine.textContent = question.domaine;
         this.elStars.textContent = '★'.repeat(question.palier);
+
+        // Visuel (le cas échéant).
+        this.elVisuel.innerHTML = '';
+        if (question.visuel && typeof Visuels !== 'undefined') {
+            const svg = Visuels.render(question.visuel);
+            if (svg) {
+                this.elVisuel.appendChild(svg);
+                this.elVisuel.hidden = false;
+            } else {
+                this.elVisuel.hidden = true;
+            }
+        } else {
+            this.elVisuel.hidden = true;
+        }
+
         this.elQuestion.textContent = question.question;
 
         this.elChoices.innerHTML = '';
