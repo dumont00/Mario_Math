@@ -1,8 +1,12 @@
 /* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal */
 
-// Phase 2 — Blocs-questions et modale. Le héros frappe un bloc « ? » par
-// le dessous, le jeu se met en pause, une question chronométrée s'ouvre,
-// puis le score et le combo se mettent à jour selon Specifications §9.
+// Phase 2 — Blocs-questions et modale.
+// Améliorations :
+//   - Blocs ouvrables par le dessous OU en se posant dessus.
+//   - Bloc raté → grisé puis réactivé après CONFIG.delaiReactivationBloc s
+//     avec une nouvelle question du même domaine.
+//   - Plateformes basses régulières pour permettre de regrimper après une chute.
+//   - Minuteur du tableau (CONFIG.tempsNiveau), écran de fin avec récap.
 
 class LevelScene extends Phaser.Scene {
     constructor() {
@@ -20,6 +24,7 @@ class LevelScene extends Phaser.Scene {
         this.questions = new QuestionManager();
         this.modale = new QuestionModal();
         this.enQuestion = false;
+        this.niveauFini = false;
 
         this.addBackgroundDecor();
 
@@ -53,11 +58,13 @@ class LevelScene extends Phaser.Scene {
 
         this.bindTouchControls();
         this.addHud();
+        this.lancerMinuteurNiveau();
+        this.preparerFinDeNiveau();
     }
 
     update() {
         if (!this.hero || !this.hero.body) return;
-        if (this.enQuestion) return;
+        if (this.enQuestion || this.niveauFini) return;
 
         const vitesse = CONFIG.moteur.vitesseHero;
         const wantLeft = this.cursors.left.isDown || this.keyA.isDown || this.touchInput.left;
@@ -97,93 +104,114 @@ class LevelScene extends Phaser.Scene {
         const m = CONFIG.moteur;
         const groundY = m.hauteurMonde - 24;
 
+        // Sol continu.
         for (let x = 32; x < m.largeurMonde; x += 64) {
             this.platforms.create(x, groundY, 'ground').refreshBody();
         }
 
-        const platformSpots = [
-            { x: 280, y: 420 },
-            { x: 460, y: 360 },
-            { x: 640, y: 300 },
-            { x: 880, y: 360 },
-            { x: 1080, y: 280 },
-            { x: 1280, y: 380 },
-            { x: 1500, y: 320 },
-            { x: 1720, y: 260 },
-            { x: 1940, y: 360 },
-            { x: 2180, y: 300 },
-            { x: 2400, y: 380 },
-            { x: 2620, y: 320 },
-            { x: 2860, y: 260 },
-            { x: 3060, y: 360 }
+        // Plateformes basses (« marches ») accessibles depuis le sol partout
+        // dans le niveau — saut max ≈ 130 px, donc top à y ≈ 428 atteignable.
+        const lowPlatforms = [
+            200, 520, 880, 1240, 1600, 1960, 2320, 2680, 3000
         ];
-        platformSpots.forEach(p => {
-            this.platforms.create(p.x, p.y, 'platform').refreshBody();
+        lowPlatforms.forEach(x => {
+            this.platforms.create(x, 450, 'platform').refreshBody();
         });
 
-        // Blocs « ? » placés à hauteur de saut, suffisamment espacés.
-        const questionSpots = [
-            { x: 220, y: 350 },
-            { x: 540, y: 280 },
-            { x: 780, y: 220 },
-            { x: 1180, y: 200 },
-            { x: 1380, y: 300 },
-            { x: 1620, y: 240 },
-            { x: 1840, y: 180 },
-            { x: 2080, y: 230 },
-            { x: 2300, y: 300 },
-            { x: 2520, y: 240 },
-            { x: 2760, y: 180 },
-            { x: 2960, y: 200 }
+        // Plateformes intermédiaires accessibles depuis les marches basses.
+        const midPlatforms = [
+            380, 720, 1060, 1400, 1740, 2080, 2440, 2800
         ];
+        midPlatforms.forEach(x => {
+            this.platforms.create(x, 350, 'platform').refreshBody();
+        });
+
+        // Plateformes hautes pour les sauts plus aventureux.
+        const highPlatforms = [540, 900, 1260, 1620, 1980, 2340, 2700];
+        highPlatforms.forEach(x => {
+            this.platforms.create(x, 250, 'platform').refreshBody();
+        });
+
+        // Blocs « ? » :
+        //   - Certains flottent au-dessus pour être frappés par le dessous.
+        //   - D'autres sont à hauteur de saut pour être atterris dessus.
+        // Chaque bloc a un domaine fixe (« thème ») pour la réactivation.
+        const domaines = CONFIG.domainesActifs;
+        const questionSpots = [
+            { x: 280,  y: 390 },   // accessible : sauter du sol et atterrir dessus
+            { x: 460,  y: 290 },   // depuis plateforme mid
+            { x: 620,  y: 390 },   // accessible : sauter du sol
+            { x: 800,  y: 190 },   // depuis plateforme haute
+            { x: 980,  y: 390 },
+            { x: 1160, y: 290 },
+            { x: 1340, y: 390 },
+            { x: 1500, y: 190 },
+            { x: 1680, y: 290 },
+            { x: 1860, y: 390 },
+            { x: 2020, y: 190 },
+            { x: 2200, y: 290 },
+            { x: 2400, y: 390 },
+            { x: 2560, y: 190 },
+            { x: 2760, y: 290 },
+            { x: 2940, y: 390 }
+        ];
+
         questionSpots.forEach((p, i) => {
             const block = this.questionBlocks.create(p.x, p.y, 'question-block');
             block.refreshBody();
-            block.setData('used', false);
+            block.setData('state', 'active');
             block.setData('id', 'qb_' + i);
+            block.setData('domaine', domaines[i % domaines.length]);
+            block.setData('lastQuestionId', null);
         });
     }
 
     // ---------------- Collision avec bloc-question ----------------
 
     onCollisionBlock(hero, block) {
-        if (this.enQuestion) return;
-        if (block.getData('used')) return;
-        // Frappe par le dessous : la tête du héros touche le bloc.
-        if (!hero.body.blocked.up) return;
+        if (this.enQuestion || this.niveauFini) return;
+        if (block.getData('state') !== 'active') return;
 
-        block.setData('used', true);
+        const hitFromBelow = hero.body.blocked.up;
+        const landedOnTop  = hero.body.blocked.down && block.body.center.y > hero.body.center.y;
+
+        if (!hitFromBelow && !landedOnTop) return;
+
+        block.setData('state', 'enQuestion');
         this.enQuestion = true;
 
-        // Petit rebond visuel : le bloc se soulève brièvement.
-        const yOrigine = block.y;
-        this.tweens.add({
-            targets: block,
-            y: yOrigine - 6,
-            duration: 80,
-            yoyo: true,
-            onComplete: () => {
-                block.y = yOrigine;
-                block.setTexture('used-block');
-                block.refreshBody();
-            }
-        });
+        // Petit rebond visuel quand frappé par le dessous.
+        if (hitFromBelow) {
+            const yOrigine = block.y;
+            this.tweens.add({
+                targets: block,
+                y: yOrigine - 6,
+                duration: 80,
+                yoyo: true,
+                onComplete: () => { block.y = yOrigine; block.refreshBody(); }
+            });
+            hero.setVelocityY(0);
+        }
 
-        // Coupe la vitesse verticale pour éviter que le héros traverse.
-        hero.setVelocityY(0);
-
-        // Réinitialise les inputs maintenus pour ne pas s'envoler après reprise.
+        // Réinitialise les inputs maintenus pour éviter un mouvement parasite
+        // au moment où la modale se ferme.
         this.touchInput.left = this.touchInput.right = this.touchInput.jump = false;
 
-        this.afficherQuestion();
+        this.afficherQuestion(block);
     }
 
-    afficherQuestion() {
-        const question = this.questions.prochaine();
+    afficherQuestion(block) {
+        const domaine = block.getData('domaine');
+        const exclureId = block.getData('lastQuestionId');
+        const question = this.questions.prochaineDuDomaine(domaine, exclureId)
+                      || this.questions.prochaine();
         if (!question) {
+            block.setData('state', 'active');
             this.enQuestion = false;
             return;
         }
+
+        block.setData('lastQuestionId', question.id);
 
         this.physics.world.pause();
 
@@ -196,8 +224,10 @@ class LevelScene extends Phaser.Scene {
                         resultat.tempsRestant,
                         question.tempsSec
                     );
+                    this.resoudreBloc(block);
                 } else {
                     info = this.score.mauvaiseReponse();
+                    this.echouerBloc(block);
                 }
                 this.afficherFloatScore(info);
                 this.majHud();
@@ -207,7 +237,30 @@ class LevelScene extends Phaser.Scene {
         });
     }
 
-    // ---------------- HUD ----------------
+    /** Bonne réponse : le bloc devient gris-brun définitivement. */
+    resoudreBloc(block) {
+        block.setData('state', 'done');
+        block.setTexture('used-block');
+        block.refreshBody();
+    }
+
+    /** Mauvaise réponse / temps écoulé : bloc gris en cooldown, réactivé plus tard. */
+    echouerBloc(block) {
+        block.setData('state', 'cooldown');
+        block.setTexture('used-block');
+        block.refreshBody();
+
+        this.time.delayedCall(CONFIG.delaiReactivationBloc * 1000, () => {
+            if (!block.active) return;
+            if (block.getData('state') !== 'cooldown') return;
+            if (this.niveauFini) return;
+            block.setData('state', 'active');
+            block.setTexture('question-block');
+            block.refreshBody();
+        });
+    }
+
+    // ---------------- HUD & minuteur du tableau ----------------
 
     addHud() {
         const styleBase = {
@@ -218,23 +271,17 @@ class LevelScene extends Phaser.Scene {
             padding: { x: 8, y: 4 }
         };
 
-        this.hudScore = this.add.text(16, 16, 'Score : 0', styleBase)
-            .setScrollFactor(0).setDepth(10);
-        this.hudCristaux = this.add.text(16, 44, 'Cristaux : 0 / ' + CONFIG.cristauxRequisParNiveau, styleBase)
-            .setScrollFactor(0).setDepth(10);
-        this.hudCombo = this.add.text(16, 72, 'Série : ×1,0', styleBase)
-            .setScrollFactor(0).setDepth(10);
+        this.hudScore    = this.add.text(16, 16, 'Score : 0', styleBase).setScrollFactor(0).setDepth(10);
+        this.hudCristaux = this.add.text(16, 44, 'Cristaux : 0 / ' + CONFIG.cristauxRequisParNiveau, styleBase).setScrollFactor(0).setDepth(10);
+        this.hudCombo    = this.add.text(16, 72, 'Série : ×1,0', styleBase).setScrollFactor(0).setDepth(10);
+        this.hudTemps    = this.add.text(this.scale.width - 16, 16, 'Temps : --:--', {
+            ...styleBase, fontSize: '20px'
+        }).setOrigin(1, 0).setScrollFactor(0).setDepth(10);
 
         this.add.text(
             16, this.scale.height - 32,
-            'Saute sur un bloc « ? » pour répondre à une question',
-            {
-                fontFamily: 'Arial, sans-serif',
-                fontSize: '14px',
-                color: '#ffffff',
-                backgroundColor: 'rgba(0, 0, 0, 0.35)',
-                padding: { x: 8, y: 4 }
-            }
+            'Saute sur un bloc « ? » par-dessous ou pose-toi dessus pour répondre',
+            { ...styleBase, fontSize: '14px' }
         ).setScrollFactor(0).setDepth(10);
     }
 
@@ -243,6 +290,78 @@ class LevelScene extends Phaser.Scene {
         this.hudCristaux.setText('Cristaux : ' + this.score.cristaux + ' / ' + CONFIG.cristauxRequisParNiveau);
         this.hudCombo.setText('Série : ' + this.score.formatCombo());
     }
+
+    lancerMinuteurNiveau() {
+        this.tempsRestant = CONFIG.tempsNiveau;
+        this.majHudTemps();
+
+        this.timerNiveau = this.time.addEvent({
+            delay: 1000,
+            loop: true,
+            callback: () => {
+                if (this.enQuestion || this.niveauFini) return;
+                this.tempsRestant -= 1;
+                this.majHudTemps();
+                if (this.tempsRestant <= 0) {
+                    this.terminerNiveau();
+                }
+            }
+        });
+    }
+
+    majHudTemps() {
+        const t = Math.max(0, this.tempsRestant);
+        const mm = Math.floor(t / 60);
+        const ss = t % 60;
+        const txt = mm + ':' + (ss < 10 ? '0' : '') + ss;
+        this.hudTemps.setText('Temps : ' + txt);
+        if (t <= 30) {
+            this.hudTemps.setColor('#ffd166');
+        }
+        if (t <= 10) {
+            this.hudTemps.setColor('#ff6b6b');
+        }
+    }
+
+    // ---------------- Fin de niveau ----------------
+
+    preparerFinDeNiveau() {
+        this.endOverlay     = document.getElementById('end-of-level');
+        this.endScoreEl     = document.getElementById('end-score');
+        this.endCristauxEl  = document.getElementById('end-cristaux');
+        this.endQuestionsEl = document.getElementById('end-questions');
+        this.endRestartBtn  = document.getElementById('end-restart');
+
+        // Évite d'attacher plusieurs fois si la scène redémarre.
+        const nouveauBtn = this.endRestartBtn.cloneNode(true);
+        this.endRestartBtn.parentNode.replaceChild(nouveauBtn, this.endRestartBtn);
+        this.endRestartBtn = nouveauBtn;
+
+        this.endRestartBtn.addEventListener('click', () => {
+            this.endOverlay.hidden = true;
+            this.endOverlay.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+            this.scene.restart();
+        });
+    }
+
+    terminerNiveau() {
+        if (this.niveauFini) return;
+        this.niveauFini = true;
+        if (this.timerNiveau) this.timerNiveau.remove();
+        this.hero.setVelocity(0, 0);
+        this.physics.world.pause();
+
+        this.endScoreEl.textContent     = this.score.score;
+        this.endCristauxEl.textContent  = this.score.cristaux + ' / ' + CONFIG.cristauxRequisParNiveau;
+        this.endQuestionsEl.textContent = this.score.questionsTotales;
+
+        this.endOverlay.hidden = false;
+        this.endOverlay.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+
+    // ---------------- Petits effets ----------------
 
     afficherFloatScore(info) {
         if (!info || info.gain <= 0) return;

@@ -97,6 +97,23 @@ class QuestionManager {
         if (this.banque.length === 0) return null;
         const q = this.banque[this.index % this.banque.length];
         this.index += 1;
+        return this.enrichir(q);
+    }
+
+    /**
+     * Retourne une question d'un domaine précis (utile à la réactivation d'un bloc raté).
+     * Évite de redonner la même question (`exclureId`) si possible.
+     */
+    prochaineDuDomaine(domaine, exclureId = null) {
+        const memeDomaine = this.banque.filter(q => q.domaine === domaine);
+        if (memeDomaine.length === 0) return null;
+        const candidats = memeDomaine.filter(q => q.id !== exclureId);
+        const pool = candidats.length > 0 ? candidats : memeDomaine;
+        const q = pool[Math.floor(Math.random() * pool.length)];
+        return this.enrichir(q);
+    }
+
+    enrichir(q) {
         return Object.assign({}, q, {
             tempsSec: q.tempsSec || this.tempsParPalier(q.palier),
             pointsBase: q.pointsBase || this.pointsParPalier(q.palier)

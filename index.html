@@ -22,6 +22,19 @@
             </div>
         </div>
 
+        <div id="end-of-level" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal__panel modal__panel--end">
+                <h2 class="modal__titre">Temps écoulé !</h2>
+                <p class="modal__sous-titre">Beau parcours, regarde tes résultats :</p>
+                <ul class="modal__recap">
+                    <li>Score : <strong id="end-score">0</strong></li>
+                    <li>Cristaux récoltés : <strong id="end-cristaux">0</strong></li>
+                    <li>Questions répondues : <strong id="end-questions">0</strong></li>
+                </ul>
+                <button id="end-restart" class="modal__continue">Recommencer</button>
+            </div>
+        </div>
+
         <div id="question-modal" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
             <div class="modal__panel">
                 <header class="modal__header">
