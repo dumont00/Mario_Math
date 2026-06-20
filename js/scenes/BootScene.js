@@ -15,6 +15,8 @@ class BootScene extends Phaser.Scene {
         this.createGroundTexture();
         this.createPlatformTexture();
         this.createCloudTexture();
+        this.createQuestionBlockTexture();
+        this.createUsedBlockTexture();
     }
 
     create() {
@@ -78,6 +80,46 @@ class BootScene extends Phaser.Scene {
         g.fillCircle(60, 22, 18);
         g.fillRect(18, 18, 44, 14);
         g.generateTexture('cloud', 80, 40);
+        g.destroy();
+    }
+
+    createQuestionBlockTexture() {
+        const g = this.make.graphics({ x: 0, y: 0, add: false });
+        // Cadre extérieur
+        g.fillStyle(0x8a5a1c, 1);
+        g.fillRect(0, 0, 40, 40);
+        // Intérieur jaune
+        g.fillStyle(0xf6c244, 1);
+        g.fillRect(3, 3, 34, 34);
+        // Rivets coins
+        g.fillStyle(0xa56f23, 1);
+        g.fillRect(4, 4, 4, 4);
+        g.fillRect(32, 4, 4, 4);
+        g.fillRect(4, 32, 4, 4);
+        g.fillRect(32, 32, 4, 4);
+        // Point d'interrogation (forme simple)
+        g.fillStyle(0xffffff, 1);
+        g.fillRect(15, 11, 10, 4);   // chapeau
+        g.fillRect(23, 13, 4, 6);    // côté droit haut
+        g.fillRect(19, 17, 8, 4);    // courbe milieu
+        g.fillRect(19, 19, 4, 6);    // tige verticale
+        g.fillRect(19, 28, 4, 4);    // point en bas
+        g.generateTexture('question-block', 40, 40);
+        g.destroy();
+    }
+
+    createUsedBlockTexture() {
+        const g = this.make.graphics({ x: 0, y: 0, add: false });
+        g.fillStyle(0x6e5a3c, 1);
+        g.fillRect(0, 0, 40, 40);
+        g.fillStyle(0x8a7250, 1);
+        g.fillRect(3, 3, 34, 34);
+        g.fillStyle(0x5d4a30, 1);
+        g.fillRect(4, 4, 4, 4);
+        g.fillRect(32, 4, 4, 4);
+        g.fillRect(4, 32, 4, 4);
+        g.fillRect(32, 32, 4, 4);
+        g.generateTexture('used-block', 40, 40);
         g.destroy();
     }
 }

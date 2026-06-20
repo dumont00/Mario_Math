@@ -21,10 +21,37 @@
                 <button id="btn-jump" class="touch-btn touch-btn--jump" aria-label="Sauter">SAUT</button>
             </div>
         </div>
+
+        <div id="question-modal" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal__panel">
+                <header class="modal__header">
+                    <span class="modal__domain" id="modal-domain">Domaine</span>
+                    <span class="modal__stars" id="modal-stars">★</span>
+                </header>
+
+                <div class="modal__timebar" aria-hidden="true">
+                    <div class="modal__timebar-fill" id="modal-timebar-fill"></div>
+                </div>
+
+                <p class="modal__question" id="modal-question">Énoncé…</p>
+
+                <div class="modal__choices" id="modal-choices"></div>
+
+                <div class="modal__feedback" id="modal-feedback" hidden>
+                    <p class="modal__feedback-text" id="modal-feedback-text"></p>
+                    <p class="modal__explication" id="modal-explication"></p>
+                </div>
+
+                <button class="modal__continue" id="modal-continue" hidden>Continuer</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
     <script src="config.js"></script>
+    <script src="js/ScoreManager.js"></script>
+    <script src="js/QuestionManager.js"></script>
+    <script src="js/QuestionModal.js"></script>
     <script src="js/scenes/BootScene.js"></script>
     <script src="js/scenes/LevelScene.js"></script>
     <script src="js/main.js"></script>

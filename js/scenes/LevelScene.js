@@ -1,9 +1,8 @@
-/* global Phaser, CONFIG */
+/* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal */
 
-// Phase 1 — Moteur de base : un héros court et saute, entre en collision
-// avec le sol et des plateformes, et la caméra le suit. Les blocs-questions,
-// la modale, la sauvegarde et la pédagogie arriveront dans les phases
-// suivantes (voir Specifications §18).
+// Phase 2 — Blocs-questions et modale. Le héros frappe un bloc « ? » par
+// le dessous, le jeu se met en pause, une question chronométrée s'ouvre,
+// puis le score et le combo se mettent à jour selon Specifications §9.
 
 class LevelScene extends Phaser.Scene {
     constructor() {
@@ -17,9 +16,15 @@ class LevelScene extends Phaser.Scene {
 
         this.physics.world.setBounds(0, 0, m.largeurMonde, m.hauteurMonde);
 
+        this.score = new ScoreManager();
+        this.questions = new QuestionManager();
+        this.modale = new QuestionModal();
+        this.enQuestion = false;
+
         this.addBackgroundDecor();
 
         this.platforms = this.physics.add.staticGroup();
+        this.questionBlocks = this.physics.add.staticGroup();
         this.buildLevel();
 
         const groundTopY = m.hauteurMonde - 48;
@@ -29,6 +34,13 @@ class LevelScene extends Phaser.Scene {
         this.hero.body.setSize(28, 44).setOffset(2, 2);
 
         this.physics.add.collider(this.hero, this.platforms);
+        this.physics.add.collider(
+            this.hero,
+            this.questionBlocks,
+            (hero, block) => this.onCollisionBlock(hero, block),
+            null,
+            this
+        );
 
         this.cameras.main.setBounds(0, 0, m.largeurMonde, m.hauteurMonde);
         this.cameras.main.startFollow(this.hero, true, 0.12, 0.12);
@@ -45,6 +57,7 @@ class LevelScene extends Phaser.Scene {
 
     update() {
         if (!this.hero || !this.hero.body) return;
+        if (this.enQuestion) return;
 
         const vitesse = CONFIG.moteur.vitesseHero;
         const wantLeft = this.cursors.left.isDown || this.keyA.isDown || this.touchInput.left;
@@ -70,6 +83,8 @@ class LevelScene extends Phaser.Scene {
         }
     }
 
+    // ---------------- Décor & niveau ----------------
+
     addBackgroundDecor() {
         const m = CONFIG.moteur;
         for (let x = 100; x < m.largeurMonde; x += 360) {
@@ -80,7 +95,7 @@ class LevelScene extends Phaser.Scene {
 
     buildLevel() {
         const m = CONFIG.moteur;
-        const groundY = m.hauteurMonde - 24; // sol = 48 px de haut, centré
+        const groundY = m.hauteurMonde - 24;
 
         for (let x = 32; x < m.largeurMonde; x += 64) {
             this.platforms.create(x, groundY, 'ground').refreshBody();
@@ -102,26 +117,156 @@ class LevelScene extends Phaser.Scene {
             { x: 2860, y: 260 },
             { x: 3060, y: 360 }
         ];
-
         platformSpots.forEach(p => {
             this.platforms.create(p.x, p.y, 'platform').refreshBody();
         });
+
+        // Blocs « ? » placés à hauteur de saut, suffisamment espacés.
+        const questionSpots = [
+            { x: 220, y: 350 },
+            { x: 540, y: 280 },
+            { x: 780, y: 220 },
+            { x: 1180, y: 200 },
+            { x: 1380, y: 300 },
+            { x: 1620, y: 240 },
+            { x: 1840, y: 180 },
+            { x: 2080, y: 230 },
+            { x: 2300, y: 300 },
+            { x: 2520, y: 240 },
+            { x: 2760, y: 180 },
+            { x: 2960, y: 200 }
+        ];
+        questionSpots.forEach((p, i) => {
+            const block = this.questionBlocks.create(p.x, p.y, 'question-block');
+            block.refreshBody();
+            block.setData('used', false);
+            block.setData('id', 'qb_' + i);
+        });
     }
 
+    // ---------------- Collision avec bloc-question ----------------
+
+    onCollisionBlock(hero, block) {
+        if (this.enQuestion) return;
+        if (block.getData('used')) return;
+        // Frappe par le dessous : la tête du héros touche le bloc.
+        if (!hero.body.blocked.up) return;
+
+        block.setData('used', true);
+        this.enQuestion = true;
+
+        // Petit rebond visuel : le bloc se soulève brièvement.
+        const yOrigine = block.y;
+        this.tweens.add({
+            targets: block,
+            y: yOrigine - 6,
+            duration: 80,
+            yoyo: true,
+            onComplete: () => {
+                block.y = yOrigine;
+                block.setTexture('used-block');
+                block.refreshBody();
+            }
+        });
+
+        // Coupe la vitesse verticale pour éviter que le héros traverse.
+        hero.setVelocityY(0);
+
+        // Réinitialise les inputs maintenus pour ne pas s'envoler après reprise.
+        this.touchInput.left = this.touchInput.right = this.touchInput.jump = false;
+
+        this.afficherQuestion();
+    }
+
+    afficherQuestion() {
+        const question = this.questions.prochaine();
+        if (!question) {
+            this.enQuestion = false;
+            return;
+        }
+
+        this.physics.world.pause();
+
+        this.modale.afficher(question, {
+            onTermine: (resultat) => {
+                let info;
+                if (resultat.correct) {
+                    info = this.score.bonneReponse(
+                        question.pointsBase,
+                        resultat.tempsRestant,
+                        question.tempsSec
+                    );
+                } else {
+                    info = this.score.mauvaiseReponse();
+                }
+                this.afficherFloatScore(info);
+                this.majHud();
+                this.physics.world.resume();
+                this.enQuestion = false;
+            }
+        });
+    }
+
+    // ---------------- HUD ----------------
+
     addHud() {
-        const hint = this.add.text(
-            16,
-            16,
-            'Flèches ou ◀ ▶ pour bouger — Espace ou SAUT pour sauter',
+        const styleBase = {
+            fontFamily: 'Arial, sans-serif',
+            fontSize: '18px',
+            color: '#ffffff',
+            backgroundColor: 'rgba(0, 0, 0, 0.35)',
+            padding: { x: 8, y: 4 }
+        };
+
+        this.hudScore = this.add.text(16, 16, 'Score : 0', styleBase)
+            .setScrollFactor(0).setDepth(10);
+        this.hudCristaux = this.add.text(16, 44, 'Cristaux : 0 / ' + CONFIG.cristauxRequisParNiveau, styleBase)
+            .setScrollFactor(0).setDepth(10);
+        this.hudCombo = this.add.text(16, 72, 'Série : ×1,0', styleBase)
+            .setScrollFactor(0).setDepth(10);
+
+        this.add.text(
+            16, this.scale.height - 32,
+            'Saute sur un bloc « ? » pour répondre à une question',
             {
                 fontFamily: 'Arial, sans-serif',
-                fontSize: '16px',
+                fontSize: '14px',
                 color: '#ffffff',
                 backgroundColor: 'rgba(0, 0, 0, 0.35)',
                 padding: { x: 8, y: 4 }
             }
-        );
-        hint.setScrollFactor(0).setDepth(10);
+        ).setScrollFactor(0).setDepth(10);
+    }
+
+    majHud() {
+        this.hudScore.setText('Score : ' + this.score.score);
+        this.hudCristaux.setText('Cristaux : ' + this.score.cristaux + ' / ' + CONFIG.cristauxRequisParNiveau);
+        this.hudCombo.setText('Série : ' + this.score.formatCombo());
+    }
+
+    afficherFloatScore(info) {
+        if (!info || info.gain <= 0) return;
+        const txt = this.add.text(
+            this.hero.x, this.hero.y - 40,
+            '+' + info.gain,
+            {
+                fontFamily: 'Arial, sans-serif',
+                fontSize: '22px',
+                color: '#ffe66d',
+                fontStyle: 'bold',
+                stroke: '#000000',
+                strokeThickness: 3
+            }
+        ).setOrigin(0.5).setDepth(20);
+
+        this.tweens.add({
+            targets: txt,
+            y: txt.y - 40,
+            alpha: 0,
+            duration: 900,
+            ease: 'Cubic.easeOut',
+            onComplete: () => txt.destroy()
+        });
     }
 
     bindTouchControls() {
