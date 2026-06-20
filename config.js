@@ -1,0 +1,43 @@
+// Configuration centralisée du jeu — voir Specifications §20 et CLAUDE.md §6.
+// Tous les réglages sont regroupés ici pour faciliter les ajustements.
+
+window.CONFIG = {
+    // Secondes par question, selon le palier de difficulté.
+    temps: { facile: 20, moyen: 15, difficile: 12 },
+
+    // Points de base accordés selon le palier.
+    pointsBase: { facile: 100, moyen: 150, difficile: 200 },
+
+    // Multiplicateur de combo (séries de bonnes réponses).
+    comboMax: 2.0,
+    comboPas: 0.1,
+
+    // Plateforme : vies et points de contrôle.
+    viesParNiveau: 3,
+
+    // Objectifs de fin de niveau / boss.
+    cristauxRequisParNiveau: 6,
+    bossCible: 8,
+    bossTempsTotal: 90,
+
+    // Domaines actifs (peuvent être désactivés depuis les Options).
+    domainesActifs: [
+        'Arithmétique',
+        'Géométrie',
+        'Mesure',
+        'Statistique',
+        'Probabilité'
+    ],
+
+    // Ajustement adaptatif de la difficulté (phase avancée).
+    adaptatif: true,
+
+    // Réglages moteur / plateforme (Phase 1).
+    moteur: {
+        largeurMonde: 3200,
+        hauteurMonde: 540,
+        vitesseHero: 220,
+        impulsionSaut: 560,
+        gravite: 1200
+    }
+};

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Les Aventures du Calcul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="phaser-game"></div>
+
+        <div id="touch-controls" class="touch-controls">
+            <div class="touch-controls__left">
+                <button id="btn-left" class="touch-btn" aria-label="Aller à gauche">◀</button>
+                <button id="btn-right" class="touch-btn" aria-label="Aller à droite">▶</button>
+            </div>
+            <div class="touch-controls__right">
+                <button id="btn-jump" class="touch-btn touch-btn--jump" aria-label="Sauter">SAUT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+    <script src="config.js"></script>
+    <script src="js/scenes/BootScene.js"></script>
+    <script src="js/scenes/LevelScene.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
