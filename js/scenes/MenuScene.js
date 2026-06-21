@@ -24,10 +24,12 @@ class MenuScene extends Phaser.Scene {
         const overlay = document.getElementById('menu-screen');
         const btnAv   = document.getElementById('menu-btn-aventure');
         const btnMu   = document.getElementById('menu-btn-mult');
+        const btnDf   = document.getElementById('menu-btn-defi');
 
         // Reset des écouteurs (clones).
         const av = btnAv.cloneNode(true); btnAv.parentNode.replaceChild(av, btnAv);
         const mu = btnMu.cloneNode(true); btnMu.parentNode.replaceChild(mu, btnMu);
+        const df = btnDf.cloneNode(true); btnDf.parentNode.replaceChild(df, btnDf);
 
         av.addEventListener('click', () => {
             this._fermer(overlay);
@@ -36,6 +38,10 @@ class MenuScene extends Phaser.Scene {
         mu.addEventListener('click', () => {
             this._fermer(overlay);
             this.scene.start('LevelScene', { mode: 'mult' });
+        });
+        df.addEventListener('click', () => {
+            this._fermer(overlay);
+            this.scene.start('DefiScene', { defiLevel: 1 });
         });
 
         overlay.hidden = false;

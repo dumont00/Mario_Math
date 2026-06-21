@@ -1,4 +1,4 @@
-/* global Phaser, CONFIG, BootScene, MenuScene, LevelScene, ResultScene */
+/* global Phaser, CONFIG, BootScene, MenuScene, LevelScene, DefiScene, ResultScene */
 
 (function () {
     'use strict';
@@ -20,7 +20,7 @@
                 debug: false
             }
         },
-        scene: [BootScene, MenuScene, LevelScene, ResultScene]
+        scene: [BootScene, MenuScene, LevelScene, DefiScene, ResultScene]
     };
 
     window.game = new Phaser.Game(config);

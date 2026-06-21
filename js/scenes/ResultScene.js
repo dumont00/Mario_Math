@@ -18,6 +18,11 @@ class ResultScene extends Phaser.Scene {
         this.recap            = data.recap || [];
         this.succes           = !!data.succes;
         this.tempsEcoule      = !!data.tempsEcoule;
+        this.abandon          = !!data.abandon;
+        // Spécifique au mode défi
+        this.defiLevel        = data.defiLevel || 1;
+        this.streakCible      = data.streakCible || 5;
+        this.meilleureSerie   = data.meilleureSerie || 0;
     }
 
     create() {
@@ -38,7 +43,18 @@ class ResultScene extends Phaser.Scene {
             : 0;
 
         // Titre + sous-titre selon l'issue et le mode.
-        if (this.mode === 'mult') {
+        if (this.mode === 'defi') {
+            if (this.succes) {
+                elTitre.textContent = 'Niveau ' + this.defiLevel + ' du défi réussi !';
+                elSous.textContent  = 'Tu as enchaîné ' + this.streakCible + ' bonnes réponses d\'affilée. Champion !';
+            } else if (this.abandon) {
+                elTitre.textContent = 'Défi quitté';
+                elSous.textContent  = 'Meilleure série : ' + this.meilleureSerie + '. On peut retenter quand tu veux.';
+            } else {
+                elTitre.textContent = 'Défi terminé';
+                elSous.textContent  = 'Meilleure série : ' + this.meilleureSerie + '.';
+            }
+        } else if (this.mode === 'mult') {
             elTitre.textContent = this.succes
                 ? 'Tables réussies !'
                 : 'Entraînement terminé';
@@ -69,10 +85,27 @@ class ResultScene extends Phaser.Scene {
             elEtoiles.appendChild(s);
         }
 
-        elNiveau.textContent = this.mode === 'mult' ? 'Tables ×' : this.niveau;
-        elScore.textContent  = this.score;
-        elCrist.textContent  = this.cristaux + ' / ' + this.cristauxRequis;
-        elPct.textContent    = pct + ' %';
+        // Récap : on reconstruit la liste pour adapter les libellés au mode.
+        const ul = elNiveau.closest('ul');
+        if (this.mode === 'defi') {
+            ul.innerHTML =
+                '<li>Niveau du défi : <strong id="result-niveau">' + this.defiLevel + '</strong></li>' +
+                '<li>Score : <strong id="result-score">' + this.score + '</strong></li>' +
+                '<li>Meilleure série : <strong id="result-cristaux">' + this.meilleureSerie + ' / ' + this.streakCible + '</strong></li>' +
+                '<li>Questions répondues : <strong id="result-pourcent">' + this.questionsTotales + '</strong></li>';
+        } else if (this.mode === 'mult') {
+            ul.innerHTML =
+                '<li>Mode : <strong id="result-niveau">Tables ×</strong></li>' +
+                '<li>Score : <strong id="result-score">' + this.score + '</strong></li>' +
+                '<li>Réussies : <strong id="result-cristaux">' + this.cristaux + ' / ' + this.cristauxRequis + '</strong></li>' +
+                '<li>Réussite : <strong id="result-pourcent">' + pct + ' %</strong></li>';
+        } else {
+            ul.innerHTML =
+                '<li>Niveau : <strong id="result-niveau">' + this.niveau + '</strong></li>' +
+                '<li>Score : <strong id="result-score">' + this.score + '</strong></li>' +
+                '<li>Cristaux : <strong id="result-cristaux">' + this.cristaux + ' / ' + this.cristauxRequis + '</strong></li>' +
+                '<li>Réussite : <strong id="result-pourcent">' + pct + ' %</strong></li>';
+        }
 
         // Récap par domaine.
         elDoms.innerHTML = '';
@@ -98,8 +131,38 @@ class ResultScene extends Phaser.Scene {
         btnNext.parentNode.replaceChild(newNext, btnNext);
 
         const niveauMax = 20;
+        const defiMax   = 10;
 
-        if (this.mode === 'mult') {
+        if (this.mode === 'defi') {
+            // Rejouer ce niveau, Niveau suivant si succès, sinon Retour au menu
+            newReplay.textContent = 'Rejouer';
+            if (this.succes && this.defiLevel < defiMax) {
+                newNext.textContent = 'Niveau ' + (this.defiLevel + 1) + ' ▶ (' + ((this.defiLevel + 1) * 5) + ' d\'affilée)';
+                newNext.disabled = false;
+                newNext.style.opacity = '';
+                newNext.style.cursor = '';
+            } else if (this.succes && this.defiLevel >= defiMax) {
+                newNext.textContent = '🏆 Maître du défi — Menu';
+                newNext.disabled = false;
+            } else {
+                newNext.textContent = 'Retour au menu';
+                newNext.disabled = false;
+                newNext.style.opacity = '';
+                newNext.style.cursor = '';
+            }
+            newReplay.addEventListener('click', () => {
+                this._fermer(overlay);
+                this.scene.start('DefiScene', { defiLevel: this.defiLevel });
+            });
+            newNext.addEventListener('click', () => {
+                this._fermer(overlay);
+                if (this.succes && this.defiLevel < defiMax) {
+                    this.scene.start('DefiScene', { defiLevel: this.defiLevel + 1 });
+                } else {
+                    this.scene.start('MenuScene');
+                }
+            });
+        } else if (this.mode === 'mult') {
             newNext.textContent = 'Retour au menu';
             newNext.disabled = false;
             newNext.style.opacity = '';
