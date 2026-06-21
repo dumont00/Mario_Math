@@ -23,8 +23,12 @@ class QuestionManager {
             ? this.toutes.filter(q => this.sousDomaines.includes(q.sousDomaine))
             : this.toutes;
 
-        this.recentlyServed = [];
-        this.maxRecent = 25;
+        // Anti-répétition + biais vers les questions les moins vues.
+        // Ces structures peuvent être passées par l'appelant pour persister
+        // entre les niveaux d'une même session (registry Phaser).
+        this.recentlyServed = options.recentlyServed || [];
+        this.seenCount      = options.seenCount || {};
+        this.maxRecent      = options.maxRecent || 80;
 
         this.fileDomaines = this._melange(this.domainesActifs.slice());
 
@@ -73,9 +77,22 @@ class QuestionManager {
         }
         if (pool.length === 0) return null;
 
-        const q = pool[Math.floor(Math.random() * pool.length)];
+        // Parmi les candidats, on prend la (les) question(s) la(les) moins
+        // vue(s) globalement, avec un tirage aléatoire pour départager.
+        const q = this._pickLeastSeen(pool);
         this._noterServie(q.id);
         return this._enrichir(q);
+    }
+
+    _pickLeastSeen(pool) {
+        let minCount = Infinity;
+        let candidats = [];
+        for (const q of pool) {
+            const c = this.seenCount[q.id] || 0;
+            if (c < minCount) { minCount = c; candidats = [q]; }
+            else if (c === minCount) { candidats.push(q); }
+        }
+        return candidats[Math.floor(Math.random() * candidats.length)];
     }
 
     /** À appeler après chaque réponse pour le suivi adaptatif. */
@@ -101,6 +118,7 @@ class QuestionManager {
         if (this.recentlyServed.length > this.maxRecent) {
             this.recentlyServed.shift();
         }
+        this.seenCount[id] = (this.seenCount[id] || 0) + 1;
     }
 
     _melange(arr) {

@@ -36,12 +36,33 @@ class LevelScene extends Phaser.Scene {
             console.warn('Banque de questions vide ou non chargée.');
         }
 
-        this.score     = new ScoreManager();
+        this.score = new ScoreManager();
+
+        // Mémoires partagées entre niveaux : on stocke les questions vues
+        // récemment et leur nombre d'apparitions dans le registry Phaser
+        // pour éviter qu'un nouveau niveau ne reproduise les mêmes
+        // questions qu'au niveau précédent.
+        const memKey = 'mem_' + (this.mode === 'mult' ? 'mult' : 'aventure');
+        const memoire = this.game.registry.get(memKey) || {
+            recentlyServed: [],
+            seenCount: {}
+        };
+
         this.questions = new QuestionManager(banque, {
             niveau:         this.niveau,
             domainesActifs: this.mode === 'mult' ? ['Arithmétique'] : CONFIG.domainesActifs,
             sousDomaines:   this.mode === 'mult' ? ['Tables de multiplication'] : null,
-            adaptatif:      CONFIG.adaptatif
+            adaptatif:      CONFIG.adaptatif,
+            recentlyServed: memoire.recentlyServed,
+            seenCount:      memoire.seenCount,
+            maxRecent:      80
+        });
+
+        // Le QM mute ces structures par référence — on conserve la même
+        // mémoire entre les niveaux d'une même session.
+        this.game.registry.set(memKey, {
+            recentlyServed: this.questions.recentlyServed,
+            seenCount:      this.questions.seenCount
         });
         this.modale       = new QuestionModal();
         this.enQuestion   = false;
