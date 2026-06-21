@@ -20,10 +20,11 @@ class LevelScene extends Phaser.Scene {
         data = data || {};
         this.mode   = data.mode || 'aventure';
         this.niveau = data.niveau || 1;
-        // Le mode entraînement utilise un monde plus large pour héberger 30 blocs.
-        this.largeurMonde = this.mode === 'mult' ? 5600 : CONFIG.moteur.largeurMonde;
+        // Les modes entraînement utilisent un monde plus large pour héberger 30 blocs.
+        const entrainement = (this.mode === 'mult' || this.mode === 'orthographe');
+        this.largeurMonde = entrainement ? 5600 : CONFIG.moteur.largeurMonde;
         // Pas de minuteur en entraînement (l'objectif est la maîtrise, pas la vitesse).
-        this.tempsNiveauTotal = this.mode === 'mult' ? null : CONFIG.tempsNiveau;
+        this.tempsNiveauTotal = entrainement ? null : CONFIG.tempsNiveau;
     }
 
     create() {
@@ -48,10 +49,21 @@ class LevelScene extends Phaser.Scene {
             seenCount: {}
         };
 
+        // Filtres selon le mode.
+        let domainesActifs = CONFIG.domainesActifs;
+        let sousDomaines = null;
+        if (this.mode === 'mult') {
+            domainesActifs = ['Arithmétique'];
+            sousDomaines   = ['Tables de multiplication'];
+        } else if (this.mode === 'orthographe') {
+            domainesActifs = ['Français'];
+            sousDomaines   = ['Orthographe'];
+        }
+
         this.questions = new QuestionManager(banque, {
             niveau:         this.niveau,
-            domainesActifs: this.mode === 'mult' ? ['Arithmétique'] : CONFIG.domainesActifs,
-            sousDomaines:   this.mode === 'mult' ? ['Tables de multiplication'] : null,
+            domainesActifs: domainesActifs,
+            sousDomaines:   sousDomaines,
             adaptatif:      CONFIG.adaptatif,
             recentlyServed: memoire.recentlyServed,
             seenCount:      memoire.seenCount,
@@ -157,8 +169,8 @@ class LevelScene extends Phaser.Scene {
             this.platforms.create(x, groundY, 'ground').refreshBody();
         }
 
-        if (this.mode === 'mult') {
-            this._buildMultLevel();
+        if (this.mode === 'mult' || this.mode === 'orthographe') {
+            this._buildEntrainementLevel(this.mode === 'mult' ? 'Arithmétique' : 'Français');
         } else {
             this._buildAventureLevel();
         }
@@ -195,11 +207,9 @@ class LevelScene extends Phaser.Scene {
         });
     }
 
-    _buildMultLevel() {
-        // Monde élargi : plateformes régulières tous les ~320 px en marches,
-        // ~340 mid, ~360 high, sur toute la largeur (5600 px).
-        const step = 320;
-        for (let x = 200; x < this.largeurMonde - 200; x += step) {
+    _buildEntrainementLevel(domaineUnique) {
+        // Monde élargi : plateformes régulières en marches sur toute la largeur.
+        for (let x = 200; x < this.largeurMonde - 200; x += 320) {
             this.platforms.create(x, 450, 'platform').refreshBody();
         }
         for (let x = 380; x < this.largeurMonde - 200; x += 340) {
@@ -209,7 +219,7 @@ class LevelScene extends Phaser.Scene {
             this.platforms.create(x, 250, 'platform').refreshBody();
         }
 
-        // 30 blocs « ? » disposés en alternance de hauteurs (391, 291, 191).
+        // 30 blocs « ? » disposés en alternance de hauteurs.
         const hauteurs = [390, 290, 190];
         const nbBlocs = 30;
         const start = 260;
@@ -221,7 +231,7 @@ class LevelScene extends Phaser.Scene {
             block.refreshBody();
             block.setData('state', 'active');
             block.setData('id', 'qb_' + i);
-            block.setData('domaine', 'Arithmétique');
+            block.setData('domaine', domaineUnique);
             block.setData('lastQuestionId', null);
         }
     }
@@ -371,9 +381,10 @@ class LevelScene extends Phaser.Scene {
             padding: { x: 8, y: 4 }
         };
 
-        const titre = this.mode === 'mult'
-            ? 'Tables de multiplication'
-            : 'Niveau ' + this.niveau;
+        let titre;
+        if (this.mode === 'mult')         titre = 'Tables de multiplication';
+        else if (this.mode === 'orthographe') titre = 'Orthographe — Écoute et écris';
+        else                              titre = 'Niveau ' + this.niveau;
 
         this.hudNiveau   = this.add.text(16, 16, titre, { ...styleBase, fontStyle: 'bold' })
             .setScrollFactor(0).setDepth(10);
@@ -388,9 +399,10 @@ class LevelScene extends Phaser.Scene {
             ).setOrigin(1, 0).setScrollFactor(0).setDepth(10);
         }
 
-        const aide = this.mode === 'mult'
-            ? 'Réponds aux 30 multiplications pour ouvrir le portail'
-            : 'Réponds à toutes les questions pour ouvrir le portail';
+        let aide;
+        if (this.mode === 'mult')          aide = 'Réponds aux 30 multiplications pour ouvrir le portail';
+        else if (this.mode === 'orthographe') aide = 'Écris les 30 mots dictés pour ouvrir le portail';
+        else                                aide = 'Réponds à toutes les questions pour ouvrir le portail';
         this.add.text(
             16, this.scale.height - 32, aide,
             { ...styleBase, fontSize: '14px' }

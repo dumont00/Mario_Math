@@ -40,6 +40,10 @@
                         <span class="menu__btn-titre">Défi — Série de bonnes réponses</span>
                         <span class="menu__btn-detail">Niveau 1 : 5 d'affilée, niveau 2 : 10, niveau 3 : 15… Pas de plateforme.</span>
                     </button>
+                    <button id="menu-btn-ortho" class="menu__btn">
+                        <span class="menu__btn-titre">Entraînement — Orthographe</span>
+                        <span class="menu__btn-detail">Écoute le mot et écris-le. ~110 mots de la 4ᵉ année.</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -85,6 +89,17 @@
 
                 <div class="modal__choices" id="modal-choices"></div>
 
+                <div class="modal__saisie" id="modal-saisie" hidden>
+                    <button type="button" class="modal__audio" id="modal-audio">🔊 Réécouter</button>
+                    <div class="modal__saisie-row">
+                        <input type="text" class="modal__input" id="modal-input"
+                               autocomplete="off" autocorrect="off"
+                               autocapitalize="off" spellcheck="false"
+                               placeholder="Tape le mot…" />
+                        <button type="button" class="modal__valider" id="modal-valider">Valider</button>
+                    </div>
+                </div>
+
                 <div class="modal__feedback" id="modal-feedback" hidden>
                     <p class="modal__feedback-text" id="modal-feedback-text"></p>
                     <p class="modal__explication" id="modal-explication"></p>
@@ -98,6 +113,7 @@
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
     <script src="config.js"></script>
     <script src="js/Visuels.js"></script>
+    <script src="js/Voix.js"></script>
     <script src="js/ScoreManager.js"></script>
     <script src="js/QuestionManager.js"></script>
     <script src="js/QuestionModal.js"></script>

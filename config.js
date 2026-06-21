@@ -32,7 +32,8 @@ window.CONFIG = {
         'Géométrie',
         'Mesure',
         'Statistique',
-        'Probabilité'
+        'Probabilité',
+        'Français'
     ],
 
     // Ajustement adaptatif de la difficulté (phase avancée).

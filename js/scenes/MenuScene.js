@@ -25,11 +25,13 @@ class MenuScene extends Phaser.Scene {
         const btnAv   = document.getElementById('menu-btn-aventure');
         const btnMu   = document.getElementById('menu-btn-mult');
         const btnDf   = document.getElementById('menu-btn-defi');
+        const btnOr   = document.getElementById('menu-btn-ortho');
 
         // Reset des écouteurs (clones).
         const av = btnAv.cloneNode(true); btnAv.parentNode.replaceChild(av, btnAv);
         const mu = btnMu.cloneNode(true); btnMu.parentNode.replaceChild(mu, btnMu);
         const df = btnDf.cloneNode(true); btnDf.parentNode.replaceChild(df, btnDf);
+        const or = btnOr.cloneNode(true); btnOr.parentNode.replaceChild(or, btnOr);
 
         av.addEventListener('click', () => {
             this._fermer(overlay);
@@ -42,6 +44,10 @@ class MenuScene extends Phaser.Scene {
         df.addEventListener('click', () => {
             this._fermer(overlay);
             this.scene.start('DefiScene', { defiLevel: 1 });
+        });
+        or.addEventListener('click', () => {
+            this._fermer(overlay);
+            this.scene.start('LevelScene', { mode: 'orthographe' });
         });
 
         overlay.hidden = false;

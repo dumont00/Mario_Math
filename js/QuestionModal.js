@@ -1,7 +1,8 @@
-/* global Visuels */
+/* global Visuels, Voix */
 
 // Encapsule la modale DOM : ouverture, fermeture, minuteur visuel,
-// rendu des `visuel` (CLAUDE.md §5), gestion des clics et bouton « Continuer ».
+// rendu des `visuel` (CLAUDE.md §5), gestion des clics (choix) ou de la
+// saisie texte avec audio (type 'saisie').
 //
 // API :
 //   const modal = new QuestionModal();
@@ -18,6 +19,10 @@ class QuestionModal {
         this.elVisuel      = document.getElementById('modal-visuel');
         this.elQuestion    = document.getElementById('modal-question');
         this.elChoices     = document.getElementById('modal-choices');
+        this.elSaisie      = document.getElementById('modal-saisie');
+        this.elAudio       = document.getElementById('modal-audio');
+        this.elInput       = document.getElementById('modal-input');
+        this.elValider     = document.getElementById('modal-valider');
         this.elFeedback    = document.getElementById('modal-feedback');
         this.elFeedbackTxt = document.getElementById('modal-feedback-text');
         this.elExplication = document.getElementById('modal-explication');
@@ -31,6 +36,19 @@ class QuestionModal {
         this.repondu      = false;
 
         this.elContinue.addEventListener('click', () => this.terminer());
+
+        // Touche Entrée dans le champ texte → validation.
+        this.elInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !this.repondu && !this.elInput.disabled) {
+                e.preventDefault();
+                this.validerSaisie();
+            }
+        });
+        this.elValider.addEventListener('click', () => {
+            if (this.repondu || this.elValider.disabled) return;
+            this.validerSaisie();
+        });
+        this.elAudio.addEventListener('click', () => this._jouerAudio());
     }
 
     afficher(question, { onTermine } = {}) {
@@ -57,15 +75,32 @@ class QuestionModal {
 
         this.elQuestion.textContent = question.question;
 
-        this.elChoices.innerHTML = '';
-        question.choix.forEach((choix) => {
-            const btn = document.createElement('button');
-            btn.className = 'modal__choice';
-            btn.type = 'button';
-            btn.textContent = choix;
-            btn.addEventListener('click', () => this.choisir(choix, btn));
-            this.elChoices.appendChild(btn);
-        });
+        // Choix vs saisie selon le type de question.
+        const estSaisie = question.type === 'saisie';
+        if (estSaisie) {
+            this.elChoices.hidden = true;
+            this.elChoices.innerHTML = '';
+            this.elSaisie.hidden = false;
+            this.elInput.value = '';
+            this.elInput.disabled = false;
+            this.elInput.classList.remove('is-correct', 'is-wrong');
+            this.elValider.disabled = false;
+            this.elAudio.disabled = false;
+            // Le focus aide à enchaîner ; sur mobile, ça ouvre le clavier.
+            setTimeout(() => this.elInput.focus(), 60);
+        } else {
+            this.elSaisie.hidden = true;
+            this.elChoices.hidden = false;
+            this.elChoices.innerHTML = '';
+            (question.choix || []).forEach((choix) => {
+                const btn = document.createElement('button');
+                btn.className = 'modal__choice';
+                btn.type = 'button';
+                btn.textContent = choix;
+                btn.addEventListener('click', () => this.choisir(choix, btn));
+                this.elChoices.appendChild(btn);
+            });
+        }
 
         this.elFeedback.hidden = true;
         this.elFeedback.classList.remove('is-good', 'is-bad');
@@ -79,6 +114,13 @@ class QuestionModal {
         this.root.setAttribute('aria-hidden', 'false');
         document.body.classList.add('modal-open');
 
+        // Audio : tente la lecture automatique du mot pour les questions
+        // d'écoute (peut être bloquée sur mobile au tout premier coup ;
+        // le bouton 🔊 Réécouter permet de relancer).
+        if (estSaisie && question.audio) {
+            setTimeout(() => this._jouerAudio(), 120);
+        }
+
         const debut = performance.now();
         this.timerId = setInterval(() => {
             const ecoule = (performance.now() - debut) / 1000;
@@ -88,6 +130,12 @@ class QuestionModal {
                 this.tempsEcoule();
             }
         }, 50);
+    }
+
+    _jouerAudio() {
+        if (!this.question || !this.question.audio) return;
+        if (typeof Voix === 'undefined') return;
+        Voix.dire(this.question.mot || this.question.reponse);
     }
 
     majTimebar() {
@@ -104,9 +152,6 @@ class QuestionModal {
 
         const correct = choixJoueur === this.question.reponse;
 
-        // On désactive tous les choix. On surligne en vert seulement si la
-        // réponse est bonne, jamais celle qui aurait été correcte pour ne
-        // pas « donner » la solution en cas d'erreur. L'explication suffit.
         Array.from(this.elChoices.children).forEach((b) => {
             b.disabled = true;
             if (correct && b === btn) {
@@ -120,10 +165,35 @@ class QuestionModal {
         this._resultat = { correct, choixJoueur, tempsRestant: this.tempsRestant };
     }
 
+    validerSaisie() {
+        if (this.repondu) return;
+        this.repondu = true;
+        this.arreterTimer();
+
+        const saisie = this.elInput.value;
+        const correct = this._comparerSaisie(saisie, this.question.reponse);
+
+        this.elInput.disabled = true;
+        this.elValider.disabled = true;
+        this.elInput.classList.add(correct ? 'is-correct' : 'is-wrong');
+
+        this.afficherFeedback(correct);
+        this._resultat = { correct, choixJoueur: saisie, tempsRestant: this.tempsRestant };
+    }
+
+    _comparerSaisie(saisie, attendu) {
+        // Tolère : espaces avant/après, casse. Les accents et traits d'union
+        // doivent correspondre (c'est l'orthographe).
+        const norm = (s) => String(s || '').trim().toLowerCase().normalize('NFC');
+        return norm(saisie) === norm(attendu);
+    }
+
     tempsEcoule() {
         this.repondu = true;
         this.arreterTimer();
         Array.from(this.elChoices.children).forEach((b) => { b.disabled = true; });
+        this.elInput.disabled = true;
+        this.elValider.disabled = true;
         this.afficherFeedback(false, true);
         this._resultat = { correct: false, choixJoueur: null, tempsRestant: 0, tempsEcoule: true };
     }

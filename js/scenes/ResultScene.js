@@ -61,6 +61,13 @@ class ResultScene extends Phaser.Scene {
             elSous.textContent  = this.succes
                 ? 'Tu as répondu aux 30 multiplications. Tu deviens champion des tables !'
                 : 'Bel effort. On peut recommencer pour aller plus loin.';
+        } else if (this.mode === 'orthographe') {
+            elTitre.textContent = this.succes
+                ? 'Orthographe réussie !'
+                : 'Dictée terminée';
+            elSous.textContent  = this.succes
+                ? 'Tu as bien écrit les 30 mots. Champion de l\'orthographe !'
+                : 'Bel effort. Recommence pour mémoriser les mots.';
         } else {
             if (this.succes) {
                 elTitre.textContent = 'Niveau ' + this.niveau + ' réussi !';
@@ -98,6 +105,12 @@ class ResultScene extends Phaser.Scene {
                 '<li>Mode : <strong id="result-niveau">Tables ×</strong></li>' +
                 '<li>Score : <strong id="result-score">' + this.score + '</strong></li>' +
                 '<li>Réussies : <strong id="result-cristaux">' + this.cristaux + ' / ' + this.cristauxRequis + '</strong></li>' +
+                '<li>Réussite : <strong id="result-pourcent">' + pct + ' %</strong></li>';
+        } else if (this.mode === 'orthographe') {
+            ul.innerHTML =
+                '<li>Mode : <strong id="result-niveau">Orthographe</strong></li>' +
+                '<li>Score : <strong id="result-score">' + this.score + '</strong></li>' +
+                '<li>Mots bien écrits : <strong id="result-cristaux">' + this.cristaux + ' / ' + this.cristauxRequis + '</strong></li>' +
                 '<li>Réussite : <strong id="result-pourcent">' + pct + ' %</strong></li>';
         } else {
             ul.innerHTML =
@@ -162,14 +175,15 @@ class ResultScene extends Phaser.Scene {
                     this.scene.start('MenuScene');
                 }
             });
-        } else if (this.mode === 'mult') {
+        } else if (this.mode === 'mult' || this.mode === 'orthographe') {
+            const modeEnt = this.mode;
             newNext.textContent = 'Retour au menu';
             newNext.disabled = false;
             newNext.style.opacity = '';
             newNext.style.cursor = '';
             newReplay.addEventListener('click', () => {
                 this._fermer(overlay);
-                this.scene.start('LevelScene', { mode: 'mult' });
+                this.scene.start('LevelScene', { mode: modeEnt });
             });
             newNext.addEventListener('click', () => {
                 this._fermer(overlay);
