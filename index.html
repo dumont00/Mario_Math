@@ -45,6 +45,33 @@
                         <span class="menu__btn-detail">Écoute le mot et écris-le. ~110 mots de la 4ᵉ année.</span>
                     </button>
                 </div>
+
+                <button id="menu-btn-reglages" class="menu__reglages">⚙  Réglages</button>
+            </div>
+        </div>
+
+        <div id="reglages-screen" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal__panel modal__panel--reglages">
+                <h2 class="modal__titre">Réglages</h2>
+                <p class="modal__sous-titre">Choisis ce qui apparaît dans les questions.</p>
+
+                <h3 class="reglages__titre">Disciplines actives</h3>
+                <p class="reglages__hint">Décoche pour mettre l'accent sur certaines matières seulement.</p>
+                <div class="reglages__domaines" id="reglages-domaines"></div>
+
+                <h3 class="reglages__titre">Orthographe</h3>
+                <label class="reglages__option">
+                    <input type="checkbox" id="reglages-accents">
+                    <span>
+                        <strong>Ne pas tenir compte des accents</strong>
+                        <span class="reglages__hint">Utile si les accents sont difficiles à taper. Les tirets restent requis.</span>
+                    </span>
+                </label>
+
+                <div class="result__actions">
+                    <button id="reglages-annuler"     class="modal__continue modal__continue--sec">Annuler</button>
+                    <button id="reglages-enregistrer" class="modal__continue">Enregistrer</button>
+                </div>
             </div>
         </div>
 
@@ -112,6 +139,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
     <script src="config.js"></script>
+    <script src="js/Reglages.js"></script>
     <script src="js/Visuels.js"></script>
     <script src="js/Voix.js"></script>
     <script src="js/ScoreManager.js"></script>

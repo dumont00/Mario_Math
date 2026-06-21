@@ -182,9 +182,17 @@ class QuestionModal {
     }
 
     _comparerSaisie(saisie, attendu) {
-        // Tolère : espaces avant/après, casse. Les accents et traits d'union
-        // doivent correspondre (c'est l'orthographe).
-        const norm = (s) => String(s || '').trim().toLowerCase().normalize('NFC');
+        // Tolère : espaces avant/après, casse. Les traits d'union doivent
+        // correspondre. Les accents doivent correspondre, SAUF si l'option
+        // « Ignorer les accents » est active dans les réglages.
+        const ignorerAccents = !!(window.CONFIG && window.CONFIG.ignorerAccents);
+        const norm = (s) => {
+            let n = String(s || '').trim().toLowerCase().normalize('NFC');
+            if (ignorerAccents) {
+                n = n.normalize('NFD').replace(/[̀-ͯ]/g, '');
+            }
+            return n;
+        };
         return norm(saisie) === norm(attendu);
     }
 

@@ -439,6 +439,102 @@ body.modal-open .touch-controls {
     color: #4a5a8a;
 }
 
+.menu__reglages {
+    margin-top: 16px;
+    background: transparent;
+    border: 1px solid #c2cbe3;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #4a5a8a;
+    cursor: pointer;
+    font-family: inherit;
+    align-self: center;
+    transition: background 0.1s ease, color 0.1s ease;
+}
+
+.menu__reglages:hover {
+    background: #eef2fb;
+    color: #1d2746;
+}
+
+.modal__panel--reglages {
+    max-width: 560px;
+    text-align: left;
+}
+
+.modal__panel--reglages .modal__titre,
+.modal__panel--reglages .modal__sous-titre {
+    text-align: center;
+}
+
+.reglages__titre {
+    margin: 18px 0 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4a5a8a;
+}
+
+.reglages__hint {
+    font-size: 13px;
+    color: #6b7aa1;
+    margin: 0 0 10px;
+}
+
+.reglages__domaines {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 14px;
+}
+
+.reglages__domaines label,
+.reglages__option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #f5f7fc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #1d2746;
+    line-height: 1.35;
+}
+
+.reglages__domaines input[type="checkbox"],
+.reglages__option input[type="checkbox"] {
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    accent-color: #4a90e2;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.reglages__option {
+    margin-bottom: 16px;
+}
+
+.reglages__option > span {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.reglages__option strong {
+    color: #1d2746;
+    font-weight: 600;
+}
+
+.reglages__option .reglages__hint {
+    margin: 0;
+}
+
+@media (max-width: 520px) {
+    .reglages__domaines { grid-template-columns: 1fr; }
+}
+
 .modal__titre {
     font-size: 28px;
     margin-bottom: 6px;
