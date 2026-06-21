@@ -7545,5 +7545,6283 @@
     "explication": "Multiplier par 10 ajoute un zéro : 12 × 10 = 120.",
     "tempsSec": 15,
     "pointsBase": 150
+  },
+  {
+    "id": "geo_p1_001",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un triangle ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "2",
+      "3"
+    ],
+    "reponse": "3",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Tri = 3.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_002",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un quadrilatère ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Quadri = 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_003",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un carré ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "5",
+      "3",
+      "4"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Tous les côtés sont égaux, il y en a 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_004",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un rectangle ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Quatre côtés, comme un cadre.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_005",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un pentagone ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
+    "reponse": "5",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Penta = 5.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_006",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un hexagone ?",
+    "visuel": null,
+    "choix": [
+      "8",
+      "7",
+      "6",
+      "5"
+    ],
+    "reponse": "6",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Hexa = 6 (comme une alvéole).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_007",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un octogone ?",
+    "visuel": null,
+    "choix": [
+      "7",
+      "6",
+      "8",
+      "10"
+    ],
+    "reponse": "8",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Octo = 8 (comme un panneau STOP).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_008",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un losange ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "3",
+      "6",
+      "4"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Quatre côtés égaux.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_009",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés a un trapèze ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "5",
+      "4",
+      "6"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Quadrilatère = 4 côtés.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_010",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de faces a un cube ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "12",
+      "8",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Comme un dé : 6 faces.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_011",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de sommets a un cube ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "12",
+      "8",
+      "6"
+    ],
+    "reponse": "8",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Aux coins du cube : 8 sommets.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_012",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien d'arêtes a un cube ?",
+    "visuel": null,
+    "choix": [
+      "12",
+      "8",
+      "6",
+      "10"
+    ],
+    "reponse": "12",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "12 arêtes : 4 en haut, 4 en bas, 4 verticales.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_013",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de sommets a un triangle ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "3",
+      "2",
+      "4"
+    ],
+    "reponse": "3",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Un sommet à chaque coin.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_014",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de sommets a un rectangle ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "6",
+      "3",
+      "5"
+    ],
+    "reponse": "4",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Un sommet à chaque coin.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_015",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de faces a une pyramide à base carrée ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "8",
+      "6",
+      "4"
+    ],
+    "reponse": "5",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "1 carré en bas + 4 triangles.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_016",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel polygone a 3 côtés ?",
+    "visuel": null,
+    "choix": [
+      "Hexagone",
+      "Pentagone",
+      "Carré",
+      "Triangle"
+    ],
+    "reponse": "Triangle",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Tri = trois.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_017",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel polygone a 5 côtés ?",
+    "visuel": null,
+    "choix": [
+      "Pentagone",
+      "Hexagone",
+      "Triangle",
+      "Carré"
+    ],
+    "reponse": "Pentagone",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Penta = cinq.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_018",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel polygone a 6 côtés ?",
+    "visuel": null,
+    "choix": [
+      "Pentagone",
+      "Hexagone",
+      "Carré",
+      "Octogone"
+    ],
+    "reponse": "Hexagone",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Hexa = six.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_019",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Comment appelle-t-on un angle qui forme un coin parfait ?",
+    "visuel": null,
+    "choix": [
+      "Angle plat",
+      "Angle droit",
+      "Angle obtus",
+      "Angle aigu"
+    ],
+    "reponse": "Angle droit",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Comme le coin d'une feuille.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_020",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de paires de côtés parallèles a un rectangle ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "reponse": "2",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Les côtés opposés sont parallèles.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_021",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés égaux a un triangle équilatéral ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "0",
+      "1",
+      "2"
+    ],
+    "reponse": "3",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Tous les côtés sont égaux.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_022",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de côtés égaux a un triangle isocèle ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ],
+    "reponse": "2",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Exactement 2 côtés égaux.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_023",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Une boule est un solide qui ressemble à…",
+    "visuel": null,
+    "choix": [
+      "Une sphère",
+      "Un cube",
+      "Une pyramide",
+      "Un cylindre"
+    ],
+    "reponse": "Une sphère",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Une sphère est une boule.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_024",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un solide qui roule comme une boîte de conserve s'appelle…",
+    "visuel": null,
+    "choix": [
+      "Un cube",
+      "Un cône",
+      "Une sphère",
+      "Un cylindre"
+    ],
+    "reponse": "Un cylindre",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Un cylindre a deux faces rondes.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_025",
+    "domaine": "Géométrie",
+    "sousDomaine": "Figures et solides",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de faces a une sphère ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "1",
+      "0",
+      "2"
+    ],
+    "reponse": "0",
+    "indice": "Pense à la définition de la figure.",
+    "explication": "Une sphère n'a pas de face plate.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q01",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          2,
+          4
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(2, 5)",
+      "(4, 2)",
+      "(3, 4)",
+      "(2, 4)"
+    ],
+    "reponse": "(2, 4)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 2 et à la ligne 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q02",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          4,
+          2
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(2, 4)",
+      "(5, 2)",
+      "(4, 2)",
+      "(4, 3)"
+    ],
+    "reponse": "(4, 2)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 4 et à la ligne 2.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q03",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          5,
+          4
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(6, 4)",
+      "(5, 4)",
+      "(4, 5)",
+      "(5, 5)"
+    ],
+    "reponse": "(5, 4)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 5 et à la ligne 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q04",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          1,
+          2
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(2, 1)",
+      "(2, 2)",
+      "(1, 2)",
+      "(1, 3)"
+    ],
+    "reponse": "(1, 2)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 1 et à la ligne 2.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q05",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          3,
+          3
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(3, 3)",
+      "(4, 3)",
+      "(3, 4)"
+    ],
+    "reponse": "(3, 3)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 3 et à la ligne 3.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q06",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          4,
+          4
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(5, 4)",
+      "(4, 5)",
+      "(4, 4)"
+    ],
+    "reponse": "(4, 4)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 4 et à la ligne 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q07",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          5,
+          1
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(1, 5)",
+      "(5, 1)",
+      "(5, 2)",
+      "(6, 1)"
+    ],
+    "reponse": "(5, 1)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 5 et à la ligne 1.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p1_q08",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          1,
+          4
+        ]
+      },
+      "taille": 6
+    },
+    "choix": [
+      "(1, 5)",
+      "(4, 1)",
+      "(2, 4)",
+      "(1, 4)"
+    ],
+    "reponse": "(1, 4)",
+    "indice": "Lis d'abord la colonne (axe horizontal), puis la ligne.",
+    "explication": "Le point A est à la colonne 1 et à la ligne 4.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "geo_p2_001",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de degrés mesure un angle droit ?",
+    "visuel": null,
+    "choix": [
+      "60°",
+      "45°",
+      "180°",
+      "90°"
+    ],
+    "reponse": "90°",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Un quart de tour = 90°.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_002",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de degrés mesure un angle plat ?",
+    "visuel": null,
+    "choix": [
+      "360°",
+      "270°",
+      "90°",
+      "180°"
+    ],
+    "reponse": "180°",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Demi-tour = 180°.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_003",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de degrés mesure un tour complet ?",
+    "visuel": null,
+    "choix": [
+      "90°",
+      "180°",
+      "360°",
+      "270°"
+    ],
+    "reponse": "360°",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Tour entier = 360°.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_004",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Un angle qui mesure moins de 90° s'appelle…",
+    "visuel": null,
+    "choix": [
+      "Angle plat",
+      "Angle aigu",
+      "Angle obtus",
+      "Angle droit"
+    ],
+    "reponse": "Angle aigu",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Aigu = pointu, plus petit que droit.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_005",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Un angle qui mesure entre 90° et 180° s'appelle…",
+    "visuel": null,
+    "choix": [
+      "Angle plat",
+      "Angle obtus",
+      "Angle droit",
+      "Angle aigu"
+    ],
+    "reponse": "Angle obtus",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Obtus = plus large que droit.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_006",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'angles droits y a-t-il dans un rectangle ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "4",
+      "1",
+      "2"
+    ],
+    "reponse": "4",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Chaque coin est droit.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_007",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de faces a un prisme à base triangulaire ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "6",
+      "4",
+      "5"
+    ],
+    "reponse": "5",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "2 triangles + 3 rectangles = 5.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_008",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'arêtes a un prisme à base triangulaire ?",
+    "visuel": null,
+    "choix": [
+      "9",
+      "6",
+      "8",
+      "12"
+    ],
+    "reponse": "9",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "3 en haut + 3 en bas + 3 verticales.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_009",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de sommets a un prisme à base triangulaire ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "5",
+      "8",
+      "4"
+    ],
+    "reponse": "6",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "3 sommets en haut + 3 en bas.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_010",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de faces a une pyramide à base triangulaire ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ],
+    "reponse": "4",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "1 base + 3 faces triangulaires.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_011",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de sommets a une pyramide à base carrée ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "5",
+      "8",
+      "6"
+    ],
+    "reponse": "5",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "4 sommets en bas + 1 au sommet.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_012",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'axes de symétrie a un carré ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "reponse": "4",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "2 diagonales + 2 médianes.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_013",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'axes de symétrie a un rectangle (non carré) ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "reponse": "2",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Les deux médianes.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_014",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'axes de symétrie a un triangle équilatéral ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "3",
+      "2",
+      "6"
+    ],
+    "reponse": "3",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Un par sommet, qui passe au milieu du côté opposé.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_015",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'axes de symétrie a un cercle ?",
+    "visuel": null,
+    "choix": [
+      "Infini",
+      "1",
+      "2",
+      "4"
+    ],
+    "reponse": "Infini",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Toute droite passant par le centre.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_016",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Un quadrilatère avec 4 côtés égaux mais sans angle droit s'appelle…",
+    "visuel": null,
+    "choix": [
+      "Trapèze",
+      "Losange",
+      "Carré",
+      "Rectangle"
+    ],
+    "reponse": "Losange",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Côtés égaux mais coins non droits.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_017",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Un quadrilatère avec exactement une paire de côtés parallèles est un…",
+    "visuel": null,
+    "choix": [
+      "Trapèze",
+      "Rectangle",
+      "Carré",
+      "Losange"
+    ],
+    "reponse": "Trapèze",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Une seule paire parallèle.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_018",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel polygone régulier ressemble à un panneau STOP ?",
+    "visuel": null,
+    "choix": [
+      "Pentagone",
+      "Octogone",
+      "Heptagone",
+      "Hexagone"
+    ],
+    "reponse": "Octogone",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Le STOP a 8 côtés.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_019",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Une figure qui a tous ses côtés et tous ses angles égaux est dite…",
+    "visuel": null,
+    "choix": [
+      "Irrégulière",
+      "Symétrique",
+      "Régulière",
+      "Concave"
+    ],
+    "reponse": "Régulière",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "Polygone régulier = tous égaux.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_020",
+    "domaine": "Géométrie",
+    "sousDomaine": "Propriétés des figures",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de plans de symétrie a un cube ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "12",
+      "6",
+      "9"
+    ],
+    "reponse": "9",
+    "indice": "Pense aux propriétés étudiées en classe.",
+    "explication": "3 horizontaux + 6 obliques.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q01",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          4,
+          6
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(3, 7)",
+      "(4, 6)",
+      "(6, 4)",
+      "(5, 5)"
+    ],
+    "reponse": "(4, 6)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (4, 6).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q02",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          2,
+          4
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(1, 5)",
+      "(3, 3)",
+      "(2, 4)",
+      "(4, 2)"
+    ],
+    "reponse": "(2, 4)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (2, 4).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q03",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          5,
+          4
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(4, 5)",
+      "(4, 5)",
+      "(6, 3)",
+      "(5, 4)"
+    ],
+    "reponse": "(5, 4)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (5, 4).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q04",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          2,
+          6
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(1, 7)",
+      "(2, 6)",
+      "(3, 5)",
+      "(6, 2)"
+    ],
+    "reponse": "(2, 6)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (2, 6).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q05",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          8,
+          8
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(8, 8)",
+      "(9, 7)",
+      "(7, 1)",
+      "(7, 9)"
+    ],
+    "reponse": "(8, 8)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (8, 8).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q06",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          6,
+          7
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(5, 8)",
+      "(6, 7)",
+      "(7, 6)",
+      "(7, 6)"
+    ],
+    "reponse": "(6, 7)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (6, 7).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q07",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          1,
+          8
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(6, 2)",
+      "(2, 7)",
+      "(8, 1)",
+      "(1, 8)"
+    ],
+    "reponse": "(1, 8)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (1, 8).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p2_q08",
+    "domaine": "Géométrie",
+    "sousDomaine": "Repérage sur quadrillage",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelles sont les coordonnées du point A ?",
+    "visuel": {
+      "type": "quadrillage",
+      "point": {
+        "A": [
+          6,
+          7
+        ]
+      },
+      "taille": 9
+    },
+    "choix": [
+      "(5, 8)",
+      "(6, 7)",
+      "(7, 6)",
+      "(7, 6)"
+    ],
+    "reponse": "(6, 7)",
+    "indice": "Colonne d'abord, puis ligne.",
+    "explication": "Le point A est en (6, 7).",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "geo_p3_001",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "La somme des angles d'un triangle vaut…",
+    "visuel": null,
+    "choix": [
+      "360°",
+      "180°",
+      "90°",
+      "120°"
+    ],
+    "reponse": "180°",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "Toujours 180° pour un triangle.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_002",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "La somme des angles d'un quadrilatère vaut…",
+    "visuel": null,
+    "choix": [
+      "270°",
+      "360°",
+      "90°",
+      "180°"
+    ],
+    "reponse": "360°",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "Quatre coins = 360°.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_003",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si deux angles d'un triangle mesurent 60° et 80°, combien mesure le troisième ?",
+    "visuel": null,
+    "choix": [
+      "40°",
+      "60°",
+      "30°",
+      "20°"
+    ],
+    "reponse": "40°",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "180 - 60 - 80 = 40°.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_004",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si deux angles d'un triangle mesurent 50° et 70°, combien mesure le troisième ?",
+    "visuel": null,
+    "choix": [
+      "60°",
+      "80°",
+      "70°",
+      "50°"
+    ],
+    "reponse": "60°",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "180 - 50 - 70 = 60°.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_005",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si deux angles d'un triangle mesurent 90° et 45°, combien mesure le troisième ?",
+    "visuel": null,
+    "choix": [
+      "55°",
+      "30°",
+      "45°",
+      "60°"
+    ],
+    "reponse": "45°",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "180 - 90 - 45 = 45°.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_006",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien d'angles obtus peut avoir un triangle ?",
+    "visuel": null,
+    "choix": [
+      "0",
+      "3",
+      "2",
+      "1"
+    ],
+    "reponse": "1",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "Au plus un, sinon la somme dépasse 180°.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_007",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un triangle qui a un angle droit s'appelle…",
+    "visuel": null,
+    "choix": [
+      "Triangle équilatéral",
+      "Triangle obtus",
+      "Triangle isocèle",
+      "Triangle rectangle"
+    ],
+    "reponse": "Triangle rectangle",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "Rectangle = avec un angle droit.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_008",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans un triangle équilatéral, chaque angle mesure…",
+    "visuel": null,
+    "choix": [
+      "90°",
+      "60°",
+      "45°",
+      "30°"
+    ],
+    "reponse": "60°",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "180 ÷ 3 = 60°.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_009",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de diagonales a un quadrilatère ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "1",
+      "4",
+      "0"
+    ],
+    "reponse": "2",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "Deux diagonales qui se croisent.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_010",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de diagonales a un pentagone ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "6",
+      "4",
+      "3"
+    ],
+    "reponse": "5",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "5 sommets → 5 diagonales.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_011",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de diagonales a un hexagone ?",
+    "visuel": null,
+    "choix": [
+      "9",
+      "8",
+      "6",
+      "12"
+    ],
+    "reponse": "9",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "Formule : n(n-3)/2 = 6·3/2 = 9.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_012",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de faces a un prisme à base hexagonale ?",
+    "visuel": null,
+    "choix": [
+      "8",
+      "10",
+      "7",
+      "6"
+    ],
+    "reponse": "8",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "2 hexagones + 6 rectangles.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_013",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien d'arêtes a un prisme à base hexagonale ?",
+    "visuel": null,
+    "choix": [
+      "24",
+      "18",
+      "12",
+      "15"
+    ],
+    "reponse": "18",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "6+6+6 = 18 arêtes.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_014",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de sommets a un prisme à base hexagonale ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "10",
+      "12",
+      "8"
+    ],
+    "reponse": "12",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "6 en haut + 6 en bas.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_015",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien d'arêtes a une pyramide à base carrée ?",
+    "visuel": null,
+    "choix": [
+      "8",
+      "6",
+      "4",
+      "12"
+    ],
+    "reponse": "8",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "4 en bas + 4 montantes vers la pointe.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_016",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Une figure ayant un seul axe de symétrie peut être…",
+    "visuel": null,
+    "choix": [
+      "Rectangle non carré",
+      "Triangle isocèle non équilatéral",
+      "Hexagone régulier",
+      "Carré"
+    ],
+    "reponse": "Triangle isocèle non équilatéral",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "L'isocèle a 1 axe (la médiane principale).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_017",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Le point central du repère a comme coordonnées…",
+    "visuel": null,
+    "choix": [
+      "(1, 1)",
+      "(0, 0)",
+      "(0, 1)",
+      "(1, 0)"
+    ],
+    "reponse": "(0, 0)",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "L'origine est (0, 0).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_018",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur un plan, le point (3, 5) est…",
+    "visuel": null,
+    "choix": [
+      "3 à gauche, 5 en bas",
+      "3 à droite, 5 en haut",
+      "5 à droite, 3 en haut",
+      "3 en haut, 5 à droite"
+    ],
+    "reponse": "3 à droite, 5 en haut",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "L'abscisse en premier (horizontal), puis l'ordonnée.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_019",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si on glisse le point (2, 3) de 4 vers la droite, on obtient…",
+    "visuel": null,
+    "choix": [
+      "(-2, 3)",
+      "(6, 7)",
+      "(2, 7)",
+      "(6, 3)"
+    ],
+    "reponse": "(6, 3)",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "On ajoute 4 à l'abscisse.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "geo_p3_020",
+    "domaine": "Géométrie",
+    "sousDomaine": "Raisonnement géométrique",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si on glisse le point (5, 4) de 2 vers le bas, on obtient…",
+    "visuel": null,
+    "choix": [
+      "(7, 4)",
+      "(5, 6)",
+      "(3, 4)",
+      "(5, 2)"
+    ],
+    "reponse": "(5, 2)",
+    "indice": "Décompose, compte les éléments un par un.",
+    "explication": "On retire 2 à l'ordonnée.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p1_001",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 mètre = ? centimètres",
+    "visuel": null,
+    "choix": [
+      "50",
+      "100",
+      "1000",
+      "10"
+    ],
+    "reponse": "100",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 m = 100 cm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_002",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 mètre = ? décimètres",
+    "visuel": null,
+    "choix": [
+      "5",
+      "10",
+      "100",
+      "1000"
+    ],
+    "reponse": "10",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 m = 10 dm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_003",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 décimètre = ? centimètres",
+    "visuel": null,
+    "choix": [
+      "10",
+      "1",
+      "100",
+      "50"
+    ],
+    "reponse": "10",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 dm = 10 cm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_004",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 centimètre = ? millimètres",
+    "visuel": null,
+    "choix": [
+      "100",
+      "50",
+      "1",
+      "10"
+    ],
+    "reponse": "10",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 cm = 10 mm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_005",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 kilogramme = ? grammes",
+    "visuel": null,
+    "choix": [
+      "100",
+      "1000",
+      "10",
+      "500"
+    ],
+    "reponse": "1000",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 kg = 1000 g.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_006",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 litre = ? millilitres",
+    "visuel": null,
+    "choix": [
+      "10",
+      "500",
+      "1000",
+      "100"
+    ],
+    "reponse": "1000",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 L = 1000 mL.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_007",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 heure = ? minutes",
+    "visuel": null,
+    "choix": [
+      "30",
+      "60",
+      "24",
+      "100"
+    ],
+    "reponse": "60",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 h = 60 min.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_008",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 minute = ? secondes",
+    "visuel": null,
+    "choix": [
+      "60",
+      "6",
+      "100",
+      "30"
+    ],
+    "reponse": "60",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 min = 60 s.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_009",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 jour = ? heures",
+    "visuel": null,
+    "choix": [
+      "60",
+      "24",
+      "48",
+      "12"
+    ],
+    "reponse": "24",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Une journée complète.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_010",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 semaine = ? jours",
+    "visuel": null,
+    "choix": [
+      "30",
+      "14",
+      "5",
+      "7"
+    ],
+    "reponse": "7",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Du lundi au dimanche.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_011",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 mois (en moyenne) compte environ … jours",
+    "visuel": null,
+    "choix": [
+      "365",
+      "30",
+      "60",
+      "7"
+    ],
+    "reponse": "30",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "30 jours en moyenne.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_012",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "1 année compte … jours (année normale)",
+    "visuel": null,
+    "choix": [
+      "365",
+      "12",
+      "360",
+      "52"
+    ],
+    "reponse": "365",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "365 jours.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_013",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel objet mesure environ 1 mètre ?",
+    "visuel": null,
+    "choix": [
+      "Un crayon",
+      "Une fourmi",
+      "Un immeuble",
+      "Une porte (largeur)"
+    ],
+    "reponse": "Une porte (largeur)",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "1 m, c'est à peu près la largeur d'une porte.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_014",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel instrument mesure des longueurs ?",
+    "visuel": null,
+    "choix": [
+      "Une règle",
+      "Une balance",
+      "Un thermomètre",
+      "Un chronomètre"
+    ],
+    "reponse": "Une règle",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Règle ou mètre à ruban.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_015",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel instrument mesure une masse ?",
+    "visuel": null,
+    "choix": [
+      "Un thermomètre",
+      "Une balance",
+      "Un verre doseur",
+      "Une règle"
+    ],
+    "reponse": "Une balance",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "La balance pèse.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_016",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel instrument mesure la température ?",
+    "visuel": null,
+    "choix": [
+      "Une horloge",
+      "Une règle",
+      "Un thermomètre",
+      "Une balance"
+    ],
+    "reponse": "Un thermomètre",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Thermomètre.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_017",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de saisons y a-t-il dans une année ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "5",
+      "12",
+      "4"
+    ],
+    "reponse": "4",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Printemps, été, automne, hiver.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_018",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de minutes y a-t-il dans une demi-heure ?",
+    "visuel": null,
+    "choix": [
+      "15",
+      "45",
+      "60",
+      "30"
+    ],
+    "reponse": "30",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Moitié de 60 = 30.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_019",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de minutes y a-t-il dans un quart d'heure ?",
+    "visuel": null,
+    "choix": [
+      "20",
+      "5",
+      "30",
+      "15"
+    ],
+    "reponse": "15",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "Quart de 60 = 15.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_020",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Le périmètre d'un carré de côté 4 cm vaut…",
+    "visuel": null,
+    "choix": [
+      "8 cm",
+      "12 cm",
+      "20 cm",
+      "16 cm"
+    ],
+    "reponse": "16 cm",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "4 × 4 = 16 cm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_021",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Le périmètre d'un carré de côté 6 cm vaut…",
+    "visuel": null,
+    "choix": [
+      "24 cm",
+      "12 cm",
+      "18 cm",
+      "30 cm"
+    ],
+    "reponse": "24 cm",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "4 × 6 = 24 cm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p1_022",
+    "domaine": "Mesure",
+    "sousDomaine": "Unités et faits",
+    "palier": 1,
+    "type": "choix",
+    "question": "Le périmètre d'un carré de côté 10 cm vaut…",
+    "visuel": null,
+    "choix": [
+      "100 cm",
+      "40 cm",
+      "30 cm",
+      "20 cm"
+    ],
+    "reponse": "40 cm",
+    "indice": "Souviens-toi des unités étudiées en classe.",
+    "explication": "4 × 10 = 40 cm.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "mes_p2_001",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Convertis 250 cm en mètres.",
+    "visuel": null,
+    "choix": [
+      "2,5 m",
+      "25 m",
+      "250 m",
+      "0,25 m"
+    ],
+    "reponse": "2,5 m",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "250 ÷ 100 = 2,5 m.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_002",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Convertis 1500 m en kilomètres.",
+    "visuel": null,
+    "choix": [
+      "150 km",
+      "1,5 km",
+      "0,15 km",
+      "15 km"
+    ],
+    "reponse": "1,5 km",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "1500 ÷ 1000 = 1,5 km.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_003",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Convertis 3 kg en grammes.",
+    "visuel": null,
+    "choix": [
+      "300 000 g",
+      "300 g",
+      "3000 g",
+      "30 g"
+    ],
+    "reponse": "3000 g",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "3 × 1000 = 3000 g.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_004",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Convertis 1,5 L en millilitres.",
+    "visuel": null,
+    "choix": [
+      "15 mL",
+      "1500 mL",
+      "15 000 mL",
+      "150 mL"
+    ],
+    "reponse": "1500 mL",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "1,5 × 1000 = 1500 mL.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_005",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Convertis 2 h 30 min en minutes.",
+    "visuel": null,
+    "choix": [
+      "120 min",
+      "150 min",
+      "230 min",
+      "90 min"
+    ],
+    "reponse": "150 min",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "120 + 30 = 150 min.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_006",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Convertis 90 minutes en heures et minutes.",
+    "visuel": null,
+    "choix": [
+      "1 h 90",
+      "90 min",
+      "1 h 30 min",
+      "9 h"
+    ],
+    "reponse": "1 h 30 min",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "60 min + 30 min.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_007",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Périmètre d'un rectangle 8 cm × 5 cm ?",
+    "visuel": null,
+    "choix": [
+      "40 cm",
+      "30 cm",
+      "13 cm",
+      "26 cm"
+    ],
+    "reponse": "26 cm",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "(8 + 5) × 2 = 26.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_008",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Périmètre d'un rectangle 12 cm × 7 cm ?",
+    "visuel": null,
+    "choix": [
+      "19 cm",
+      "38 cm",
+      "84 cm",
+      "44 cm"
+    ],
+    "reponse": "38 cm",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "(12 + 7) × 2 = 38.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_009",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Périmètre d'un triangle équilatéral de côté 9 cm ?",
+    "visuel": null,
+    "choix": [
+      "9 cm",
+      "30 cm",
+      "27 cm",
+      "18 cm"
+    ],
+    "reponse": "27 cm",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "3 × 9 = 27.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_010",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Aire d'un rectangle 4 × 6 (en carrés-unités) ?",
+    "visuel": null,
+    "choix": [
+      "10",
+      "24",
+      "30",
+      "18"
+    ],
+    "reponse": "24",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "4 × 6 = 24.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_011",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Aire d'un rectangle 7 × 3 (en carrés-unités) ?",
+    "visuel": null,
+    "choix": [
+      "21",
+      "10",
+      "14",
+      "24"
+    ],
+    "reponse": "21",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "7 × 3 = 21.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_012",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Aire d'un carré de côté 5 (en carrés-unités) ?",
+    "visuel": null,
+    "choix": [
+      "30",
+      "25",
+      "10",
+      "20"
+    ],
+    "reponse": "25",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "5 × 5 = 25.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_013",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Aire d'un carré de côté 8 (en carrés-unités) ?",
+    "visuel": null,
+    "choix": [
+      "16",
+      "32",
+      "64",
+      "48"
+    ],
+    "reponse": "64",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "8 × 8 = 64.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_014",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Une émission commence à 19 h 15 et dure 45 min. Quand finit-elle ?",
+    "visuel": null,
+    "choix": [
+      "19 h 45",
+      "19 h 60",
+      "20 h 15",
+      "20 h 00"
+    ],
+    "reponse": "20 h 00",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "15 + 45 = 60 min = 1 heure.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_015",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Une recette demande 1,2 kg de farine. Combien de grammes ?",
+    "visuel": null,
+    "choix": [
+      "120 g",
+      "12 000 g",
+      "12 g",
+      "1200 g"
+    ],
+    "reponse": "1200 g",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "1,2 × 1000 = 1200 g.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_016",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien de millilitres dans 0,75 L ?",
+    "visuel": null,
+    "choix": [
+      "7,5 mL",
+      "75 mL",
+      "750 mL",
+      "7500 mL"
+    ],
+    "reponse": "750 mL",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "0,75 × 1000 = 750 mL.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_017",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Une voiture roule à 60 km/h. Combien de km en 2 h ?",
+    "visuel": null,
+    "choix": [
+      "60 km",
+      "120 km",
+      "180 km",
+      "30 km"
+    ],
+    "reponse": "120 km",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "60 × 2 = 120 km.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_018",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel poids est le plus lourd ?",
+    "visuel": null,
+    "choix": [
+      "999 g",
+      "500 g",
+      "100 g",
+      "1 kg"
+    ],
+    "reponse": "1 kg",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "1 kg = 1000 g.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_019",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quelle est la plus grande longueur ?",
+    "visuel": null,
+    "choix": [
+      "999 m",
+      "10 m",
+      "1 km",
+      "100 m"
+    ],
+    "reponse": "1 km",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "1 km = 1000 m.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p2_020",
+    "domaine": "Mesure",
+    "sousDomaine": "Conversions et calculs",
+    "palier": 2,
+    "type": "choix",
+    "question": "Périmètre d'un pentagone régulier de côté 8 cm ?",
+    "visuel": null,
+    "choix": [
+      "30 cm",
+      "48 cm",
+      "40 cm",
+      "13 cm"
+    ],
+    "reponse": "40 cm",
+    "indice": "Convertis dans la bonne unité avant de calculer.",
+    "explication": "5 × 8 = 40.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "mes_p3_001",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un terrain rectangulaire mesure 15 m × 8 m. Son périmètre ?",
+    "visuel": null,
+    "choix": [
+      "120 m",
+      "23 m",
+      "46 m",
+      "60 m"
+    ],
+    "reponse": "46 m",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "(15+8)×2 = 46 m.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_002",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un terrain rectangulaire mesure 25 m × 12 m. Son aire (m²) ?",
+    "visuel": null,
+    "choix": [
+      "74 m²",
+      "37 m²",
+      "240 m²",
+      "300 m²"
+    ],
+    "reponse": "300 m²",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "25 × 12 = 300.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_003",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Une pièce mesure 6 m × 4 m. Combien de m² de plancher ?",
+    "visuel": null,
+    "choix": [
+      "20 m²",
+      "30 m²",
+      "10 m²",
+      "24 m²"
+    ],
+    "reponse": "24 m²",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "6 × 4 = 24.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_004",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Une piscine fait 25 m de long. Combien de m pour 8 longueurs ?",
+    "visuel": null,
+    "choix": [
+      "150 m",
+      "200 m",
+      "100 m",
+      "33 m"
+    ],
+    "reponse": "200 m",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "25 × 8 = 200.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_005",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un film commence à 18 h 45 et dure 2 h 20 min. Quand finit-il ?",
+    "visuel": null,
+    "choix": [
+      "21 h 25",
+      "21 h 05",
+      "20 h 65",
+      "20 h 05"
+    ],
+    "reponse": "21 h 05",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "18:45 + 2:20 = 21:05.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_006",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Une fête commence à 14 h 30 et finit à 17 h 15. Combien de temps ?",
+    "visuel": null,
+    "choix": [
+      "2 h 15 min",
+      "3 h 45 min",
+      "2 h 45 min",
+      "3 h 15 min"
+    ],
+    "reponse": "2 h 45 min",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "De 14:30 à 17:15 = 2 h 45.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_007",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "De 9 h 50 à 11 h 25, il s'est écoulé…",
+    "visuel": null,
+    "choix": [
+      "1 h 25 min",
+      "1 h 35 min",
+      "1 h 75 min",
+      "2 h 25 min"
+    ],
+    "reponse": "1 h 35 min",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "10 min jusqu'à 10:00, puis 1 h 25 min.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_008",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Convertis 4,25 km en mètres.",
+    "visuel": null,
+    "choix": [
+      "425 m",
+      "4025 m",
+      "42 m",
+      "4250 m"
+    ],
+    "reponse": "4250 m",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "4,25 × 1000 = 4250 m.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_009",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Convertis 7,2 kg en grammes.",
+    "visuel": null,
+    "choix": [
+      "7200 g",
+      "72 000 g",
+      "720 g",
+      "72 g"
+    ],
+    "reponse": "7200 g",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "7,2 × 1000 = 7200 g.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_010",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Convertis 2350 g en kilogrammes.",
+    "visuel": null,
+    "choix": [
+      "23,5 kg",
+      "235 kg",
+      "2,35 kg",
+      "0,235 kg"
+    ],
+    "reponse": "2,35 kg",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "2350 ÷ 1000 = 2,35 kg.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_011",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de cm dans 3,7 m ?",
+    "visuel": null,
+    "choix": [
+      "37 cm",
+      "3700 cm",
+      "3,7 cm",
+      "370 cm"
+    ],
+    "reponse": "370 cm",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "3,7 × 100 = 370.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_012",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Une bouteille contient 1,5 L. Combien de verres de 250 mL ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "4",
+      "8",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "1500 ÷ 250 = 6.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_013",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Une recette pour 4 personnes demande 200 g de sucre. Pour 6 personnes ?",
+    "visuel": null,
+    "choix": [
+      "500 g",
+      "400 g",
+      "300 g",
+      "250 g"
+    ],
+    "reponse": "300 g",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "200 ÷ 4 × 6 = 300 g.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_014",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Périmètre d'un hexagone régulier de côté 7 cm ?",
+    "visuel": null,
+    "choix": [
+      "42 cm",
+      "49 cm",
+      "28 cm",
+      "35 cm"
+    ],
+    "reponse": "42 cm",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "6 × 7 = 42.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_015",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Aire d'un rectangle 12 cm × 8 cm (cm²) ?",
+    "visuel": null,
+    "choix": [
+      "40 cm²",
+      "96 cm²",
+      "80 cm²",
+      "20 cm²"
+    ],
+    "reponse": "96 cm²",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "12 × 8 = 96.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_016",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un coureur boucle 400 m en 80 s. Sa vitesse moyenne (m/s) ?",
+    "visuel": null,
+    "choix": [
+      "6 m/s",
+      "4 m/s",
+      "5 m/s",
+      "8 m/s"
+    ],
+    "reponse": "5 m/s",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "400 ÷ 80 = 5.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_017",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "La température passe de -4 °C à 12 °C. De combien a-t-elle augmenté ?",
+    "visuel": null,
+    "choix": [
+      "20 °C",
+      "16 °C",
+      "8 °C",
+      "12 °C"
+    ],
+    "reponse": "16 °C",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "12 - (-4) = 16.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_018",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "La température baisse de 18 °C à -3 °C. Variation ?",
+    "visuel": null,
+    "choix": [
+      "15 °C",
+      "21 °C",
+      "25 °C",
+      "18 °C"
+    ],
+    "reponse": "21 °C",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "18 + 3 = 21.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_019",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "À 8 h 50, dans 2 h 25 min, il sera…",
+    "visuel": null,
+    "choix": [
+      "11 h 25",
+      "10 h 75",
+      "11 h 15",
+      "10 h 15"
+    ],
+    "reponse": "11 h 15",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "8:50 + 2:25 = 11:15.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "mes_p3_020",
+    "domaine": "Mesure",
+    "sousDomaine": "Problèmes de mesure",
+    "palier": 3,
+    "type": "choix",
+    "question": "Un autobus part à 7 h 12 et arrive à 9 h 03. Durée du trajet ?",
+    "visuel": null,
+    "choix": [
+      "1 h 51 min",
+      "1 h 91 min",
+      "2 h 09 min",
+      "1 h 09 min"
+    ],
+    "reponse": "1 h 51 min",
+    "indice": "Convertis tout dans la même unité, puis calcule.",
+    "explication": "De 7:12 à 9:03 = 1 h 51 min.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p1_001",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Demain, le soleil se lèvera. C'est…",
+    "visuel": null,
+    "choix": [
+      "Possible",
+      "Impossible",
+      "Certain",
+      "Pas sûr"
+    ],
+    "reponse": "Certain",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Cela arrive chaque jour.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_002",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Voir un poisson voler dans le ciel sans aide, c'est…",
+    "visuel": null,
+    "choix": [
+      "Possible",
+      "Impossible",
+      "Certain",
+      "Probable"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Les poissons ne volent pas.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_003",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Sortir le visage d'un dé classique en lançant, c'est…",
+    "visuel": null,
+    "choix": [
+      "Certain",
+      "Probable",
+      "Impossible",
+      "Possible"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Un dé montre des points, pas un visage.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_004",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tirer une carte rouge d'un jeu de cartes ordinaire, c'est…",
+    "visuel": null,
+    "choix": [
+      "Possible",
+      "Impossible",
+      "Certain",
+      "Pas sûr"
+    ],
+    "reponse": "Possible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Il y a des rouges et des noires.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_005",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Obtenir un nombre entre 1 et 6 en lançant un dé à 6 faces, c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Certain",
+      "Rare",
+      "Possible"
+    ],
+    "reponse": "Certain",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Toutes les faces sont entre 1 et 6.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_006",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Obtenir le nombre 7 en lançant un dé à 6 faces, c'est…",
+    "visuel": null,
+    "choix": [
+      "Possible",
+      "Impossible",
+      "Probable",
+      "Certain"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Le dé ne va que jusqu'à 6.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_007",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Lancer une pièce et obtenir pile, c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Pas sûr",
+      "Possible",
+      "Certain"
+    ],
+    "reponse": "Possible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Pile est une issue parmi deux.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_008",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tirer une bille bleue dans un sac qui ne contient que des billes rouges, c'est…",
+    "visuel": null,
+    "choix": [
+      "Probable",
+      "Certain",
+      "Impossible",
+      "Possible"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Pas de bleu dans le sac.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_009",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tirer une bille rouge dans un sac qui ne contient que des billes rouges, c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Rare",
+      "Possible",
+      "Certain"
+    ],
+    "reponse": "Certain",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Toutes les billes sont rouges.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_010",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Faire un nombre pair en lançant un dé, c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Improbable",
+      "Certain",
+      "Possible"
+    ],
+    "reponse": "Possible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "2, 4 ou 6 sont possibles.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_011",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Une nuit, il y aura de la lumière du Soleil, c'est…",
+    "visuel": null,
+    "choix": [
+      "Probable",
+      "Impossible",
+      "Possible",
+      "Certain"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "La nuit, le Soleil ne brille pas.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_012",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Demain matin, tu manges du riz, c'est…",
+    "visuel": null,
+    "choix": [
+      "Très probable",
+      "Possible",
+      "Certain",
+      "Impossible"
+    ],
+    "reponse": "Possible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Cela dépend de ton choix.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_013",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un événement qui peut se produire ou non est dit…",
+    "visuel": null,
+    "choix": [
+      "Certain",
+      "Possible",
+      "Sûr",
+      "Impossible"
+    ],
+    "reponse": "Possible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Possible = pas garanti.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_014",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un événement qui se produit toujours est dit…",
+    "visuel": null,
+    "choix": [
+      "Probable",
+      "Impossible",
+      "Possible",
+      "Certain"
+    ],
+    "reponse": "Certain",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Certain = arrive toujours.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_015",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un événement qui ne peut pas se produire est dit…",
+    "visuel": null,
+    "choix": [
+      "Rare",
+      "Impossible",
+      "Possible",
+      "Certain"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Impossible = ne peut pas arriver.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_016",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "En lançant une pièce, combien d'issues possibles ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "4",
+      "6",
+      "2"
+    ],
+    "reponse": "2",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Pile ou face = 2.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_017",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "En lançant un dé à 6 faces, combien d'issues possibles ?",
+    "visuel": null,
+    "choix": [
+      "12",
+      "4",
+      "2",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Faces 1 à 6 = 6.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_018",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de chiffres pairs y a-t-il sur un dé à 6 faces ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "3",
+      "6",
+      "4"
+    ],
+    "reponse": "3",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "2, 4, 6 → 3 chiffres.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_019",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de chiffres impairs y a-t-il sur un dé à 6 faces ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "3",
+      "6",
+      "2"
+    ],
+    "reponse": "3",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "1, 3, 5 → 3 chiffres.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_020",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien de jours dans une semaine ne sont pas le week-end ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "6",
+      "5",
+      "7"
+    ],
+    "reponse": "5",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Du lundi au vendredi : 5.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_021",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Obtenir un nombre supérieur à 0 sur un dé à 6 faces, c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Probable",
+      "Possible",
+      "Certain"
+    ],
+    "reponse": "Certain",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Toutes les faces sont >0.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_022",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Obtenir un nombre supérieur à 6 sur un dé à 6 faces, c'est…",
+    "visuel": null,
+    "choix": [
+      "Certain",
+      "Possible",
+      "Improbable",
+      "Impossible"
+    ],
+    "reponse": "Impossible",
+    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
+    "explication": "Le maximum est 6.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p2_001",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, combien de résultats pairs ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "2",
+      "3",
+      "6"
+    ],
+    "reponse": "3",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "2, 4, 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_002",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, combien de résultats > 4 ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "4",
+      "2",
+      "3"
+    ],
+    "reponse": "2",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "5 et 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_003",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, combien de résultats < 3 ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "1",
+      "3",
+      "2"
+    ],
+    "reponse": "2",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "1 et 2.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_004",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, combien de multiples de 3 ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "2",
+      "4",
+      "3"
+    ],
+    "reponse": "2",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "3 et 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_005",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Avec une pièce, lancer deux fois. Combien de résultats au total ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "3",
+      "6",
+      "2"
+    ],
+    "reponse": "4",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "PP, PF, FP, FF.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_006",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un sac de 3 billes rouges et 2 bleues, laquelle est plus probable ?",
+    "visuel": null,
+    "choix": [
+      "Bleu",
+      "Aucune",
+      "Rouge",
+      "Égal"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Il y a plus de rouges.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_007",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un sac de 5 billes vertes et 5 jaunes, laquelle est plus probable ?",
+    "visuel": null,
+    "choix": [
+      "Aucune",
+      "Égal",
+      "Verte",
+      "Jaune"
+    ],
+    "reponse": "Égal",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Mêmes quantités.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_008",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un sac de 1 rouge et 7 bleues, le plus probable est…",
+    "visuel": null,
+    "choix": [
+      "Égal",
+      "Rouge",
+      "Bleu",
+      "Aucune"
+    ],
+    "reponse": "Bleu",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "7 contre 1.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_009",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un sac de 4 rouges et 4 bleues et 4 vertes, laquelle a la même probabilité ?",
+    "visuel": null,
+    "choix": [
+      "Bleue",
+      "Verte",
+      "Rouge",
+      "Toutes"
+    ],
+    "reponse": "Toutes",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Quantités égales.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_010",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur une roue divisée en 4 parts égales (R, B, V, J), quelle couleur a 1 chance sur 4 ?",
+    "visuel": null,
+    "choix": [
+      "Verte seulement",
+      "Bleue seulement",
+      "Toutes",
+      "Rouge seulement"
+    ],
+    "reponse": "Toutes",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "1/4 chacune.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_011",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur une roue divisée en 3 parts égales (R, B, V), la probabilité d'avoir rouge est…",
+    "visuel": null,
+    "choix": [
+      "1/4",
+      "1/6",
+      "1/3",
+      "1/2"
+    ],
+    "reponse": "1/3",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Une part sur trois.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_012",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, la probabilité d'obtenir un 1 est…",
+    "visuel": null,
+    "choix": [
+      "1/6",
+      "1/2",
+      "1/12",
+      "1/3"
+    ],
+    "reponse": "1/6",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Une face sur six.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_013",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, la probabilité d'obtenir un nombre pair est…",
+    "visuel": null,
+    "choix": [
+      "1/6",
+      "1/4",
+      "1/2",
+      "1/3"
+    ],
+    "reponse": "1/2",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "3 sur 6 = 1/2.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_014",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, la probabilité d'obtenir un nombre > 4 est…",
+    "visuel": null,
+    "choix": [
+      "1/6",
+      "2/3",
+      "1/2",
+      "1/3"
+    ],
+    "reponse": "1/3",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "2 sur 6 = 1/3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_015",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur une pièce, la probabilité de pile est…",
+    "visuel": null,
+    "choix": [
+      "1/4",
+      "1/2",
+      "1/1",
+      "1/3"
+    ],
+    "reponse": "1/2",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Une chance sur deux.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_016",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un sac de 6 billes (4 rouges, 2 bleues), tirer une rouge ?",
+    "visuel": null,
+    "choix": [
+      "1/4",
+      "4/6",
+      "1/2",
+      "2/6"
+    ],
+    "reponse": "4/6",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "4 rouges sur 6 billes.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_017",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un sac de 6 billes (4 rouges, 2 bleues), tirer une bleue ?",
+    "visuel": null,
+    "choix": [
+      "1/2",
+      "2/6",
+      "1/3",
+      "4/6"
+    ],
+    "reponse": "2/6",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "2 bleues sur 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_018",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Sur une roue (3 rouges, 1 bleu), la probabilité de rouge est…",
+    "visuel": null,
+    "choix": [
+      "2/3",
+      "1/2",
+      "1/4",
+      "3/4"
+    ],
+    "reponse": "3/4",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "3 secteurs rouges sur 4.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_019",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Lancer une pièce 3 fois : combien de résultats possibles au total ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "8",
+      "3",
+      "9"
+    ],
+    "reponse": "8",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "2 × 2 × 2 = 8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_020",
+    "domaine": "Probabilité",
+    "sousDomaine": "Dénombrement",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans un jeu de 52 cartes, combien y a-t-il de cartes rouges ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "26",
+      "13",
+      "52"
+    ],
+    "reponse": "26",
+    "indice": "Compte les issues favorables puis le total.",
+    "explication": "Cœurs + carreaux = 13 + 13 = 26.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_s01",
+    "domaine": "Probabilité",
+    "sousDomaine": "Sac de billes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 2,
+        "Bleu": 3
+      }
+    },
+    "choix": [
+      "Aucune",
+      "Bleu",
+      "Les deux égaux",
+      "Rouge"
+    ],
+    "reponse": "Bleu",
+    "indice": "Compare les quantités.",
+    "explication": "Il y a 2 rouges et 3 bleues, donc Bleu est plus probable.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_s02",
+    "domaine": "Probabilité",
+    "sousDomaine": "Sac de billes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 7,
+        "Bleu": 6
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Aucune",
+      "Bleu",
+      "Les deux égaux"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "Il y a 7 rouges et 6 bleues, donc Rouge est plus probable.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_s03",
+    "domaine": "Probabilité",
+    "sousDomaine": "Sac de billes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 7,
+        "Bleu": 4
+      }
+    },
+    "choix": [
+      "Aucune",
+      "Rouge",
+      "Bleu",
+      "Les deux égaux"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "Il y a 7 rouges et 4 bleues, donc Rouge est plus probable.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_s04",
+    "domaine": "Probabilité",
+    "sousDomaine": "Sac de billes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 6,
+        "Bleu": 7
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Les deux égaux",
+      "Aucune",
+      "Bleu"
+    ],
+    "reponse": "Bleu",
+    "indice": "Compare les quantités.",
+    "explication": "Il y a 6 rouges et 7 bleues, donc Bleu est plus probable.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_s05",
+    "domaine": "Probabilité",
+    "sousDomaine": "Sac de billes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 6,
+        "Bleu": 7
+      }
+    },
+    "choix": [
+      "Les deux égaux",
+      "Aucune",
+      "Rouge",
+      "Bleu"
+    ],
+    "reponse": "Bleu",
+    "indice": "Compare les quantités.",
+    "explication": "Il y a 6 rouges et 7 bleues, donc Bleu est plus probable.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p2_s06",
+    "domaine": "Probabilité",
+    "sousDomaine": "Sac de billes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Dans ce sac, quelle couleur a le plus de chances d'être tirée ?",
+    "visuel": {
+      "type": "sac",
+      "billes": {
+        "Rouge": 7,
+        "Bleu": 6
+      }
+    },
+    "choix": [
+      "Les deux égaux",
+      "Bleu",
+      "Rouge",
+      "Aucune"
+    ],
+    "reponse": "Rouge",
+    "indice": "Compare les quantités.",
+    "explication": "Il y a 7 rouges et 6 bleues, donc Rouge est plus probable.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "pro_p3_001",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans un sac de 3 rouges et 1 bleue, combien de fois rouge est-il plus probable que bleu ?",
+    "visuel": null,
+    "choix": [
+      "3 fois",
+      "Égal",
+      "2 fois",
+      "4 fois"
+    ],
+    "reponse": "3 fois",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "3 contre 1.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_002",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans un sac de 6 rouges et 2 bleues, le rapport rouge/bleu est…",
+    "visuel": null,
+    "choix": [
+      "3 pour 1",
+      "2 pour 1",
+      "1 pour 3",
+      "6 pour 2"
+    ],
+    "reponse": "3 pour 1",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "6 ÷ 2 = 3.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_003",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur une roue (2 rouges, 4 bleus, 2 verts), la couleur la moins probable est…",
+    "visuel": null,
+    "choix": [
+      "Vert",
+      "Bleu",
+      "Égalité entre rouge et vert",
+      "Rouge"
+    ],
+    "reponse": "Égalité entre rouge et vert",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "Rouge et vert ont chacun 2/8.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_004",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 8 secteurs égaux (3 rouges, 5 bleus), la probabilité d'avoir rouge est…",
+    "visuel": null,
+    "choix": [
+      "5/8",
+      "3/5",
+      "3/8",
+      "1/2"
+    ],
+    "reponse": "3/8",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "3 secteurs rouges sur 8.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_005",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 12 secteurs égaux (4 rouges, 8 verts), la probabilité d'avoir rouge est…",
+    "visuel": null,
+    "choix": [
+      "1/3",
+      "4/12",
+      "1/4",
+      "1/2"
+    ],
+    "reponse": "1/3",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "4/12 = 1/3.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_006",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans un sac de 12 billes (8 rouges), combien de billes ne sont pas rouges ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "12",
+      "4",
+      "8"
+    ],
+    "reponse": "4",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "12 - 8 = 4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_007",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur deux pièces lancées, combien de résultats donnent au moins un pile ?",
+    "visuel": null,
+    "choix": [
+      "3",
+      "1",
+      "4",
+      "2"
+    ],
+    "reponse": "3",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "PP, PF, FP.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_008",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur deux dés à 6 faces, combien de paires donnent une somme de 7 ?",
+    "visuel": null,
+    "choix": [
+      "7",
+      "6",
+      "5",
+      "4"
+    ],
+    "reponse": "6",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "(1,6),(2,5),(3,4),(4,3),(5,2),(6,1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_009",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur deux dés à 6 faces, combien de paires donnent une somme de 2 ?",
+    "visuel": null,
+    "choix": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
+    "reponse": "1",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "Seulement (1,1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_010",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien de résultats donnent une somme de 12 sur deux dés à 6 faces ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "3",
+      "2",
+      "6"
+    ],
+    "reponse": "1",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "Seulement (6,6).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_011",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si un sac contient autant de bleues que de rouges, la probabilité de bleue est…",
+    "visuel": null,
+    "choix": [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/4"
+    ],
+    "reponse": "1/2",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "Mêmes quantités → 1/2.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_012",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur un dé, la probabilité d'obtenir un nombre multiple de 3 est…",
+    "visuel": null,
+    "choix": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "1/6"
+    ],
+    "reponse": "1/3",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "3 et 6 sur 6.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_013",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 20 billes (12 rouges, 8 bleues), la probabilité de bleue est…",
+    "visuel": null,
+    "choix": [
+      "1/4",
+      "8/20",
+      "2/5",
+      "1/2"
+    ],
+    "reponse": "2/5",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "8/20 = 2/5.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_014",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si la probabilité d'un événement est 1, l'événement est…",
+    "visuel": null,
+    "choix": [
+      "Possible",
+      "Probable",
+      "Impossible",
+      "Certain"
+    ],
+    "reponse": "Certain",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "1 = toujours.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_015",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Si la probabilité d'un événement est 0, l'événement est…",
+    "visuel": null,
+    "choix": [
+      "Certain",
+      "Rare",
+      "Impossible",
+      "Possible"
+    ],
+    "reponse": "Impossible",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "0 = jamais.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_016",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Lancer 3 pièces : combien de combinaisons donnent exactement 2 piles ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "3",
+      "2",
+      "1"
+    ],
+    "reponse": "3",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "PPF, PFP, FPP.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_017",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Lancer 2 pièces : combien de chances d'obtenir 2 piles ?",
+    "visuel": null,
+    "choix": [
+      "1/2",
+      "1/4",
+      "1/3",
+      "1/8"
+    ],
+    "reponse": "1/4",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "PP sur PP/PF/FP/FF.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_018",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur un dé à 6 faces, la probabilité d'obtenir un nombre premier (2, 3, 5) est…",
+    "visuel": null,
+    "choix": [
+      "2/3",
+      "1/2",
+      "1/6",
+      "1/3"
+    ],
+    "reponse": "1/2",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "3 sur 6.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_019",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans un sac de 5 billes rouges et 15 bleues, combien de fois plus probable est bleu ?",
+    "visuel": null,
+    "choix": [
+      "2 fois",
+      "3 fois",
+      "4 fois",
+      "5 fois"
+    ],
+    "reponse": "3 fois",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "15 ÷ 5 = 3.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_020",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur une roue à 6 secteurs (2 R, 2 B, 2 V), probabilité d'avoir rouge ?",
+    "visuel": null,
+    "choix": [
+      "1/6",
+      "1/2",
+      "1/3",
+      "2/3"
+    ],
+    "reponse": "1/3",
+    "indice": "Compte les issues favorables, puis divise par le total.",
+    "explication": "2 sur 6 = 1/3.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p1_001",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans un diagramme à bandes, qu'indique généralement l'axe vertical ?",
+    "visuel": null,
+    "choix": [
+      "La valeur (le nombre)",
+      "Les catégories",
+      "La date",
+      "Le titre"
+    ],
+    "reponse": "La valeur (le nombre)",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Hauteur = quantité.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_002",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans un diagramme à bandes, qu'indique généralement l'axe horizontal ?",
+    "visuel": null,
+    "choix": [
+      "Le titre",
+      "La date",
+      "Les catégories",
+      "La valeur"
+    ],
+    "reponse": "Les catégories",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "En bas : catégories.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_003",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans un pictogramme, chaque symbole représente…",
+    "visuel": null,
+    "choix": [
+      "Une quantité donnée",
+      "Une couleur",
+      "Une seule personne",
+      "Une lettre"
+    ],
+    "reponse": "Une quantité donnée",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Le légende indique la valeur.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_004",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un diagramme à ligne brisée sert surtout à montrer…",
+    "visuel": null,
+    "choix": [
+      "Des formes",
+      "Des catégories",
+      "Des couleurs",
+      "L'évolution dans le temps"
+    ],
+    "reponse": "L'évolution dans le temps",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Tendance dans le temps.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_005",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel diagramme convient pour comparer des catégories distinctes ?",
+    "visuel": null,
+    "choix": [
+      "Diagramme à ligne",
+      "Diagramme à bandes",
+      "Cercle uniquement",
+      "Aucun"
+    ],
+    "reponse": "Diagramme à bandes",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Bandes = comparaison.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_006",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Le titre d'un diagramme sert à…",
+    "visuel": null,
+    "choix": [
+      "Dire de quoi il parle",
+      "Mesurer la hauteur",
+      "Mettre une couleur",
+      "Compter les barres"
+    ],
+    "reponse": "Dire de quoi il parle",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Le titre informe.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_007",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans un diagramme à bandes, la bande la plus haute représente…",
+    "visuel": null,
+    "choix": [
+      "La plus petite",
+      "La catégorie A",
+      "La catégorie B",
+      "La plus grande valeur"
+    ],
+    "reponse": "La plus grande valeur",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Plus haute = plus grande quantité.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_008",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme",
+    "palier": 1,
+    "type": "choix",
+    "question": "Dans un diagramme à bandes, la bande la plus basse représente…",
+    "visuel": null,
+    "choix": [
+      "La plus petite valeur",
+      "La moyenne",
+      "La plus grande",
+      "Toujours zéro"
+    ],
+    "reponse": "La plus petite valeur",
+    "indice": "Regarde axes et titre du diagramme.",
+    "explication": "Plus basse = plus petite quantité.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b01",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus grande valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Lune": 9,
+        "Soleil": 7,
+        "Étoile": 5
+      }
+    },
+    "choix": [
+      "Soleil",
+      "Étoile",
+      "Lune"
+    ],
+    "reponse": "Lune",
+    "indice": "Regarde la bande la plus haute.",
+    "explication": "Lune a la plus grande bande (9).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b02",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus petite valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Lune": 8,
+        "Soleil": 2,
+        "Étoile": 7
+      }
+    },
+    "choix": [
+      "Lune",
+      "Soleil",
+      "Étoile"
+    ],
+    "reponse": "Soleil",
+    "indice": "Regarde la bande la plus courte.",
+    "explication": "Soleil a la plus petite bande (2).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b03",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus grande valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Vélo": 7,
+        "Auto": 6,
+        "Bus": 3
+      }
+    },
+    "choix": [
+      "Bus",
+      "Vélo",
+      "Auto"
+    ],
+    "reponse": "Vélo",
+    "indice": "Regarde la bande la plus haute.",
+    "explication": "Vélo a la plus grande bande (7).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b04",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus petite valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Pomme": 3,
+        "Banane": 4,
+        "Cerise": 2
+      }
+    },
+    "choix": [
+      "Cerise",
+      "Pomme",
+      "Banane"
+    ],
+    "reponse": "Cerise",
+    "indice": "Regarde la bande la plus courte.",
+    "explication": "Cerise a la plus petite bande (2).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b05",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus grande valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Bleu": 3,
+        "Vert": 5,
+        "Rouge": 4
+      }
+    },
+    "choix": [
+      "Rouge",
+      "Vert",
+      "Bleu"
+    ],
+    "reponse": "Vert",
+    "indice": "Regarde la bande la plus haute.",
+    "explication": "Vert a la plus grande bande (5).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b06",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus petite valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Vélo": 8,
+        "Auto": 9,
+        "Bus": 3
+      }
+    },
+    "choix": [
+      "Auto",
+      "Bus",
+      "Vélo"
+    ],
+    "reponse": "Bus",
+    "indice": "Regarde la bande la plus courte.",
+    "explication": "Bus a la plus petite bande (3).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b07",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus grande valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Vélo": 8,
+        "Auto": 3,
+        "Bus": 5
+      }
+    },
+    "choix": [
+      "Bus",
+      "Vélo",
+      "Auto"
+    ],
+    "reponse": "Vélo",
+    "indice": "Regarde la bande la plus haute.",
+    "explication": "Vélo a la plus grande bande (8).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b08",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus petite valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Pomme": 7,
+        "Banane": 4,
+        "Cerise": 5
+      }
+    },
+    "choix": [
+      "Pomme",
+      "Cerise",
+      "Banane"
+    ],
+    "reponse": "Banane",
+    "indice": "Regarde la bande la plus courte.",
+    "explication": "Banane a la plus petite bande (4).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b09",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus grande valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Chat": 3,
+        "Chien": 6,
+        "Lapin": 8
+      }
+    },
+    "choix": [
+      "Lapin",
+      "Chien",
+      "Chat"
+    ],
+    "reponse": "Lapin",
+    "indice": "Regarde la bande la plus haute.",
+    "explication": "Lapin a la plus grande bande (8).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p1_b10",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle catégorie a la plus petite valeur ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Préférences",
+      "donnees": {
+        "Vélo": 4,
+        "Auto": 3,
+        "Bus": 2
+      }
+    },
+    "choix": [
+      "Bus",
+      "Auto",
+      "Vélo"
+    ],
+    "reponse": "Bus",
+    "indice": "Regarde la bande la plus courte.",
+    "explication": "Bus a la plus petite bande (2).",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "sta_p2_b01",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Vert » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Bleu": 8,
+        "Vert": 3,
+        "Rouge": 6
+      }
+    },
+    "choix": [
+      "4",
+      "8",
+      "3",
+      "6"
+    ],
+    "reponse": "3",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Vert indique 3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b02",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Rouge » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Bleu": 10,
+        "Vert": 8,
+        "Rouge": 6
+      }
+    },
+    "choix": [
+      "10",
+      "8",
+      "6",
+      "4"
+    ],
+    "reponse": "6",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Rouge indique 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b03",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Vélo » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Vélo": 6,
+        "Auto": 10,
+        "Bus": 11
+      }
+    },
+    "choix": [
+      "11",
+      "7",
+      "6",
+      "10"
+    ],
+    "reponse": "6",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Vélo indique 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b04",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Chien » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Chat": 8,
+        "Chien": 10,
+        "Lapin": 10
+      }
+    },
+    "choix": [
+      "12",
+      "8",
+      "10",
+      "11"
+    ],
+    "reponse": "10",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Chien indique 10.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b05",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Chien » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Chat": 4,
+        "Chien": 12,
+        "Lapin": 8
+      }
+    },
+    "choix": [
+      "15",
+      "8",
+      "12",
+      "4"
+    ],
+    "reponse": "12",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Chien indique 12.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b06",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Étoile » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Lune": 9,
+        "Soleil": 11,
+        "Étoile": 10
+      }
+    },
+    "choix": [
+      "9",
+      "10",
+      "13",
+      "11"
+    ],
+    "reponse": "10",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Étoile indique 10.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b07",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Bus » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Vélo": 5,
+        "Auto": 11,
+        "Bus": 6
+      }
+    },
+    "choix": [
+      "8",
+      "5",
+      "11",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Bus indique 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b08",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Rouge » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Bleu": 4,
+        "Vert": 8,
+        "Rouge": 10
+      }
+    },
+    "choix": [
+      "8",
+      "7",
+      "10",
+      "4"
+    ],
+    "reponse": "10",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Rouge indique 10.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b09",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Vert » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Bleu": 5,
+        "Vert": 5,
+        "Rouge": 7
+      }
+    },
+    "choix": [
+      "6",
+      "5",
+      "4",
+      "7"
+    ],
+    "reponse": "5",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Vert indique 5.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b10",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Vélo » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Vélo": 6,
+        "Auto": 12,
+        "Bus": 12
+      }
+    },
+    "choix": [
+      "6",
+      "7",
+      "12",
+      "12"
+    ],
+    "reponse": "6",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Vélo indique 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b11",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Cerise » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Pomme": 5,
+        "Banane": 5,
+        "Cerise": 8
+      }
+    },
+    "choix": [
+      "5",
+      "7",
+      "8",
+      "5"
+    ],
+    "reponse": "8",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Cerise indique 8.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b12",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Lune » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Lune": 3,
+        "Soleil": 8,
+        "Étoile": 6
+      }
+    },
+    "choix": [
+      "6",
+      "3",
+      "8",
+      "2"
+    ],
+    "reponse": "3",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Lune indique 3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b13",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Cerise » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Pomme": 11,
+        "Banane": 11,
+        "Cerise": 3
+      }
+    },
+    "choix": [
+      "11",
+      "2",
+      "11",
+      "3"
+    ],
+    "reponse": "3",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Cerise indique 3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b14",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Lune » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Lune": 7,
+        "Soleil": 5,
+        "Étoile": 10
+      }
+    },
+    "choix": [
+      "10",
+      "5",
+      "7",
+      "8"
+    ],
+    "reponse": "7",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Lune indique 7.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b15",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Vélo » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Vélo": 9,
+        "Auto": 9,
+        "Bus": 12
+      }
+    },
+    "choix": [
+      "12",
+      "9",
+      "8",
+      "10"
+    ],
+    "reponse": "9",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Vélo indique 9.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b16",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Bleu » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Bleu": 6,
+        "Vert": 5,
+        "Rouge": 11
+      }
+    },
+    "choix": [
+      "11",
+      "5",
+      "8",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Bleu indique 6.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b17",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Lune » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Lune": 3,
+        "Soleil": 10,
+        "Étoile": 9
+      }
+    },
+    "choix": [
+      "3",
+      "6",
+      "9",
+      "10"
+    ],
+    "reponse": "3",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Lune indique 3.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p2_b18",
+    "domaine": "Statistique",
+    "sousDomaine": "Lecture de diagramme à bandes",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien d'éléments pour « Banane » ?",
+    "visuel": {
+      "type": "barres",
+      "titre": "Compilation",
+      "donnees": {
+        "Pomme": 7,
+        "Banane": 7,
+        "Cerise": 11
+      }
+    },
+    "choix": [
+      "6",
+      "7",
+      "8",
+      "11"
+    ],
+    "reponse": "7",
+    "indice": "Lis la hauteur de la bande indiquée.",
+    "explication": "La bande Banane indique 7.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "sta_p3_pic01",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Soccer » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Soccer": 5,
+        "Hockey": 4,
+        "Danse": 5
+      }
+    },
+    "choix": [
+      "5",
+      "10",
+      "5",
+      "12"
+    ],
+    "reponse": "10",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "5 × 2 = 10.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic02",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Danse » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Course": 2,
+        "Danse": 5,
+        "Tennis": 2
+      }
+    },
+    "choix": [
+      "12",
+      "5",
+      "10",
+      "5"
+    ],
+    "reponse": "10",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "5 × 2 = 10.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic03",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 3. Combien pour « Course » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 3,
+      "donnees": {
+        "Natation": 2,
+        "Course": 5,
+        "Tennis": 5
+      }
+    },
+    "choix": [
+      "10",
+      "5",
+      "18",
+      "15"
+    ],
+    "reponse": "15",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "5 × 3 = 15.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic04",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 5. Combien pour « Danse » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 5,
+      "donnees": {
+        "Natation": 2,
+        "Tennis": 2,
+        "Danse": 2
+      }
+    },
+    "choix": [
+      "10",
+      "15",
+      "2",
+      "8"
+    ],
+    "reponse": "10",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "2 × 5 = 10.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic05",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 5. Combien pour « Soccer » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 5,
+      "donnees": {
+        "Course": 3,
+        "Natation": 3,
+        "Soccer": 3
+      }
+    },
+    "choix": [
+      "20",
+      "3",
+      "15",
+      "12"
+    ],
+    "reponse": "15",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "3 × 5 = 15.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic06",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Danse » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Soccer": 5,
+        "Danse": 4,
+        "Natation": 5
+      }
+    },
+    "choix": [
+      "8",
+      "10",
+      "4",
+      "4"
+    ],
+    "reponse": "8",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "4 × 2 = 8.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic07",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Soccer » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Natation": 5,
+        "Hockey": 3,
+        "Soccer": 3
+      }
+    },
+    "choix": [
+      "6",
+      "8",
+      "3",
+      "3"
+    ],
+    "reponse": "6",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "3 × 2 = 6.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic08",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Natation » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Natation": 4,
+        "Hockey": 5,
+        "Course": 2
+      }
+    },
+    "choix": [
+      "10",
+      "4",
+      "8",
+      "4"
+    ],
+    "reponse": "8",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "4 × 2 = 8.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic09",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Natation » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Soccer": 3,
+        "Course": 3,
+        "Natation": 3
+      }
+    },
+    "choix": [
+      "6",
+      "8",
+      "3",
+      "3"
+    ],
+    "reponse": "6",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "3 × 2 = 6.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_pic10",
+    "domaine": "Statistique",
+    "sousDomaine": "Pictogramme",
+    "palier": 3,
+    "type": "choix",
+    "question": "Chaque symbole vaut 2. Combien pour « Hockey » ?",
+    "visuel": {
+      "type": "pictogramme",
+      "titre": "Collecte",
+      "valeurParSymbole": 2,
+      "donnees": {
+        "Hockey": 4,
+        "Course": 4,
+        "Danse": 3
+      }
+    },
+    "choix": [
+      "8",
+      "4",
+      "4",
+      "10"
+    ],
+    "reponse": "8",
+    "indice": "Multiplie le nombre de symboles par leur valeur.",
+    "explication": "4 × 2 = 8.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig01",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr"
+      ],
+      "valeurs": [
+        29,
+        11,
+        5,
+        30
+      ]
+    },
+    "choix": [
+      "Mar → Avr",
+      "Fév → Mar",
+      "Jan → Fév"
+    ],
+    "reponse": "Mar → Avr",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Mar à Avr, on passe de 5 à 30.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig02",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai",
+        "Juin"
+      ],
+      "valeurs": [
+        23,
+        15,
+        19,
+        1,
+        1,
+        7
+      ]
+    },
+    "choix": [
+      "Mar → Avr",
+      "Avr → Mai",
+      "Mai → Juin",
+      "Jan → Fév"
+    ],
+    "reponse": "Mai → Juin",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Mai à Juin, on passe de 1 à 7.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig03",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr"
+      ],
+      "valeurs": [
+        29,
+        27,
+        19,
+        26
+      ]
+    },
+    "choix": [
+      "Jan → Fév",
+      "Fév → Mar",
+      "Mar → Avr"
+    ],
+    "reponse": "Mar → Avr",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Mar à Avr, on passe de 19 à 26.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig04",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr"
+      ],
+      "valeurs": [
+        0,
+        22,
+        30,
+        2
+      ]
+    },
+    "choix": [
+      "Jan → Fév",
+      "Mar → Avr",
+      "Fév → Mar"
+    ],
+    "reponse": "Jan → Fév",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Jan à Fév, on passe de 0 à 22.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig05",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai",
+        "Juin"
+      ],
+      "valeurs": [
+        20,
+        15,
+        9,
+        20,
+        29,
+        6
+      ]
+    },
+    "choix": [
+      "Fév → Mar",
+      "Jan → Fév",
+      "Mar → Avr",
+      "Mai → Juin"
+    ],
+    "reponse": "Mar → Avr",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Mar à Avr, on passe de 9 à 20.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig06",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai",
+        "Juin"
+      ],
+      "valeurs": [
+        21,
+        16,
+        28,
+        6,
+        20,
+        27
+      ]
+    },
+    "choix": [
+      "Fév → Mar",
+      "Jan → Fév",
+      "Avr → Mai",
+      "Mai → Juin"
+    ],
+    "reponse": "Avr → Mai",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Avr à Mai, on passe de 6 à 20.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "sta_p3_lig07",
+    "domaine": "Statistique",
+    "sousDomaine": "Diagramme à ligne brisée",
+    "palier": 3,
+    "type": "choix",
+    "question": "Entre quels mois la hausse est-elle la plus forte ?",
+    "visuel": {
+      "type": "ligne",
+      "titre": "Évolution",
+      "labels": [
+        "Jan",
+        "Fév",
+        "Mar",
+        "Avr",
+        "Mai"
+      ],
+      "valeurs": [
+        4,
+        7,
+        4,
+        2,
+        30
+      ]
+    },
+    "choix": [
+      "Fév → Mar",
+      "Mar → Avr",
+      "Avr → Mai",
+      "Jan → Fév"
+    ],
+    "reponse": "Avr → Mai",
+    "indice": "Compare les écarts entre points consécutifs.",
+    "explication": "De Avr à Mai, on passe de 2 à 30.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p1_x001",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tirer un dé et obtenir 0, c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Certain",
+      "Possible",
+      "Rare"
+    ],
+    "reponse": "Impossible",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Le dé commence à 1.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x002",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tirer un dé et obtenir au moins 1, c'est…",
+    "visuel": null,
+    "choix": [
+      "Possible",
+      "Certain",
+      "Impossible",
+      "Rare"
+    ],
+    "reponse": "Certain",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Toutes les faces sont ≥ 1.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x003",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tu lances une pièce. Combien de chances d'obtenir face ?",
+    "visuel": null,
+    "choix": [
+      "1 sur 6",
+      "1 sur 4",
+      "1 sur 3",
+      "1 sur 2"
+    ],
+    "reponse": "1 sur 2",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Pile ou face, 2 possibilités.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x004",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tu fais tourner une roue divisée en 2 parts égales rouge/bleu. Probabilité de rouge ?",
+    "visuel": null,
+    "choix": [
+      "1 sur 4",
+      "1 sur 3",
+      "Impossible",
+      "1 sur 2"
+    ],
+    "reponse": "1 sur 2",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Une part sur deux.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x005",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Il pleut à l'instant : c'est…",
+    "visuel": null,
+    "choix": [
+      "Impossible",
+      "Certain",
+      "Possible",
+      "Improbable"
+    ],
+    "reponse": "Possible",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Cela dépend du jour.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x006",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Tu tires une carte dans un sac VIDE. Tirer une rouge, c'est…",
+    "visuel": null,
+    "choix": [
+      "Rare",
+      "Certain",
+      "Impossible",
+      "Possible"
+    ],
+    "reponse": "Impossible",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Le sac est vide.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x007",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Un sac contient 10 billes vertes. Tirer une verte, c'est…",
+    "visuel": null,
+    "choix": [
+      "Certain",
+      "Improbable",
+      "Impossible",
+      "Possible"
+    ],
+    "reponse": "Certain",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Toutes sont vertes.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x008",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "La probabilité d'un événement certain vaut…",
+    "visuel": null,
+    "choix": [
+      "1/2",
+      "1",
+      "0",
+      "2"
+    ],
+    "reponse": "1",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Certain = probabilité 1.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x009",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "La probabilité d'un événement impossible vaut…",
+    "visuel": null,
+    "choix": [
+      "-1",
+      "1/2",
+      "1",
+      "0"
+    ],
+    "reponse": "0",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Impossible = probabilité 0.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p1_x010",
+    "domaine": "Probabilité",
+    "sousDomaine": "Événements",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quelle situation est possible mais peu probable ?",
+    "visuel": null,
+    "choix": [
+      "Avoir un anniversaire",
+      "Pleuvoir en automne",
+      "Tirer 6 fois un 6 d'affilée",
+      "Lever le soleil"
+    ],
+    "reponse": "Tirer 6 fois un 6 d'affilée",
+    "indice": "Pense aux issues possibles.",
+    "explication": "Peu probable mais possible.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "pro_p3_x001",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 2 dés à 6 faces, somme la plus probable ?",
+    "visuel": null,
+    "choix": [
+      "6",
+      "12",
+      "7",
+      "2"
+    ],
+    "reponse": "7",
+    "indice": "Compte favorables / total.",
+    "explication": "(1,6)…(6,1) = 6 issues.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x002",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 2 dés, combien de paires donnent une somme de 5 ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "6",
+      "5",
+      "3"
+    ],
+    "reponse": "4",
+    "indice": "Compte favorables / total.",
+    "explication": "(1,4),(2,3),(3,2),(4,1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x003",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 2 dés, combien de paires donnent une somme de 10 ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "reponse": "3",
+    "indice": "Compte favorables / total.",
+    "explication": "(4,6),(5,5),(6,4).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x004",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 2 dés, combien de paires donnent une somme de 4 ?",
+    "visuel": null,
+    "choix": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "reponse": "3",
+    "indice": "Compte favorables / total.",
+    "explication": "(1,3),(2,2),(3,1).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x005",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur 2 dés, combien de paires donnent un double ?",
+    "visuel": null,
+    "choix": [
+      "12",
+      "4",
+      "3",
+      "6"
+    ],
+    "reponse": "6",
+    "indice": "Compte favorables / total.",
+    "explication": "(1,1),(2,2)…(6,6).",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x006",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans 20 billes (15 R, 5 B), la probabilité de rouge est…",
+    "visuel": null,
+    "choix": [
+      "1/4",
+      "3/4",
+      "1/2",
+      "5/15"
+    ],
+    "reponse": "3/4",
+    "indice": "Compte favorables / total.",
+    "explication": "15/20 = 3/4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x007",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Dans 24 billes (6 R, 18 B), la probabilité de bleue est…",
+    "visuel": null,
+    "choix": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "6/18"
+    ],
+    "reponse": "3/4",
+    "indice": "Compte favorables / total.",
+    "explication": "18/24 = 3/4.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x008",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Sur une roue divisée en 5 parts égales (2 R, 2 B, 1 V), probabilité de rouge ?",
+    "visuel": null,
+    "choix": [
+      "1/5",
+      "1/2",
+      "1/3",
+      "2/5"
+    ],
+    "reponse": "2/5",
+    "indice": "Compte favorables / total.",
+    "explication": "2 secteurs sur 5.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x009",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Lancer 3 pièces : combien de combinaisons donnent 3 piles ?",
+    "visuel": null,
+    "choix": [
+      "4",
+      "3",
+      "1",
+      "8"
+    ],
+    "reponse": "1",
+    "indice": "Compte favorables / total.",
+    "explication": "Seulement PPP.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "pro_p3_x010",
+    "domaine": "Probabilité",
+    "sousDomaine": "Probabilités calculées",
+    "palier": 3,
+    "type": "choix",
+    "question": "Lancer 3 pièces : combien de combinaisons donnent exactement 0 pile ?",
+    "visuel": null,
+    "choix": [
+      "1",
+      "4",
+      "0",
+      "3"
+    ],
+    "reponse": "1",
+    "indice": "Compte favorables / total.",
+    "explication": "Seulement FFF.",
+    "tempsSec": 12,
+    "pointsBase": 200
   }
 ]

@@ -135,10 +135,12 @@ class QuestionModal {
         } else {
             this.elFeedback.classList.add('is-bad');
             this.elFeedbackTxt.textContent = tempsEcoule
-                ? 'Temps écoulé… Voici comment faire :'
-                : 'Presque ! Voici comment faire :';
+                ? 'Temps écoulé…'
+                : 'Presque ! Réfléchis encore la prochaine fois.';
         }
-        this.elExplication.textContent = this.question.explication || '';
+        // L'explication et la bonne réponse sont volontairement masquées
+        // pour ne pas « donner » la solution juste après une erreur.
+        this.elExplication.textContent = '';
         this.elFeedback.hidden = false;
         this.elContinue.hidden = false;
         this.elContinue.focus();

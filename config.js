@@ -15,8 +15,8 @@ window.CONFIG = {
     // Plateforme : vies et points de contrôle.
     viesParNiveau: 3,
 
-    // Durée totale d'un tableau (en secondes) — 3 à 4 minutes selon le cas.
-    tempsNiveau: 240,
+    // Durée totale d'un tableau (en secondes).
+    tempsNiveau: 180,
 
     // Délai (s) avant qu'un bloc raté ne se réactive avec une nouvelle question.
     delaiReactivationBloc: 20,
