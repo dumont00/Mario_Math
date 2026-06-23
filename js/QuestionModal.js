@@ -48,7 +48,9 @@ class QuestionModal {
             if (this.repondu || this.elValider.disabled) return;
             this.validerSaisie();
         });
-        this.elAudio.addEventListener('click', () => this._jouerAudio());
+        // « Réécouter » prononce le mot et, s'il y en a une, la phrase de
+        // contexte pour lever l'ambiguïté des homophones (vert, vers, verre…).
+        this.elAudio.addEventListener('click', () => this._jouerAudio(true));
     }
 
     afficher(question, { onTermine } = {}) {
@@ -114,11 +116,12 @@ class QuestionModal {
         this.root.setAttribute('aria-hidden', 'false');
         document.body.classList.add('modal-open');
 
-        // Audio : tente la lecture automatique du mot pour les questions
-        // d'écoute (peut être bloquée sur mobile au tout premier coup ;
-        // le bouton 🔊 Réécouter permet de relancer).
+        // Audio : tente la lecture automatique du mot seul à l'ouverture.
+        // La phrase de contexte n'est jouée que lorsque le joueur clique
+        // sur « Réécouter », pour ne pas révéler trop vite l'orthographe
+        // attendue (les homophones gardent leur petit défi).
         if (estSaisie && question.audio) {
-            setTimeout(() => this._jouerAudio(), 120);
+            setTimeout(() => this._jouerAudio(false), 120);
         }
 
         const debut = performance.now();
@@ -132,10 +135,17 @@ class QuestionModal {
         }, 50);
     }
 
-    _jouerAudio() {
+    _jouerAudio(avecContexte = false) {
         if (!this.question || !this.question.audio) return;
         if (typeof Voix === 'undefined') return;
-        Voix.dire(this.question.mot || this.question.reponse);
+        const mot = this.question.mot || this.question.reponse;
+        let texte = mot;
+        if (avecContexte && this.question.phraseContexte) {
+            // Pause naturelle entre le mot et la phrase pour que le lecteur
+            // marque bien la séparation.
+            texte = mot + ', comme dans : ' + this.question.phraseContexte + '.';
+        }
+        Voix.dire(texte);
     }
 
     majTimebar() {

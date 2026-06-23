@@ -13839,7 +13839,8 @@
     "indice": "Animal domestique qui miaule.",
     "explication": "Le mot est : chat.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le chat dort sur le tapis"
   },
   {
     "id": "fr_p1_002",
@@ -13856,7 +13857,8 @@
     "indice": "Animal domestique qui aboie.",
     "explication": "Le mot est : chien.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le chien aboie dans le jardin"
   },
   {
     "id": "fr_p1_003",
@@ -13873,7 +13875,8 @@
     "indice": "Une personne que tu aimes.",
     "explication": "Le mot est : ami.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "mon meilleur ami est gentil"
   },
   {
     "id": "fr_p1_004",
@@ -13890,7 +13893,8 @@
     "indice": "Tu y vas pour apprendre.",
     "explication": "Le mot est : école.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "je vais à l'école chaque matin"
   },
   {
     "id": "fr_p1_005",
@@ -13907,7 +13911,8 @@
     "indice": "Tu le lis pour apprendre.",
     "explication": "Le mot est : livre.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "je lis un livre intéressant"
   },
   {
     "id": "fr_p1_006",
@@ -13924,7 +13929,8 @@
     "indice": "Meuble à 4 pattes.",
     "explication": "Le mot est : table.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "la table de la cuisine est en bois"
   },
   {
     "id": "fr_p1_007",
@@ -13941,7 +13947,8 @@
     "indice": "On la pousse pour entrer.",
     "explication": "Le mot est : porte.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "ferme la porte derrière toi"
   },
   {
     "id": "fr_p1_008",
@@ -13958,7 +13965,8 @@
     "indice": "Tu le vois en levant la tête.",
     "explication": "Le mot est : ciel.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le ciel est rempli de nuages"
   },
   {
     "id": "fr_p1_009",
@@ -13975,7 +13983,8 @@
     "indice": "Notre planète.",
     "explication": "Le mot est : terre.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "la planète Terre tourne autour du Soleil"
   },
   {
     "id": "fr_p1_010",
@@ -13992,7 +14001,8 @@
     "indice": "On en boit chaque jour.",
     "explication": "Le mot est : eau.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "je bois un grand verre d'eau"
   },
   {
     "id": "fr_p1_011",
@@ -14009,7 +14019,8 @@
     "indice": "Ça chauffe et ça brûle.",
     "explication": "Le mot est : feu.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le feu brûle dans la cheminée"
   },
   {
     "id": "fr_p1_012",
@@ -14026,7 +14037,8 @@
     "indice": "Le contraire de la nuit.",
     "explication": "Le mot est : jour.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "quelle belle journée, un beau jour ensoleillé"
   },
   {
     "id": "fr_p1_013",
@@ -14043,7 +14055,8 @@
     "indice": "Quand il fait noir.",
     "explication": "Le mot est : nuit.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "la nuit, je dors profondément"
   },
   {
     "id": "fr_p1_014",
@@ -14060,7 +14073,8 @@
     "indice": "Le début de la journée.",
     "explication": "Le mot est : matin.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le matin, je prends mon déjeuner"
   },
   {
     "id": "fr_p1_015",
@@ -14077,7 +14091,8 @@
     "indice": "Quand le soleil se couche.",
     "explication": "Le mot est : soir.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le soir, je lis avant de dormir"
   },
   {
     "id": "fr_p1_016",
@@ -14094,7 +14109,8 @@
     "indice": "Le milieu de la journée.",
     "explication": "Le mot est : midi.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "à midi, on dîne ensemble"
   },
   {
     "id": "fr_p1_017",
@@ -14111,7 +14127,8 @@
     "indice": "Couleur du sang.",
     "explication": "Le mot est : rouge.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "la pomme est bien rouge"
   },
   {
     "id": "fr_p1_018",
@@ -14128,7 +14145,8 @@
     "indice": "Couleur du ciel.",
     "explication": "Le mot est : bleu.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le ciel est bleu aujourd'hui"
   },
   {
     "id": "fr_p1_019",
@@ -14145,7 +14163,8 @@
     "indice": "Couleur de l'herbe.",
     "explication": "Le mot est : vert.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "un arbre vert dans la forêt"
   },
   {
     "id": "fr_p1_020",
@@ -14162,7 +14181,8 @@
     "indice": "Couleur du soleil.",
     "explication": "Le mot est : jaune.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le soleil est jaune"
   },
   {
     "id": "fr_p1_021",
@@ -14179,7 +14199,8 @@
     "indice": "Couleur de la nuit.",
     "explication": "Le mot est : noir.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "j'ai un chat noir à la maison"
   },
   {
     "id": "fr_p1_022",
@@ -14196,7 +14217,8 @@
     "indice": "Couleur de la neige.",
     "explication": "Le mot est : blanc.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le drap est tout blanc"
   },
   {
     "id": "fr_p1_023",
@@ -14213,7 +14235,8 @@
     "indice": "Couleur d'une fleur.",
     "explication": "Le mot est : rose.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "une rose dans le vase, la fleur rose"
   },
   {
     "id": "fr_p1_024",
@@ -14230,7 +14253,8 @@
     "indice": "Le nombre après neuf.",
     "explication": "Le mot est : dix.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "j'ai dix doigts au total"
   },
   {
     "id": "fr_p1_025",
@@ -14247,7 +14271,8 @@
     "indice": "Le nombre après huit.",
     "explication": "Le mot est : neuf.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "il a neuf ans aujourd'hui"
   },
   {
     "id": "fr_p1_026",
@@ -14264,7 +14289,8 @@
     "indice": "Le nombre 20.",
     "explication": "Le mot est : vingt.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "vingt enfants dans la classe"
   },
   {
     "id": "fr_p1_027",
@@ -14281,7 +14307,8 @@
     "indice": "Le nombre 100.",
     "explication": "Le mot est : cent.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "j'ai compté jusqu'à cent"
   },
   {
     "id": "fr_p1_028",
@@ -14298,7 +14325,8 @@
     "indice": "Tu y marches en ville.",
     "explication": "Le mot est : rue.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "je marche dans la rue"
   },
   {
     "id": "fr_p1_029",
@@ -14315,7 +14343,8 @@
     "indice": "Plus grande qu'un village.",
     "explication": "Le mot est : ville.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "Montréal est une grande ville"
   },
   {
     "id": "fr_p1_030",
@@ -14332,7 +14361,8 @@
     "indice": "Là où tu apprends à l'école.",
     "explication": "Le mot est : classe.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "ma classe est au deuxième étage"
   },
   {
     "id": "fr_p1_031",
@@ -14349,7 +14379,8 @@
     "indice": "Tu écris avec ça.",
     "explication": "Le mot est : crayon.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "j'écris avec mon crayon de bois"
   },
   {
     "id": "fr_p1_032",
@@ -14366,7 +14397,8 @@
     "indice": "On écrit dessus.",
     "explication": "Le mot est : papier.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "une feuille de papier blanc"
   },
   {
     "id": "fr_p1_033",
@@ -14383,7 +14415,8 @@
     "indice": "Pousse au jardin.",
     "explication": "Le mot est : fleur.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "une jolie fleur dans le jardin"
   },
   {
     "id": "fr_p1_034",
@@ -14400,7 +14433,8 @@
     "indice": "Grand végétal avec des feuilles.",
     "explication": "Le mot est : arbre.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "l'arbre est très grand"
   },
   {
     "id": "fr_p1_035",
@@ -14417,7 +14451,8 @@
     "indice": "Beaucoup d'arbres ensemble.",
     "explication": "Le mot est : forêt.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "il y a beaucoup d'arbres dans la forêt"
   },
   {
     "id": "fr_p1_036",
@@ -14434,7 +14469,8 @@
     "indice": "Grande étendue d'eau salée.",
     "explication": "Le mot est : mer.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "la mer est calme aujourd'hui"
   },
   {
     "id": "fr_p1_037",
@@ -14451,7 +14487,8 @@
     "indice": "Du sable au bord de la mer.",
     "explication": "Le mot est : plage.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "je joue dans le sable de la plage"
   },
   {
     "id": "fr_p1_038",
@@ -14468,7 +14505,8 @@
     "indice": "Tu joues au soccer avec.",
     "explication": "Le mot est : ballon.",
     "tempsSec": 25,
-    "pointsBase": 100
+    "pointsBase": 100,
+    "phraseContexte": "le ballon de soccer roule sur l'herbe"
   },
   {
     "id": "fr_p2_001",
@@ -14485,7 +14523,8 @@
     "indice": "On en mange à sa fête.",
     "explication": "Le mot est : gâteau.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "maman a fait un gâteau au chocolat"
   },
   {
     "id": "fr_p2_002",
@@ -14502,7 +14541,8 @@
     "indice": "Oiseau qui chasse la nuit.",
     "explication": "Le mot est : hibou.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "le hibou hulule pendant la nuit"
   },
   {
     "id": "fr_p2_003",
@@ -14519,7 +14559,8 @@
     "indice": "Saison de la neige.",
     "explication": "Le mot est : hiver.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "il neige beaucoup en hiver"
   },
   {
     "id": "fr_p2_004",
@@ -14536,7 +14577,8 @@
     "indice": "Il vole dans le ciel.",
     "explication": "Le mot est : oiseau.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "l'oiseau vole dans le ciel"
   },
   {
     "id": "fr_p2_005",
@@ -14553,7 +14595,8 @@
     "indice": "Demeure du roi.",
     "explication": "Le mot est : château.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "le roi habite un grand château"
   },
   {
     "id": "fr_p2_006",
@@ -14570,7 +14613,8 @@
     "indice": "Cours d'eau.",
     "explication": "Le mot est : rivière.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "la rivière coule doucement"
   },
   {
     "id": "fr_p2_007",
@@ -14587,7 +14631,8 @@
     "indice": "Très grande colline.",
     "explication": "Le mot est : montagne.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'ai grimpé sur la montagne"
   },
   {
     "id": "fr_p2_008",
@@ -14604,7 +14649,8 @@
     "indice": "On y fait pousser des fleurs.",
     "explication": "Le mot est : jardin.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "il y a des tomates dans le jardin"
   },
   {
     "id": "fr_p2_009",
@@ -14621,7 +14667,8 @@
     "indice": "Toi à l'école.",
     "explication": "Le mot est : élève.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "chaque élève écoute le professeur"
   },
   {
     "id": "fr_p2_010",
@@ -14638,7 +14685,8 @@
     "indice": "Un enfant masculin.",
     "explication": "Le mot est : garçon.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "un garçon joue au soccer"
   },
   {
     "id": "fr_p2_011",
@@ -14655,7 +14703,8 @@
     "indice": "Une enfant féminine.",
     "explication": "Le mot est : fille.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "une petite fille rit aux éclats"
   },
   {
     "id": "fr_p2_012",
@@ -14672,7 +14721,8 @@
     "indice": "Crier le nom de quelqu'un.",
     "explication": "Le mot est : appeler.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "je vais appeler ma grand-mère"
   },
   {
     "id": "fr_p2_013",
@@ -14689,7 +14739,8 @@
     "indice": "Aller loin de chez soi.",
     "explication": "Le mot est : voyage.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "nous partons en voyage en Gaspésie"
   },
   {
     "id": "fr_p2_014",
@@ -14706,7 +14757,8 @@
     "indice": "Saison où tombent les feuilles.",
     "explication": "Le mot est : automne.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "en automne, les feuilles tombent"
   },
   {
     "id": "fr_p2_015",
@@ -14723,7 +14775,8 @@
     "indice": "Saison des fleurs.",
     "explication": "Le mot est : printemps.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "au printemps, les fleurs poussent"
   },
   {
     "id": "fr_p2_016",
@@ -14740,7 +14793,8 @@
     "indice": "Papa, maman et les enfants.",
     "explication": "Le mot est : famille.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'adore passer du temps en famille"
   },
   {
     "id": "fr_p2_017",
@@ -14757,7 +14811,8 @@
     "indice": "Là où tu habites.",
     "explication": "Le mot est : maison.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'habite dans une grande maison"
   },
   {
     "id": "fr_p2_018",
@@ -14774,7 +14829,8 @@
     "indice": "Tu parles à distance avec.",
     "explication": "Le mot est : téléphone.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "le téléphone sonne dans le salon"
   },
   {
     "id": "fr_p2_019",
@@ -14791,7 +14847,8 @@
     "indice": "Pour regarder des émissions.",
     "explication": "Le mot est : téléviseur.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'allume le téléviseur pour le hockey"
   },
   {
     "id": "fr_p2_020",
@@ -14808,7 +14865,8 @@
     "indice": "Petit animal avec une grosse queue.",
     "explication": "Le mot est : écureuil.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "l'écureuil grimpe à l'arbre"
   },
   {
     "id": "fr_p2_021",
@@ -14825,7 +14883,8 @@
     "indice": "On le dit à un homme adulte.",
     "explication": "Le mot est : monsieur.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "bonjour monsieur, comment allez-vous"
   },
   {
     "id": "fr_p2_022",
@@ -14842,7 +14901,8 @@
     "indice": "On le dit à une femme adulte.",
     "explication": "Le mot est : madame.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "bonsoir madame, bienvenue"
   },
   {
     "id": "fr_p2_023",
@@ -14859,7 +14919,8 @@
     "indice": "Personne qui enseigne.",
     "explication": "Le mot est : professeur.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "le professeur écrit au tableau"
   },
   {
     "id": "fr_p2_024",
@@ -14876,7 +14937,8 @@
     "indice": "Tout le temps.",
     "explication": "Le mot est : toujours.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "je suis toujours à l'heure"
   },
   {
     "id": "fr_p2_025",
@@ -14893,7 +14955,8 @@
     "indice": "Pas une seule fois.",
     "explication": "Le mot est : jamais.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "je ne mens jamais"
   },
   {
     "id": "fr_p2_026",
@@ -14910,7 +14973,8 @@
     "indice": "Très fréquemment.",
     "explication": "Le mot est : souvent.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "je vais souvent à la bibliothèque"
   },
   {
     "id": "fr_p2_027",
@@ -14927,7 +14991,8 @@
     "indice": "Les uns avec les autres.",
     "explication": "Le mot est : ensemble.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "nous jouons ensemble dans la cour"
   },
   {
     "id": "fr_p2_028",
@@ -14944,7 +15009,8 @@
     "indice": "Là où on soigne les malades.",
     "explication": "Le mot est : hôpital.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "le médecin travaille à l'hôpital"
   },
   {
     "id": "fr_p2_029",
@@ -14961,7 +15027,8 @@
     "indice": "Gros véhicule pour passagers.",
     "explication": "Le mot est : autobus.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'attends l'autobus à l'arrêt"
   },
   {
     "id": "fr_p2_030",
@@ -14978,7 +15045,8 @@
     "indice": "Auto familiale.",
     "explication": "Le mot est : voiture.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "papa conduit la voiture"
   },
   {
     "id": "fr_p2_031",
@@ -14995,7 +15063,8 @@
     "indice": "Vélo à deux roues.",
     "explication": "Le mot est : bicyclette.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "je roule à bicyclette"
   },
   {
     "id": "fr_p2_032",
@@ -15012,7 +15081,8 @@
     "indice": "Une image prise.",
     "explication": "Le mot est : photographie.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'ai pris une belle photographie"
   },
   {
     "id": "fr_p2_033",
@@ -15029,7 +15099,8 @@
     "indice": "On l'écoute avec plaisir.",
     "explication": "Le mot est : musique.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "j'écoute de la musique douce"
   },
   {
     "id": "fr_p2_034",
@@ -15046,7 +15117,8 @@
     "indice": "Pluriel d'animal.",
     "explication": "Le mot est : animaux.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "les animaux du zoo dorment"
   },
   {
     "id": "fr_p2_035",
@@ -15063,7 +15135,8 @@
     "indice": "Pluriel d'oiseau.",
     "explication": "Le mot est : oiseaux.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "les oiseaux chantent au lever du soleil"
   },
   {
     "id": "fr_p2_036",
@@ -15080,7 +15153,8 @@
     "indice": "Tu les coiffes.",
     "explication": "Le mot est : cheveux.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "mes cheveux sont bruns et bouclés"
   },
   {
     "id": "fr_p2_037",
@@ -15097,7 +15171,8 @@
     "indice": "Pour de vrai.",
     "explication": "Le mot est : vraiment.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "c'est vraiment une bonne idée"
   },
   {
     "id": "fr_p2_038",
@@ -15114,7 +15189,8 @@
     "indice": "Très très grand.",
     "explication": "Le mot est : immense.",
     "tempsSec": 20,
-    "pointsBase": 150
+    "pointsBase": 150,
+    "phraseContexte": "le ciel étoilé est immense"
   },
   {
     "id": "fr_p3_001",
@@ -15131,7 +15207,8 @@
     "indice": "L'étude des nombres et des figures.",
     "explication": "Le mot est : mathématiques.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "j'aime les mathématiques à l'école"
   },
   {
     "id": "fr_p3_002",
@@ -15148,7 +15225,8 @@
     "indice": "L'étude de la Terre et des pays.",
     "explication": "Le mot est : géographie.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "en géographie, on étudie les pays"
   },
   {
     "id": "fr_p3_003",
@@ -15165,7 +15243,8 @@
     "indice": "Une personne agréable.",
     "explication": "Le mot est : sympathique.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "ma voisine est très sympathique"
   },
   {
     "id": "fr_p3_004",
@@ -15182,7 +15261,8 @@
     "indice": "Le jour présent.",
     "explication": "Le mot est : aujourd'hui.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "aujourd'hui, il fait beau dehors"
   },
   {
     "id": "fr_p3_005",
@@ -15199,7 +15279,8 @@
     "indice": "Dans le passé, il y a longtemps.",
     "explication": "Le mot est : autrefois.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "autrefois, il n'y avait pas d'autos"
   },
   {
     "id": "fr_p3_006",
@@ -15216,7 +15297,8 @@
     "indice": "Une grande quantité.",
     "explication": "Le mot est : beaucoup.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "j'ai beaucoup d'amis à l'école"
   },
   {
     "id": "fr_p3_007",
@@ -15233,7 +15315,8 @@
     "indice": "C'est possible.",
     "explication": "Le mot est : peut-être.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "peut-être que je viendrai demain"
   },
   {
     "id": "fr_p3_008",
@@ -15250,7 +15333,8 @@
     "indice": "Donne une raison.",
     "explication": "Le mot est : parce que.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "je suis content parce que c'est congé"
   },
   {
     "id": "fr_p3_009",
@@ -15267,7 +15351,8 @@
     "indice": "Tu y joues à des jeux.",
     "explication": "Le mot est : ordinateur.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "mon ordinateur portable est neuf"
   },
   {
     "id": "fr_p3_010",
@@ -15284,7 +15369,8 @@
     "indice": "Quelqu'un qui comprend vite.",
     "explication": "Le mot est : intelligent.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "ce chien est très intelligent"
   },
   {
     "id": "fr_p3_011",
@@ -15301,7 +15387,8 @@
     "indice": "Très très bien.",
     "explication": "Le mot est : fantastique.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "le voyage était fantastique"
   },
   {
     "id": "fr_p3_012",
@@ -15318,7 +15405,8 @@
     "indice": "Livre qui explique les mots.",
     "explication": "Le mot est : dictionnaire.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "je cherche un mot dans le dictionnaire"
   },
   {
     "id": "fr_p3_013",
@@ -15335,7 +15423,8 @@
     "indice": "Grand livre du savoir.",
     "explication": "Le mot est : encyclopédie.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "une grosse encyclopédie illustrée"
   },
   {
     "id": "fr_p3_014",
@@ -15352,7 +15441,8 @@
     "indice": "Ce qui fait fonctionner les ampoules.",
     "explication": "Le mot est : électricité.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "il y a une panne d'électricité"
   },
   {
     "id": "fr_p3_015",
@@ -15369,7 +15459,8 @@
     "indice": "Qui attire le fer.",
     "explication": "Le mot est : magnétique.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "un aimant est magnétique"
   },
   {
     "id": "fr_p3_016",
@@ -15386,7 +15477,8 @@
     "indice": "L'air autour de la Terre.",
     "explication": "Le mot est : atmosphère.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "l'atmosphère de la Terre nous protège"
   },
   {
     "id": "fr_p3_017",
@@ -15403,7 +15495,8 @@
     "indice": "La nature autour de nous.",
     "explication": "Le mot est : environnement.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "il faut protéger l'environnement"
   },
   {
     "id": "fr_p3_018",
@@ -15420,7 +15513,8 @@
     "indice": "Pas comme les autres, spécial.",
     "explication": "Le mot est : particulier.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "ce cas-ci est très particulier"
   },
   {
     "id": "fr_p3_019",
@@ -15437,7 +15531,8 @@
     "indice": "Quand deux choses se ressemblent.",
     "explication": "Le mot est : ressemblance.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "il y a une grande ressemblance entre eux"
   },
   {
     "id": "fr_p3_020",
@@ -15454,7 +15549,8 @@
     "indice": "Personne qui réfléchit beaucoup.",
     "explication": "Le mot est : philosophe.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "Socrate était un grand philosophe"
   },
   {
     "id": "fr_p3_021",
@@ -15471,7 +15567,8 @@
     "indice": "Personne qui soigne les malades.",
     "explication": "Le mot est : médecin.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "le médecin soigne les malades"
   },
   {
     "id": "fr_p3_022",
@@ -15488,7 +15585,8 @@
     "indice": "Qui semble vrai.",
     "explication": "Le mot est : vraisemblable.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "c'est une histoire vraisemblable"
   },
   {
     "id": "fr_p3_023",
@@ -15505,7 +15603,8 @@
     "indice": "Qui concerne la vie.",
     "explication": "Le mot est : biologique.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "j'achète des légumes biologiques"
   },
   {
     "id": "fr_p3_024",
@@ -15522,7 +15621,8 @@
     "indice": "En forme de rectangle.",
     "explication": "Le mot est : rectangulaire.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "notre table est rectangulaire"
   },
   {
     "id": "fr_p3_025",
@@ -15539,7 +15639,8 @@
     "indice": "De façon naturelle.",
     "explication": "Le mot est : naturellement.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "il sourit naturellement"
   },
   {
     "id": "fr_p3_026",
@@ -15556,7 +15657,8 @@
     "indice": "Tout de suite.",
     "explication": "Le mot est : immédiatement.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "viens ici immédiatement, s'il te plaît"
   },
   {
     "id": "fr_p3_027",
@@ -15573,7 +15675,8 @@
     "indice": "La plupart du temps.",
     "explication": "Le mot est : généralement.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "généralement, je me couche tôt"
   },
   {
     "id": "fr_p3_028",
@@ -15590,7 +15693,8 @@
     "indice": "C'est évident, bien sûr.",
     "explication": "Le mot est : évidemment.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "évidemment, j'accepte ton invitation"
   },
   {
     "id": "fr_p3_029",
@@ -15607,7 +15711,8 @@
     "indice": "Pendant une longue durée.",
     "explication": "Le mot est : longtemps.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "j'ai attendu longtemps avant de partir"
   },
   {
     "id": "fr_p3_030",
@@ -15624,7 +15729,8 @@
     "indice": "De temps en temps.",
     "explication": "Le mot est : quelquefois.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "quelquefois, je pars en voyage"
   },
   {
     "id": "fr_p3_031",
@@ -15641,7 +15747,8 @@
     "indice": "Un moment convenu pour se rencontrer.",
     "explication": "Le mot est : rendez-vous.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "j'ai rendez-vous chez le dentiste"
   },
   {
     "id": "fr_p3_032",
@@ -15658,7 +15765,8 @@
     "indice": "Vêtements vendus tout faits.",
     "explication": "Le mot est : prêt-à-porter.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "un magasin de prêt-à-porter"
   },
   {
     "id": "fr_p3_033",
@@ -15675,7 +15783,8 @@
     "indice": "Le 20e.",
     "explication": "Le mot est : vingtième.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "le vingtième siècle"
   },
   {
     "id": "fr_p3_034",
@@ -15692,7 +15801,8 @@
     "indice": "Le jour avant aujourd'hui.",
     "explication": "Le mot est : hier.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "hier soir, j'ai bien dormi"
   },
   {
     "id": "fr_p3_035",
@@ -15709,6 +15819,7 @@
     "indice": "Le jour après aujourd'hui.",
     "explication": "Le mot est : demain.",
     "tempsSec": 15,
-    "pointsBase": 200
+    "pointsBase": 200,
+    "phraseContexte": "demain, c'est samedi"
   }
 ]
