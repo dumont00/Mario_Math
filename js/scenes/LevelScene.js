@@ -112,10 +112,12 @@ class LevelScene extends Phaser.Scene {
         this.cameras.main.startFollow(this.hero, true, 0.12, 0.12);
         this.cameras.main.setDeadzone(120, 80);
 
-        this.cursors = this.input.keyboard.createCursorKeys();
+        this.cursors  = this.input.keyboard.createCursorKeys();
         this.spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-        this.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
-        this.keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
+        // On n'utilise PAS de lettres pour le mouvement : elles doivent
+        // rester disponibles pour la saisie texte du mode orthographe.
+        // Seules les flèches du clavier (et les boutons tactiles) déplacent
+        // le héros.
 
         this.bindTouchControls();
         this.addHud();
@@ -129,8 +131,8 @@ class LevelScene extends Phaser.Scene {
         if (this.enQuestion || this.niveauFini) return;
 
         const vitesse = CONFIG.moteur.vitesseHero;
-        const wantLeft = this.cursors.left.isDown || this.keyA.isDown || this.touchInput.left;
-        const wantRight = this.cursors.right.isDown || this.keyD.isDown || this.touchInput.right;
+        const wantLeft  = this.cursors.left.isDown  || this.touchInput.left;
+        const wantRight = this.cursors.right.isDown || this.touchInput.right;
         const wantJump =
             this.cursors.up.isDown ||
             this.cursors.space.isDown ||
