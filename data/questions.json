@@ -880,266 +880,6 @@
     "pointsBase": 150
   },
   {
-    "id": "arith_045",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "4 995 + 4 311 = ?",
-    "visuel": null,
-    "choix": [
-      "9 306",
-      "9 206",
-      "9 406",
-      "9 307"
-    ],
-    "reponse": "9 306",
-    "indice": "Colonne par colonne.",
-    "explication": "4 995 + 4 311 = 9 306.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_046",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "4 053 + 4 092 = ?",
-    "visuel": null,
-    "choix": [
-      "8 245",
-      "8 045",
-      "8 145",
-      "8 146"
-    ],
-    "reponse": "8 145",
-    "indice": "Colonne par colonne.",
-    "explication": "4 053 + 4 092 = 8 145.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_047",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "2 415 + 1 991 = ?",
-    "visuel": null,
-    "choix": [
-      "4 506",
-      "4 407",
-      "4 306",
-      "4 406"
-    ],
-    "reponse": "4 406",
-    "indice": "Colonne par colonne.",
-    "explication": "2 415 + 1 991 = 4 406.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_048",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "4 263 + 2 384 = ?",
-    "visuel": null,
-    "choix": [
-      "6 547",
-      "6 747",
-      "6 648",
-      "6 647"
-    ],
-    "reponse": "6 647",
-    "indice": "Colonne par colonne.",
-    "explication": "4 263 + 2 384 = 6 647.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_049",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "3 259 + 4 592 = ?",
-    "visuel": null,
-    "choix": [
-      "7 852",
-      "7 751",
-      "7 851",
-      "7 951"
-    ],
-    "reponse": "7 851",
-    "indice": "Colonne par colonne.",
-    "explication": "3 259 + 4 592 = 7 851.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_050",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "4 687 + 1 861 = ?",
-    "visuel": null,
-    "choix": [
-      "6 648",
-      "6 549",
-      "6 448",
-      "6 548"
-    ],
-    "reponse": "6 548",
-    "indice": "Colonne par colonne.",
-    "explication": "4 687 + 1 861 = 6 548.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_051",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Addition",
-    "palier": 2,
-    "type": "choix",
-    "question": "3 965 + 4 630 = ?",
-    "visuel": null,
-    "choix": [
-      "8 495",
-      "8 595",
-      "8 596",
-      "8 695"
-    ],
-    "reponse": "8 595",
-    "indice": "Colonne par colonne.",
-    "explication": "3 965 + 4 630 = 8 595.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_052",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Soustraction",
-    "palier": 2,
-    "type": "choix",
-    "question": "8 666 − 3 216 = ?",
-    "visuel": null,
-    "choix": [
-      "5 550",
-      "5 451",
-      "5 350",
-      "5 450"
-    ],
-    "reponse": "5 450",
-    "indice": "Colonne par colonne.",
-    "explication": "8 666 − 3 216 = 5 450.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_053",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Soustraction",
-    "palier": 2,
-    "type": "choix",
-    "question": "7 434 − 6 585 = ?",
-    "visuel": null,
-    "choix": [
-      "850",
-      "849",
-      "949",
-      "749"
-    ],
-    "reponse": "849",
-    "indice": "Colonne par colonne.",
-    "explication": "7 434 − 6 585 = 849.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_054",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Soustraction",
-    "palier": 2,
-    "type": "choix",
-    "question": "6 573 − 3 155 = ?",
-    "visuel": null,
-    "choix": [
-      "3 419",
-      "3 418",
-      "3 518",
-      "3 318"
-    ],
-    "reponse": "3 418",
-    "indice": "Colonne par colonne.",
-    "explication": "6 573 − 3 155 = 3 418.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_055",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Soustraction",
-    "palier": 2,
-    "type": "choix",
-    "question": "6 457 − 4 945 = ?",
-    "visuel": null,
-    "choix": [
-      "1 612",
-      "1 513",
-      "1 512",
-      "1 412"
-    ],
-    "reponse": "1 512",
-    "indice": "Colonne par colonne.",
-    "explication": "6 457 − 4 945 = 1 512.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_056",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Soustraction",
-    "palier": 2,
-    "type": "choix",
-    "question": "7 754 − 6 288 = ?",
-    "visuel": null,
-    "choix": [
-      "1 566",
-      "1 366",
-      "1 467",
-      "1 466"
-    ],
-    "reponse": "1 466",
-    "indice": "Colonne par colonne.",
-    "explication": "7 754 − 6 288 = 1 466.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_057",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Soustraction",
-    "palier": 2,
-    "type": "choix",
-    "question": "8 144 − 3 372 = ?",
-    "visuel": null,
-    "choix": [
-      "4 672",
-      "4 772",
-      "4 773",
-      "4 872"
-    ],
-    "reponse": "4 772",
-    "indice": "Colonne par colonne.",
-    "explication": "8 144 − 3 372 = 4 772.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
     "id": "arith_058",
     "domaine": "Arithmétique",
     "sousDomaine": "Multiplication",
@@ -6845,146 +6585,6 @@
     "explication": "12 × 12 = 12 × 11 + 12 = 132 + 12 = 144.",
     "tempsSec": 12,
     "pointsBase": 200
-  },
-  {
-    "id": "arith_mul_029",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 1,
-    "type": "choix",
-    "question": "1 × 4 = ?",
-    "visuel": null,
-    "choix": [
-      "14",
-      "4",
-      "3",
-      "2"
-    ],
-    "reponse": "4",
-    "indice": "Pense à la table de 4.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 4 = 4.",
-    "tempsSec": 20,
-    "pointsBase": 100
-  },
-  {
-    "id": "arith_mul_030",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 1,
-    "type": "choix",
-    "question": "Quel est le résultat de 1 × 6 ?",
-    "visuel": null,
-    "choix": [
-      "4",
-      "12",
-      "6",
-      "5"
-    ],
-    "reponse": "6",
-    "indice": "Pense à la table de 6.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 6 = 6.",
-    "tempsSec": 20,
-    "pointsBase": 100
-  },
-  {
-    "id": "arith_mul_031",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 1,
-    "type": "choix",
-    "question": "1 × 7 = ?",
-    "visuel": null,
-    "choix": [
-      "8",
-      "5",
-      "7",
-      "6"
-    ],
-    "reponse": "7",
-    "indice": "Pense à la table de 7.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 7 = 7.",
-    "tempsSec": 20,
-    "pointsBase": 100
-  },
-  {
-    "id": "arith_mul_032",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 2,
-    "type": "choix",
-    "question": "1 × 8 = ?",
-    "visuel": null,
-    "choix": [
-      "16",
-      "10",
-      "8",
-      "7"
-    ],
-    "reponse": "8",
-    "indice": "Pense à la table de 8.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 8 = 8.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_mul_033",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 2,
-    "type": "choix",
-    "question": "1 × 9 = ?",
-    "visuel": null,
-    "choix": [
-      "7",
-      "9",
-      "19",
-      "11"
-    ],
-    "reponse": "9",
-    "indice": "Table de 9 : les chiffres du résultat font 9 quand on les additionne.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 9 = 9.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_mul_034",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 2,
-    "type": "choix",
-    "question": "Combien font 1 × 11 ?",
-    "visuel": null,
-    "choix": [
-      "1",
-      "21",
-      "11",
-      "22"
-    ],
-    "reponse": "11",
-    "indice": "Pense à la table de 11.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 11 = 11.",
-    "tempsSec": 15,
-    "pointsBase": 150
-  },
-  {
-    "id": "arith_mul_035",
-    "domaine": "Arithmétique",
-    "sousDomaine": "Tables de multiplication",
-    "palier": 2,
-    "type": "choix",
-    "question": "Quel est le résultat de 1 × 12 ?",
-    "visuel": null,
-    "choix": [
-      "10",
-      "12",
-      "11",
-      "2"
-    ],
-    "reponse": "12",
-    "indice": "Pense à la table de 12.",
-    "explication": "Multiplier par 1 ne change rien : 1 × 12 = 12.",
-    "tempsSec": 15,
-    "pointsBase": 150
   },
   {
     "id": "arith_mul_036",
@@ -15821,5 +15421,3445 @@
     "tempsSec": 15,
     "pointsBase": 200,
     "phraseContexte": "demain, c'est samedi"
+  },
+  {
+    "id": "arith_add_p1_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "52 + 20 = ?",
+    "visuel": null,
+    "choix": [
+      "62",
+      "72",
+      "53",
+      "74"
+    ],
+    "reponse": "72",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "52 + 20 = 72.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "75 + 14 = ?",
+    "visuel": null,
+    "choix": [
+      "79",
+      "91",
+      "70",
+      "89"
+    ],
+    "reponse": "89",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "75 + 14 = 89.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "22 + 65 = ?",
+    "visuel": null,
+    "choix": [
+      "87",
+      "68",
+      "77",
+      "108"
+    ],
+    "reponse": "87",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "22 + 65 = 87.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "84 + 15 = ?",
+    "visuel": null,
+    "choix": [
+      "80",
+      "99",
+      "97",
+      "101"
+    ],
+    "reponse": "99",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "84 + 15 = 99.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "48 + 37 = ?",
+    "visuel": null,
+    "choix": [
+      "96",
+      "76",
+      "85",
+      "75"
+    ],
+    "reponse": "85",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "48 + 37 = 85.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "24 + 35 = ?",
+    "visuel": null,
+    "choix": [
+      "49",
+      "59",
+      "70",
+      "60"
+    ],
+    "reponse": "59",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "24 + 35 = 59.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "37 + 42 = ?",
+    "visuel": null,
+    "choix": [
+      "179",
+      "79",
+      "90",
+      "81"
+    ],
+    "reponse": "79",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "37 + 42 = 79.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "57 + 30 = ?",
+    "visuel": null,
+    "choix": [
+      "87",
+      "78",
+      "187",
+      "85"
+    ],
+    "reponse": "87",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "57 + 30 = 87.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "78 + 18 = ?",
+    "visuel": null,
+    "choix": [
+      "95",
+      "106",
+      "96",
+      "97"
+    ],
+    "reponse": "96",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "78 + 18 = 96.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "32 + 59 = ?",
+    "visuel": null,
+    "choix": [
+      "82",
+      "101",
+      "92",
+      "91"
+    ],
+    "reponse": "91",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "32 + 59 = 91.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "82 + 15 = ?",
+    "visuel": null,
+    "choix": [
+      "98",
+      "197",
+      "118",
+      "97"
+    ],
+    "reponse": "97",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "82 + 15 = 97.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "19 + 22 = ?",
+    "visuel": null,
+    "choix": [
+      "41",
+      "51",
+      "31",
+      "40"
+    ],
+    "reponse": "41",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "19 + 22 = 41.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "84 + 14 = ?",
+    "visuel": null,
+    "choix": [
+      "98",
+      "99",
+      "100",
+      "97"
+    ],
+    "reponse": "98",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "84 + 14 = 98.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "32 + 50 = ?",
+    "visuel": null,
+    "choix": [
+      "63",
+      "72",
+      "82",
+      "92"
+    ],
+    "reponse": "82",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "32 + 50 = 82.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p1_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 1,
+    "type": "choix",
+    "question": "42 + 36 = ?",
+    "visuel": null,
+    "choix": [
+      "80",
+      "68",
+      "78",
+      "88"
+    ],
+    "reponse": "78",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "42 + 36 = 78.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "75 − 27 = ?",
+    "visuel": null,
+    "choix": [
+      "39",
+      "50",
+      "48",
+      "59"
+    ],
+    "reponse": "48",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "75 − 27 = 48.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "62 − 53 = ?",
+    "visuel": null,
+    "choix": [
+      "8",
+      "109",
+      "9",
+      "30"
+    ],
+    "reponse": "9",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "62 − 53 = 9.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "54 − 24 = ?",
+    "visuel": null,
+    "choix": [
+      "30",
+      "11",
+      "40",
+      "21"
+    ],
+    "reponse": "30",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "54 − 24 = 30.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "49 − 36 = ?",
+    "visuel": null,
+    "choix": [
+      "13",
+      "34",
+      "113",
+      "15"
+    ],
+    "reponse": "13",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "49 − 36 = 13.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "69 − 59 = ?",
+    "visuel": null,
+    "choix": [
+      "11",
+      "110",
+      "21",
+      "10"
+    ],
+    "reponse": "10",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "69 − 59 = 10.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "70 − 50 = ?",
+    "visuel": null,
+    "choix": [
+      "18",
+      "1",
+      "20",
+      "22"
+    ],
+    "reponse": "20",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "70 − 50 = 20.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "50 − 17 = ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "14",
+      "33",
+      "34"
+    ],
+    "reponse": "33",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "50 − 17 = 33.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "74 − 16 = ?",
+    "visuel": null,
+    "choix": [
+      "39",
+      "79",
+      "58",
+      "59"
+    ],
+    "reponse": "58",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "74 − 16 = 58.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "49 − 26 = ?",
+    "visuel": null,
+    "choix": [
+      "44",
+      "123",
+      "24",
+      "23"
+    ],
+    "reponse": "23",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "49 − 26 = 23.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "94 − 72 = ?",
+    "visuel": null,
+    "choix": [
+      "122",
+      "22",
+      "32",
+      "43"
+    ],
+    "reponse": "22",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "94 − 72 = 22.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "46 − 31 = ?",
+    "visuel": null,
+    "choix": [
+      "13",
+      "26",
+      "15",
+      "16"
+    ],
+    "reponse": "15",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "46 − 31 = 15.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "49 − 44 = ?",
+    "visuel": null,
+    "choix": [
+      "26",
+      "3",
+      "5",
+      "15"
+    ],
+    "reponse": "5",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "49 − 44 = 5.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "84 − 43 = ?",
+    "visuel": null,
+    "choix": [
+      "41",
+      "42",
+      "52",
+      "32"
+    ],
+    "reponse": "41",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "84 − 43 = 41.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "80 − 38 = ?",
+    "visuel": null,
+    "choix": [
+      "40",
+      "63",
+      "142",
+      "42"
+    ],
+    "reponse": "42",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "80 − 38 = 42.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_sub_p1_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 1,
+    "type": "choix",
+    "question": "52 − 43 = ?",
+    "visuel": null,
+    "choix": [
+      "20",
+      "10",
+      "9",
+      "109"
+    ],
+    "reponse": "9",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "52 − 43 = 9.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_add_p2_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "341 + 232 = ?",
+    "visuel": null,
+    "choix": [
+      "564",
+      "584",
+      "572",
+      "573"
+    ],
+    "reponse": "573",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "341 + 232 = 573.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "286 + 141 = ?",
+    "visuel": null,
+    "choix": [
+      "527",
+      "408",
+      "418",
+      "427"
+    ],
+    "reponse": "427",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "286 + 141 = 427.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "204 + 347 = ?",
+    "visuel": null,
+    "choix": [
+      "562",
+      "651",
+      "451",
+      "551"
+    ],
+    "reponse": "551",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "204 + 347 = 551.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "429 + 143 = ?",
+    "visuel": null,
+    "choix": [
+      "573",
+      "593",
+      "572",
+      "553"
+    ],
+    "reponse": "572",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "429 + 143 = 572.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "322 + 425 = ?",
+    "visuel": null,
+    "choix": [
+      "748",
+      "746",
+      "728",
+      "747"
+    ],
+    "reponse": "747",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "322 + 425 = 747.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "471 + 181 = ?",
+    "visuel": null,
+    "choix": [
+      "642",
+      "652",
+      "552",
+      "752"
+    ],
+    "reponse": "652",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "471 + 181 = 652.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "435 + 174 = ?",
+    "visuel": null,
+    "choix": [
+      "709",
+      "609",
+      "620",
+      "611"
+    ],
+    "reponse": "609",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "435 + 174 = 609.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "110 + 107 = ?",
+    "visuel": null,
+    "choix": [
+      "198",
+      "317",
+      "217",
+      "238"
+    ],
+    "reponse": "217",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "110 + 107 = 217.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "208 + 114 = ?",
+    "visuel": null,
+    "choix": [
+      "320",
+      "322",
+      "422",
+      "313"
+    ],
+    "reponse": "322",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "208 + 114 = 322.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "232 + 378 = ?",
+    "visuel": null,
+    "choix": [
+      "611",
+      "610",
+      "600",
+      "510"
+    ],
+    "reponse": "610",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "232 + 378 = 610.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "356 + 166 = ?",
+    "visuel": null,
+    "choix": [
+      "622",
+      "522",
+      "512",
+      "532"
+    ],
+    "reponse": "522",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "356 + 166 = 522.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "411 + 102 = ?",
+    "visuel": null,
+    "choix": [
+      "613",
+      "503",
+      "534",
+      "513"
+    ],
+    "reponse": "513",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "411 + 102 = 513.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "384 + 131 = ?",
+    "visuel": null,
+    "choix": [
+      "536",
+      "525",
+      "514",
+      "515"
+    ],
+    "reponse": "515",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "384 + 131 = 515.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "227 + 197 = ?",
+    "visuel": null,
+    "choix": [
+      "324",
+      "422",
+      "405",
+      "424"
+    ],
+    "reponse": "424",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "227 + 197 = 424.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p2_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 2,
+    "type": "choix",
+    "question": "489 + 132 = ?",
+    "visuel": null,
+    "choix": [
+      "623",
+      "621",
+      "632",
+      "620"
+    ],
+    "reponse": "621",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "489 + 132 = 621.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "613 − 570 = ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "43",
+      "143",
+      "53"
+    ],
+    "reponse": "43",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "613 − 570 = 43.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "722 − 257 = ?",
+    "visuel": null,
+    "choix": [
+      "465",
+      "466",
+      "455",
+      "467"
+    ],
+    "reponse": "465",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "722 − 257 = 465.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "473 − 87 = ?",
+    "visuel": null,
+    "choix": [
+      "387",
+      "377",
+      "386",
+      "407"
+    ],
+    "reponse": "386",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "473 − 87 = 386.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "275 − 89 = ?",
+    "visuel": null,
+    "choix": [
+      "185",
+      "286",
+      "186",
+      "207"
+    ],
+    "reponse": "186",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "275 − 89 = 186.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "628 − 274 = ?",
+    "visuel": null,
+    "choix": [
+      "335",
+      "355",
+      "454",
+      "354"
+    ],
+    "reponse": "354",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "628 − 274 = 354.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "315 − 230 = ?",
+    "visuel": null,
+    "choix": [
+      "85",
+      "87",
+      "96",
+      "185"
+    ],
+    "reponse": "85",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "315 − 230 = 85.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "515 − 213 = ?",
+    "visuel": null,
+    "choix": [
+      "283",
+      "301",
+      "302",
+      "202"
+    ],
+    "reponse": "302",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "515 − 213 = 302.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "601 − 68 = ?",
+    "visuel": null,
+    "choix": [
+      "532",
+      "534",
+      "533",
+      "543"
+    ],
+    "reponse": "533",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "601 − 68 = 533.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "265 − 108 = ?",
+    "visuel": null,
+    "choix": [
+      "257",
+      "157",
+      "138",
+      "155"
+    ],
+    "reponse": "157",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "265 − 108 = 157.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "426 − 116 = ?",
+    "visuel": null,
+    "choix": [
+      "308",
+      "331",
+      "311",
+      "310"
+    ],
+    "reponse": "310",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "426 − 116 = 310.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "867 − 384 = ?",
+    "visuel": null,
+    "choix": [
+      "383",
+      "464",
+      "483",
+      "481"
+    ],
+    "reponse": "483",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "867 − 384 = 483.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "425 − 58 = ?",
+    "visuel": null,
+    "choix": [
+      "348",
+      "367",
+      "365",
+      "388"
+    ],
+    "reponse": "367",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "425 − 58 = 367.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "218 − 117 = ?",
+    "visuel": null,
+    "choix": [
+      "82",
+      "103",
+      "101",
+      "1"
+    ],
+    "reponse": "101",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "218 − 117 = 101.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "424 − 368 = ?",
+    "visuel": null,
+    "choix": [
+      "56",
+      "67",
+      "47",
+      "37"
+    ],
+    "reponse": "56",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "424 − 368 = 56.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_sub_p2_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 2,
+    "type": "choix",
+    "question": "418 − 75 = ?",
+    "visuel": null,
+    "choix": [
+      "334",
+      "333",
+      "343",
+      "341"
+    ],
+    "reponse": "343",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "418 − 75 = 343.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_add_p3_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "598 + 508 = ?",
+    "visuel": null,
+    "choix": [
+      "1106",
+      "1116",
+      "1127",
+      "1096"
+    ],
+    "reponse": "1106",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "598 + 508 = 1106.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "578 + 298 = ?",
+    "visuel": null,
+    "choix": [
+      "776",
+      "876",
+      "886",
+      "976"
+    ],
+    "reponse": "876",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "578 + 298 = 876.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "575 + 508 = ?",
+    "visuel": null,
+    "choix": [
+      "1064",
+      "1104",
+      "1084",
+      "1083"
+    ],
+    "reponse": "1083",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "575 + 508 = 1083.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "709 + 437 = ?",
+    "visuel": null,
+    "choix": [
+      "1137",
+      "1146",
+      "1246",
+      "1167"
+    ],
+    "reponse": "1146",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "709 + 437 = 1146.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "657 + 457 = ?",
+    "visuel": null,
+    "choix": [
+      "1114",
+      "1104",
+      "1214",
+      "1014"
+    ],
+    "reponse": "1114",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "657 + 457 = 1114.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "670 + 363 = ?",
+    "visuel": null,
+    "choix": [
+      "1014",
+      "933",
+      "1033",
+      "1034"
+    ],
+    "reponse": "1033",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "670 + 363 = 1033.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "804 + 430 = ?",
+    "visuel": null,
+    "choix": [
+      "1134",
+      "1224",
+      "1234",
+      "1236"
+    ],
+    "reponse": "1234",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "804 + 430 = 1234.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "451 + 414 = ?",
+    "visuel": null,
+    "choix": [
+      "965",
+      "865",
+      "864",
+      "875"
+    ],
+    "reponse": "865",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "451 + 414 = 865.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "608 + 391 = ?",
+    "visuel": null,
+    "choix": [
+      "999",
+      "998",
+      "989",
+      "899"
+    ],
+    "reponse": "999",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "608 + 391 = 999.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "693 + 422 = ?",
+    "visuel": null,
+    "choix": [
+      "1115",
+      "1125",
+      "1106",
+      "1136"
+    ],
+    "reponse": "1115",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "693 + 422 = 1115.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "496 + 415 = ?",
+    "visuel": null,
+    "choix": [
+      "912",
+      "911",
+      "901",
+      "892"
+    ],
+    "reponse": "911",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "496 + 415 = 911.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "603 + 435 = ?",
+    "visuel": null,
+    "choix": [
+      "1059",
+      "1038",
+      "1019",
+      "1029"
+    ],
+    "reponse": "1038",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "603 + 435 = 1038.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "841 + 446 = ?",
+    "visuel": null,
+    "choix": [
+      "1289",
+      "1387",
+      "1287",
+      "1277"
+    ],
+    "reponse": "1287",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "841 + 446 = 1287.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "472 + 646 = ?",
+    "visuel": null,
+    "choix": [
+      "1118",
+      "1128",
+      "1119",
+      "1139"
+    ],
+    "reponse": "1118",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "472 + 646 = 1118.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_add_p3_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Addition",
+    "palier": 3,
+    "type": "choix",
+    "question": "801 + 579 = ?",
+    "visuel": null,
+    "choix": [
+      "1401",
+      "1371",
+      "1380",
+      "1480"
+    ],
+    "reponse": "1380",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "801 + 579 = 1380.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_001",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "568 − 476 = ?",
+    "visuel": null,
+    "choix": [
+      "82",
+      "93",
+      "94",
+      "92"
+    ],
+    "reponse": "92",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "568 − 476 = 92.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_002",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "821 − 169 = ?",
+    "visuel": null,
+    "choix": [
+      "643",
+      "673",
+      "662",
+      "652"
+    ],
+    "reponse": "652",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "821 − 169 = 652.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_003",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "733 − 558 = ?",
+    "visuel": null,
+    "choix": [
+      "185",
+      "175",
+      "196",
+      "156"
+    ],
+    "reponse": "175",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "733 − 558 = 175.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_004",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "881 − 635 = ?",
+    "visuel": null,
+    "choix": [
+      "246",
+      "244",
+      "346",
+      "227"
+    ],
+    "reponse": "246",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "881 − 635 = 246.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_005",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "618 − 528 = ?",
+    "visuel": null,
+    "choix": [
+      "111",
+      "100",
+      "190",
+      "90"
+    ],
+    "reponse": "90",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "618 − 528 = 90.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_006",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "966 − 850 = ?",
+    "visuel": null,
+    "choix": [
+      "116",
+      "127",
+      "114",
+      "16"
+    ],
+    "reponse": "116",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "966 − 850 = 116.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_007",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "669 − 280 = ?",
+    "visuel": null,
+    "choix": [
+      "400",
+      "389",
+      "410",
+      "387"
+    ],
+    "reponse": "389",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "669 − 280 = 389.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_008",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "531 − 398 = ?",
+    "visuel": null,
+    "choix": [
+      "131",
+      "133",
+      "114",
+      "154"
+    ],
+    "reponse": "133",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "531 − 398 = 133.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_009",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "648 − 512 = ?",
+    "visuel": null,
+    "choix": [
+      "138",
+      "146",
+      "134",
+      "136"
+    ],
+    "reponse": "136",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "648 − 512 = 136.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_010",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "957 − 712 = ?",
+    "visuel": null,
+    "choix": [
+      "226",
+      "243",
+      "236",
+      "245"
+    ],
+    "reponse": "245",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "957 − 712 = 245.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_011",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "734 − 189 = ?",
+    "visuel": null,
+    "choix": [
+      "547",
+      "543",
+      "555",
+      "545"
+    ],
+    "reponse": "545",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "734 − 189 = 545.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_012",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "538 − 447 = ?",
+    "visuel": null,
+    "choix": [
+      "91",
+      "81",
+      "82",
+      "102"
+    ],
+    "reponse": "91",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "538 − 447 = 91.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_013",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "808 − 670 = ?",
+    "visuel": null,
+    "choix": [
+      "136",
+      "137",
+      "138",
+      "119"
+    ],
+    "reponse": "138",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "808 − 670 = 138.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_014",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "701 − 162 = ?",
+    "visuel": null,
+    "choix": [
+      "529",
+      "541",
+      "439",
+      "539"
+    ],
+    "reponse": "539",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "701 − 162 = 539.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_sub_p3_015",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Soustraction",
+    "palier": 3,
+    "type": "choix",
+    "question": "872 − 294 = ?",
+    "visuel": null,
+    "choix": [
+      "578",
+      "577",
+      "579",
+      "678"
+    ],
+    "reponse": "578",
+    "indice": "Pose l'opération en colonnes si tu veux.",
+    "explication": "872 − 294 = 578.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_100",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "3 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "18",
+      "28",
+      "11",
+      "21"
+    ],
+    "reponse": "21",
+    "indice": "Pense à la table de 7.",
+    "explication": "3 × 7 = 3 × 6 + 3 = 18 + 3 = 21.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_101",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Quel est le résultat de 3 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "21",
+      "31",
+      "11",
+      "18"
+    ],
+    "reponse": "21",
+    "indice": "Pense à la table de 7.",
+    "explication": "3 × 7 = 3 × 6 + 3 = 18 + 3 = 21.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_102",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "7 × 3 = ?",
+    "visuel": null,
+    "choix": [
+      "24",
+      "21",
+      "31",
+      "11"
+    ],
+    "reponse": "21",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 3 = 7 × 2 + 7 = 14 + 7 = 21.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_103",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien font 7 × 3 ?",
+    "visuel": null,
+    "choix": [
+      "21",
+      "18",
+      "31",
+      "11"
+    ],
+    "reponse": "21",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 3 = 7 × 2 + 7 = 14 + 7 = 21.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_104",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "4 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "34",
+      "24",
+      "18",
+      "30"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 6.",
+    "explication": "4 × 6 = 4 × 5 + 4 = 20 + 4 = 24.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_105",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien font 4 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "24",
+      "20",
+      "28",
+      "18"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 6.",
+    "explication": "4 × 6 = 4 × 5 + 4 = 20 + 4 = 24.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_106",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "6 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "18",
+      "34",
+      "24",
+      "30"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 6.",
+    "explication": "6 × 4 = 6 × 3 + 6 = 18 + 6 = 24.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_107",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 1,
+    "type": "choix",
+    "question": "Combien font 6 × 4 ?",
+    "visuel": null,
+    "choix": [
+      "24",
+      "28",
+      "30",
+      "18"
+    ],
+    "reponse": "24",
+    "indice": "Pense à la table de 6.",
+    "explication": "6 × 4 = 6 × 3 + 6 = 18 + 6 = 24.",
+    "tempsSec": 20,
+    "pointsBase": 100
+  },
+  {
+    "id": "arith_mul_109",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 4 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "32",
+      "28",
+      "42",
+      "40"
+    ],
+    "reponse": "32",
+    "indice": "Pense à la table de 8.",
+    "explication": "4 × 8 = 4 × 7 + 4 = 28 + 4 = 32.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_110",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 fois 8, ça fait combien ?",
+    "visuel": null,
+    "choix": [
+      "36",
+      "40",
+      "32",
+      "28"
+    ],
+    "reponse": "32",
+    "indice": "Pense à la table de 8.",
+    "explication": "4 × 8 = 4 × 7 + 4 = 28 + 4 = 32.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_111",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "8 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "22",
+      "36",
+      "32",
+      "24"
+    ],
+    "reponse": "32",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 4 = 8 × 3 + 8 = 24 + 8 = 32.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_112",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 8 × 4 ?",
+    "visuel": null,
+    "choix": [
+      "32",
+      "24",
+      "36",
+      "42"
+    ],
+    "reponse": "32",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 4 = 8 × 3 + 8 = 24 + 8 = 32.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_114",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 4 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "36",
+      "45",
+      "27",
+      "32"
+    ],
+    "reponse": "36",
+    "indice": "Pense à la table de 9.",
+    "explication": "4 × 9 = 4 × 8 + 4 = 32 + 4 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_115",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "4 fois 9, ça fait combien ?",
+    "visuel": null,
+    "choix": [
+      "40",
+      "27",
+      "46",
+      "36"
+    ],
+    "reponse": "36",
+    "indice": "Pense à la table de 9.",
+    "explication": "4 × 9 = 4 × 8 + 4 = 32 + 4 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_116",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "9 × 4 = ?",
+    "visuel": null,
+    "choix": [
+      "40",
+      "36",
+      "26",
+      "32"
+    ],
+    "reponse": "36",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 4 = 9 × 3 + 9 = 27 + 9 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_117",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 9 × 4 ?",
+    "visuel": null,
+    "choix": [
+      "26",
+      "27",
+      "32",
+      "36"
+    ],
+    "reponse": "36",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 4 = 9 × 3 + 9 = 27 + 9 = 36.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_118",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 5 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "35",
+      "45",
+      "50",
+      "40"
+    ],
+    "reponse": "45",
+    "indice": "Pense à la table de 9.",
+    "explication": "5 × 9 = 5 × 8 + 5 = 40 + 5 = 45.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_119",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 5 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "50",
+      "45",
+      "55"
+    ],
+    "reponse": "45",
+    "indice": "Pense à la table de 9.",
+    "explication": "5 × 9 = 5 × 8 + 5 = 40 + 5 = 45.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_120",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "9 × 5 = ?",
+    "visuel": null,
+    "choix": [
+      "45",
+      "55",
+      "54",
+      "50"
+    ],
+    "reponse": "45",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 5 = 9 × 4 + 9 = 36 + 9 = 45.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_121",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 9 × 5 ?",
+    "visuel": null,
+    "choix": [
+      "55",
+      "35",
+      "36",
+      "45"
+    ],
+    "reponse": "45",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 5 = 9 × 4 + 9 = 36 + 9 = 45.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_123",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 6 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "36",
+      "48",
+      "42",
+      "35"
+    ],
+    "reponse": "42",
+    "indice": "Pense à la table de 7.",
+    "explication": "6 × 7 = 6 × 6 + 6 = 36 + 6 = 42.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_124",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "6 fois 7, ça fait combien ?",
+    "visuel": null,
+    "choix": [
+      "35",
+      "36",
+      "49",
+      "42"
+    ],
+    "reponse": "42",
+    "indice": "Pense à la table de 7.",
+    "explication": "6 × 7 = 6 × 6 + 6 = 36 + 6 = 42.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_125",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "7 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "49",
+      "42",
+      "32",
+      "52"
+    ],
+    "reponse": "42",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 6 = 7 × 5 + 7 = 35 + 7 = 42.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_126",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 7 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "42",
+      "36",
+      "48",
+      "35"
+    ],
+    "reponse": "42",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 6 = 7 × 5 + 7 = 35 + 7 = 42.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_127",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "6 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "42",
+      "48",
+      "38"
+    ],
+    "reponse": "48",
+    "indice": "Pense à la table de 8.",
+    "explication": "6 × 8 = 6 × 7 + 6 = 42 + 6 = 48.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_128",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Quel est le résultat de 6 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "48",
+      "58",
+      "54",
+      "38"
+    ],
+    "reponse": "48",
+    "indice": "Pense à la table de 8.",
+    "explication": "6 × 8 = 6 × 7 + 6 = 42 + 6 = 48.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_129",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "8 × 6 = ?",
+    "visuel": null,
+    "choix": [
+      "48",
+      "40",
+      "54",
+      "42"
+    ],
+    "reponse": "48",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 6 = 8 × 5 + 8 = 40 + 8 = 48.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_130",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 2,
+    "type": "choix",
+    "question": "Combien font 8 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "42",
+      "58",
+      "48"
+    ],
+    "reponse": "48",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 6 = 8 × 5 + 8 = 40 + 8 = 48.",
+    "tempsSec": 15,
+    "pointsBase": 150
+  },
+  {
+    "id": "arith_mul_131",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "6 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "44",
+      "48",
+      "54",
+      "63"
+    ],
+    "reponse": "54",
+    "indice": "Pense à la table de 9.",
+    "explication": "6 × 9 = 6 × 8 + 6 = 48 + 6 = 54.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_132",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 6 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "63",
+      "45",
+      "48",
+      "54"
+    ],
+    "reponse": "54",
+    "indice": "Pense à la table de 9.",
+    "explication": "6 × 9 = 6 × 8 + 6 = 48 + 6 = 54.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_134",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 9 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "44",
+      "45",
+      "60",
+      "54"
+    ],
+    "reponse": "54",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 6 = 9 × 5 + 9 = 45 + 9 = 54.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_135",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 9 × 6 ?",
+    "visuel": null,
+    "choix": [
+      "63",
+      "45",
+      "44",
+      "54"
+    ],
+    "reponse": "54",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 6 = 9 × 5 + 9 = 45 + 9 = 54.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_136",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 7 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "59",
+      "42",
+      "49",
+      "56"
+    ],
+    "reponse": "49",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 7 = 49.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_137",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 7 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "42",
+      "49",
+      "39",
+      "59"
+    ],
+    "reponse": "49",
+    "indice": "Pense à la table de 7.",
+    "explication": "7 × 7 = 49.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_138",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 7 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "46",
+      "56",
+      "49",
+      "63"
+    ],
+    "reponse": "56",
+    "indice": "Pense à la table de 8.",
+    "explication": "7 × 8 = 7 × 7 + 7 = 49 + 7 = 56.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_139",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 7 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "64",
+      "56",
+      "46",
+      "48"
+    ],
+    "reponse": "56",
+    "indice": "Pense à la table de 8.",
+    "explication": "7 × 8 = 7 × 7 + 7 = 49 + 7 = 56.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_140",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "8 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "49",
+      "46",
+      "56",
+      "63"
+    ],
+    "reponse": "56",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 7 = 8 × 6 + 8 = 48 + 8 = 56.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_141",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 8 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "56",
+      "63",
+      "46",
+      "49"
+    ],
+    "reponse": "56",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 7 = 8 × 6 + 8 = 48 + 8 = 56.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_142",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 7 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "70",
+      "63",
+      "56"
+    ],
+    "reponse": "63",
+    "indice": "Pense à la table de 9.",
+    "explication": "7 × 9 = 7 × 8 + 7 = 56 + 7 = 63.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_143",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 7 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "53",
+      "70",
+      "73",
+      "63"
+    ],
+    "reponse": "63",
+    "indice": "Pense à la table de 9.",
+    "explication": "7 × 9 = 7 × 8 + 7 = 56 + 7 = 63.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_144",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "9 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "70",
+      "73",
+      "53",
+      "63"
+    ],
+    "reponse": "63",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 7 = 9 × 6 + 9 = 54 + 9 = 63.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_145",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 9 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "56",
+      "63",
+      "54",
+      "53"
+    ],
+    "reponse": "63",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 7 = 9 × 6 + 9 = 54 + 9 = 63.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_146",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "7 × 11 = ?",
+    "visuel": null,
+    "choix": [
+      "70",
+      "87",
+      "77",
+      "66"
+    ],
+    "reponse": "77",
+    "indice": "Pense à la table de 11.",
+    "explication": "7 × 11 = 7 × 10 + 7 = 70 + 7 = 77.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_147",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 7 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "88",
+      "66",
+      "77",
+      "70"
+    ],
+    "reponse": "77",
+    "indice": "Pense à la table de 11.",
+    "explication": "7 × 11 = 7 × 10 + 7 = 70 + 7 = 77.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_148",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "11 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "66",
+      "87",
+      "84",
+      "77"
+    ],
+    "reponse": "77",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 7 = 11 × 6 + 11 = 66 + 11 = 77.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_149",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 11 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "88",
+      "77",
+      "84",
+      "67"
+    ],
+    "reponse": "77",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 7 = 11 × 6 + 11 = 66 + 11 = 77.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_150",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 7 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "96",
+      "84",
+      "74",
+      "94"
+    ],
+    "reponse": "84",
+    "indice": "Pense à la table de 12.",
+    "explication": "7 × 12 = 7 × 11 + 7 = 77 + 7 = 84.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_151",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 7 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "72",
+      "77",
+      "84",
+      "94"
+    ],
+    "reponse": "84",
+    "indice": "Pense à la table de 12.",
+    "explication": "7 × 12 = 7 × 11 + 7 = 77 + 7 = 84.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_152",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "12 × 7 = ?",
+    "visuel": null,
+    "choix": [
+      "84",
+      "72",
+      "91",
+      "74"
+    ],
+    "reponse": "84",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 7 = 12 × 6 + 12 = 72 + 12 = 84.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_153",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 12 × 7 ?",
+    "visuel": null,
+    "choix": [
+      "72",
+      "84",
+      "91",
+      "74"
+    ],
+    "reponse": "84",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 7 = 12 × 6 + 12 = 72 + 12 = 84.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_155",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 8 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "72",
+      "56",
+      "54",
+      "64"
+    ],
+    "reponse": "64",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 8 = 64.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_156",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "8 fois 8, ça fait combien ?",
+    "visuel": null,
+    "choix": [
+      "54",
+      "56",
+      "64",
+      "72"
+    ],
+    "reponse": "64",
+    "indice": "Pense à la table de 8.",
+    "explication": "8 × 8 = 64.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_157",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "8 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "81",
+      "64",
+      "72",
+      "82"
+    ],
+    "reponse": "72",
+    "indice": "Pense à la table de 9.",
+    "explication": "8 × 9 = 8 × 8 + 8 = 64 + 8 = 72.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_158",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 8 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "81",
+      "63",
+      "72",
+      "82"
+    ],
+    "reponse": "72",
+    "indice": "Pense à la table de 9.",
+    "explication": "8 × 9 = 8 × 8 + 8 = 64 + 8 = 72.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_159",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "9 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "62",
+      "72",
+      "64",
+      "80"
+    ],
+    "reponse": "72",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 8 = 9 × 7 + 9 = 63 + 9 = 72.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_160",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 9 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "62",
+      "80",
+      "72",
+      "82"
+    ],
+    "reponse": "72",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 8 = 9 × 7 + 9 = 63 + 9 = 72.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_161",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "8 × 11 = ?",
+    "visuel": null,
+    "choix": [
+      "88",
+      "78",
+      "96",
+      "99"
+    ],
+    "reponse": "88",
+    "indice": "Pense à la table de 11.",
+    "explication": "8 × 11 = 8 × 10 + 8 = 80 + 8 = 88.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_162",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 8 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "88",
+      "78",
+      "98",
+      "77"
+    ],
+    "reponse": "88",
+    "indice": "Pense à la table de 11.",
+    "explication": "8 × 11 = 8 × 10 + 8 = 80 + 8 = 88.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_163",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "11 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "77",
+      "80",
+      "78",
+      "88"
+    ],
+    "reponse": "88",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 8 = 11 × 7 + 11 = 77 + 11 = 88.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_164",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 11 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "77",
+      "88",
+      "99",
+      "98"
+    ],
+    "reponse": "88",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 8 = 11 × 7 + 11 = 77 + 11 = 88.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_165",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 8 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "86",
+      "108",
+      "96",
+      "88"
+    ],
+    "reponse": "96",
+    "indice": "Pense à la table de 12.",
+    "explication": "8 × 12 = 8 × 11 + 8 = 88 + 8 = 96.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_166",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 8 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "96",
+      "86",
+      "106",
+      "84"
+    ],
+    "reponse": "96",
+    "indice": "Pense à la table de 12.",
+    "explication": "8 × 12 = 8 × 11 + 8 = 88 + 8 = 96.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_167",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "12 × 8 = ?",
+    "visuel": null,
+    "choix": [
+      "88",
+      "96",
+      "108",
+      "86"
+    ],
+    "reponse": "96",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 8 = 12 × 7 + 12 = 84 + 12 = 96.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_168",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 12 × 8 ?",
+    "visuel": null,
+    "choix": [
+      "106",
+      "96",
+      "104",
+      "84"
+    ],
+    "reponse": "96",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 8 = 12 × 7 + 12 = 84 + 12 = 96.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_169",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "9 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "90",
+      "81",
+      "71",
+      "91"
+    ],
+    "reponse": "81",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 9 = 81.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_170",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 9 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "91",
+      "72",
+      "90",
+      "81"
+    ],
+    "reponse": "81",
+    "indice": "Pense à la table de 9.",
+    "explication": "9 × 9 = 81.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_171",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "9 × 11 = ?",
+    "visuel": null,
+    "choix": [
+      "108",
+      "99",
+      "88",
+      "90"
+    ],
+    "reponse": "99",
+    "indice": "Pense à la table de 11.",
+    "explication": "9 × 11 = 9 × 10 + 9 = 90 + 9 = 99.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_172",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 9 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "88",
+      "90",
+      "89",
+      "99"
+    ],
+    "reponse": "99",
+    "indice": "Pense à la table de 11.",
+    "explication": "9 × 11 = 9 × 10 + 9 = 90 + 9 = 99.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_173",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "11 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "108",
+      "89",
+      "99",
+      "88"
+    ],
+    "reponse": "99",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 9 = 11 × 8 + 11 = 88 + 11 = 99.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_174",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 11 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "108",
+      "90",
+      "88",
+      "99"
+    ],
+    "reponse": "99",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 9 = 11 × 8 + 11 = 88 + 11 = 99.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_175",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "9 × 12 = ?",
+    "visuel": null,
+    "choix": [
+      "98",
+      "120",
+      "96",
+      "108"
+    ],
+    "reponse": "108",
+    "indice": "Pense à la table de 12.",
+    "explication": "9 × 12 = 9 × 11 + 9 = 99 + 9 = 108.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_176",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 9 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "120",
+      "98",
+      "108",
+      "118"
+    ],
+    "reponse": "108",
+    "indice": "Pense à la table de 12.",
+    "explication": "9 × 12 = 9 × 11 + 9 = 99 + 9 = 108.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_177",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "12 × 9 = ?",
+    "visuel": null,
+    "choix": [
+      "120",
+      "118",
+      "108",
+      "98"
+    ],
+    "reponse": "108",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 9 = 12 × 8 + 12 = 96 + 12 = 108.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_178",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 12 × 9 ?",
+    "visuel": null,
+    "choix": [
+      "99",
+      "108",
+      "117",
+      "98"
+    ],
+    "reponse": "108",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 9 = 12 × 8 + 12 = 96 + 12 = 108.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_179",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 11 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "110",
+      "121",
+      "111",
+      "131"
+    ],
+    "reponse": "121",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 11 = 121.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_180",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Quel est le résultat de 11 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "132",
+      "111",
+      "121",
+      "131"
+    ],
+    "reponse": "121",
+    "indice": "Pense à la table de 11.",
+    "explication": "11 × 11 = 121.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_181",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "11 × 12 = ?",
+    "visuel": null,
+    "choix": [
+      "121",
+      "143",
+      "120",
+      "132"
+    ],
+    "reponse": "132",
+    "indice": "Pense à la table de 12.",
+    "explication": "11 × 12 = 11 × 11 + 11 = 121 + 11 = 132.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_182",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 11 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "132",
+      "120",
+      "142",
+      "122"
+    ],
+    "reponse": "132",
+    "indice": "Pense à la table de 12.",
+    "explication": "11 × 12 = 11 × 11 + 11 = 121 + 11 = 132.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_183",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "12 × 11 = ?",
+    "visuel": null,
+    "choix": [
+      "132",
+      "143",
+      "120",
+      "144"
+    ],
+    "reponse": "132",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 11 = 12 × 10 + 12 = 120 + 12 = 132.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_184",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 12 × 11 ?",
+    "visuel": null,
+    "choix": [
+      "122",
+      "143",
+      "142",
+      "132"
+    ],
+    "reponse": "132",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 11 = 12 × 10 + 12 = 120 + 12 = 132.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_185",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "12 × 12 = ?",
+    "visuel": null,
+    "choix": [
+      "156",
+      "134",
+      "154",
+      "144"
+    ],
+    "reponse": "144",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 12 = 144.",
+    "tempsSec": 12,
+    "pointsBase": 200
+  },
+  {
+    "id": "arith_mul_186",
+    "domaine": "Arithmétique",
+    "sousDomaine": "Tables de multiplication",
+    "palier": 3,
+    "type": "choix",
+    "question": "Combien font 12 × 12 ?",
+    "visuel": null,
+    "choix": [
+      "154",
+      "134",
+      "132",
+      "144"
+    ],
+    "reponse": "144",
+    "indice": "Pense à la table de 12.",
+    "explication": "12 × 12 = 144.",
+    "tempsSec": 12,
+    "pointsBase": 200
   }
 ]
