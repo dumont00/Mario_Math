@@ -107,18 +107,13 @@ body.modal-open .touch-controls {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     display: flex;
-    /* Aligné en haut pour que le contenu puisse défiler quand il dépasse
-       la hauteur de l'écran (iPhone en mode portrait, etc.). Quand le
-       contenu rentre, `margin: auto` sur le panel le recentre quand
-       même verticalement. */
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     z-index: 100;
     padding: 16px;
     padding-top:    max(16px, env(safe-area-inset-top));
     padding-bottom: max(16px, env(safe-area-inset-bottom));
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
 }
 
 .modal[hidden] {
@@ -134,10 +129,15 @@ body.modal-open .touch-controls {
     padding: 22px 26px 26px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
     animation: pop 0.18s ease-out;
-    /* Auto-margin permet de centrer verticalement quand le contenu
-       rentre, et de laisser le panel en haut pour défiler quand il
-       déborde. */
-    margin: auto;
+    box-sizing: border-box;
+    /* Le panneau lui-même défile quand son contenu dépasse l'écran.
+       Cela évite les problèmes de scroll connus avec
+       `display: flex` + `overflow: auto` sur certaines versions de
+       Chrome où la molette ne déclenchait pas le défilement. */
+    max-height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 @keyframes pop {
