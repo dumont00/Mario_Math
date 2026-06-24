@@ -26,8 +26,10 @@ jobs:
 
       - name: Write version.json
         run: |
-          DATE_FR=$(TZ='America/Montreal' date +"%-d %B %Y")
-          HEURE=$(TZ='America/Montreal' date +"%H:%M (heure de Montréal)")
+          # Force le locale FR pour avoir les noms de mois en français.
+          sudo locale-gen fr_CA.UTF-8 || true
+          DATE_FR=$(LC_TIME=fr_CA.UTF-8 TZ='America/Montreal' date +"%-d %B %Y")
+          HEURE=$(TZ='America/Montreal' date +"%H:%M")
           COMMIT=$(git rev-parse --short HEAD)
           # Le numéro de version : on incrémente pas automatiquement, on garde
           # ce qui est déjà dans le fichier (le développeur le bump à la main).

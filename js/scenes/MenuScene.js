@@ -99,11 +99,15 @@ class MenuScene extends Phaser.Scene {
         try {
             const v = this.cache.json.get('version');
             if (v && (v.version || v.date || v.commit)) {
-                let txt = '';
-                if (v.version) txt += 'Version ' + v.version + ' — ';
-                if (v.date)    txt += 'mis à jour le ' + v.date;
-                if (v.commit)  txt += ' (' + v.commit + ')';
-                elVersion.textContent = txt.trim();
+                const parts = [];
+                if (v.version) parts.push('Version ' + v.version);
+                if (v.date) {
+                    let date = 'mis à jour le ' + v.date;
+                    if (v.heure && v.heure !== '—') date += ' à ' + v.heure;
+                    parts.push(date);
+                }
+                if (v.commit && v.commit !== '—') parts.push('commit ' + v.commit);
+                elVersion.textContent = parts.join(' — ');
             } else {
                 elVersion.textContent = '';
             }

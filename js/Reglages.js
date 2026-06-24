@@ -21,6 +21,7 @@ class ReglagesManager {
     }
 
     charger() {
+        let migration = false;
         try {
             const raw = localStorage.getItem(this.STORAGE_KEY);
             if (raw) {
@@ -37,6 +38,24 @@ class ReglagesManager {
                     && data.multiplicateurTemps > 0)
                     ? data.multiplicateurTemps
                     : this.defauts.multiplicateurTemps;
+
+                // Migration : on active automatiquement les domaines qui ont
+                // été ajoutés à l'app depuis la dernière sauvegarde, pour
+                // qu'ils soient présents par défaut (l'utilisateur peut
+                // toujours les décocher).
+                const nouveauxDomaines = ['Géographie', 'Histoire'];
+                for (const d of nouveauxDomaines) {
+                    if (this.defauts.domainesActifs.indexOf(d) !== -1
+                        && this.domainesActifs.indexOf(d) === -1) {
+                        this.domainesActifs.push(d);
+                        migration = true;
+                    }
+                }
+                if (migration) {
+                    // On sauvegarde immédiatement pour ne pas refaire la
+                    // migration au prochain chargement.
+                    this.sauvegarder();
+                }
                 return;
             }
         } catch (e) { /* ignore */ }
