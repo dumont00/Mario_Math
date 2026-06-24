@@ -59,6 +59,18 @@
                 <p class="reglages__hint">Décoche pour mettre l'accent sur certaines matières seulement.</p>
                 <div class="reglages__domaines" id="reglages-domaines"></div>
 
+                <h3 class="reglages__titre">Temps par question</h3>
+                <p class="reglages__hint">Ajuste la durée allouée pour répondre à chaque question.</p>
+                <label class="reglages__option">
+                    <select id="reglages-temps">
+                        <option value="2.0">×2,0 — Très lent (le double du temps normal)</option>
+                        <option value="1.5">×1,5 — Plus lent</option>
+                        <option value="1.0" selected>×1,0 — Normal</option>
+                        <option value="0.75">×0,75 — Plus rapide</option>
+                        <option value="0.5">×0,5 — Très rapide (moitié du temps)</option>
+                    </select>
+                </label>
+
                 <h3 class="reglages__titre">Orthographe</h3>
                 <label class="reglages__option">
                     <input type="checkbox" id="reglages-accents">
@@ -72,6 +84,8 @@
                     <button id="reglages-annuler"     class="modal__continue modal__continue--sec">Annuler</button>
                     <button id="reglages-enregistrer" class="modal__continue">Enregistrer</button>
                 </div>
+
+                <p class="reglages__version" id="reglages-version" aria-live="polite"></p>
             </div>
         </div>
 
@@ -139,6 +153,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
     <script src="config.js"></script>
+    <script src="js/Csv.js"></script>
     <script src="js/Reglages.js"></script>
     <script src="js/Visuels.js"></script>
     <script src="js/Voix.js"></script>

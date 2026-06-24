@@ -108,8 +108,10 @@ class QuestionModal {
         this.elFeedback.classList.remove('is-good', 'is-bad');
         this.elContinue.hidden = true;
 
-        this.tempsTotal = question.tempsSec;
-        this.tempsRestant = question.tempsSec;
+        const mult = (window.CONFIG && typeof window.CONFIG.multiplicateurTemps === 'number')
+            ? window.CONFIG.multiplicateurTemps : 1;
+        this.tempsTotal   = Math.max(3, Math.round(question.tempsSec * mult));
+        this.tempsRestant = this.tempsTotal;
         this.majTimebar();
 
         this.root.hidden = false;
@@ -226,9 +228,15 @@ class QuestionModal {
                 ? 'Temps écoulé…'
                 : 'Presque ! Réfléchis encore la prochaine fois.';
         }
-        // L'explication et la bonne réponse sont volontairement masquées
-        // pour ne pas « donner » la solution juste après une erreur.
-        this.elExplication.textContent = '';
+        // Pour l'orthographe, on AFFICHE le mot correct quand le joueur
+        // se trompe (apprentissage par comparaison). Pour les autres
+        // domaines, on garde la solution masquée.
+        const estSaisie = this.question && this.question.type === 'saisie';
+        if (!correct && estSaisie) {
+            this.elExplication.textContent = 'Le mot était : ' + (this.question.reponse || this.question.mot || '');
+        } else {
+            this.elExplication.textContent = '';
+        }
         this.elFeedback.hidden = false;
         this.elContinue.hidden = false;
         this.elContinue.focus();

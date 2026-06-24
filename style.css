@@ -543,6 +543,27 @@ body.modal-open .touch-controls {
     margin: 0;
 }
 
+.reglages__option select {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #c2cbe3;
+    background: #ffffff;
+    font-size: 15px;
+    font-family: inherit;
+    color: #1d2746;
+    cursor: pointer;
+}
+
+.reglages__version {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid #e6ebf7;
+    text-align: center;
+    color: #6b7aa1;
+    font-size: 12px;
+}
+
 @media (max-width: 520px) {
     .reglages__domaines { grid-template-columns: 1fr; }
 }

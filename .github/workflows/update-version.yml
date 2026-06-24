@@ -1,0 +1,56 @@
+name: Update version.json
+
+# Met à jour data/version.json avec la date/heure et le hash court du
+# commit, à chaque push (sauf si le push ne touche QUE version.json,
+# pour éviter une boucle infinie).
+
+on:
+  push:
+    branches:
+      - main
+      - claude/sweet-maxwell-4f5408
+    paths-ignore:
+      - 'data/version.json'
+
+jobs:
+  update_version:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Write version.json
+        run: |
+          DATE_FR=$(TZ='America/Montreal' date +"%-d %B %Y")
+          HEURE=$(TZ='America/Montreal' date +"%H:%M (heure de Montréal)")
+          COMMIT=$(git rev-parse --short HEAD)
+          # Le numéro de version : on incrémente pas automatiquement, on garde
+          # ce qui est déjà dans le fichier (le développeur le bump à la main).
+          OLD_VERSION=$(grep -o '"version": *"[^"]*"' data/version.json | head -1 | cut -d'"' -f4)
+          if [ -z "$OLD_VERSION" ]; then OLD_VERSION="0.9.0"; fi
+          cat > data/version.json <<EOF
+          {
+            "version": "$OLD_VERSION",
+            "date": "$DATE_FR",
+            "heure": "$HEURE",
+            "commit": "$COMMIT"
+          }
+          EOF
+          cat data/version.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/version.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement de version à committer."
+          else
+            git commit -m "Auto-update version.json [skip ci]"
+            git push
+          fi

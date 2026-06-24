@@ -8,7 +8,9 @@ const DOMAINES_DISPONIBLES = [
     'Mesure',
     'Statistique',
     'Probabilité',
-    'Français'
+    'Français',
+    'Géographie',
+    'Histoire'
 ];
 
 class MenuScene extends Phaser.Scene {
@@ -69,6 +71,8 @@ class MenuScene extends Phaser.Scene {
         const reglagesOverlay = document.getElementById('reglages-screen');
         const elDomaines      = document.getElementById('reglages-domaines');
         const elAccents       = document.getElementById('reglages-accents');
+        const elTemps         = document.getElementById('reglages-temps');
+        const elVersion       = document.getElementById('reglages-version');
         const btnAnnuler      = document.getElementById('reglages-annuler');
         const btnEnregistrer  = document.getElementById('reglages-enregistrer');
 
@@ -89,6 +93,23 @@ class MenuScene extends Phaser.Scene {
         });
 
         elAccents.checked = !!Reglages.ignorerAccents;
+        elTemps.value = String(Reglages.multiplicateurTemps || 1);
+
+        // Version : on la lit depuis le cache JSON chargé par BootScene.
+        try {
+            const v = this.cache.json.get('version');
+            if (v && (v.version || v.date || v.commit)) {
+                let txt = '';
+                if (v.version) txt += 'Version ' + v.version + ' — ';
+                if (v.date)    txt += 'mis à jour le ' + v.date;
+                if (v.commit)  txt += ' (' + v.commit + ')';
+                elVersion.textContent = txt.trim();
+            } else {
+                elVersion.textContent = '';
+            }
+        } catch (e) {
+            elVersion.textContent = '';
+        }
 
         // Reset des boutons (clones).
         const a = btnAnnuler.cloneNode(true); btnAnnuler.parentNode.replaceChild(a, btnAnnuler);
@@ -101,14 +122,16 @@ class MenuScene extends Phaser.Scene {
                 .map(cb => cb.dataset.domaine);
 
             if (choisis.length === 0) {
-                // On exige au moins une discipline ; on remet à au moins
-                // Arithmétique pour éviter une banque vide.
                 window.alert('Choisis au moins une discipline. Arithmétique sera activée par défaut.');
                 Reglages.domainesActifs = ['Arithmétique'];
             } else {
                 Reglages.domainesActifs = choisis;
             }
             Reglages.ignorerAccents = elAccents.checked;
+
+            const mult = parseFloat(elTemps.value);
+            Reglages.multiplicateurTemps = (mult > 0 && mult <= 4) ? mult : 1.0;
+
             Reglages.appliquer();
             Reglages.sauvegarder();
 

@@ -12,6 +12,10 @@ class BootScene extends Phaser.Scene {
     preload() {
         // Banque de questions.
         this.load.json('questions', 'data/questions.json');
+        // Liste de mots d'orthographe (parent-éditable).
+        this.load.text('orthographe', 'data/orthographe.csv');
+        // Version courante (mise à jour automatiquement par GitHub Actions).
+        this.load.json('version', 'data/version.json');
 
         // Indique un éventuel échec de chargement (utile pour debugging).
         this.load.on('loaderror', (file) => {
@@ -29,7 +33,63 @@ class BootScene extends Phaser.Scene {
     }
 
     create() {
+        this._integrerOrthographe();
         this.scene.start('MenuScene');
+    }
+
+    /**
+     * Lit data/orthographe.csv et injecte les mots comme questions de
+     * type 'saisie' dans la banque chargée. Les questions Français /
+     * Orthographe absentes du JSON sont ainsi entièrement gérées par
+     * le parent via le CSV.
+     */
+    _integrerOrthographe() {
+        const csv = this.cache.text.get('orthographe');
+        if (!csv || typeof Csv === 'undefined') return;
+
+        const lignes = Csv.parse(csv);
+        if (!lignes || lignes.length === 0) return;
+
+        const TIMES  = { 1: 25, 2: 20, 3: 15 };
+        const POINTS = { 1: 100, 2: 150, 3: 200 };
+
+        const nouvelles = lignes.map((row, i) => {
+            const palier = parseInt(row.palier, 10) || 1;
+            const mot = (row.mot || '').trim();
+            if (!mot) return null;
+            return {
+                id: 'fr_csv_' + String(i + 1).padStart(3, '0'),
+                domaine: 'Français',
+                sousDomaine: 'Orthographe',
+                palier: palier,
+                type: 'saisie',
+                audio: true,
+                question: 'Écris le mot que tu entends.',
+                mot: mot,
+                visuel: null,
+                choix: [],
+                reponse: mot,
+                indice: row.indice || '',
+                phraseContexte: row.phrase || '',
+                explication: 'Le mot est : ' + mot + '.',
+                tempsSec: TIMES[palier] || TIMES[1],
+                pointsBase: POINTS[palier] || POINTS[1]
+            };
+        }).filter(q => q !== null);
+
+        const banque = this.cache.json.get('questions');
+        if (Array.isArray(banque)) {
+            // On retire toutes les questions Français/Orthographe déjà présentes
+            // (au cas où le JSON en contiendrait encore) puis on ajoute le CSV.
+            for (let i = banque.length - 1; i >= 0; i--) {
+                const q = banque[i];
+                if (q.domaine === 'Français' && q.sousDomaine === 'Orthographe') {
+                    banque.splice(i, 1);
+                }
+            }
+            banque.push(...nouvelles);
+            console.log('Orthographe : ' + nouvelles.length + ' mots chargés depuis le CSV.');
+        }
     }
 
     // --- Textures générées par primitives Phaser ---
