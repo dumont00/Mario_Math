@@ -1,13 +1,16 @@
-// Wrapper minimal pour la synthèse vocale du navigateur (Web Speech API).
-// Choisit la meilleure voix française disponible et gère le « déverrouillage »
-// audio nécessaire sur certains navigateurs mobiles (iOS Safari) qui exigent
-// une interaction utilisateur préalable.
+// Wrapper pour la synthèse vocale du navigateur (Web Speech API).
+// Renforcé pour fonctionner sur Chrome iOS où l'API est plus capricieuse
+// que sur Safari iOS : on évite les `cancel()` superflus, on déverrouille
+// avec une utterance audible (volume très bas) plutôt que muette,
+// et on rejoue les voix à chaque demande au cas où elles n'étaient pas
+// encore chargées au démarrage.
 
 class VoixHelper {
     constructor() {
         this.disponible = ('speechSynthesis' in window) &&
                           (typeof SpeechSynthesisUtterance !== 'undefined');
         this.voixFr = null;
+        this.aEteDebloquee = false;
 
         if (this.disponible) {
             this._chargerVoix();
@@ -21,6 +24,7 @@ class VoixHelper {
     }
 
     _chargerVoix() {
+        if (!this.disponible) return;
         const voix = window.speechSynthesis.getVoices();
         if (!voix || voix.length === 0) return;
         // Préférer fr-CA, puis fr-FR, puis toute voix fr-*.
@@ -32,23 +36,41 @@ class VoixHelper {
     }
 
     /**
-     * À appeler dans le premier gestionnaire de clic / touchstart de la page
-     * pour autoriser les navigateurs mobiles à jouer du son.
+     * Déverrouille la synthèse vocale lors d'un geste utilisateur (clic /
+     * touchstart). Sur Chrome iOS particulièrement, une utterance
+     * complètement silencieuse (volume = 0) est parfois ignorée par le
+     * moteur ; on utilise un volume très bas mais non nul.
      */
     debloquer() {
-        if (!this.disponible) return;
+        if (!this.disponible || this.aEteDebloquee) return;
         try {
-            const u = new SpeechSynthesisUtterance('');
-            u.volume = 0;
+            const u = new SpeechSynthesisUtterance(' ');
+            u.volume = 0.01;
+            u.rate = 2.0;
+            u.lang = 'fr-FR';
             window.speechSynthesis.speak(u);
+            this.aEteDebloquee = true;
         } catch (e) { /* ignore */ }
     }
 
-    /** Prononce un mot. Renvoie true si la requête a été envoyée. */
+    /**
+     * Prononce un mot. Sur Chrome iOS, doit être appelée de façon
+     * synchrone dans un gestionnaire d'événement utilisateur (click /
+     * touchend), sinon la requête peut être ignorée silencieusement.
+     */
     dire(mot, options = {}) {
         if (!this.disponible || !mot) return false;
         try {
-            window.speechSynthesis.cancel();
+            // Recharger les voix au cas où elles n'étaient pas dispos à
+            // l'init (Chrome iOS les charge parfois en retard).
+            if (!this.voixFr) this._chargerVoix();
+
+            // On annule seulement si quelque chose est en train de parler.
+            // Cancel inutile peut perturber le moteur sur Chrome iOS.
+            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+                window.speechSynthesis.cancel();
+            }
+
             const u = new SpeechSynthesisUtterance(String(mot));
             if (this.voixFr) {
                 u.voice = this.voixFr;
@@ -59,6 +81,7 @@ class VoixHelper {
             u.rate   = options.rate   !== undefined ? options.rate   : 0.9;
             u.pitch  = options.pitch  !== undefined ? options.pitch  : 1.0;
             u.volume = options.volume !== undefined ? options.volume : 1;
+
             window.speechSynthesis.speak(u);
             return true;
         } catch (e) {
@@ -68,6 +91,36 @@ class VoixHelper {
     }
 
     aFrancais() { return !!this.voixFr; }
+
+    /** Affiche dans la console l'état de la synthèse vocale (debug). */
+    diagnostic() {
+        if (!this.disponible) {
+            console.log('speechSynthesis n\'est pas disponible dans ce navigateur.');
+            return { disponible: false };
+        }
+        const voix = window.speechSynthesis.getVoices();
+        const fr = voix.filter(v => v.lang && v.lang.toLowerCase().startsWith('fr'));
+        const info = {
+            disponible: true,
+            nombreVoixTotales: voix.length,
+            nombreVoixFr: fr.length,
+            voixFrançaises: fr.map(v => ({
+                name: v.name,
+                lang: v.lang,
+                default: v.default,
+                localService: v.localService
+            })),
+            voixSelectionnee: this.voixFr ? {
+                name: this.voixFr.name,
+                lang: this.voixFr.lang
+            } : null,
+            aEteDebloquee: this.aEteDebloquee,
+            estEnTrainDeParler: window.speechSynthesis.speaking,
+            enAttente: window.speechSynthesis.pending
+        };
+        console.log('Voix — diagnostic :', info);
+        return info;
+    }
 }
 
 // Instance globale unique. On évite de réutiliser le nom `Voix` comme
@@ -82,7 +135,9 @@ window.Voix = new VoixHelper();
         try { window.Voix.debloquer(); } catch (e) { /* ignore */ }
         document.removeEventListener('click', unlock);
         document.removeEventListener('touchstart', unlock);
+        document.removeEventListener('touchend', unlock);
     }
     document.addEventListener('click', unlock, { once: true });
     document.addEventListener('touchstart', unlock, { once: true });
+    document.addEventListener('touchend', unlock, { once: true });
 })();

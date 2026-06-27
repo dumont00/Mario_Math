@@ -119,11 +119,15 @@ class QuestionModal {
         document.body.classList.add('modal-open');
 
         // Audio : tente la lecture automatique du mot seul à l'ouverture.
-        // La phrase de contexte n'est jouée que lorsque le joueur clique
-        // sur « Réécouter », pour ne pas révéler trop vite l'orthographe
-        // attendue (les homophones gardent leur petit défi).
+        // Appel SYNCHRONE plutôt qu'avec setTimeout, pour préserver le
+        // contexte de geste utilisateur — sinon Chrome iOS rejette
+        // l'utterance. Si la lecture auto échoue tout de même (cas
+        // courant sur Chrome iOS car la modale s'ouvre via la collision
+        // Phaser, hors gestionnaire de clic direct), le joueur peut
+        // utiliser le bouton « 🔊 Réécouter » qui, lui, sera dans un
+        // vrai contexte de clic.
         if (estSaisie && question.audio) {
-            setTimeout(() => this._jouerAudio(false), 120);
+            this._jouerAudio(false);
         }
 
         const debut = performance.now();
