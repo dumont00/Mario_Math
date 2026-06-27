@@ -27,13 +27,16 @@ window.CONFIG = {
     bossTempsTotal: 90,
 
     // Domaines actifs (peuvent être désactivés depuis les Options).
+    // L'ordre n'importe pas : c'est la liste complète des domaines connus.
     domainesActifs: [
         'Arithmétique',
         'Géométrie',
         'Mesure',
         'Statistique',
         'Probabilité',
-        'Français'
+        'Français',
+        'Géographie',
+        'Histoire'
     ],
 
     // Ajustement adaptatif de la difficulté (phase avancée).
