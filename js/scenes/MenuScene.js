@@ -71,6 +71,7 @@ class MenuScene extends Phaser.Scene {
         const reglagesOverlay = document.getElementById('reglages-screen');
         const elDomaines      = document.getElementById('reglages-domaines');
         const elAccents       = document.getElementById('reglages-accents');
+        const elEpeler        = document.getElementById('reglages-epeler');
         const elTemps         = document.getElementById('reglages-temps');
         const elVersion       = document.getElementById('reglages-version');
         const btnAnnuler      = document.getElementById('reglages-annuler');
@@ -93,7 +94,8 @@ class MenuScene extends Phaser.Scene {
         });
 
         elAccents.checked = !!Reglages.ignorerAccents;
-        elTemps.value = String(Reglages.multiplicateurTemps || 1);
+        elEpeler.checked  = Reglages.epelerApresOrthographe !== false;
+        elTemps.value     = String(Reglages.multiplicateurTemps || 1);
 
         // Version : on la lit depuis le cache JSON chargé par BootScene.
         try {
@@ -131,7 +133,8 @@ class MenuScene extends Phaser.Scene {
             } else {
                 Reglages.domainesActifs = choisis;
             }
-            Reglages.ignorerAccents = elAccents.checked;
+            Reglages.ignorerAccents         = elAccents.checked;
+            Reglages.epelerApresOrthographe = elEpeler.checked;
 
             const mult = parseFloat(elTemps.value);
             Reglages.multiplicateurTemps = (mult > 0 && mult <= 4) ? mult : 1.0;

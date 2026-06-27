@@ -14,7 +14,8 @@ class ReglagesManager {
                 : ['Arithmétique', 'Géométrie', 'Mesure', 'Statistique', 'Probabilité',
                    'Français', 'Géographie', 'Histoire'],
             ignorerAccents: true,           // par défaut on tolère les accents
-            multiplicateurTemps: 1.0        // 1× = temps de référence des questions
+            multiplicateurTemps: 1.0,       // 1× = temps de référence des questions
+            epelerApresOrthographe: true    // épelle le mot à voix haute après chaque réponse
         };
         this.charger();
         this.appliquer();
@@ -38,6 +39,9 @@ class ReglagesManager {
                     && data.multiplicateurTemps > 0)
                     ? data.multiplicateurTemps
                     : this.defauts.multiplicateurTemps;
+                this.epelerApresOrthographe = data.epelerApresOrthographe !== undefined
+                    ? !!data.epelerApresOrthographe
+                    : this.defauts.epelerApresOrthographe;
 
                 // Migration : on active automatiquement les domaines qui ont
                 // été ajoutés à l'app depuis la dernière sauvegarde, pour
@@ -59,17 +63,19 @@ class ReglagesManager {
                 return;
             }
         } catch (e) { /* ignore */ }
-        this.domainesActifs = this.defauts.domainesActifs.slice();
-        this.ignorerAccents = this.defauts.ignorerAccents;
-        this.multiplicateurTemps = this.defauts.multiplicateurTemps;
+        this.domainesActifs         = this.defauts.domainesActifs.slice();
+        this.ignorerAccents         = this.defauts.ignorerAccents;
+        this.multiplicateurTemps    = this.defauts.multiplicateurTemps;
+        this.epelerApresOrthographe = this.defauts.epelerApresOrthographe;
     }
 
     sauvegarder() {
         try {
             localStorage.setItem(this.STORAGE_KEY, JSON.stringify({
-                domainesActifs:      this.domainesActifs,
-                ignorerAccents:      this.ignorerAccents,
-                multiplicateurTemps: this.multiplicateurTemps
+                domainesActifs:         this.domainesActifs,
+                ignorerAccents:         this.ignorerAccents,
+                multiplicateurTemps:    this.multiplicateurTemps,
+                epelerApresOrthographe: this.epelerApresOrthographe
             }));
         } catch (e) { /* ignore (quota dépassé, navigation privée…) */ }
     }
@@ -84,9 +90,10 @@ class ReglagesManager {
         // (au cas où une vieille version aurait sauvé un nom obsolète).
         const connus = this.defauts.domainesActifs;
         const actifs = this.domainesActifs.filter(d => connus.indexOf(d) !== -1);
-        window.CONFIG.domainesActifs       = actifs.length > 0 ? actifs : connus.slice();
-        window.CONFIG.ignorerAccents       = this.ignorerAccents;
-        window.CONFIG.multiplicateurTemps  = this.multiplicateurTemps;
+        window.CONFIG.domainesActifs         = actifs.length > 0 ? actifs : connus.slice();
+        window.CONFIG.ignorerAccents         = this.ignorerAccents;
+        window.CONFIG.multiplicateurTemps    = this.multiplicateurTemps;
+        window.CONFIG.epelerApresOrthographe = this.epelerApresOrthographe;
     }
 
     domaineEstActif(nom) {

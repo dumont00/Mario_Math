@@ -118,16 +118,12 @@ class QuestionModal {
         this.root.setAttribute('aria-hidden', 'false');
         document.body.classList.add('modal-open');
 
-        // Audio : tente la lecture automatique du mot seul à l'ouverture.
-        // Appel SYNCHRONE plutôt qu'avec setTimeout, pour préserver le
-        // contexte de geste utilisateur — sinon Chrome iOS rejette
-        // l'utterance. Si la lecture auto échoue tout de même (cas
-        // courant sur Chrome iOS car la modale s'ouvre via la collision
-        // Phaser, hors gestionnaire de clic direct), le joueur peut
-        // utiliser le bouton « 🔊 Réécouter » qui, lui, sera dans un
-        // vrai contexte de clic.
+        // Audio : à l'ouverture, on dit déjà le mot ET la phrase de
+        // contexte (lèvent l'ambiguïté des homophones — vert / vers /
+        // verre / ver). Appel SYNCHRONE pour préserver le contexte de
+        // geste utilisateur quand c'est possible.
         if (estSaisie && question.audio) {
-            this._jouerAudio(false);
+            this._jouerAudio(true);
         }
 
         const debut = performance.now();
@@ -232,18 +228,54 @@ class QuestionModal {
                 ? 'Temps écoulé…'
                 : 'Presque ! Réfléchis encore la prochaine fois.';
         }
-        // Pour l'orthographe, on AFFICHE le mot correct quand le joueur
-        // se trompe (apprentissage par comparaison). Pour les autres
-        // domaines, on garde la solution masquée.
-        const estSaisie = this.question && this.question.type === 'saisie';
-        if (!correct && estSaisie) {
-            this.elExplication.textContent = 'Le mot était : ' + (this.question.reponse || this.question.mot || '');
+
+        // Sur les questions de connaissance (à mémoriser), on affiche la
+        // bonne réponse après une erreur : orthographe, géographie,
+        // histoire. Pour les questions de raisonnement / calcul (math),
+        // on garde la solution masquée pour pousser l'enfant à
+        // réfléchir la prochaine fois.
+        const estSaisie    = this.question && this.question.type === 'saisie';
+        const dom          = this.question && this.question.domaine;
+        const domParCoeur  = ['Géographie', 'Histoire'];
+        const estParCoeur  = dom && domParCoeur.indexOf(dom) !== -1;
+
+        if (!correct && (estSaisie || estParCoeur)) {
+            const rep = this.question.reponse || this.question.mot || '';
+            this.elExplication.textContent = estSaisie
+                ? 'Le mot était : ' + rep
+                : 'La bonne réponse était : ' + rep;
         } else {
             this.elExplication.textContent = '';
         }
+
+        // Question d'orthographe : on épelle le mot à voix haute
+        // (sauf si désactivé dans Réglages).
+        if (estSaisie) this._epelerMot(correct);
+
         this.elFeedback.hidden = false;
         this.elContinue.hidden = false;
         this.elContinue.focus();
+    }
+
+    _epelerMot(correct) {
+        const epelerActif = !window.CONFIG
+            || window.CONFIG.epelerApresOrthographe !== false;
+        if (!epelerActif) return;
+        if (typeof Voix === 'undefined') return;
+        const mot = this.question && (this.question.mot || this.question.reponse);
+        if (!mot) return;
+
+        const epellation = String(mot).split('').map(c => {
+            if (c === '-') return 'tiret';
+            if (c === "'") return 'apostrophe';
+            if (c === ' ') return 'espace';
+            return c;
+        }).join(', ');
+
+        const phrase = correct
+            ? `Bien, le mot ${mot} s'écrit : ${epellation}.`
+            : `Essaie la prochaine fois. Le mot ${mot} s'écrit : ${epellation}.`;
+        Voix.dire(phrase);
     }
 
     arreterTimer() {
