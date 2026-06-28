@@ -10,7 +10,10 @@ const DOMAINES_DISPONIBLES = [
     'Probabilité',
     'Français',
     'Géographie',
-    'Histoire'
+    'Histoire',
+    'Grammaire',
+    'Vocabulaire',
+    'Logique'
 ];
 
 class MenuScene extends Phaser.Scene {

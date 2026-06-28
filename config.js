@@ -36,7 +36,10 @@ window.CONFIG = {
         'Probabilité',
         'Français',
         'Géographie',
-        'Histoire'
+        'Histoire',
+        'Grammaire',
+        'Vocabulaire',
+        'Logique'
     ],
 
     // Ajustement adaptatif de la difficulté (phase avancée).

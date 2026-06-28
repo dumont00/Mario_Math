@@ -12,7 +12,8 @@ class ReglagesManager {
             domainesActifs: (CONFIG && CONFIG.domainesActifs)
                 ? CONFIG.domainesActifs.slice()
                 : ['Arithmétique', 'Géométrie', 'Mesure', 'Statistique', 'Probabilité',
-                   'Français', 'Géographie', 'Histoire'],
+                   'Français', 'Géographie', 'Histoire',
+                   'Grammaire', 'Vocabulaire', 'Logique'],
             ignorerAccents: true,           // par défaut on tolère les accents
             multiplicateurTemps: 1.0,       // 1× = temps de référence des questions
             epelerApresOrthographe: true    // épelle le mot à voix haute après chaque réponse
@@ -47,7 +48,8 @@ class ReglagesManager {
                 // été ajoutés à l'app depuis la dernière sauvegarde, pour
                 // qu'ils soient présents par défaut (l'utilisateur peut
                 // toujours les décocher).
-                const nouveauxDomaines = ['Géographie', 'Histoire'];
+                const nouveauxDomaines = ['Géographie', 'Histoire',
+                                          'Grammaire', 'Vocabulaire', 'Logique'];
                 for (const d of nouveauxDomaines) {
                     if (this.defauts.domainesActifs.indexOf(d) !== -1
                         && this.domainesActifs.indexOf(d) === -1) {
