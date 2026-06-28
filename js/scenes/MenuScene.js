@@ -1,4 +1,4 @@
-/* global Phaser, Reglages */
+/* global Phaser, Reglages, Stats */
 
 // Écran de lancement : choix du mode + accès aux Réglages parentaux.
 
@@ -35,34 +35,25 @@ class MenuScene extends Phaser.Scene {
 
         const overlay = document.getElementById('menu-screen');
         const btnAv   = document.getElementById('menu-btn-aventure');
-        const btnMu   = document.getElementById('menu-btn-mult');
         const btnDf   = document.getElementById('menu-btn-defi');
-        const btnOr   = document.getElementById('menu-btn-ortho');
+        const btnSt   = document.getElementById('menu-btn-stats');
         const btnRg   = document.getElementById('menu-btn-reglages');
 
         // Reset des écouteurs (clones).
         const av = btnAv.cloneNode(true); btnAv.parentNode.replaceChild(av, btnAv);
-        const mu = btnMu.cloneNode(true); btnMu.parentNode.replaceChild(mu, btnMu);
         const df = btnDf.cloneNode(true); btnDf.parentNode.replaceChild(df, btnDf);
-        const or = btnOr.cloneNode(true); btnOr.parentNode.replaceChild(or, btnOr);
+        const st = btnSt.cloneNode(true); btnSt.parentNode.replaceChild(st, btnSt);
         const rg = btnRg.cloneNode(true); btnRg.parentNode.replaceChild(rg, btnRg);
 
         av.addEventListener('click', () => {
             this._fermer(overlay);
             this.scene.start('LevelScene', { niveau: 1, mode: 'aventure' });
         });
-        mu.addEventListener('click', () => {
-            this._fermer(overlay);
-            this.scene.start('LevelScene', { mode: 'mult' });
-        });
         df.addEventListener('click', () => {
             this._fermer(overlay);
             this.scene.start('DefiScene', { defiLevel: 1 });
         });
-        or.addEventListener('click', () => {
-            this._fermer(overlay);
-            this.scene.start('LevelScene', { mode: 'orthographe' });
-        });
+        st.addEventListener('click', () => this._ouvrirStats());
         rg.addEventListener('click', () => this._ouvrirReglages());
 
         overlay.hidden = false;
@@ -156,6 +147,125 @@ class MenuScene extends Phaser.Scene {
         const reglagesOverlay = document.getElementById('reglages-screen');
         reglagesOverlay.hidden = true;
         reglagesOverlay.setAttribute('aria-hidden', 'true');
+    }
+
+    _ouvrirStats() {
+        const overlay   = document.getElementById('stats-screen');
+        const elApercu  = document.getElementById('stats-apercu');
+        const elDom     = document.getElementById('stats-domaines');
+        const elManq    = document.getElementById('stats-manquees');
+        const elCpt     = document.getElementById('stats-manquees-compteur');
+        const btnFermer = document.getElementById('stats-fermer');
+        const btnEff    = document.getElementById('stats-effacer-manquees');
+
+        const refresh = () => {
+            const ap = Stats.apercu();
+            if (ap.total === 0) {
+                elApercu.textContent = 'Aucune question répondue pour l\'instant. Joue une partie pour voir tes stats !';
+            } else {
+                elApercu.textContent =
+                    ap.total + ' question' + (ap.total > 1 ? 's' : '') + ' répondue' + (ap.total > 1 ? 's' : '') +
+                    ' — ' + ap.bonnes + ' bonne' + (ap.bonnes > 1 ? 's' : '') +
+                    ' (' + ap.pourcentage + ' % de réussite).';
+            }
+
+            elDom.innerHTML = '';
+            const doms = Stats.listeDomaines();
+            if (doms.length === 0) {
+                const p = document.createElement('p');
+                p.className = 'reglages__hint';
+                p.textContent = '—';
+                elDom.appendChild(p);
+            } else {
+                doms.forEach(d => {
+                    const row = document.createElement('div');
+                    row.className = 'stats__dom';
+                    const label = document.createElement('span');
+                    label.textContent = d.domaine;
+                    const val = document.createElement('strong');
+                    val.textContent = d.bonnes + ' / ' + d.total + '  (' + d.pct + ' %)';
+                    row.appendChild(label);
+                    row.appendChild(val);
+                    elDom.appendChild(row);
+                });
+            }
+
+            const manq = Stats.listeManquees();
+            elCpt.textContent = manq.length > 0 ? '(' + manq.length + ')' : '';
+            elManq.innerHTML = '';
+            if (manq.length === 0) {
+                const p = document.createElement('p');
+                p.className = 'reglages__hint';
+                p.textContent = 'Aucune question manquée — bravo !';
+                elManq.appendChild(p);
+            } else {
+                manq.forEach(q => {
+                    const card = document.createElement('div');
+                    card.className = 'stats__manq';
+
+                    const head = document.createElement('div');
+                    head.className = 'stats__manq-head';
+                    const dom = document.createElement('span');
+                    dom.className = 'stats__manq-dom';
+                    dom.textContent = q.domaine + (q.sousDomaine ? ' · ' + q.sousDomaine : '');
+                    head.appendChild(dom);
+
+                    const ques = document.createElement('p');
+                    ques.className = 'stats__manq-q';
+                    ques.textContent = q.question;
+
+                    const lignes = document.createElement('p');
+                    lignes.className = 'stats__manq-lignes';
+                    const choix = (q.choixJoueur || '').trim();
+                    lignes.innerHTML =
+                        '<span class="stats__manq-mauvais">Réponse donnée : ' +
+                        (choix ? this._escape(choix) : '<em>aucune</em>') + '</span><br>' +
+                        '<span class="stats__manq-bon">Bonne réponse : ' + this._escape(q.reponse) + '</span>';
+
+                    card.appendChild(head);
+                    card.appendChild(ques);
+                    card.appendChild(lignes);
+
+                    if (q.explication) {
+                        const ex = document.createElement('p');
+                        ex.className = 'stats__manq-ex';
+                        ex.textContent = q.explication;
+                        card.appendChild(ex);
+                    }
+
+                    elManq.appendChild(card);
+                });
+            }
+        };
+
+        refresh();
+
+        // Reset des boutons (clones) puis nouveaux listeners.
+        const f = btnFermer.cloneNode(true); btnFermer.parentNode.replaceChild(f, btnFermer);
+        const e = btnEff.cloneNode(true);    btnEff.parentNode.replaceChild(e, btnEff);
+
+        f.addEventListener('click', () => this._fermerStats());
+        e.addEventListener('click', () => {
+            if (Stats.listeManquees().length === 0) return;
+            if (window.confirm('Effacer la liste des questions manquées ?')) {
+                Stats.effacerManquees();
+                refresh();
+            }
+        });
+
+        overlay.hidden = false;
+        overlay.setAttribute('aria-hidden', 'false');
+    }
+
+    _fermerStats() {
+        const overlay = document.getElementById('stats-screen');
+        overlay.hidden = true;
+        overlay.setAttribute('aria-hidden', 'true');
+    }
+
+    _escape(s) {
+        return String(s == null ? '' : s)
+            .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
     }
 
     _fermer(overlay) {

@@ -33,21 +33,42 @@
                         <span class="menu__btn-titre">Aventure</span>
                         <span class="menu__btn-detail">Niveaux 1 à 20 — 5 mondes, tous les domaines</span>
                     </button>
-                    <button id="menu-btn-mult" class="menu__btn">
-                        <span class="menu__btn-titre">Entraînement — Tables de multiplication</span>
-                        <span class="menu__btn-detail">30 multiplications de 1 à 12 (accent sur 4, 6, 7, 8, 9, 11, 12)</span>
-                    </button>
                     <button id="menu-btn-defi" class="menu__btn">
                         <span class="menu__btn-titre">Défi — Série de bonnes réponses</span>
                         <span class="menu__btn-detail">Niveau 1 : 5 d'affilée, niveau 2 : 10, niveau 3 : 15… Pas de plateforme.</span>
                     </button>
-                    <button id="menu-btn-ortho" class="menu__btn">
-                        <span class="menu__btn-titre">Entraînement — Orthographe</span>
-                        <span class="menu__btn-detail">Écoute le mot et écris-le. ~110 mots de la 4ᵉ année.</span>
-                    </button>
                 </div>
 
-                <button id="menu-btn-reglages" class="menu__reglages">⚙  Réglages</button>
+                <div class="menu__bas">
+                    <button id="menu-btn-stats" class="menu__reglages">📊  Stats &amp; révision</button>
+                    <button id="menu-btn-reglages" class="menu__reglages">⚙  Réglages</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="stats-screen" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal__inner">
+            <div class="modal__panel modal__panel--stats">
+                <h2 class="modal__titre">Stats &amp; révision</h2>
+                <p class="modal__sous-titre">Vue d'ensemble pour revoir avec l'enfant.</p>
+
+                <h3 class="reglages__titre">Aperçu général</h3>
+                <p class="stats__apercu" id="stats-apercu">Aucune question répondue pour l'instant.</p>
+
+                <h3 class="reglages__titre">Par domaine</h3>
+                <div class="stats__domaines" id="stats-domaines"></div>
+
+                <h3 class="reglages__titre">Questions manquées
+                    <span class="stats__compteur" id="stats-manquees-compteur"></span>
+                </h3>
+                <p class="reglages__hint">Les plus récentes en premier. Idéal pour revoir avec un adulte.</p>
+                <div class="stats__manquees" id="stats-manquees"></div>
+
+                <div class="result__actions">
+                    <button id="stats-effacer-manquees" class="modal__continue modal__continue--sec">Effacer la liste</button>
+                    <button id="stats-fermer"           class="modal__continue">Fermer</button>
+                </div>
             </div>
             </div>
         </div>
@@ -132,6 +153,8 @@
                 <header class="modal__header">
                     <span class="modal__domain" id="modal-domain">Domaine</span>
                     <span class="modal__stars" id="modal-stars">★</span>
+                    <button type="button" class="modal__home" id="modal-home"
+                            aria-label="Retour au menu" title="Retour au menu">🏠</button>
                 </header>
 
                 <div class="modal__timebar" aria-hidden="true">
@@ -170,6 +193,7 @@
     <script src="config.js"></script>
     <script src="js/Csv.js"></script>
     <script src="js/Reglages.js"></script>
+    <script src="js/StatsManager.js"></script>
     <script src="js/Visuels.js"></script>
     <script src="js/Voix.js"></script>
     <script src="js/ScoreManager.js"></script>

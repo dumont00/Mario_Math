@@ -1,4 +1,4 @@
-/* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal */
+/* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal, Stats */
 
 // Mode Défi — Série de bonnes réponses.
 // Pas de plateforme : les cartes-questions s'enchaînent une à la suite
@@ -127,7 +127,16 @@ class DefiScene extends Phaser.Scene {
             this.terminerNiveau({ succes: false });
             return;
         }
-        this.modale.afficher(q, { onTermine: (res) => this.onReponse(q, res) });
+        this.modale.afficher(q, {
+            onTermine:    (res) => this.onReponse(q, res),
+            onRetourMenu: () => this.retourMenu()
+        });
+    }
+
+    retourMenu() {
+        if (this.niveauFini) return;
+        this.niveauFini = true;
+        this.scene.start('MenuScene');
     }
 
     onReponse(question, resultat) {
@@ -150,6 +159,10 @@ class DefiScene extends Phaser.Scene {
             question.domaine, resultat.correct,
             resultat.tempsRestant || 0, question.tempsSec
         );
+        // Persistance globale pour la page Stats & révision du menu.
+        if (typeof Stats !== 'undefined') {
+            Stats.enregistrer(question, resultat.correct, resultat.choixJoueur);
+        }
 
         this.majHud();
 

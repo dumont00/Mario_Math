@@ -27,15 +27,20 @@ class QuestionModal {
         this.elFeedbackTxt = document.getElementById('modal-feedback-text');
         this.elExplication = document.getElementById('modal-explication');
         this.elContinue    = document.getElementById('modal-continue');
+        this.elHome        = document.getElementById('modal-home');
 
-        this.timerId      = null;
-        this.tempsRestant = 0;
-        this.tempsTotal   = 0;
-        this.onTermine    = null;
-        this.question     = null;
-        this.repondu      = false;
+        this.timerId        = null;
+        this.tempsRestant   = 0;
+        this.tempsTotal     = 0;
+        this.onTermine      = null;
+        this.onRetourMenu   = null;
+        this.question       = null;
+        this.repondu        = false;
 
         this.elContinue.addEventListener('click', () => this.terminer());
+        if (this.elHome) {
+            this.elHome.addEventListener('click', () => this.demanderRetourMenu());
+        }
 
         // Touche Entrée dans le champ texte → validation.
         this.elInput.addEventListener('keydown', (e) => {
@@ -53,9 +58,10 @@ class QuestionModal {
         this.elAudio.addEventListener('click', () => this._jouerAudio(true));
     }
 
-    afficher(question, { onTermine } = {}) {
+    afficher(question, { onTermine, onRetourMenu } = {}) {
         this.question = question;
-        this.onTermine = onTermine || null;
+        this.onTermine    = onTermine || null;
+        this.onRetourMenu = onRetourMenu || null;
         this.repondu = false;
 
         this.elDomaine.textContent = question.domaine;
@@ -293,12 +299,39 @@ class QuestionModal {
 
         const resultat = this._resultat || { correct: false, choixJoueur: null, tempsRestant: 0, abandon: true };
         this._resultat = null;
+        this.onRetourMenu = null;
 
         if (this.onTermine) {
             const cb = this.onTermine;
             this.onTermine = null;
             cb(resultat);
         }
+    }
+
+    /**
+     * Bouton « 🏠 » du coin haut-droit : l'utilisateur veut quitter la
+     * question et revenir au menu. On confirme si la question n'est pas
+     * encore répondue (clic accidentel). On ferme la modale sans déclencher
+     * la callback `onTermine` — c'est `onRetourMenu` qui prend le relais.
+     */
+    demanderRetourMenu() {
+        if (!this.repondu) {
+            const ok = window.confirm('Quitter cette question et revenir au menu ?');
+            if (!ok) return;
+        }
+        this.arreterTimer();
+        this.root.hidden = true;
+        this.root.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+
+        // On neutralise la callback de réponse en attente avant d'appeler
+        // celle du retour menu, pour éviter un double-déclenchement.
+        this._resultat = null;
+        this.onTermine = null;
+
+        const cb = this.onRetourMenu;
+        this.onRetourMenu = null;
+        if (cb) cb();
     }
 }
 

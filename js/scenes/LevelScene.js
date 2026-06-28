@@ -1,4 +1,4 @@
-/* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal */
+/* global Phaser, CONFIG, ScoreManager, QuestionManager, QuestionModal, Stats */
 
 // LevelScene — joue un niveau de plateforme.
 // Deux modes :
@@ -292,6 +292,9 @@ class LevelScene extends Phaser.Scene {
                     question.domaine, resultat.correct,
                     resultat.tempsRestant, question.tempsSec
                 );
+                if (typeof Stats !== 'undefined') {
+                    Stats.enregistrer(question, resultat.correct, resultat.choixJoueur);
+                }
 
                 this.afficherFloatScore(info);
                 this.majHud();
@@ -299,8 +302,21 @@ class LevelScene extends Phaser.Scene {
 
                 this.physics.world.resume();
                 this.enQuestion = false;
-            }
+            },
+            onRetourMenu: () => this.retourMenu(block)
         });
+    }
+
+    retourMenu(block) {
+        if (this.niveauFini) return;
+        this.niveauFini = true;
+        // Le bloc redeviendra actif au prochain niveau ; on évite de
+        // laisser la physique en pause si la modale est ré-ouverte ailleurs.
+        if (block) block.setData('state', 'active');
+        this.physics.world.resume();
+        this.enQuestion = false;
+        if (this.timerNiveau) this.timerNiveau.remove();
+        this.scene.start('MenuScene');
     }
 
     resoudreBloc(block) {
