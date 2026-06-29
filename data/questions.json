@@ -10189,26 +10189,6 @@
     "pointsBase": 100
   },
   {
-    "id": "pro_p1_003",
-    "domaine": "Probabilité",
-    "sousDomaine": "Événements",
-    "palier": 1,
-    "type": "choix",
-    "question": "Sortir le visage d'un dé classique en lançant, c'est…",
-    "visuel": null,
-    "choix": [
-      "Certain",
-      "Probable",
-      "Impossible",
-      "Possible"
-    ],
-    "reponse": "Impossible",
-    "indice": "Demande-toi si l'événement peut, doit ou ne peut pas arriver.",
-    "explication": "Un dé montre des points, pas un visage.",
-    "tempsSec": 20,
-    "pointsBase": 100
-  },
-  {
     "id": "pro_p1_004",
     "domaine": "Probabilité",
     "sousDomaine": "Événements",
@@ -11394,7 +11374,7 @@
     "visuel": null,
     "choix": [
       "1/4",
-      "8/20",
+      "12/20",
       "2/5",
       "1/2"
     ],
@@ -24830,7 +24810,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ veut bien essayer. »",
+    "question": "« ___ il veut bien essayer. »",
     "visuel": null,
     "choix": [
       "Mai",
@@ -26541,7 +26521,7 @@
     "reponse": "32",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 32.",
-    "tempsSec": 20,
+    "tempsSec": 30,
     "pointsBase": 100
   },
   {
@@ -26561,7 +26541,7 @@
     "reponse": "48",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 48.",
-    "tempsSec": 20,
+    "tempsSec": 60,
     "pointsBase": 100
   },
   {
@@ -26601,7 +26581,7 @@
     "reponse": "25",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 25.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26621,7 +26601,7 @@
     "reponse": "47",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 47.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26641,7 +26621,7 @@
     "reponse": "16",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 16.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26661,7 +26641,7 @@
     "reponse": "33",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 33.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26681,7 +26661,7 @@
     "reponse": "8",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 8.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26701,7 +26681,7 @@
     "reponse": "42",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 42.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26721,7 +26701,7 @@
     "reponse": "23",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 23.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26741,7 +26721,7 @@
     "reponse": "12.5",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 12.5.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26761,7 +26741,7 @@
     "reponse": "125",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 125.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
@@ -26781,7 +26761,7 @@
     "reponse": "46",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 46.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
@@ -26801,7 +26781,7 @@
     "reponse": "33",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 33.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
@@ -26821,7 +26801,7 @@
     "reponse": "120",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 120.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
@@ -26841,7 +26821,7 @@
     "reponse": "111221",
     "indice": "Cherche la régularité entre les nombres.",
     "explication": "La bonne réponse est : 111221.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
@@ -26881,7 +26861,7 @@
     "reponse": "I",
     "indice": "Réfléchis bien à la question.",
     "explication": "La bonne réponse est : I.",
-    "tempsSec": 20,
+    "tempsSec": 30,
     "pointsBase": 100
   },
   {
@@ -26901,7 +26881,7 @@
     "reponse": "M",
     "indice": "Réfléchis bien à la question.",
     "explication": "La bonne réponse est : M.",
-    "tempsSec": 15,
+    "tempsSec": 30,
     "pointsBase": 150
   },
   {
@@ -26921,7 +26901,7 @@
     "reponse": "R",
     "indice": "Réfléchis bien à la question.",
     "explication": "La bonne réponse est : R.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26941,7 +26921,7 @@
     "reponse": "J",
     "indice": "Réfléchis bien à la question.",
     "explication": "La bonne réponse est : J.",
-    "tempsSec": 15,
+    "tempsSec": 60,
     "pointsBase": 150
   },
   {
@@ -26961,7 +26941,7 @@
     "reponse": "6",
     "indice": "Réfléchis bien à la question.",
     "explication": "La bonne réponse est : 6.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
@@ -26981,7 +26961,7 @@
     "reponse": "7",
     "indice": "Réfléchis bien à la question.",
     "explication": "La bonne réponse est : 7.",
-    "tempsSec": 12,
+    "tempsSec": 60,
     "pointsBase": 200
   },
   {
