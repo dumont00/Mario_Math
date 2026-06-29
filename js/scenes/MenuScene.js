@@ -70,6 +70,8 @@ class MenuScene extends Phaser.Scene {
         const elVersion       = document.getElementById('reglages-version');
         const btnAnnuler      = document.getElementById('reglages-annuler');
         const btnEnregistrer  = document.getElementById('reglages-enregistrer');
+        const btnVoirManq     = document.getElementById('reglages-voir-manquees');
+        const btnEffacerStats = document.getElementById('reglages-effacer-stats');
 
         // Construit la liste de cases à cocher.
         elDomaines.innerHTML = '';
@@ -112,8 +114,27 @@ class MenuScene extends Phaser.Scene {
         }
 
         // Reset des boutons (clones).
-        const a = btnAnnuler.cloneNode(true); btnAnnuler.parentNode.replaceChild(a, btnAnnuler);
+        const a = btnAnnuler.cloneNode(true);     btnAnnuler.parentNode.replaceChild(a, btnAnnuler);
         const e = btnEnregistrer.cloneNode(true); btnEnregistrer.parentNode.replaceChild(e, btnEnregistrer);
+        const v = btnVoirManq.cloneNode(true);    btnVoirManq.parentNode.replaceChild(v, btnVoirManq);
+        const x = btnEffacerStats.cloneNode(true); btnEffacerStats.parentNode.replaceChild(x, btnEffacerStats);
+
+        v.addEventListener('click', () => this._ouvrirManquees());
+        x.addEventListener('click', () => {
+            const ap = Stats.apercu();
+            if (ap.total === 0 && Stats.listeManquees().length === 0) {
+                window.alert('Aucune statistique à effacer.');
+                return;
+            }
+            if (window.confirm(
+                'Effacer toutes les statistiques ?\n\n' +
+                'Cela supprime : le décompte par domaine et la liste complète des questions manquées. ' +
+                'Cette action ne peut pas être annulée.'
+            )) {
+                Stats.effacerTout();
+                window.alert('Statistiques effacées.');
+            }
+        });
 
         a.addEventListener('click', () => this._fermerReglages());
         e.addEventListener('click', () => {
@@ -155,8 +176,10 @@ class MenuScene extends Phaser.Scene {
         const elDom     = document.getElementById('stats-domaines');
         const elManq    = document.getElementById('stats-manquees');
         const elCpt     = document.getElementById('stats-manquees-compteur');
+        const elHint    = document.getElementById('stats-voir-toutes-hint');
         const btnFermer = document.getElementById('stats-fermer');
-        const btnEff    = document.getElementById('stats-effacer-manquees');
+
+        const APERCU_MAX = 8;       // aperçu seulement — liste complète dans Réglages
 
         const refresh = () => {
             const ap = Stats.apercu();
@@ -198,63 +221,143 @@ class MenuScene extends Phaser.Scene {
                 p.className = 'reglages__hint';
                 p.textContent = 'Aucune question manquée — bravo !';
                 elManq.appendChild(p);
+                if (elHint) elHint.hidden = true;
             } else {
-                manq.forEach(q => {
-                    const card = document.createElement('div');
-                    card.className = 'stats__manq';
-
-                    const head = document.createElement('div');
-                    head.className = 'stats__manq-head';
-                    const dom = document.createElement('span');
-                    dom.className = 'stats__manq-dom';
-                    dom.textContent = q.domaine + (q.sousDomaine ? ' · ' + q.sousDomaine : '');
-                    head.appendChild(dom);
-
-                    const ques = document.createElement('p');
-                    ques.className = 'stats__manq-q';
-                    ques.textContent = q.question;
-
-                    const lignes = document.createElement('p');
-                    lignes.className = 'stats__manq-lignes';
-                    const choix = (q.choixJoueur || '').trim();
-                    lignes.innerHTML =
-                        '<span class="stats__manq-mauvais">Réponse donnée : ' +
-                        (choix ? this._escape(choix) : '<em>aucune</em>') + '</span><br>' +
-                        '<span class="stats__manq-bon">Bonne réponse : ' + this._escape(q.reponse) + '</span>';
-
-                    card.appendChild(head);
-                    card.appendChild(ques);
-                    card.appendChild(lignes);
-
-                    if (q.explication) {
-                        const ex = document.createElement('p');
-                        ex.className = 'stats__manq-ex';
-                        ex.textContent = q.explication;
-                        card.appendChild(ex);
-                    }
-
-                    elManq.appendChild(card);
+                // Aperçu : on en montre quelques-unes seulement. La liste
+                // complète vit dans Réglages → Suivi des résultats.
+                manq.slice(0, APERCU_MAX).forEach(q => {
+                    elManq.appendChild(this._creerCarteManquee(q));
                 });
+                if (elHint) elHint.hidden = (manq.length <= APERCU_MAX);
             }
         };
 
         refresh();
 
-        // Reset des boutons (clones) puis nouveaux listeners.
+        const f = btnFermer.cloneNode(true); btnFermer.parentNode.replaceChild(f, btnFermer);
+        f.addEventListener('click', () => this._fermerStats());
+
+        overlay.hidden = false;
+        overlay.setAttribute('aria-hidden', 'false');
+    }
+
+    /** Construit une carte DOM pour une question manquée. */
+    _creerCarteManquee(q) {
+        const card = document.createElement('div');
+        card.className = 'stats__manq';
+
+        const head = document.createElement('div');
+        head.className = 'stats__manq-head';
+        const dom = document.createElement('span');
+        dom.className = 'stats__manq-dom';
+        dom.textContent = q.domaine + (q.sousDomaine ? ' · ' + q.sousDomaine : '');
+        head.appendChild(dom);
+
+        const ques = document.createElement('p');
+        ques.className = 'stats__manq-q';
+        ques.textContent = q.question;
+
+        const lignes = document.createElement('p');
+        lignes.className = 'stats__manq-lignes';
+        const choix = (q.choixJoueur || '').trim();
+        lignes.innerHTML =
+            '<span class="stats__manq-mauvais">Réponse donnée : ' +
+            (choix ? this._escape(choix) : '<em>aucune</em>') + '</span><br>' +
+            '<span class="stats__manq-bon">Bonne réponse : ' + this._escape(q.reponse) + '</span>';
+
+        card.appendChild(head);
+        card.appendChild(ques);
+        card.appendChild(lignes);
+
+        if (q.explication) {
+            const ex = document.createElement('p');
+            ex.className = 'stats__manq-ex';
+            ex.textContent = q.explication;
+            card.appendChild(ex);
+        }
+        return card;
+    }
+
+    /**
+     * Fenêtre dédiée à toutes les questions manquées (accessible depuis
+     * Réglages → Suivi des résultats). Affiche TOUT, avec filtre par
+     * domaine pour cibler une matière.
+     */
+    _ouvrirManquees() {
+        const overlay   = document.getElementById('manquees-screen');
+        const elListe   = document.getElementById('manquees-liste');
+        const elCpt     = document.getElementById('manquees-compteur');
+        const elFiltre  = document.getElementById('manquees-filtre');
+        const btnFermer = document.getElementById('manquees-fermer');
+        const btnEff    = document.getElementById('manquees-effacer');
+
+        const peupleFiltre = () => {
+            const manq = Stats.listeManquees();
+            const doms = Array.from(new Set(manq.map(q => q.domaine))).sort((a, b) => a.localeCompare(b, 'fr'));
+            const courant = elFiltre.value;
+            elFiltre.innerHTML = '';
+            const optTous = document.createElement('option');
+            optTous.value = '';
+            optTous.textContent = 'Tous les domaines (' + manq.length + ')';
+            elFiltre.appendChild(optTous);
+            doms.forEach(d => {
+                const n = manq.filter(q => q.domaine === d).length;
+                const opt = document.createElement('option');
+                opt.value = d;
+                opt.textContent = d + ' (' + n + ')';
+                elFiltre.appendChild(opt);
+            });
+            // On restaure la sélection courante si elle existe toujours.
+            if (Array.from(elFiltre.options).some(o => o.value === courant)) {
+                elFiltre.value = courant;
+            }
+        };
+
+        const refresh = () => {
+            const filtre = elFiltre.value;
+            const tout = Stats.listeManquees();
+            const manq = filtre ? tout.filter(q => q.domaine === filtre) : tout;
+            elCpt.textContent = '(' + manq.length + (filtre && filtre !== '' ? ' sur ' + tout.length : '') + ')';
+            elListe.innerHTML = '';
+            if (manq.length === 0) {
+                const p = document.createElement('p');
+                p.className = 'reglages__hint';
+                p.textContent = filtre
+                    ? 'Aucune question manquée dans ce domaine.'
+                    : 'Aucune question manquée — bravo !';
+                elListe.appendChild(p);
+                return;
+            }
+            manq.forEach(q => elListe.appendChild(this._creerCarteManquee(q)));
+        };
+
+        peupleFiltre();
+        refresh();
+
+        // Reset des écouteurs : on remplace les boutons par des clones, et
+        // on utilise l'attribut onchange (idempotent) pour le select.
         const f = btnFermer.cloneNode(true); btnFermer.parentNode.replaceChild(f, btnFermer);
         const e = btnEff.cloneNode(true);    btnEff.parentNode.replaceChild(e, btnEff);
 
-        f.addEventListener('click', () => this._fermerStats());
+        f.addEventListener('click', () => this._fermerManquees());
         e.addEventListener('click', () => {
             if (Stats.listeManquees().length === 0) return;
             if (window.confirm('Effacer la liste des questions manquées ?')) {
                 Stats.effacerManquees();
+                peupleFiltre();
                 refresh();
             }
         });
+        elFiltre.onchange = refresh;
 
         overlay.hidden = false;
         overlay.setAttribute('aria-hidden', 'false');
+    }
+
+    _fermerManquees() {
+        const overlay = document.getElementById('manquees-screen');
+        overlay.hidden = true;
+        overlay.setAttribute('aria-hidden', 'true');
     }
 
     _fermerStats() {

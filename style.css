@@ -711,6 +711,100 @@ body.modal-open .touch-controls {
     .stats__domaines { grid-template-columns: 1fr; }
 }
 
+/* ------------------ Réglages : section Suivi des résultats ------------------ */
+
+.reglages__suivi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.reglages__action {
+    background: #f5f7fc;
+    border: 1px solid #c2cbe3;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: #1d2746;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.1s ease, border-color 0.1s ease, transform 0.05s ease;
+}
+
+.reglages__action:hover  { background: #e6ebf7; border-color: #4a90e2; }
+.reglages__action:active { transform: scale(0.99); }
+
+.reglages__action--danger {
+    color: #8a2727;
+    border-color: #ecc1c1;
+    background: #fdf3f3;
+}
+
+.reglages__action--danger:hover {
+    background: #fae0e0;
+    border-color: #d35858;
+}
+
+/* ------------------ Modale « Toutes les questions manquées » ------------------ */
+
+/* Manquees s'ouvre par-dessus Réglages : doit passer au-dessus. */
+#manquees-screen { z-index: 110; }
+
+.modal__panel--manquees {
+    max-width: 720px;
+    text-align: left;
+}
+
+.modal__panel--manquees .modal__titre,
+.modal__panel--manquees .modal__sous-titre {
+    text-align: center;
+}
+
+.manquees__filtres {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 14px;
+    padding: 10px 12px;
+    background: #f5f7fc;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4a5a8a;
+}
+
+.manquees__filtres label {
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.manquees__filtres select {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #c2cbe3;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+    color: #1d2746;
+    cursor: pointer;
+}
+
+.manquees__liste {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 55vh;
+    overflow-y: auto;
+    padding: 2px 4px 2px 0;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 520px) {
+    .modal__panel--manquees { max-width: 100%; }
+}
+
 .modal__titre {
     font-size: 28px;
     margin-bottom: 6px;

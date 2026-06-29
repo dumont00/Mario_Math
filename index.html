@@ -65,9 +65,37 @@
                 <p class="reglages__hint">Les plus récentes en premier. Idéal pour revoir avec un adulte.</p>
                 <div class="stats__manquees" id="stats-manquees"></div>
 
+                <p class="reglages__hint" id="stats-voir-toutes-hint" hidden>
+                    Astuce : ouvre <strong>Réglages → Suivi des résultats</strong> pour la liste complète.
+                </p>
+
                 <div class="result__actions">
-                    <button id="stats-effacer-manquees" class="modal__continue modal__continue--sec">Effacer la liste</button>
                     <button id="stats-fermer"           class="modal__continue">Fermer</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div id="manquees-screen" class="modal" hidden aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="modal__inner">
+            <div class="modal__panel modal__panel--manquees">
+                <h2 class="modal__titre">Toutes les questions manquées
+                    <span class="stats__compteur" id="manquees-compteur"></span>
+                </h2>
+                <p class="modal__sous-titre">Les plus récentes en premier. Revois-les avec l'enfant.</p>
+
+                <div class="manquees__filtres">
+                    <label for="manquees-filtre">Filtrer&nbsp;:</label>
+                    <select id="manquees-filtre">
+                        <option value="">Tous les domaines</option>
+                    </select>
+                </div>
+
+                <div class="manquees__liste" id="manquees-liste"></div>
+
+                <div class="result__actions">
+                    <button id="manquees-effacer" class="modal__continue modal__continue--sec">Effacer la liste</button>
+                    <button id="manquees-fermer"  class="modal__continue">Fermer</button>
                 </div>
             </div>
             </div>
@@ -110,6 +138,17 @@
                         <span class="reglages__hint">Après chaque mot d'orthographe, la voix dit le mot lettre par lettre.</span>
                     </span>
                 </label>
+
+                <h3 class="reglages__titre">Suivi des résultats</h3>
+                <p class="reglages__hint">Pour revoir les questions ratées et repartir à zéro.</p>
+                <div class="reglages__suivi">
+                    <button type="button" id="reglages-voir-manquees" class="reglages__action">
+                        📋  Voir toutes les questions manquées
+                    </button>
+                    <button type="button" id="reglages-effacer-stats" class="reglages__action reglages__action--danger">
+                        🗑  Effacer toutes les statistiques
+                    </button>
+                </div>
 
                 <div class="result__actions">
                     <button id="reglages-annuler"     class="modal__continue modal__continue--sec">Annuler</button>
