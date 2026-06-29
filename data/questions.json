@@ -24485,32 +24485,12 @@
     "pointsBase": 200
   },
   {
-    "id": "gram_conj_0205",
-    "domaine": "Grammaire",
-    "sousDomaine": "Conjugaison",
-    "palier": 3,
-    "type": "choix",
-    "question": "Quel temps exprime un fait qui sera fini avant un autre futur ?",
-    "visuel": null,
-    "choix": [
-      "Futur simple",
-      "Futur antérieur",
-      "Imparfait",
-      "Présent"
-    ],
-    "reponse": "Futur antérieur",
-    "indice": "Réfléchis bien à la question.",
-    "explication": "La bonne réponse est : Futur antérieur.",
-    "tempsSec": 12,
-    "pointsBase": 200
-  },
-  {
     "id": "voc_hom_0206",
     "domaine": "Vocabulaire",
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Il va ___ l'école. » (à / a)",
+    "question": "« Il va ___ l'école. »",
     "visuel": null,
     "choix": [
       "à",
@@ -24530,7 +24510,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Elle ___ un beau chien. » (a / à)",
+    "question": "« Elle ___ un beau chien. »",
     "visuel": null,
     "choix": [
       "a",
@@ -24550,7 +24530,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Tu ___ raison. » (a / à / as)",
+    "question": "« Tu ___ raison. »",
     "visuel": null,
     "choix": [
       "à",
@@ -24570,7 +24550,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Le chat ___ couché. » (c'est / s'est)",
+    "question": "« Le chat ___ couché. »",
     "visuel": null,
     "choix": [
       "s'est",
@@ -24590,7 +24570,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ une belle journée. » (c'est / s'est)",
+    "question": "« ___ une belle journée. »",
     "visuel": null,
     "choix": [
       "Ses",
@@ -24610,7 +24590,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ enfants jouent. » (ces / ses / c'est / s'est)",
+    "question": "« ___ enfants jouent. »",
     "visuel": null,
     "choix": [
       "C'est",
@@ -24630,7 +24610,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Marie aime ___ amis. » (ses / ces)",
+    "question": "« Marie aime ___ amis. »",
     "visuel": null,
     "choix": [
       "ses",
@@ -24650,7 +24630,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Mon père ___ un médecin. » (est / et)",
+    "question": "« Mon père ___ un médecin. »",
     "visuel": null,
     "choix": [
       "est",
@@ -24670,7 +24650,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Papa ___ maman arrivent. » (est / et)",
+    "question": "« Papa ___ maman arrivent. »",
     "visuel": null,
     "choix": [
       "ai",
@@ -24690,7 +24670,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Le chien ___ noir. » (est / et)",
+    "question": "« Le chien ___ noir. »",
     "visuel": null,
     "choix": [
       "est",
@@ -24710,7 +24690,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ est-il parti ? » (où / ou)",
+    "question": "« ___ est-il parti ? »",
     "visuel": null,
     "choix": [
       "Ou",
@@ -24730,7 +24710,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Veux-tu thé ___ café ? » (où / ou)",
+    "question": "« Veux-tu thé ___ café ? »",
     "visuel": null,
     "choix": [
       "aux",
@@ -24750,7 +24730,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ frère arrive demain. » (son / sont)",
+    "question": "« ___ frère arrive demain. »",
     "visuel": null,
     "choix": [
       "Sont",
@@ -24770,7 +24750,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Les enfants ___ contents. » (son / sont)",
+    "question": "« Les enfants ___ contents. »",
     "visuel": null,
     "choix": [
       "son",
@@ -24790,7 +24770,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ a vu un oiseau. » (on / ont)",
+    "question": "« ___ a vu un oiseau. »",
     "visuel": null,
     "choix": [
       "Hon",
@@ -24810,7 +24790,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« Ils ___ trouvé la solution. » (on / ont)",
+    "question": "« Ils ___ trouvé la solution. »",
     "visuel": null,
     "choix": [
       "ont",
@@ -24830,7 +24810,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ amie est gentille. » (mon / mont)",
+    "question": "« ___ amie est gentille. »",
     "visuel": null,
     "choix": [
       "Mon",
@@ -24850,7 +24830,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ veut bien essayer. » (mais / mes)",
+    "question": "« ___ veut bien essayer. »",
     "visuel": null,
     "choix": [
       "Mai",
@@ -24870,7 +24850,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ livres sont sur la table. » (mais / mes)",
+    "question": "« ___ livres sont sur la table. »",
     "visuel": null,
     "choix": [
       "Mai",
@@ -24890,7 +24870,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 1,
     "type": "choix",
-    "question": "« ___ tu vas, je viens. » (où / ou)",
+    "question": "« ___ tu vas, je viens. »",
     "visuel": null,
     "choix": [
       "Hou",
@@ -24910,7 +24890,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Quand il pleut, ___ reste à la maison. » (on / ont)",
+    "question": "« Quand il pleut, ___ reste à la maison. »",
     "visuel": null,
     "choix": [
       "on",
@@ -24930,7 +24910,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Les fleurs qu'elles ___ cueillies sentent bon. » (on / ont)",
+    "question": "« Les fleurs qu'elles ___ cueillies sentent bon. »",
     "visuel": null,
     "choix": [
       "ond",
@@ -24950,12 +24930,12 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Il n'a pas ___ regret. » (sans / s'en)",
+    "question": "« Il est ___ regret. »",
     "visuel": null,
     "choix": [
       "s'en",
       "sans",
-      "de",
+      "la",
       "san"
     ],
     "reponse": "de",
@@ -24970,7 +24950,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Il est parti ___ rien dire. » (sans / s'en)",
+    "question": "« Il est parti ___ rien dire. »",
     "visuel": null,
     "choix": [
       "sans",
@@ -24990,7 +24970,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Il ___ va lentement. » (sans / s'en)",
+    "question": "« Il ___ va lentement. »",
     "visuel": null,
     "choix": [
       "s'en",
@@ -25010,7 +24990,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Il y avait ___ enfants. » (cents / cent)",
+    "question": "« Il y avait ___ enfants. »",
     "visuel": null,
     "choix": [
       "s'en",
@@ -25050,7 +25030,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« ___ que tu dois faire » (ce / se)",
+    "question": "« ___ que tu dois faire »",
     "visuel": null,
     "choix": [
       "Ses",
@@ -25070,7 +25050,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Il ___ lève tôt. » (ce / se)",
+    "question": "« Il ___ lève tôt. »",
     "visuel": null,
     "choix": [
       "ces",
@@ -25090,7 +25070,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« ___ matin, je travaille. » (ce / se)",
+    "question": "« ___ matin, je travaille. »",
     "visuel": null,
     "choix": [
       "Se",
@@ -25110,7 +25090,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« ___ filles sont là. » (ces / ses)",
+    "question": "« ___ filles sont là. »",
     "visuel": null,
     "choix": [
       "S'est",
@@ -25130,7 +25110,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Pierre cherche ___ clés. » (ces / ses)",
+    "question": "« Pierre cherche ___ clés. »",
     "visuel": null,
     "choix": [
       "c'est",
@@ -25150,7 +25130,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Tu lui donnes ___ livre. » (son / sont)",
+    "question": "« Tu lui donnes ___ livre. »",
     "visuel": null,
     "choix": [
       "sont",
@@ -25170,7 +25150,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« Elle prend ___ vélo. » (son / sont)",
+    "question": "« Elle prend ___ vélo. »",
     "visuel": null,
     "choix": [
       "sont",
@@ -25190,7 +25170,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 2,
     "type": "choix",
-    "question": "« ___ que je veux dire » (ce / se)",
+    "question": "« ___ que je veux dire »",
     "visuel": null,
     "choix": [
       "Ses",
@@ -25210,7 +25190,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Je ne sais pas ___ je dois faire. » (ce / se / ces / ses)",
+    "question": "« Je ne sais pas ___ je dois faire. »",
     "visuel": null,
     "choix": [
       "ce",
@@ -25230,7 +25210,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« ___ qu'il dit est important. » (ce / se)",
+    "question": "« ___ qu'il dit est important. »",
     "visuel": null,
     "choix": [
       "Cette",
@@ -25250,7 +25230,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Il s'agit ___ une bonne nouvelle. » (d' / s')",
+    "question": "« Il s'agit ___ une bonne nouvelle. »",
     "visuel": null,
     "choix": [
       "d'",
@@ -25270,7 +25250,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« ___ - il facile ? » (est / et)",
+    "question": "« ___ - il facile ? »",
     "visuel": null,
     "choix": [
       "Et",
@@ -25290,7 +25270,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Mes parents ___ très occupés. » (sont / son)",
+    "question": "« Mes parents ___ très occupés. »",
     "visuel": null,
     "choix": [
       "sont",
@@ -25310,7 +25290,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Voici la maison ___ je suis né. » (où / ou)",
+    "question": "« Voici la maison ___ je suis né. »",
     "visuel": null,
     "choix": [
       "au",
@@ -25330,7 +25310,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Il ne ___ peut pas. » (la / là)",
+    "question": "« Il ne ___ peut pas. »",
     "visuel": null,
     "choix": [
       "là",
@@ -25350,7 +25330,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Il est ___ depuis longtemps. » (la / là)",
+    "question": "« Il est ___ depuis longtemps. »",
     "visuel": null,
     "choix": [
       "las",
@@ -25370,7 +25350,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Il ___ vue hier. » (la / là / l'a)",
+    "question": "« Il ___ vue hier. »",
     "visuel": null,
     "choix": [
       "là",
@@ -25390,7 +25370,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« On va au cinéma, ___ on reste à la maison ? » (où / ou)",
+    "question": "« On va au cinéma, ___ on reste à la maison ? »",
     "visuel": null,
     "choix": [
       "au",
@@ -25410,7 +25390,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« ___ peut le faire ensemble. » (on / ont)",
+    "question": "« ___ peut le faire ensemble. »",
     "visuel": null,
     "choix": [
       "Au",
@@ -25430,7 +25410,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Les fleurs que tu m'___ offertes. » (a / as)",
+    "question": "« Les fleurs que tu m'___ offertes. »",
     "visuel": null,
     "choix": [
       "as",
@@ -25450,7 +25430,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Cette histoire ne ___ finit jamais. » (ce / se)",
+    "question": "« Cette histoire ne ___ finit jamais. »",
     "visuel": null,
     "choix": [
       "cet",
@@ -25470,7 +25450,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Il n'y a ni l'un ni ___. » (l'autre / l'autres)",
+    "question": "« Il n'y a ni l'un ni ___. »",
     "visuel": null,
     "choix": [
       "l'autre-fois",
@@ -25490,7 +25470,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Ils ___ sont rejoints. » (se / ce)",
+    "question": "« Ils ___ sont rejoints. »",
     "visuel": null,
     "choix": [
       "ces",
