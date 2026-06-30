@@ -91,7 +91,10 @@ class MenuScene extends Phaser.Scene {
 
         elAccents.checked = !!Reglages.ignorerAccents;
         elEpeler.checked  = Reglages.epelerApresOrthographe !== false;
-        elTemps.value     = String(Reglages.multiplicateurTemps || 1);
+        // 0 = sans chronomètre — il faut le préserver explicitement
+        // (sinon `0 || 1` → 1 et l'option « sans chrono » est perdue).
+        const m = Reglages.multiplicateurTemps;
+        elTemps.value = String(typeof m === 'number' ? m : 1);
 
         // Version : on la lit depuis le cache JSON chargé par BootScene.
         try {
@@ -152,7 +155,8 @@ class MenuScene extends Phaser.Scene {
             Reglages.epelerApresOrthographe = elEpeler.checked;
 
             const mult = parseFloat(elTemps.value);
-            Reglages.multiplicateurTemps = (mult > 0 && mult <= 4) ? mult : 1.0;
+            // 0 = sans chronomètre (cas spécial). Sinon on borne entre 0 et 4.
+            Reglages.multiplicateurTemps = (mult === 0 || (mult > 0 && mult <= 4)) ? mult : 1.0;
 
             Reglages.appliquer();
             Reglages.sauvegarder();
@@ -290,6 +294,7 @@ class MenuScene extends Phaser.Scene {
         const elFiltre  = document.getElementById('manquees-filtre');
         const btnFermer = document.getElementById('manquees-fermer');
         const btnEff    = document.getElementById('manquees-effacer');
+        const btnMenu   = document.getElementById('manquees-menu');
 
         const peupleFiltre = () => {
             const manq = Stats.listeManquees();
@@ -338,6 +343,7 @@ class MenuScene extends Phaser.Scene {
         // on utilise l'attribut onchange (idempotent) pour le select.
         const f = btnFermer.cloneNode(true); btnFermer.parentNode.replaceChild(f, btnFermer);
         const e = btnEff.cloneNode(true);    btnEff.parentNode.replaceChild(e, btnEff);
+        const m = btnMenu.cloneNode(true);   btnMenu.parentNode.replaceChild(m, btnMenu);
 
         f.addEventListener('click', () => this._fermerManquees());
         e.addEventListener('click', () => {
@@ -347,6 +353,13 @@ class MenuScene extends Phaser.Scene {
                 peupleFiltre();
                 refresh();
             }
+        });
+        // Raccourci : ferme Manquees ET Réglages d'un coup pour ressortir
+        // directement sur le menu principal (sinon il faut traverser deux
+        // niveaux de modales).
+        m.addEventListener('click', () => {
+            this._fermerManquees();
+            this._fermerReglages();
         });
         elFiltre.onchange = refresh;
 

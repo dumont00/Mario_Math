@@ -116,9 +116,20 @@ class QuestionModal {
 
         const mult = (window.CONFIG && typeof window.CONFIG.multiplicateurTemps === 'number')
             ? window.CONFIG.multiplicateurTemps : 1;
-        this.tempsTotal   = Math.max(3, Math.round(question.tempsSec * mult));
-        this.tempsRestant = this.tempsTotal;
-        this.majTimebar();
+        this.sansChrono = (mult === 0);
+
+        // La barre de temps est cachée quand on est sans chronomètre.
+        const timebarEl = this.elTimebarFill && this.elTimebarFill.parentElement;
+        if (timebarEl) timebarEl.hidden = this.sansChrono;
+
+        if (this.sansChrono) {
+            this.tempsTotal   = 0;
+            this.tempsRestant = 0;
+        } else {
+            this.tempsTotal   = Math.max(3, Math.round(question.tempsSec * mult));
+            this.tempsRestant = this.tempsTotal;
+            this.majTimebar();
+        }
 
         this.root.hidden = false;
         this.root.setAttribute('aria-hidden', 'false');
@@ -132,15 +143,17 @@ class QuestionModal {
             this._jouerAudio(true);
         }
 
-        const debut = performance.now();
-        this.timerId = setInterval(() => {
-            const ecoule = (performance.now() - debut) / 1000;
-            this.tempsRestant = Math.max(0, this.tempsTotal - ecoule);
-            this.majTimebar();
-            if (this.tempsRestant <= 0 && !this.repondu) {
-                this.tempsEcoule();
-            }
-        }, 50);
+        if (!this.sansChrono) {
+            const debut = performance.now();
+            this.timerId = setInterval(() => {
+                const ecoule = (performance.now() - debut) / 1000;
+                this.tempsRestant = Math.max(0, this.tempsTotal - ecoule);
+                this.majTimebar();
+                if (this.tempsRestant <= 0 && !this.repondu) {
+                    this.tempsEcoule();
+                }
+            }, 50);
+        }
     }
 
     _jouerAudio(avecContexte = false) {

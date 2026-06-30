@@ -36,8 +36,10 @@ class ReglagesManager {
                 this.ignorerAccents = data.ignorerAccents !== undefined
                     ? !!data.ignorerAccents
                     : this.defauts.ignorerAccents;
+                // 0 = sans chronomètre (cas spécial accepté).
                 this.multiplicateurTemps = (typeof data.multiplicateurTemps === 'number'
-                    && data.multiplicateurTemps > 0)
+                    && data.multiplicateurTemps >= 0
+                    && data.multiplicateurTemps <= 4)
                     ? data.multiplicateurTemps
                     : this.defauts.multiplicateurTemps;
                 this.epelerApresOrthographe = data.epelerApresOrthographe !== undefined
