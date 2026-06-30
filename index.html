@@ -65,9 +65,16 @@
                 <p class="reglages__hint">Les plus récentes en premier. Idéal pour revoir avec un adulte.</p>
                 <div class="stats__manquees" id="stats-manquees"></div>
 
-                <p class="reglages__hint" id="stats-voir-toutes-hint" hidden>
-                    Astuce : ouvre <strong>Réglages → Suivi des résultats</strong> pour la liste complète.
-                </p>
+                <h3 class="reglages__titre">Suivi des résultats</h3>
+                <p class="reglages__hint">Liste complète des questions ratées, ou remise à zéro.</p>
+                <div class="reglages__suivi">
+                    <button type="button" id="stats-voir-manquees" class="reglages__action">
+                        📋  Voir toutes les questions manquées
+                    </button>
+                    <button type="button" id="stats-effacer-tout" class="reglages__action reglages__action--danger">
+                        🗑  Effacer toutes les statistiques
+                    </button>
+                </div>
 
                 <div class="result__actions">
                     <button id="stats-fermer"           class="modal__continue">Fermer</button>
@@ -140,17 +147,6 @@
                         <span class="reglages__hint">Après chaque mot d'orthographe, la voix dit le mot lettre par lettre.</span>
                     </span>
                 </label>
-
-                <h3 class="reglages__titre">Suivi des résultats</h3>
-                <p class="reglages__hint">Pour revoir les questions ratées et repartir à zéro.</p>
-                <div class="reglages__suivi">
-                    <button type="button" id="reglages-voir-manquees" class="reglages__action">
-                        📋  Voir toutes les questions manquées
-                    </button>
-                    <button type="button" id="reglages-effacer-stats" class="reglages__action reglages__action--danger">
-                        🗑  Effacer toutes les statistiques
-                    </button>
-                </div>
 
                 <div class="result__actions">
                     <button id="reglages-annuler"     class="modal__continue modal__continue--sec">Annuler</button>

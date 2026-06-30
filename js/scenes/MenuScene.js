@@ -70,8 +70,6 @@ class MenuScene extends Phaser.Scene {
         const elVersion       = document.getElementById('reglages-version');
         const btnAnnuler      = document.getElementById('reglages-annuler');
         const btnEnregistrer  = document.getElementById('reglages-enregistrer');
-        const btnVoirManq     = document.getElementById('reglages-voir-manquees');
-        const btnEffacerStats = document.getElementById('reglages-effacer-stats');
 
         // Construit la liste de cases à cocher.
         elDomaines.innerHTML = '';
@@ -119,25 +117,6 @@ class MenuScene extends Phaser.Scene {
         // Reset des boutons (clones).
         const a = btnAnnuler.cloneNode(true);     btnAnnuler.parentNode.replaceChild(a, btnAnnuler);
         const e = btnEnregistrer.cloneNode(true); btnEnregistrer.parentNode.replaceChild(e, btnEnregistrer);
-        const v = btnVoirManq.cloneNode(true);    btnVoirManq.parentNode.replaceChild(v, btnVoirManq);
-        const x = btnEffacerStats.cloneNode(true); btnEffacerStats.parentNode.replaceChild(x, btnEffacerStats);
-
-        v.addEventListener('click', () => this._ouvrirManquees());
-        x.addEventListener('click', () => {
-            const ap = Stats.apercu();
-            if (ap.total === 0 && Stats.listeManquees().length === 0) {
-                window.alert('Aucune statistique à effacer.');
-                return;
-            }
-            if (window.confirm(
-                'Effacer toutes les statistiques ?\n\n' +
-                'Cela supprime : le décompte par domaine et la liste complète des questions manquées. ' +
-                'Cette action ne peut pas être annulée.'
-            )) {
-                Stats.effacerTout();
-                window.alert('Statistiques effacées.');
-            }
-        });
 
         a.addEventListener('click', () => this._fermerReglages());
         e.addEventListener('click', () => {
@@ -175,15 +154,16 @@ class MenuScene extends Phaser.Scene {
     }
 
     _ouvrirStats() {
-        const overlay   = document.getElementById('stats-screen');
-        const elApercu  = document.getElementById('stats-apercu');
-        const elDom     = document.getElementById('stats-domaines');
-        const elManq    = document.getElementById('stats-manquees');
-        const elCpt     = document.getElementById('stats-manquees-compteur');
-        const elHint    = document.getElementById('stats-voir-toutes-hint');
-        const btnFermer = document.getElementById('stats-fermer');
+        const overlay    = document.getElementById('stats-screen');
+        const elApercu   = document.getElementById('stats-apercu');
+        const elDom      = document.getElementById('stats-domaines');
+        const elManq     = document.getElementById('stats-manquees');
+        const elCpt      = document.getElementById('stats-manquees-compteur');
+        const btnFermer  = document.getElementById('stats-fermer');
+        const btnVoirManq = document.getElementById('stats-voir-manquees');
+        const btnEffTout  = document.getElementById('stats-effacer-tout');
 
-        const APERCU_MAX = 8;       // aperçu seulement — liste complète dans Réglages
+        const APERCU_MAX = 8;       // aperçu seulement — liste complète dans la fenêtre dédiée
 
         const refresh = () => {
             const ap = Stats.apercu();
@@ -225,21 +205,41 @@ class MenuScene extends Phaser.Scene {
                 p.className = 'reglages__hint';
                 p.textContent = 'Aucune question manquée — bravo !';
                 elManq.appendChild(p);
-                if (elHint) elHint.hidden = true;
             } else {
-                // Aperçu : on en montre quelques-unes seulement. La liste
-                // complète vit dans Réglages → Suivi des résultats.
+                // Aperçu : on en montre quelques-unes seulement. Le bouton
+                // « Voir toutes les questions manquées » plus bas ouvre la
+                // liste complète avec filtre par domaine.
                 manq.slice(0, APERCU_MAX).forEach(q => {
                     elManq.appendChild(this._creerCarteManquee(q));
                 });
-                if (elHint) elHint.hidden = (manq.length <= APERCU_MAX);
             }
         };
 
         refresh();
 
-        const f = btnFermer.cloneNode(true); btnFermer.parentNode.replaceChild(f, btnFermer);
+        // Reset des écouteurs (clones).
+        const f = btnFermer.cloneNode(true);   btnFermer.parentNode.replaceChild(f, btnFermer);
+        const v = btnVoirManq.cloneNode(true); btnVoirManq.parentNode.replaceChild(v, btnVoirManq);
+        const x = btnEffTout.cloneNode(true);  btnEffTout.parentNode.replaceChild(x, btnEffTout);
+
         f.addEventListener('click', () => this._fermerStats());
+        v.addEventListener('click', () => this._ouvrirManquees());
+        x.addEventListener('click', () => {
+            const ap = Stats.apercu();
+            if (ap.total === 0 && Stats.listeManquees().length === 0) {
+                window.alert('Aucune statistique à effacer.');
+                return;
+            }
+            if (window.confirm(
+                'Effacer toutes les statistiques ?\n\n' +
+                'Cela supprime : le décompte par domaine et la liste complète des questions manquées. ' +
+                'Cette action ne peut pas être annulée.'
+            )) {
+                Stats.effacerTout();
+                refresh();
+                window.alert('Statistiques effacées.');
+            }
+        });
 
         overlay.hidden = false;
         overlay.setAttribute('aria-hidden', 'false');
@@ -284,8 +284,8 @@ class MenuScene extends Phaser.Scene {
 
     /**
      * Fenêtre dédiée à toutes les questions manquées (accessible depuis
-     * Réglages → Suivi des résultats). Affiche TOUT, avec filtre par
-     * domaine pour cibler une matière.
+     * Stats & révision → Suivi des résultats). Affiche TOUT, avec filtre
+     * par domaine pour cibler une matière.
      */
     _ouvrirManquees() {
         const overlay   = document.getElementById('manquees-screen');
@@ -354,12 +354,12 @@ class MenuScene extends Phaser.Scene {
                 refresh();
             }
         });
-        // Raccourci : ferme Manquees ET Réglages d'un coup pour ressortir
+        // Raccourci : ferme Manquees ET Stats d'un coup pour ressortir
         // directement sur le menu principal (sinon il faut traverser deux
         // niveaux de modales).
         m.addEventListener('click', () => {
             this._fermerManquees();
-            this._fermerReglages();
+            this._fermerStats();
         });
         elFiltre.onchange = refresh;
 
