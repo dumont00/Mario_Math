@@ -72,6 +72,24 @@ class MenuScene extends Phaser.Scene {
         const btnEnregistrer  = document.getElementById('reglages-enregistrer');
 
         // Construit la liste de cases à cocher.
+        // Métadonnées Orthographe : nombre de mots chargés au runtime +
+        // date de dernière mise à jour du CSV (mise dans version.json par
+        // le GitHub Action). Permet au parent de confirmer que sa nouvelle
+        // liste est bien déployée.
+        const banque = this.cache.json.get('questions') || [];
+        const nbMotsOrtho = banque.filter(q => q.domaine === 'Orthographe').length;
+        let metaOrtho = '';
+        try {
+            const v = this.cache.json.get('version');
+            const o = v && v.orthographe;
+            if (o && o.date) {
+                metaOrtho = 'v. ' + (o.heure ? o.heure.replace(':', 'h') + ' ' : '') + o.date;
+            }
+        } catch (e) { /* ignore */ }
+        if (nbMotsOrtho > 0) {
+            metaOrtho = (metaOrtho ? metaOrtho + ' · ' : '') + nbMotsOrtho + ' mots';
+        }
+
         elDomaines.innerHTML = '';
         DOMAINES_DISPONIBLES.forEach(nom => {
             const label = document.createElement('label');
@@ -82,6 +100,12 @@ class MenuScene extends Phaser.Scene {
             cb.dataset.domaine = nom;
             const span = document.createElement('span');
             span.textContent = nom;
+            if (nom === 'Orthographe' && metaOrtho) {
+                const meta = document.createElement('small');
+                meta.className = 'reglages__meta';
+                meta.textContent = metaOrtho;
+                span.appendChild(meta);
+            }
             label.appendChild(cb);
             label.appendChild(span);
             elDomaines.appendChild(label);
