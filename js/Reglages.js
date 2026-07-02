@@ -12,7 +12,7 @@ class ReglagesManager {
             domainesActifs: (CONFIG && CONFIG.domainesActifs)
                 ? CONFIG.domainesActifs.slice()
                 : ['Arithmétique', 'Géométrie', 'Mesure', 'Statistique', 'Probabilité',
-                   'Français', 'Géographie', 'Histoire',
+                   'Orthographe', 'Géographie', 'Histoire',
                    'Grammaire', 'Vocabulaire', 'Logique'],
             ignorerAccents: true,           // par défaut on tolère les accents
             multiplicateurTemps: 1.0,       // 1× = temps de référence des questions
@@ -45,6 +45,19 @@ class ReglagesManager {
                 this.epelerApresOrthographe = data.epelerApresOrthographe !== undefined
                     ? !!data.epelerApresOrthographe
                     : this.defauts.epelerApresOrthographe;
+
+                // Migration : renomme l'ancien domaine « Français » (qui
+                // ne contenait en fait que l'orthographe) en « Orthographe »
+                // — c'est le nom réel de la matière.
+                const idxFr = this.domainesActifs.indexOf('Français');
+                if (idxFr !== -1) {
+                    if (this.domainesActifs.indexOf('Orthographe') === -1) {
+                        this.domainesActifs[idxFr] = 'Orthographe';
+                    } else {
+                        this.domainesActifs.splice(idxFr, 1);
+                    }
+                    migration = true;
+                }
 
                 // Migration : on active automatiquement les domaines qui ont
                 // été ajoutés à l'app depuis la dernière sauvegarde, pour

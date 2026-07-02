@@ -34,7 +34,7 @@ window.CONFIG = {
         'Mesure',
         'Statistique',
         'Probabilité',
-        'Français',
+        'Orthographe',
         'Géographie',
         'Histoire',
         'Grammaire',

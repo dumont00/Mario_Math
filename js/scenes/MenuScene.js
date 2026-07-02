@@ -8,7 +8,7 @@ const DOMAINES_DISPONIBLES = [
     'Mesure',
     'Statistique',
     'Probabilité',
-    'Français',
+    'Orthographe',
     'Géographie',
     'Histoire',
     'Grammaire',

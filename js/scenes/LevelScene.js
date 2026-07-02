@@ -56,7 +56,7 @@ class LevelScene extends Phaser.Scene {
             domainesActifs = ['Arithmétique'];
             sousDomaines   = ['Tables de multiplication'];
         } else if (this.mode === 'orthographe') {
-            domainesActifs = ['Français'];
+            domainesActifs = ['Orthographe'];
             sousDomaines   = ['Orthographe'];
         }
 
@@ -172,7 +172,7 @@ class LevelScene extends Phaser.Scene {
         }
 
         if (this.mode === 'mult' || this.mode === 'orthographe') {
-            this._buildEntrainementLevel(this.mode === 'mult' ? 'Arithmétique' : 'Français');
+            this._buildEntrainementLevel(this.mode === 'mult' ? 'Arithmétique' : 'Orthographe');
         } else {
             this._buildAventureLevel();
         }

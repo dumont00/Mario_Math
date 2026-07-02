@@ -25,7 +25,36 @@ class StatsManagerLocal {
                     this.manquees = data.manquees;
                 }
             }
+            this._migrerFrancaisVersOrthographe();
         } catch (e) { /* ignore (quota, navigation privée…) */ }
+    }
+
+    /**
+     * L'ancien domaine « Français » contenait en fait uniquement des mots
+     * d'orthographe. On fusionne son décompte et ses questions manquées
+     * sous « Orthographe » (le nom actuel), pour ne pas perdre l'historique.
+     */
+    _migrerFrancaisVersOrthographe() {
+        let modifie = false;
+
+        if (this.parDomaine['Français']) {
+            const src = this.parDomaine['Français'];
+            const dst = this.parDomaine['Orthographe'] || { bonnes: 0, total: 0 };
+            dst.bonnes += src.bonnes || 0;
+            dst.total  += src.total  || 0;
+            this.parDomaine['Orthographe'] = dst;
+            delete this.parDomaine['Français'];
+            modifie = true;
+        }
+
+        this.manquees.forEach(q => {
+            if (q && q.domaine === 'Français') {
+                q.domaine = 'Orthographe';
+                modifie = true;
+            }
+        });
+
+        if (modifie) this.sauvegarder();
     }
 
     sauvegarder() {

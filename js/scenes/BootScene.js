@@ -39,9 +39,8 @@ class BootScene extends Phaser.Scene {
 
     /**
      * Lit data/orthographe.csv et injecte les mots comme questions de
-     * type 'saisie' dans la banque chargée. Les questions Français /
-     * Orthographe absentes du JSON sont ainsi entièrement gérées par
-     * le parent via le CSV.
+     * type 'saisie' dans la banque chargée (domaine « Orthographe »).
+     * Ces questions sont entièrement gérées par le parent via le CSV.
      */
     _integrerOrthographe() {
         const csv = this.cache.text.get('orthographe');
@@ -59,7 +58,7 @@ class BootScene extends Phaser.Scene {
             if (!mot) return null;
             return {
                 id: 'fr_csv_' + String(i + 1).padStart(3, '0'),
-                domaine: 'Français',
+                domaine: 'Orthographe',
                 sousDomaine: 'Orthographe',
                 palier: palier,
                 type: 'saisie',
@@ -79,11 +78,13 @@ class BootScene extends Phaser.Scene {
 
         const banque = this.cache.json.get('questions');
         if (Array.isArray(banque)) {
-            // On retire toutes les questions Français/Orthographe déjà présentes
-            // (au cas où le JSON en contiendrait encore) puis on ajoute le CSV.
+            // On retire toutes les questions Orthographe déjà présentes
+            // (héritage de l'ancien domaine « Français », ou doublons du JSON)
+            // puis on ajoute le CSV.
             for (let i = banque.length - 1; i >= 0; i--) {
                 const q = banque[i];
-                if (q.domaine === 'Français' && q.sousDomaine === 'Orthographe') {
+                if (q.domaine === 'Orthographe'
+                    || (q.domaine === 'Français' && q.sousDomaine === 'Orthographe')) {
                     banque.splice(i, 1);
                 }
             }
