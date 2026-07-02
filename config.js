@@ -45,6 +45,12 @@ window.CONFIG = {
     // Ajustement adaptatif de la difficulté (phase avancée).
     adaptatif: true,
 
+    // Comment le palier de chaque question est choisi :
+    //   'niveau'    : selon le mélange défini par le niveau (voir CLAUDE.md §7)
+    //   'aleatoire' : tirage uniforme entre ★, ★★, ★★★ — plus de variété
+    //                 quand on pratique une ou deux catégories à la fois
+    paliersMode: 'aleatoire',
+
     // Réglages moteur / plateforme (Phase 1).
     moteur: {
         largeurMonde: 3200,

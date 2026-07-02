@@ -67,6 +67,7 @@ class MenuScene extends Phaser.Scene {
         const elAccents       = document.getElementById('reglages-accents');
         const elEpeler        = document.getElementById('reglages-epeler');
         const elTemps         = document.getElementById('reglages-temps');
+        const elDifficulte    = document.getElementById('reglages-difficulte');
         const elVersion       = document.getElementById('reglages-version');
         const btnAnnuler      = document.getElementById('reglages-annuler');
         const btnEnregistrer  = document.getElementById('reglages-enregistrer');
@@ -118,6 +119,8 @@ class MenuScene extends Phaser.Scene {
         const m = Reglages.multiplicateurTemps;
         elTemps.value = String(typeof m === 'number' ? m : 1);
 
+        elDifficulte.value = (Reglages.paliersMode === 'niveau') ? 'niveau' : 'aleatoire';
+
         // Version : on la lit depuis le cache JSON chargé par BootScene.
         try {
             const v = this.cache.json.get('version');
@@ -160,6 +163,8 @@ class MenuScene extends Phaser.Scene {
             const mult = parseFloat(elTemps.value);
             // 0 = sans chronomètre (cas spécial). Sinon on borne entre 0 et 4.
             Reglages.multiplicateurTemps = (mult === 0 || (mult > 0 && mult <= 4)) ? mult : 1.0;
+
+            Reglages.paliersMode = (elDifficulte.value === 'niveau') ? 'niveau' : 'aleatoire';
 
             Reglages.appliquer();
             Reglages.sauvegarder();

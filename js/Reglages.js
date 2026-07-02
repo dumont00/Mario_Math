@@ -16,7 +16,8 @@ class ReglagesManager {
                    'Grammaire', 'Vocabulaire', 'Logique'],
             ignorerAccents: true,           // par défaut on tolère les accents
             multiplicateurTemps: 1.0,       // 1× = temps de référence des questions
-            epelerApresOrthographe: true    // épelle le mot à voix haute après chaque réponse
+            epelerApresOrthographe: true,   // épelle le mot à voix haute après chaque réponse
+            paliersMode: 'aleatoire'        // 'niveau' | 'aleatoire' (plus de variété)
         };
         this.charger();
         this.appliquer();
@@ -45,6 +46,9 @@ class ReglagesManager {
                 this.epelerApresOrthographe = data.epelerApresOrthographe !== undefined
                     ? !!data.epelerApresOrthographe
                     : this.defauts.epelerApresOrthographe;
+                this.paliersMode = (data.paliersMode === 'niveau' || data.paliersMode === 'aleatoire')
+                    ? data.paliersMode
+                    : this.defauts.paliersMode;
 
                 // Migration : renomme l'ancien domaine « Français » (qui
                 // ne contenait en fait que l'orthographe) en « Orthographe »
@@ -84,6 +88,7 @@ class ReglagesManager {
         this.ignorerAccents         = this.defauts.ignorerAccents;
         this.multiplicateurTemps    = this.defauts.multiplicateurTemps;
         this.epelerApresOrthographe = this.defauts.epelerApresOrthographe;
+        this.paliersMode            = this.defauts.paliersMode;
     }
 
     sauvegarder() {
@@ -92,7 +97,8 @@ class ReglagesManager {
                 domainesActifs:         this.domainesActifs,
                 ignorerAccents:         this.ignorerAccents,
                 multiplicateurTemps:    this.multiplicateurTemps,
-                epelerApresOrthographe: this.epelerApresOrthographe
+                epelerApresOrthographe: this.epelerApresOrthographe,
+                paliersMode:            this.paliersMode
             }));
         } catch (e) { /* ignore (quota dépassé, navigation privée…) */ }
     }
@@ -111,6 +117,7 @@ class ReglagesManager {
         window.CONFIG.ignorerAccents         = this.ignorerAccents;
         window.CONFIG.multiplicateurTemps    = this.multiplicateurTemps;
         window.CONFIG.epelerApresOrthographe = this.epelerApresOrthographe;
+        window.CONFIG.paliersMode            = this.paliersMode;
     }
 
     domaineEstActif(nom) {

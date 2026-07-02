@@ -18,6 +18,13 @@ class QuestionManager {
             ? options.adaptatif
             : !!(CONFIG && CONFIG.adaptatif);
 
+        // 'niveau' respecte le mélange de paliers du niveau ; 'aleatoire' tire
+        // uniformément ★ / ★★ / ★★★ pour maximiser la diversité (utile quand
+        // on pratique une ou deux catégories à la fois).
+        this.paliersMode = options.paliersMode
+            || (CONFIG && CONFIG.paliersMode)
+            || 'aleatoire';
+
         // Banque filtrée selon le sous-domaine (si actif).
         this.banque = this.sousDomaines
             ? this.toutes.filter(q => this.sousDomaines.includes(q.sousDomaine))
@@ -50,29 +57,45 @@ class QuestionManager {
         }
         const palier = this._choisirPalierAdapte(domaine);
 
-        let pool = this.banque.filter(q =>
-            q.domaine === domaine
-            && q.palier === palier
-            && q.id !== exclureId
-            && !this.recentlyServed.includes(q.id)
+        // Cap dynamique de la mémoire anti-répétition : sur les petites
+        // poches (ex. Grammaire ★ ≈ 52 questions), 80 slots récents
+        // saturent le pool et forcent le fallback. On limite l'exclusion
+        // à ~60 % de la taille de la poche courante pour garantir qu'il
+        // reste toujours des candidats frais.
+        const poolTotal = this.banque.filter(q =>
+            q.domaine === domaine && q.palier === palier
         );
+        const recentLimit = Math.min(
+            this.recentlyServed.length,
+            Math.max(5, Math.floor(poolTotal.length * 0.6))
+        );
+        const recentSet = new Set(this.recentlyServed.slice(-recentLimit));
+
+        let pool = poolTotal.filter(q =>
+            q.id !== exclureId && !recentSet.has(q.id)
+        );
+
+        // Fallback 1 : essayer un palier voisin en gardant le filtre récente.
+        //   On préfère une question fraîche d'un palier adjacent à une question
+        //   déjà vue du même palier (surtout en mode « au hasard »).
         if (pool.length === 0) {
-            // Fallback 1 : on retire le filtre "récente".
-            pool = this.banque.filter(q =>
-                q.domaine === domaine && q.palier === palier && q.id !== exclureId
-            );
-        }
-        if (pool.length === 0) {
-            // Fallback 2 : palier voisin (vers le bas, puis vers le haut).
             for (const altP of [palier - 1, palier + 1, palier - 2, palier + 2]) {
+                if (altP < 1 || altP > 3) continue;
                 pool = this.banque.filter(q =>
-                    q.domaine === domaine && q.palier === altP && q.id !== exclureId
+                    q.domaine === domaine && q.palier === altP
+                    && q.id !== exclureId && !recentSet.has(q.id)
                 );
                 if (pool.length > 0) break;
             }
         }
+
+        // Fallback 2 : palier demandé, mais on laisse tomber le filtre récente.
         if (pool.length === 0) {
-            // Fallback 3 : n'importe quelle question du domaine.
+            pool = poolTotal.filter(q => q.id !== exclureId);
+        }
+
+        // Fallback 3 : n'importe quelle question du domaine.
+        if (pool.length === 0) {
             pool = this.banque.filter(q => q.domaine === domaine);
         }
         if (pool.length === 0) return null;
@@ -139,6 +162,12 @@ class QuestionManager {
     }
 
     _choisirPalierNiveau() {
+        // Mode « au hasard » : tirage uniforme entre ★ / ★★ / ★★★, ignore
+        // la progression du niveau. Utilisé par défaut pour maximiser la
+        // variété quand on pratique une ou deux catégories à la fois.
+        if (this.paliersMode === 'aleatoire') {
+            return 1 + Math.floor(Math.random() * 3);
+        }
         const mix = this._melangePaliersDuNiveau();
         const r = Math.random();
         let acc = 0;
