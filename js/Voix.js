@@ -11,6 +11,11 @@ class VoixHelper {
                           (typeof SpeechSynthesisUtterance !== 'undefined');
         this.voixFr = null;
         this.aEteDebloquee = false;
+        // Timer d'attente entre un cancel() et le speak() suivant. On le
+        // garde en champ pour pouvoir l'annuler depuis arreter() : sinon,
+        // fermer la modale juste après avoir demandé un nouveau mot
+        // laisserait ce speak() différé s'exécuter quand même.
+        this._speakTimer = null;
 
         if (this.disponible) {
             this._chargerVoix();
@@ -88,9 +93,18 @@ class VoixHelper {
             // appliqué QUE si on doit vraiment annuler quelque chose.
             const doitAnnuler = window.speechSynthesis.speaking
                              || window.speechSynthesis.pending;
+
+            // Un speak différé en attente ? On le remplace : c'est le
+            // nouveau mot qui doit être dit, pas l'ancien.
+            if (this._speakTimer !== null) {
+                clearTimeout(this._speakTimer);
+                this._speakTimer = null;
+            }
+
             if (doitAnnuler) {
                 window.speechSynthesis.cancel();
-                setTimeout(() => {
+                this._speakTimer = setTimeout(() => {
+                    this._speakTimer = null;
                     try { window.speechSynthesis.speak(u); }
                     catch (e) { /* ignore */ }
                 }, 80);
@@ -112,6 +126,13 @@ class VoixHelper {
      */
     arreter() {
         if (!this.disponible) return;
+        // Annule aussi un speak() différé qui n'aurait pas encore tiré :
+        // sans ça, fermer la modale entre le cancel() et le setTimeout
+        // de 80 ms laisserait quand même l'utterance suivante partir.
+        if (this._speakTimer !== null) {
+            clearTimeout(this._speakTimer);
+            this._speakTimer = null;
+        }
         try {
             if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
                 window.speechSynthesis.cancel();
