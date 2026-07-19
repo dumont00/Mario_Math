@@ -17318,7 +17318,7 @@
       "9",
       "7"
     ],
-    "reponse": "7",
+    "reponse": "5",
     "indice": "Compte : Ontario, Manitoba, Saskatchewan, Alberta, C.-B., …",
     "explication": "Ontario, Manitoba, Saskatchewan, Alberta, Colombie-Britannique + les 2 territoires.",
     "tempsSec": 20,
@@ -24918,9 +24918,9 @@
       "la",
       "san"
     ],
-    "reponse": "de",
+    "reponse": "sans",
     "indice": "Réfléchis bien à la question.",
-    "explication": "La bonne réponse est : de.",
+    "explication": "La bonne réponse est : sans.",
     "tempsSec": 15,
     "pointsBase": 150
   },
@@ -25290,7 +25290,7 @@
     "sousDomaine": "Homophones grammaticaux",
     "palier": 3,
     "type": "choix",
-    "question": "« Il ne ___ peut pas. »",
+    "question": "« Il ne ___ voit pas. »",
     "visuel": null,
     "choix": [
       "là",
