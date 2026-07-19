@@ -56,7 +56,10 @@ class VoixHelper {
     /**
      * Prononce un mot. Sur Chrome iOS, doit être appelée de façon
      * synchrone dans un gestionnaire d'événement utilisateur (click /
-     * touchend), sinon la requête peut être ignorée silencieusement.
+     * touchend), sinon la requête peut être ignorée silencieusement —
+     * SAUF si la synthèse a déjà été déverrouillée par un clic
+     * précédent (voir `debloquer()`), auquel cas les appels ultérieurs
+     * fonctionnent même dans un setTimeout.
      */
     dire(mot, options = {}) {
         if (!this.disponible || !mot) return false;
@@ -64,12 +67,6 @@ class VoixHelper {
             // Recharger les voix au cas où elles n'étaient pas dispos à
             // l'init (Chrome iOS les charge parfois en retard).
             if (!this.voixFr) this._chargerVoix();
-
-            // On annule seulement si quelque chose est en train de parler.
-            // Cancel inutile peut perturber le moteur sur Chrome iOS.
-            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-                window.speechSynthesis.cancel();
-            }
 
             const u = new SpeechSynthesisUtterance(String(mot));
             if (this.voixFr) {
@@ -82,12 +79,44 @@ class VoixHelper {
             u.pitch  = options.pitch  !== undefined ? options.pitch  : 1.0;
             u.volume = options.volume !== undefined ? options.volume : 1;
 
-            window.speechSynthesis.speak(u);
+            // Bug Chrome (surtout iOS) : cancel() suivi immédiatement d'un
+            // speak() peut soit avaler la nouvelle utterance, soit laisser
+            // l'ancienne finir d'abord — donnant l'impression qu'un
+            // ancien mot est prononcé pendant qu'une nouvelle question
+            // s'affiche. On force un petit délai pour laisser le moteur
+            // vider sa file avant de reprendre la parole. Ce délai n'est
+            // appliqué QUE si on doit vraiment annuler quelque chose.
+            const doitAnnuler = window.speechSynthesis.speaking
+                             || window.speechSynthesis.pending;
+            if (doitAnnuler) {
+                window.speechSynthesis.cancel();
+                setTimeout(() => {
+                    try { window.speechSynthesis.speak(u); }
+                    catch (e) { /* ignore */ }
+                }, 80);
+            } else {
+                window.speechSynthesis.speak(u);
+            }
             return true;
         } catch (e) {
             console.warn('Voix.dire a échoué :', e);
             return false;
         }
+    }
+
+    /**
+     * Arrête toute parole en cours ou en attente. À appeler lors des
+     * transitions de scène (fermeture de modale, retour au menu, fin
+     * de partie) pour éviter qu'une longue épellation résiduelle ne
+     * déborde sur la partie suivante.
+     */
+    arreter() {
+        if (!this.disponible) return;
+        try {
+            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+                window.speechSynthesis.cancel();
+            }
+        } catch (e) { /* ignore */ }
     }
 
     aFrancais() { return !!this.voixFr; }

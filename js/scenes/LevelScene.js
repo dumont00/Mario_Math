@@ -28,6 +28,10 @@ class LevelScene extends Phaser.Scene {
     }
 
     create() {
+        // Filet de sécurité : coupe toute parole résiduelle d'une partie
+        // précédente (voir DefiScene pour le contexte).
+        if (typeof Voix !== 'undefined' && Voix.arreter) Voix.arreter();
+
         const m = CONFIG.moteur;
 
         this.physics.world.setBounds(0, 0, this.largeurMonde, m.hauteurMonde);

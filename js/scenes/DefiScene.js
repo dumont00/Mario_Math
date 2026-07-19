@@ -25,6 +25,11 @@ class DefiScene extends Phaser.Scene {
     }
 
     create() {
+        // Filet de sécurité : coupe toute parole résiduelle d'une partie
+        // précédente. Sans ça, la première question d'orthographe d'un
+        // nouveau Défi peut être décalée par l'épellation qui traînait.
+        if (typeof Voix !== 'undefined' && Voix.arreter) Voix.arreter();
+
         const w = this.scale.width, h = this.scale.height;
 
         // Décor : ciel sombre étoilé pour distinguer du mode aventure.

@@ -306,6 +306,12 @@ class QuestionModal {
 
     terminer() {
         this.arreterTimer();
+        // Coupe toute parole résiduelle (épellation en cours après une
+        // question d'orthographe) — sinon elle déborde sur la question
+        // suivante ou sur la partie suivante et cause un décalage entre
+        // le mot prononcé et le mot attendu.
+        if (typeof Voix !== 'undefined' && Voix.arreter) Voix.arreter();
+
         this.root.hidden = true;
         this.root.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('modal-open');
@@ -333,6 +339,7 @@ class QuestionModal {
             if (!ok) return;
         }
         this.arreterTimer();
+        if (typeof Voix !== 'undefined' && Voix.arreter) Voix.arreter();
         this.root.hidden = true;
         this.root.setAttribute('aria-hidden', 'true');
         document.body.classList.remove('modal-open');
